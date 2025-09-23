@@ -1,13 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import "../styles/Booking.css";
 
-// Fake data : barbers
 const barbers = [
-  { id: 1, nom: "Karim" },
-  { id: 2, nom: "Ali" }
+  { id: 1, nom: "Karim", photo: "/images/barber1.jpg" },
+  { id: 2, nom: "Ali", photo: "/images/barber2.jpg" }
 ];
 
-// Fake data : services
 const services = [
   { id: 1, nom: "Coupe cheveux" },
   { id: 2, nom: "Cheveux + barbe" },
@@ -26,31 +25,32 @@ export default function Booking() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      `✅ Réservation confirmée avec ${barber.nom} pour ${service.nom} le ${date} à ${time}`
-    );
+    alert(`✅ Réservation confirmée avec ${barber.nom} pour ${service.nom} le ${date} à ${time}`);
   };
 
   return (
-    <div style={{ padding: 24 }}>
-      <h2>Réserver avec {barber.nom}</h2>
-      <p>Service choisi : {service.nom}</p>
+    <div className="booking">
+      <div className="booking-card">
+        <h2>Réserver avec {barber.nom}</h2>
+        <img src={barber.photo} alt={barber.nom} className="barber-photo" />
+        <p>Service choisi : <strong>{service.nom}</strong></p>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-          required
-        /><br /><br />
-        <input
-          type="time"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-          required
-        /><br /><br />
-        <button type="submit">Confirmer</button>
-      </form>
+        <form onSubmit={handleSubmit} className="booking-form">
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required
+          />
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            required
+          />
+          <button type="submit">Confirmer</button>
+        </form>
+      </div>
     </div>
   );
 }
