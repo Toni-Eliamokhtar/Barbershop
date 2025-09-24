@@ -1,11 +1,36 @@
+import { useEffect, useState } from "react";
+import { supabase } from "./lib/supabase"; 
 import "./styles/Home.css";
 
 export default function App() {
+  const [status, setStatus] = useState("⏳ Connexion à Supabase...");
+
+  useEffect(() => {
+    async function testConnection() {
+      const { data, error } = await supabase
+        .from("profiles")
+        .select("*")
+        .limit(1);
+
+      if (error) {
+        console.error("❌ Erreur Supabase :", error.message);
+        setStatus("❌ Erreur de connexion à Supabase");
+      } else {
+        console.log("✅ Connexion Supabase OK, exemple :", data);
+        setStatus("✅ Supabase connecté !");
+      }
+    }
+
+    testConnection();
+  }, []);
+
   return (
     <div className="home">
       <header className="home-header">
         <h1>💈 Barbershop 514</h1>
         <p className="slogan">Style. Confiance. Élégance.</p>
+        <p style={{ marginTop: "10px", fontSize: "14px" }}>{status}</p>
+
         <div className="home-actions">
           <a href="/login" className="btn-primary">Se connecter</a>
           <a href="/signup" className="btn-secondary">S'inscrire</a>
