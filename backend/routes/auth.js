@@ -27,10 +27,33 @@ router.post("/signup", async (req, res) => {
 });
 
 router.post("/login", async (req, res) => {
-  res.json({
-    message:
-      "⚠️ Utilise supabase.auth.signInWithPassword côté frontend pour la connexion."
-  });
+  try {
+    const { email, password } = req.body;
+    
+    if(!email || !password) {
+      return res.status(400).json({ error: "Email et mot de passe sont requis." });
+    }
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      return res.status(400).json({ error: error.message });
+    }
+    
+    res.json({
+      message: "Connexion réussie",
+      user: data.user,
+      access_token: data.session?.access_token,
+      refresh_token: data.session?.refresh_token
+    });
+  }
+  catch (err) {
+    console.error("Erreur de la connexion :", err);
+    res.status(500).json({ error: "Erreur pendant la connexion" });
+  }
 });
 
 export default router;
