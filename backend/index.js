@@ -1,18 +1,17 @@
-import express from 'express';
-import users from './user.js';
+import express from "express";
+import cors from "cors";
+import authRoutes from "./routes/auth.js";
+import dotenv from "dotenv";
 
-const app = express()
+dotenv.config();
 
-app.get('/', (req, res) => {
-  res.send('Server is ready')
-})
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.get('/api/user', (req, res) => {
-  res.send(users)
-})
+app.use("/auth", authRoutes);
 
-const port = process.env.PORT || 3000
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`)
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () =>
+  console.log(`✅ Backend démarré sur http://localhost:${PORT}`)
+);
