@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 import "../styles/Auth.css";
 
 export default function Login() {
@@ -7,13 +8,28 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    if (email && password) {
-      alert(`✅ Connexion réussie pour ${email}`);
+
+    try {
+      const res = await fetch("http://localhost:5000/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Erreur de connexion");
+
+      const { access_token, refresh_token } = data;
+      const { error } = await supabase.auth.setSession({ access_token, refresh_token });
+      if (error) throw error;
+      
+      alert(`✅ Bienvenue ${email}`);
       navigate("/dashboard");
-    } else {
-      alert("Veuillez entrer un email et un mot de passe");
+    } catch (err) {
+      console.error("Erreur de login :", err);
+      alert("❌ " + err.message);
     }
   };
 
