@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 import "../styles/Dashboard.css";
 
 const barbers = [
@@ -17,9 +19,18 @@ const services = [
 export default function Dashboard() {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    alert("Vous êtes déconnecté !");
-    navigate("/");
+  useEffect(() => {
+    (async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        navigate("/login");
+      }
+    })();
+  }, [navigate]);
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    navigate("/login");
   };
 
   return (
