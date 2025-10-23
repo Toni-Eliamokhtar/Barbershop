@@ -1,10 +1,7 @@
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 import "../styles/Dashboard.css";
-
-const barbers = [
-  { id: 1, nom: "Karim", specialite: "Coupe moderne", photo: "/images/barber1.jpg" },
-  { id: 2, nom: "Ali", specialite: "Barbe & cheveux", photo: "/images/barber2.jpg" }
-];
 
 const services = [
   { id: 1, nom: "Coupe cheveux", prix: 25 },
@@ -17,9 +14,35 @@ const services = [
 export default function Dashboard() {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    alert("Vous êtes déconnecté !");
-    navigate("/");
+  const [barbers, setBarbers] = useState([]);
+  const [loadingBarbers, setLoadingBarbers] = useState(true);
+  const [barbersError, setBarbersError] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        navigate("/login");
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from("barbers")
+        .select("*")
+        .order("nom", { ascending: true });
+
+      if (error) {
+        setBarbersError(error.message);
+      } else {
+        setBarbers(data ?? []);
+      }
+      setLoadingBarbers(false);
+    })();
+  }, [navigate]);
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    navigate("/login");
   };
 
   return (
@@ -29,10 +52,13 @@ export default function Dashboard() {
         <button onClick={handleLogout} className="logout-btn">Déconnexion</button>
       </div>
 
+      {loadingBarbers && <p>Chargement des barbiers…</p>}
+      {barbersError && <p style={{ color: "tomato" }}>Erreur: {barbersError}</p>}
+
       <div className="barbers-grid">
         {barbers.map((b) => (
           <div key={b.id} className="barber-card">
-            <img src={b.photo} alt={b.nom} className="barber-photo" />
+            <img src={b.photo_url ?? "/images/fallback.jpg"} alt={b.nom} className="barber-photo" />
             <h3>{b.nom}</h3>
             <p className="specialite">{b.specialite}</p>
 
@@ -49,6 +75,10 @@ export default function Dashboard() {
             </div>
           </div>
         ))}
+
+        {!loadingBarbers && !barbersError && barbers.length === 0 && (
+          <p>Aucun barbier pour le moment.</p>
+        )}
       </div>
     </div>
   );
