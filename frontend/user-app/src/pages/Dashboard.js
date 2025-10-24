@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
+import BarberCard from "../components/BarberCard";
 import "../styles/Dashboard.css";
 
 const services = [
@@ -8,7 +9,7 @@ const services = [
   { id: 2, nom: "Cheveux + barbe", prix: 35 },
   { id: 3, nom: "Étudiant", prix: 20 },
   { id: 4, nom: "Enfant", prix: 15 },
-  { id: 5, nom: "Barbe", prix: 18 }
+  { id: 5, nom: "Barbe", prix: 18 },
 ];
 
 export default function Dashboard() {
@@ -82,7 +83,9 @@ export default function Dashboard() {
       return;
     }
 
-    setNom(""); setSpecialite(""); setPhotoUrl("");
+    setNom("");
+    setSpecialite("");
+    setPhotoUrl("");
 
     const { data } = await supabase
       .from("barbers")
@@ -97,7 +100,9 @@ export default function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-header">
         <h2>Réserve ton rendez-vous 💈</h2>
-        <button onClick={handleLogout} className="logout-btn">Déconnexion</button>
+        <button onClick={handleLogout} className="logout-btn">
+          Déconnexion
+        </button>
       </div>
 
       {isAdmin && (
@@ -108,11 +113,14 @@ export default function Dashboard() {
             borderRadius: 12,
             padding: 16,
             marginBottom: 20,
-            border: "1px solid #1f2937"
+            border: "1px solid #1f2937",
           }}
         >
           <h3 style={{ marginTop: 0 }}>Admin — Ajouter un barbier</h3>
-          <form onSubmit={handleAddBarber} style={{ display: "grid", gap: 12, maxWidth: 520 }}>
+          <form
+            onSubmit={handleAddBarber}
+            style={{ display: "grid", gap: 12, maxWidth: 520 }}
+          >
             <input
               placeholder="Nom"
               value={nom}
@@ -133,33 +141,21 @@ export default function Dashboard() {
             <button type="submit" disabled={saving}>
               {saving ? "Ajout..." : "Ajouter"}
             </button>
-            {saveError && <p style={{ color: "tomato", margin: 0 }}>Erreur: {saveError}</p>}
+            {saveError && (
+              <p style={{ color: "tomato", margin: 0 }}>Erreur: {saveError}</p>
+            )}
           </form>
         </div>
       )}
 
       {loadingBarbers && <p>Chargement des barbiers…</p>}
-      {barbersError && <p style={{ color: "tomato" }}>Erreur: {barbersError}</p>}
+      {barbersError && (
+        <p style={{ color: "tomato" }}>Erreur: {barbersError}</p>
+      )}
 
       <div className="barbers-grid">
         {barbers.map((b) => (
-          <div key={b.id} className="barber-card">
-            <img src={b.photo_url ?? "/images/fallback.jpg"} alt={b.nom} className="barber-photo" />
-            <h3>{b.nom}</h3>
-            <p className="specialite">{b.specialite}</p>
-
-            <div className="services">
-              {services.map((s) => (
-                <Link
-                  key={s.id}
-                  to={`/booking/${b.id}/${s.id}`}
-                  className="service-btn"
-                >
-                  {s.nom} - {s.prix}$
-                </Link>
-              ))}
-            </div>
-          </div>
+          <BarberCard key={b.id} barber={b} />
         ))}
 
         {!loadingBarbers && !barbersError && barbers.length === 0 && (
