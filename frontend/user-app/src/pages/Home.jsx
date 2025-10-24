@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ServiceCard from "../components/ServiceCard";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -45,9 +46,9 @@ export default function Home() {
       <section className="home-services">
         <h2>Nos services</h2>
         <div className="services-grid">
-          <div className="service-card">💇 Coupe de cheveux</div>
-          <div className="service-card">🧔 Barbe & moustache</div>
-          <div className="service-card">🎓 Étudiant & enfant</div>
+          <ServiceCard icon="💇" title="Coupe de cheveux" />
+          <ServiceCard icon="🧔" title="Barbe & moustache" />
+          <ServiceCard icon="🎓" title="Étudiant & enfant" />
         </div>
       </section>
 
