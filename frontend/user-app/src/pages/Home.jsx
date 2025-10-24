@@ -1,6 +1,6 @@
-// src/pages/Home.jsx
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
+import Header from "../components/Header";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -27,20 +27,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <header className="home-header">
-        <h1>💈 Barbershop 514</h1>
-        <p className="slogan">Style. Confiance. Élégance.</p>
-        <p style={{ marginTop: "10px", fontSize: "14px" }}>{status}</p>
-
-        <div className="home-actions">
-          <a href="/login" className="btn-primary">
-            Se connecter
-          </a>
-          <a href="/signup" className="btn-secondary">
-            S'inscrire
-          </a>
-        </div>
-      </header>
+      <Header />
 
       <section className="home-about">
         <img src="/images/barbershop.png" alt="Barbershop" />
