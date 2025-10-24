@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
+import BookingInfo from "../components/BookingInfo";
 import "../styles/Booking.css";
 
 const services = [
@@ -8,7 +9,7 @@ const services = [
   { id: 2, nom: "Cheveux + barbe" },
   { id: 3, nom: "Étudiant" },
   { id: 4, nom: "Enfant" },
-  { id: 5, nom: "Barbe" }
+  { id: 5, nom: "Barbe" },
 ];
 
 export default function Booking() {
@@ -36,7 +37,10 @@ export default function Booking() {
           .single();
 
         // Récupérer les données de l'utilisateur connecté
-        const { data: { user: currentUser }, error: userError } = await supabase.auth.getUser();
+        const {
+          data: { user: currentUser },
+          error: userError,
+        } = await supabase.auth.getUser();
 
         if (barberError) {
           setErr(barberError.message);
@@ -49,7 +53,6 @@ export default function Booking() {
         } else {
           setUser(currentUser);
         }
-
       } catch (error) {
         setErr(error.message);
       } finally {
@@ -65,10 +68,10 @@ export default function Booking() {
     setBookingLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/booking/create', {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json' 
+      const response = await fetch("http://localhost:5000/booking/create", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           barberId: barber.id,
@@ -76,10 +79,13 @@ export default function Booking() {
           date,
           time,
           userEmail: user.email,
-          userName: user.user_metadata?.nom || user.user_metadata?.name || user.email.split('@')[0],
+          userName:
+            user.user_metadata?.nom ||
+            user.user_metadata?.name ||
+            user.email.split("@")[0],
           barberName: barber.nom,
-          serviceName: service.nom
-        })
+          serviceName: service.nom,
+        }),
       });
 
       const data = await response.json();
@@ -92,70 +98,91 @@ export default function Booking() {
 📋 Détails de votre réservation :
 👨‍💼 Barbier : ${barber.nom}
 ✂️ Service : ${service.nom} 
-📅 Date : ${new Date(date).toLocaleDateString('fr-FR')}
+📅 Date : ${new Date(date).toLocaleDateString("fr-FR")}
 🕐 Heure : ${time}
 
 Merci de votre confiance ! 💈`);
-        
+
         // Réinitialiser le formulaire
         setDate("");
         setTime("");
       } else {
-        throw new Error(data.error || 'Erreur lors de la réservation');
+        throw new Error(data.error || "Erreur lors de la réservation");
       }
     } catch (error) {
-      console.error('❌ Erreur:', error);
+      console.error("❌ Erreur:", error);
       alert(`❌ Erreur lors de la réservation : ${error.message}`);
     } finally {
       setBookingLoading(false);
     }
   };
 
-  if (loading) return <div className="booking"><p>Chargement…</p></div>;
-  if (err) return <div className="booking"><p style={{color:"tomato"}}>Erreur: {err}</p></div>;
-  if (!barber) return <div className="booking"><p>Barbier introuvable.</p></div>;
-  if (!service) return <div className="booking"><p>Service introuvable.</p></div>;
-  if (!user) return <div className="booking"><p>Vous devez être connecté pour réserver.</p></div>;
+  if (loading)
+    return (
+      <div className="booking">
+        <p>Chargement…</p>
+      </div>
+    );
+  if (err)
+    return (
+      <div className="booking">
+        <p style={{ color: "tomato" }}>Erreur: {err}</p>
+      </div>
+    );
+  if (!barber)
+    return (
+      <div className="booking">
+        <p>Barbier introuvable.</p>
+      </div>
+    );
+  if (!service)
+    return (
+      <div className="booking">
+        <p>Service introuvable.</p>
+      </div>
+    );
+  if (!user)
+    return (
+      <div className="booking">
+        <p>Vous devez être connecté pour réserver.</p>
+      </div>
+    );
 
   return (
     <div className="booking">
       <div className="booking-card">
-        <h2>Réserver avec {barber.nom}</h2>
-        <img src={barber.photo_url ?? "/images/fallback.jpg"} alt={barber.nom} className="barber-photo" />
-        
-        <div className="booking-info">
-          <p>Service choisi : <strong>{service.nom}</strong></p>
-          <p>📧 Email de confirmation : <strong>{user.email}</strong></p>
-        </div>
+        <BookingInfo barber={barber} service={service} user={user} />
 
         <form onSubmit={handleSubmit} className="booking-form">
           <div className="form-group">
             <label htmlFor="date">📅 Date :</label>
-            <input 
+            <input
               id="date"
               type="date"
-              value={date} 
-              onChange={(e) => setDate(e.target.value)} 
-              min={new Date().toISOString().split('T')[0]} // Date minimum = aujourd'hui
-              required 
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              min={new Date().toISOString().split("T")[0]} // Date minimum = aujourd'hui
+              required
             />
           </div>
-          
+
           <div className="form-group">
             <label htmlFor="time">🕐 Heure :</label>
-            <input 
+            <input
               id="time"
-              type="time" 
-              value={time} 
-              onChange={(e) => setTime(e.target.value)} 
+              type="time"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
               min="09:00"
               max="18:00"
-              required 
+              required
             />
           </div>
-          
+
           <button type="submit" disabled={bookingLoading}>
-            {bookingLoading ? "⏳ Confirmation en cours..." : "✅ Confirmer et recevoir l'email"}
+            {bookingLoading
+              ? "⏳ Confirmation en cours..."
+              : "✅ Confirmer et recevoir l'email"}
           </button>
         </form>
       </div>
