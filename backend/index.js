@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import authRoutes from "./routes/auth.js";
+import bookingRoutes from "./routes/booking.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(
 app.use(express.json());
 
 app.use("/auth", authRoutes);
+app.use("/booking", bookingRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
