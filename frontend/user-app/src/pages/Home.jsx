@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -58,9 +59,7 @@ export default function Home() {
         <p>📞 Téléphone : (514) 123-4567</p>
       </section>
 
-      <footer className="home-footer">
-        <p>© 2025 Barbershop 514 - Tous droits réservés</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
