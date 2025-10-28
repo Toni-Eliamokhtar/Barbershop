@@ -181,9 +181,21 @@ router.post("/create-checkout-session", async (req, res) => {
       price,
     } = req.body;
 
-    if (!price) {
-      return res.status(400).json({ error: "Price is required (in EUR)" });
-    }
+    // Server-side price mapping to avoid trusting client-provided prices.
+    // Map service IDs to prices (CAD). Keep in sync with frontend `services`.
+    const servicePriceMap = {
+      "1": 25,
+      "2": 35,
+      "3": 20,
+      "4": 15,
+      "5": 18,
+    };
+
+    // Prefer server-side mapping; fall back to client-provided price when missing.
+    const finalPrice =
+      (serviceId != null && servicePriceMap[String(serviceId)]) ||
+      (price != null && Number(price)) ||
+      10;
 
     // Create a pending booking in DB to link with the payment
     let bookingRecord = null;
@@ -209,11 +221,11 @@ router.post("/create-checkout-session", async (req, res) => {
       mode: "payment",
       line_items: [
         {
-          price_data: {
-            currency: "eur",
-            product_data: { name: `Réservation - ${serviceName || "Service"}` },
-            unit_amount: Math.round(Number(price) * 100),
-          },
+  price_data: {
+    currency: "cad",
+    product_data: { name: `Réservation - ${serviceName || "Service"}` },
+    unit_amount: Math.round(Number(finalPrice) * 100),
+      },
           quantity: 1,
         },
       ],
