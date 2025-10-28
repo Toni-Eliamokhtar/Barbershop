@@ -1,9 +1,12 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import Stripe from "stripe";
+import { createBooking } from "../lib/supabase.js";
 
 dotenv.config();
 const router = express.Router();
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // ✅ Configuration du transporteur Gmail
 const transporter = nodemailer.createTransport({
@@ -119,6 +122,25 @@ router.post("/create", async (req, res) => {
       `,
     };
 
+    // Persist booking in Supabase (if available)
+    let created = null;
+    try {
+      const { data, error } = await createBooking({
+        barber_id: barberId,
+        service_id: serviceId,
+        date,
+        time,
+        user_email: userEmail,
+        user_name: userName,
+        barber_name: barberName,
+        service_name: serviceName,
+      });
+      if (error) console.warn("Supabase createBooking warning:", error);
+      created = data ?? null;
+    } catch (err) {
+      console.warn("Could not create booking in supabase:", err.message || err);
+    }
+
     // ✅ Envoi de l'email
     await transporter.sendMail(mailOptions);
     console.log(`📩 Email de confirmation envoyé à ${userEmail}`);
@@ -126,7 +148,7 @@ router.post("/create", async (req, res) => {
     res.json({
       success: true,
       message: "✅ Réservation confirmée et email envoyé avec succès",
-      booking: {
+      booking: created || {
         barberId,
         serviceId,
         date,
@@ -141,6 +163,70 @@ router.post("/create", async (req, res) => {
       error: "Erreur lors de la confirmation de réservation",
       details: error.message,
     });
+  }
+});
+
+// Create a Stripe Checkout session and (optionally) create a pending booking
+router.post("/create-checkout-session", async (req, res) => {
+  try {
+    const {
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+      price,
+    } = req.body;
+
+    if (!price) {
+      return res.status(400).json({ error: "Price is required (in EUR)" });
+    }
+
+    // Create a pending booking in DB to link with the payment
+    let bookingRecord = null;
+    try {
+      const { data, error } = await createBooking({
+        barber_id: barberId,
+        service_id: serviceId,
+        date,
+        time,
+        user_email: userEmail,
+        user_name: userName,
+        barber_name: barberName,
+        service_name: serviceName,
+      });
+      if (error) console.warn("Supabase createBooking warning:", error);
+      bookingRecord = data;
+    } catch (err) {
+      console.warn("Could not create booking in supabase:", err.message || err);
+    }
+
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      mode: "payment",
+      line_items: [
+        {
+          price_data: {
+            currency: "eur",
+            product_data: { name: `Réservation - ${serviceName || "Service"}` },
+            unit_amount: Math.round(Number(price) * 100),
+          },
+          quantity: 1,
+        },
+      ],
+      customer_email: userEmail,
+      success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.FRONTEND_URL}/cancel`,
+      metadata: { bookingId: bookingRecord?.id ?? "" },
+    });
+
+    res.json({ url: session.url });
+  } catch (err) {
+    console.error("Stripe create session error", err);
+    res.status(500).json({ error: "Unable to create Stripe session" });
   }
 });
 

@@ -23,42 +23,37 @@ export default function BookingForm({ barber, service, user }) {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/booking/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          barberId: barber.id,
-          serviceId: service.id,
-          date,
-          time,
-          userEmail: user.email,
-          userName:
-            user.user_metadata?.nom ||
-            user.user_metadata?.name ||
-            user.email.split("@")[0],
-          barberName: barber.nom,
-          serviceName: service.nom,
-        }),
-      });
+      // Determine price from service object (fallback to 10 EUR)
+      const price = service?.prix || service?.price || 10;
+
+      const response = await fetch(
+        "http://localhost:5000/booking/create-checkout-session",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            barberId: barber.id,
+            serviceId: service.id,
+            date,
+            time,
+            userEmail: user.email,
+            userName:
+              user.user_metadata?.nom ||
+              user.user_metadata?.name ||
+              user.email.split("@")[0],
+            barberName: barber.nom,
+            serviceName: service.nom,
+            price,
+          }),
+        }
+      );
 
       const data = await response.json();
-      if (response.ok) {
-        alert(
-          `✅ Réservation confirmée ! 
-📧 Un email de confirmation a été envoyé à : ${user.email}
-
-📋 Détails :
-👨‍💼 Barbier : ${barber.nom}
-✂️ Service : ${service.nom}
-📅 Date : ${new Date(date).toLocaleDateString("fr-FR")}
-🕐 Heure : ${time}
-
-Merci de votre confiance 💈`
-        );
-        setDate("");
-        setTime("");
+      if (response.ok && data.url) {
+        // redirect to Stripe Checkout
+        window.location = data.url;
       } else {
-        throw new Error(data.error || "Erreur lors de la réservation");
+        throw new Error(data.error || "Erreur lors de la création du paiement");
       }
     } catch (error) {
       alert(`❌ Erreur : ${error.message}`);
