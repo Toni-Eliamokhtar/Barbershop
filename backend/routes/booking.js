@@ -3,60 +3,43 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
 dotenv.config();
-
 const router = express.Router();
 
-// Configuration du transporteur email (Ethereal pour test)
+// ✅ Configuration du transporteur Gmail
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
-  port: 587,
+  service: "gmail",
   auth: {
-    user: 'ethereal.user@ethereal.email',
-    pass: 'ethereal.pass'
-  }
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  },
 });
 
-// Route pour créer une réservation
-router.post('/create', async (req, res) => {
+// ✅ Route pour créer une réservation et envoyer l'email de confirmation
+router.post("/create", async (req, res) => {
   try {
-    const { barberId, serviceId, date, time, userEmail, userName, barberName, serviceName } = req.body;
+    const {
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+    } = req.body;
 
-    // Validation des données
+    // 🧭 Validation basique
     if (!barberId || !serviceId || !date || !time || !userEmail || !userName) {
-      return res.status(400).json({ 
-        error: 'Tous les champs sont requis' 
+      return res.status(400).json({
+        error: "Tous les champs sont requis",
       });
     }
 
-    // Mode simulation : ne pas envoyer d'email réel pour le développement
-    console.log('📧 EMAIL SIMULÉ - Détails de la réservation :');
-    console.log(`👤 Client: ${userName} (${userEmail})`);
-    console.log(`💇 Barbier: ${barberName}`);
-    console.log(`✂️ Service: ${serviceName}`);
-    console.log(`📅 Date: ${date} à ${time}`);
-    
-    res.json({ 
-      success: true, 
-      message: '✅ Réservation confirmée ! (Email simulé en mode développement)',
-      booking: {
-        barberId,
-        serviceId, 
-        date,
-        time,
-        userEmail,
-        userName
-      },
-      emailSent: 'simulated',
-      note: 'Email simulé pour le développement. Configurez Gmail pour de vrais emails.'
-    });
-    
-    return;
-
-    // Configuration de l'email de confirmation
+    // 📨 Email HTML
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"Barbershop 514" <${process.env.EMAIL_USER}>`,
       to: userEmail,
-      subject: '✅ Confirmation de votre rendez-vous - Barbershop',
+      subject: "✅ Confirmation de votre rendez-vous - Barbershop 514",
       html: `
         <!DOCTYPE html>
         <html>
@@ -106,16 +89,17 @@ router.post('/create', async (req, res) => {
             </div>
             <div class="email-body">
               <p>Bonjour <strong>${userName}</strong>,</p>
-              
               <p>Votre rendez-vous a été <span class="highlight">confirmé avec succès</span> !</p>
               
               <div class="booking-details">
                 <h3>📋 Détails de votre réservation :</h3>
-                <div class="detail-item">📅 <strong>Date :</strong> ${new Date(date).toLocaleDateString('fr-FR', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                <div class="detail-item">📅 <strong>Date :</strong> ${new Date(
+                  date
+                ).toLocaleDateString("fr-FR", {
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
                 })}</div>
                 <div class="detail-item">🕐 <strong>Heure :</strong> ${time}</div>
                 <div class="detail-item">✂️ <strong>Service :</strong> ${serviceName}</div>
@@ -123,11 +107,8 @@ router.post('/create', async (req, res) => {
               </div>
               
               <p><strong>📧 Email de contact :</strong> ${userEmail}</p>
-              
               <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
-              
               <p><em>Merci de votre confiance ! Nous avons hâte de vous accueillir.</em></p>
-              
               <p style="text-align: center; margin-top: 30px;">
                 <strong>L'équipe Barbershop 💈</strong>
               </p>
@@ -135,53 +116,30 @@ router.post('/create', async (req, res) => {
           </div>
         </body>
         </html>
-      `
+      `,
     };
 
-    try {
-      // Envoi de l'email
-      await transporter.sendMail(mailOptions);
-      console.log(`✅ Email de confirmation envoyé à ${userEmail}`);
-      
-      res.json({ 
-        success: true, 
-        message: 'Réservation confirmée et email de confirmation envoyé',
-        booking: {
-          barberId,
-          serviceId, 
-          date,
-          time,
-          userEmail,
-          userName
-        },
-        emailSent: true
-      });
-      
-    } catch (emailError) {
-      console.error('❌ Erreur envoi email:', emailError);
-      
-      // Même si l'email échoue, on confirme la réservation
-      res.json({ 
-        success: true, 
-        message: 'Réservation confirmée mais échec envoi email',
-        booking: {
-          barberId,
-          serviceId, 
-          date,
-          time,
-          userEmail,
-          userName
-        },
-        emailSent: false,
-        emailError: emailError.message
-      });
-    }
+    // ✅ Envoi de l'email
+    await transporter.sendMail(mailOptions);
+    console.log(`📩 Email de confirmation envoyé à ${userEmail}`);
 
+    res.json({
+      success: true,
+      message: "✅ Réservation confirmée et email envoyé avec succès",
+      booking: {
+        barberId,
+        serviceId,
+        date,
+        time,
+        userEmail,
+        userName,
+      },
+    });
   } catch (error) {
-    console.error('❌ Erreur lors de la réservation:', error);
-    res.status(500).json({ 
-      error: 'Erreur lors de la confirmation de réservation',
-      details: error.message 
+    console.error("❌ Erreur lors de la réservation:", error);
+    res.status(500).json({
+      error: "Erreur lors de la confirmation de réservation",
+      details: error.message,
     });
   }
 });
