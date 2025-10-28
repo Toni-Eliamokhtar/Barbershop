@@ -16,6 +16,9 @@ export default function BookingInfo({ barber, service, user }) {
           Service choisi : <strong>{service.nom}</strong>
         </p>
         <p>
+          Prix : <strong>CA${(service.prix ?? service.price ?? 10).toString()}</strong>
+        </p>
+        <p>
           📧 Email de confirmation : <strong>{user.email}</strong>
         </p>
       </div>

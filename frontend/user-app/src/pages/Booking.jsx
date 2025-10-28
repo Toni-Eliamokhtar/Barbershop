@@ -6,11 +6,11 @@ import BookingForm from "../components/BookingForm";
 import "../styles/Booking.css";
 
 const services = [
-  { id: 1, nom: "Coupe cheveux" },
-  { id: 2, nom: "Cheveux + barbe" },
-  { id: 3, nom: "Étudiant" },
-  { id: 4, nom: "Enfant" },
-  { id: 5, nom: "Barbe" },
+  { id: 1, nom: "Coupe cheveux", prix: 25 },
+  { id: 2, nom: "Cheveux + barbe", prix: 35 },
+  { id: 3, nom: "Étudiant", prix: 20 },
+  { id: 4, nom: "Enfant", prix: 15 },
+  { id: 5, nom: "Barbe", prix: 18 },
 ];
 
 export default function Booking() {
