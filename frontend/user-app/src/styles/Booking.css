@@ -102,3 +102,24 @@
   transform: none;
   box-shadow: none;
 }
+
+.booking-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-form select:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.booking-form option {
+  background: #0f172a;
+  color: white;
+}

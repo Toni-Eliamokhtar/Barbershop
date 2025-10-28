@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function BookingForm({ barber, service, user }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [timeSlots, setTimeSlots] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  // 🕒 Générer les créneaux horaires 10:00 → 22:00
+  useEffect(() => {
+    const slots = [];
+    for (let hour = 10; hour < 22; hour++) {
+      slots.push(`${hour.toString().padStart(2, "0")}:00`);
+      slots.push(`${hour.toString().padStart(2, "0")}:30`);
+    }
+    slots.push("22:00");
+    setTimeSlots(slots);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!barber || !service || !user) return;
 
     setLoading(true);
-
     try {
       const response = await fetch("http://localhost:5000/booking/create", {
         method: "POST",
@@ -31,7 +42,6 @@ export default function BookingForm({ barber, service, user }) {
       });
 
       const data = await response.json();
-
       if (response.ok) {
         alert(
           `✅ Réservation confirmée ! 
@@ -39,13 +49,12 @@ export default function BookingForm({ barber, service, user }) {
 
 📋 Détails :
 👨‍💼 Barbier : ${barber.nom}
-✂️ Service : ${service.nom} 
+✂️ Service : ${service.nom}
 📅 Date : ${new Date(date).toLocaleDateString("fr-FR")}
 🕐 Heure : ${time}
 
-Merci de votre confiance ! 💈`
+Merci de votre confiance 💈`
         );
-
         setDate("");
         setTime("");
       } else {
@@ -74,15 +83,19 @@ Merci de votre confiance ! 💈`
 
       <div className="form-group">
         <label htmlFor="time">🕐 Heure :</label>
-        <input
+        <select
           id="time"
-          type="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
-          min="09:00"
-          max="18:00"
           required
-        />
+        >
+          <option value="">-- Sélectionner une heure --</option>
+          {timeSlots.map((slot) => (
+            <option key={slot} value={slot}>
+              {slot}
+            </option>
+          ))}
+        </select>
       </div>
 
       <button type="submit" disabled={loading}>
