@@ -32,7 +32,7 @@ export default function Booking() {
           .select("*")
           .eq("id", barberId)
           .single();
-
+        
         // Récupérer l'utilisateur connecté
         const {
           data: { user: currentUser },
@@ -91,7 +91,7 @@ export default function Booking() {
     <div className="booking">
       <div className="booking-card">
         <BookingInfo barber={barber} service={service} user={user} />
-        <BookingForm barber={barber} service={service} user={user} />
+        <BookingForm barber={barber} service={service} user={user} barberId={barberId} serviceId={serviceId} />
       </div>
     </div>
   );
