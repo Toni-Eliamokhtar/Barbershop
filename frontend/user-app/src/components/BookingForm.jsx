@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { supabase } from "../lib/supabase"; // ⬅️ AJOUT
+import { supabase } from "../lib/supabase";
+import Swal from "sweetalert2"; // ✅ popup centered
 
 export default function BookingForm({ barber, service, user }) {
   const [date, setDate] = useState("");
@@ -34,7 +35,11 @@ export default function BookingForm({ barber, service, user }) {
         .single();
 
       if (svcErr || !svcData) {
-        alert("Service introuvable en base");
+        Swal.fire({
+          icon: "error",
+          title: "Service introuvable ❌",
+          text: "Réessaie plus tard."
+        });
         return;
       }
 
@@ -49,7 +54,11 @@ export default function BookingForm({ barber, service, user }) {
         .single();
 
       if (slotErr || !slot) {
-        alert("Ce créneau n’est pas disponible (déjà réservé ou inexistant).");
+        Swal.fire({
+          icon: "warning",
+          title: "Créneau indisponible ⛔",
+          text: "Ce créneau vient d’être réservé."
+        });
         return;
       }
 
@@ -60,18 +69,23 @@ export default function BookingForm({ barber, service, user }) {
       });
 
       if (bookErr) {
-        if (bookErr.message?.includes("SLOT_TAKEN")) {
-          alert("Ce créneau vient d'être pris. Choisis un autre.");
-        } else {
-          console.error(bookErr);
-          alert("Erreur lors de la réservation.");
-        }
+        Swal.fire({
+          icon: "warning",
+          title: "Créneau pris ⛔",
+          text: "Quelqu'un a réservé à la dernière seconde."
+        });
         return;
       }
 
-      const response = await fetch(
-        "http://localhost:5000/booking/create-checkout-session",
-        {
+      // ✅ Succès popup avant paiement
+      Swal.fire({
+        icon: "success",
+        title: "Rendez-vous confirmé ✅",
+        html: `<b>${barber.nom}</b><br/>Le <b>${date}</b> à <b>${time}</b>`,
+        confirmButtonColor: "#111",
+        confirmButtonText: "Passer au paiement 💳"
+      }).then(async () => {
+        const response = await fetch("http://localhost:5000/booking/create-checkout-session", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -95,15 +109,18 @@ export default function BookingForm({ barber, service, user }) {
         }
       );
 
-      const data = await response.json();
-      if (response.ok && data.url) {
-        // redirect to Stripe Checkout
-        window.location = data.url;
-      } else {
-        throw new Error(data.error || "Erreur lors de la création du paiement");
-      }
+        const data = await response.json();
+        if (response.ok && data.url) {
+          window.location = data.url;
+        }
+      });
+
     } catch (error) {
-      alert(`❌ Erreur : ${error.message}`);
+      Swal.fire({
+        icon: "error",
+        title: "Erreur ❌",
+        text: error.message
+      });
     } finally {
       setLoading(false);
     }
@@ -142,8 +159,8 @@ export default function BookingForm({ barber, service, user }) {
 
       <button type="submit" disabled={loading}>
         {loading
-          ? "⏳ Confirmation en cours..."
-          : "✅ Confirmer et recevoir l'email"}
+          ? "⏳ Confirmation…" 
+          : "✅ Confirmer et payer"}
       </button>
     </form>
   );
