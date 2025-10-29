@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import LoginForm from "../components/LoginForm";
+import Swal from "sweetalert2";
 import "../styles/Auth.css";
 
 export default function Login() {
@@ -24,11 +25,23 @@ export default function Login() {
       });
       if (error) throw error;
 
-      alert(`✅ Bienvenue ${email}`);
+      await Swal.fire({
+        icon: "success",
+        title: "Connexion réussie ✅",
+        text: `Bienvenue ${email} !`,
+        confirmButtonColor: "#111",
+      });
+
       navigate("/dashboard");
     } catch (err) {
       console.error("Erreur de login :", err);
-      alert("❌ " + err.message);
+
+      Swal.fire({
+        icon: "error",
+        title: "Échec de connexion ❌",
+        text: err.message || "Email ou mot de passe invalide.",
+        confirmButtonColor: "#111",
+      });
     }
   };
 
