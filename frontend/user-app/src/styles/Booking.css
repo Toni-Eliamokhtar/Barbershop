@@ -6,6 +6,26 @@
   min-height: 100vh;
 }
 
+.back-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1100;
+  background: #b91c1c; /* rouge bordeaux */
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.2s, transform 0.08s;
+}
+.back-btn:active { transform: translateY(1px); }
+.back-btn:hover {
+  background: #7f1d1d;
+}
+
 .booking-card {
   background: #1e293b;
   padding: 30px;

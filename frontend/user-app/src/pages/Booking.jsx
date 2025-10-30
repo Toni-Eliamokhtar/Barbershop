@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
 import BookingInfo from "../components/BookingInfo";
@@ -14,6 +14,12 @@ const services = [
 ];
 
 export default function Booking() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    // navigate back one step in history
+    navigate(-1);
+  };
   const { barberId, serviceId } = useParams();
 
   const [barber, setBarber] = useState(null);
@@ -89,6 +95,9 @@ export default function Booking() {
 
   return (
     <div className="booking">
+      {/* Bouton Retour fixé en haut à droite de la page (hors des components) */}
+      <button onClick={handleBack} className="back-btn">Retour</button>
+
       <div className="booking-card">
         <BookingInfo barber={barber} service={service} user={user} />
         <BookingForm barber={barber} service={service} user={user} barberId={barberId} serviceId={serviceId} />
