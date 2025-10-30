@@ -1,46 +1,19 @@
+// src/components/SignupForm.jsx
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:5000/auth/signup";
-
-export default function SignupForm() {
+export default function SignupForm({ onSubmit }) {
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
   const [telephone, setTelephone] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
-  const handleSignup = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!nom || !email || !password) {
-      alert("❌ Veuillez remplir tous les champs obligatoires.");
-      return;
-    }
-
-    try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nom, email, password, telephone }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Erreur lors de l'inscription.");
-      }
-
-      alert(`✅ Compte créé pour ${nom} (${email})`);
-      navigate("/login");
-    } catch (err) {
-      console.error("Erreur signup :", err);
-      alert("❌ " + err.message);
-    }
+    onSubmit?.({ nom, email, telephone, password });
   };
 
   return (
-    <form onSubmit={handleSignup} className="auth-form">
+    <form onSubmit={handleSubmit} className="auth-form">
       <input
         type="text"
         placeholder="Nom complet"
@@ -56,6 +29,7 @@ export default function SignupForm() {
         required
       />
       <input
+        type="text"
         placeholder="Téléphone"
         value={telephone}
         onChange={(e) => setTelephone(e.target.value)}
