@@ -5,19 +5,68 @@ import Swal from "sweetalert2"; // ✅ popup centered
 export default function BookingForm({ barber, service, user }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [timeSlots, setTimeSlots] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  // 🕒 Générer les créneaux horaires 10:00 → 22:00
-  useEffect(() => {
+  // Liste complète de créneaux (constante)
+  const ALL_SLOTS = (() => {
     const slots = [];
     for (let hour = 10; hour < 22; hour++) {
       slots.push(`${hour.toString().padStart(2, "0")}:00`);
       slots.push(`${hour.toString().padStart(2, "0")}:30`);
     }
     slots.push("22:00");
-    setTimeSlots(slots);
-  }, []);
+    return slots;
+  })();
+
+  // `availableSlots` contient les créneaux non réservés pour la date/barber choisis
+  const [availableSlots, setAvailableSlots] = useState(ALL_SLOTS);
+  const [loading, setLoading] = useState(false);
+
+  // Quand la date ou le barbier change, récupérer les créneaux réservés et filtrer
+  useEffect(() => {
+    // pas de date/barber -> toutes les heures
+    if (!date || !barber) {
+      setAvailableSlots(ALL_SLOTS);
+      return;
+    }
+
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      try {
+        // La table utilisée dans la logique d'envoi est `disponibilites_barber`.
+        // On récupère les heures déjà réservées (est_reserve = true) pour ce barbier et cette date.
+        const { data, error } = await supabase
+          .from("disponibilites_barber")
+          .select("heure_dispo")
+          .eq("barber_id", barber.id)
+          .eq("date_dispo", date)
+          .eq("est_reserve", true);
+
+        if (error) {
+          console.error("Erreur fetch disponibilites:", error);
+          if (!cancelled) setAvailableSlots(ALL_SLOTS);
+        } else if (!cancelled) {
+          // heure_dispo peut être "HH:MM:SS" ou "HH:MM" -> on normalise en HH:MM
+          const booked = (data || []).map((d) =>
+            d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : ""
+          );
+
+          setAvailableSlots(ALL_SLOTS.filter((t) => !booked.includes(t)));
+
+          // si l'heure sélectionnée vient d'être réservée, la désélectionner
+          if (booked.includes(time)) setTime("");
+        }
+      } catch (e) {
+        console.error(e);
+        if (!cancelled) setAvailableSlots(ALL_SLOTS);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [date, barber]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -149,7 +198,7 @@ export default function BookingForm({ barber, service, user }) {
           required
         >
           <option value="">-- Sélectionner une heure --</option>
-          {timeSlots.map((slot) => (
+          {availableSlots.map((slot) => (
             <option key={slot} value={slot}>
               {slot}
             </option>
