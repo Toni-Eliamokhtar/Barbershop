@@ -2,7 +2,7 @@ import express from "express";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import Stripe from "stripe";
-import { createBooking } from "../lib/supabase.js";
+import { createBooking, supabase } from "../lib/supabase.js";
 
 dotenv.config();
 const router = express.Router();
@@ -163,6 +163,36 @@ router.post("/create", async (req, res) => {
       error: "Erreur lors de la confirmation de réservation",
       details: error.message,
     });
+  }
+});
+
+// GET /booking/bookings?date=YYYY-MM-DD&barber_id=123
+router.get("/bookings", async (req, res) => {
+  const date = req.query.date;
+  const barberId = req.query.barber_id || req.query.barberId;
+  if (!date || !barberId) {
+    return res.status(400).json({ error: "Missing date or barber_id" });
+  }
+
+  try {
+    // On lit la table des disponibilités pour ce barbier+date et on renvoie les heures réservées
+    const { data, error } = await supabase
+      .from("disponibilites_barber")
+      .select("heure_dispo")
+      .eq("barber_id", barberId)
+      .eq("date_dispo", date)
+      .eq("est_reserve", true);
+
+    if (error) throw error;
+
+    const times = (data || []).map((d) =>
+      d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : null
+    ).filter(Boolean);
+
+    res.json({ bookings: times });
+  } catch (err) {
+    console.error("GET /booking/bookings error", err);
+    res.status(500).json({ error: "Server error" });
   }
 });
 
