@@ -1,5 +1,6 @@
 import express from "express";
 import { supabase } from "../lib/supabase.js";
+import sendConfirmationEmail from "../email.js";
 
 const router = express.Router();
 
@@ -29,6 +30,31 @@ router.post("/signup", async (req, res) => {
       .from("profiles")
       .insert([{ id: userId, nom, email, telephone, role: "client" }]);
     if (profErr) return res.status(400).json({ error: profErr.message });
+
+    // Envoi d'un email de bienvenue (non-bloquant)
+    try {
+      const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";
+      const welcomeHtml = `
+        <h1>Bienvenue chez Barbershop 514 !</h1>
+        <p>Bonjour ${nom},</p>
+        <p>Merci d'avoir créé un compte chez nous. Voici un aperçu de nos services :</p>
+        <ul>
+          <li><strong>Coupe classique</strong> — Coupe professionnelle adaptée à votre style.</li>
+          <li><strong>Barbe & rasage</strong> — Soin et finition précis.</li>
+          <li><strong>Coloration</strong> — Produits de qualité et conseil personnalisé.</li>
+          <li><strong>Soins du cuir chevelu</strong> — Traitements et diagnostics.</li>
+        </ul>
+        <p>Pour prendre rendez-vous, rendez-vous sur votre espace client : <a href="${frontendUrl}">Ouvrir l'application</a></p>
+        <p>À bientôt,<br/>L'équipe Barbershop 514</p>
+      `;
+
+      // Appel non-bloquant : on attrape les erreurs mais on ne bloque pas la réponse
+      sendConfirmationEmail(email, "Bienvenue chez Barbershop 514", welcomeHtml).catch((err) => {
+        console.error("Envoi email de bienvenue échoué:", err);
+      });
+    } catch (err) {
+      console.error("Erreur préparation email de bienvenue:", err);
+    }
 
     return res.json({ ok: true, user: { id: userId, email } });
   } catch (e) {
