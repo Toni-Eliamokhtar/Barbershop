@@ -4,36 +4,27 @@ import dotenv from "dotenv";
 import Stripe from "stripe";
 import { createBooking, supabase } from "../lib/supabase.js";
 import { extractBookingFields } from "../lib/extractBookingFields.js";
+import { buildBookingPayload } from "../lib/buildBookingPayload.js";
 
 dotenv.config();
 const router = express.Router();
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
-// 🔁 Helper: persister une réservation (déjà existant)
-async function persistBookingInSupabase({
-  barberId,
-  serviceId,
-  date,
-  time,
-  userEmail,
-  userName,
-  barberName,
-  serviceName,
-}) {
+// 🔁 Persister une réservation
+async function persistBookingInSupabase(payload) {
   try {
     const { data, error } = await createBooking({
-      barber_id: barberId,
-      service_id: serviceId,
-      date,
-      time,
-      user_email: userEmail,
-      user_name: userName,
-      barber_name: barberName,
-      service_name: serviceName,
+      barber_id: payload.barberId,
+      service_id: payload.serviceId,
+      date: payload.date,
+      time: payload.time,
+      user_email: payload.userEmail,
+      user_name: payload.userName,
+      barber_name: payload.barberName,
+      service_name: payload.serviceName,
     });
 
     if (error) console.warn("Supabase createBooking warning:", error);
-
     return data ?? null;
   } catch (err) {
     console.warn("Could not create booking in supabase:", err?.message || err);
@@ -50,61 +41,37 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// ✅ Route: créer une réservation + envoyer email
+// -------------------------------
+// 🔥 ROUTE: CREATE
+// -------------------------------
 router.post("/create", async (req, res) => {
   try {
-    // 🟢 PLUS AUCUNE DUPLICATION ICI
-    const {
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    } = extractBookingFields(req.body);
+    const fields = extractBookingFields(req.body);
 
-    if (!barberId || !serviceId || !date || !time || !userEmail || !userName) {
+    if (!fields.barberId || !fields.serviceId || !fields.date || !fields.time || !fields.userEmail || !fields.userName) {
       return res.status(400).json({ error: "Tous les champs sont requis" });
     }
 
-    const mailOptions = {
+    const payload = buildBookingPayload(fields);
+
+    const created = await persistBookingInSupabase(payload);
+
+    await transporter.sendMail({
       from: `"Barbershop 514" <${process.env.EMAIL_USER}>`,
-      to: userEmail,
+      to: fields.userEmail,
       subject: "Confirmation de votre rendez-vous",
       html: `
         <h2>Votre rendez-vous est confirmé</h2>
-        <p><strong>Date:</strong> ${date}</p>
-        <p><strong>Heure:</strong> ${time}</p>
-        <p><strong>Service:</strong> ${serviceName}</p>
-        <p><strong>Barbier:</strong> ${barberName}</p>
+        <p><strong>Date:</strong> ${fields.date}</p>
+        <p><strong>Heure:</strong> ${fields.time}</p>
+        <p><strong>Service:</strong> ${fields.serviceName}</p>
+        <p><strong>Barbier:</strong> ${fields.barberName}</p>
       `,
-    };
-
-    const created = await persistBookingInSupabase({
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
     });
-
-    await transporter.sendMail(mailOptions);
 
     res.json({
       success: true,
-      booking: created || {
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
-      },
+      booking: created || payload,
     });
   } catch (error) {
     console.error("Erreur lors de la réservation:", error);
@@ -112,7 +79,9 @@ router.post("/create", async (req, res) => {
   }
 });
 
-// GET /booking/bookings
+// -------------------------------
+// 🔥 ROUTE: GET BOOKINGS
+// -------------------------------
 router.get("/bookings", async (req, res) => {
   const date = req.query.date;
   const barberId = req.query.barber_id || req.query.barberId;
@@ -142,22 +111,15 @@ router.get("/bookings", async (req, res) => {
   }
 });
 
-// Stripe Checkout
+// -------------------------------
+// 🔥 ROUTE: STRIPE CHECKOUT
+// -------------------------------
 router.post("/create-checkout-session", async (req, res) => {
   try {
-    // 🟢 PLUS AUCUNE DUPLICATION ICI NON PLUS
-    const {
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    } = extractBookingFields(req.body);
-
+    const fields = extractBookingFields(req.body);
     const { price } = req.body;
+
+    const payload = buildBookingPayload(fields);
 
     const servicePriceMap = {
       "1": 25,
@@ -168,20 +130,11 @@ router.post("/create-checkout-session", async (req, res) => {
     };
 
     const finalPrice =
-      servicePriceMap[String(serviceId)] ||
+      servicePriceMap[String(fields.serviceId)] ||
       (price != null && Number(price)) ||
       10;
 
-    const bookingRecord = await persistBookingInSupabase({
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    });
+    const bookingRecord = await persistBookingInSupabase(payload);
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -190,15 +143,13 @@ router.post("/create-checkout-session", async (req, res) => {
         {
           price_data: {
             currency: "cad",
-            product_data: {
-              name: `Réservation - ${serviceName || "Service"}`,
-            },
+            product_data: { name: `Réservation - ${fields.serviceName}` },
             unit_amount: Math.round(Number(finalPrice) * 100),
           },
           quantity: 1,
         },
       ],
-      customer_email: userEmail,
+      customer_email: fields.userEmail,
       success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.FRONTEND_URL}/cancel`,
       metadata: { bookingId: bookingRecord?.id ?? "" },
@@ -206,7 +157,7 @@ router.post("/create-checkout-session", async (req, res) => {
 
     res.json({ url: session.url });
   } catch (err) {
-    console.error("Stripe session error", err);
+    console.error("Stripe create session error", err);
     res.status(500).json({ error: "Unable to create Stripe session" });
   }
 });
