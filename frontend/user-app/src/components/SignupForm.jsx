@@ -1,5 +1,6 @@
 // src/components/SignupForm.jsx
 import { useState } from "react";
+import AuthPasswordField from "./AuthPasswordField";
 
 export default function SignupForm({ onSubmit }) {
   const [nom, setNom] = useState("");
@@ -34,16 +35,11 @@ export default function SignupForm({ onSubmit }) {
         value={telephone}
         onChange={(e) => setTelephone(e.target.value)}
       />
-      <input
-        type="password"
-        placeholder="Mot de passe"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
+      <AuthPasswordField
+        password={password}
+        setPassword={setPassword}
+        buttonLabel="S'inscrire"
       />
-      <button type="submit" className="auth-btn">
-        S'inscrire
-      </button>
     </form>
   );
 }
