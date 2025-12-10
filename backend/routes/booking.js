@@ -8,12 +8,49 @@ dotenv.config();
 const router = express.Router();
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
+// 🔁 Helper pour créer une réservation dans Supabase (évite la duplication)
+async function persistBookingInSupabase({
+  barberId,
+  serviceId,
+  date,
+  time,
+  userEmail,
+  userName,
+  barberName,
+  serviceName,
+}) {
+  try {
+    const { data, error } = await createBooking({
+      barber_id: barberId,
+      service_id: serviceId,
+      date,
+      time,
+      user_email: userEmail,
+      user_name: userName,
+      barber_name: barberName,
+      service_name: serviceName,
+    });
+
+    if (error) {
+      console.warn("Supabase createBooking warning:", error);
+    }
+
+    return data ?? null;
+  } catch (err) {
+    console.warn(
+      "Could not create booking in supabase:",
+      err?.message || err
+    );
+    return null;
+  }
+}
+
 // ✅ Configuration du transporteur Gmail
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -97,13 +134,13 @@ router.post("/create", async (req, res) => {
               <div class="booking-details">
                 <h3>📋 Détails de votre réservation :</h3>
                 <div class="detail-item">📅 <strong>Date :</strong> ${new Date(
-                  date
-                ).toLocaleDateString("fr-FR", {
-                  weekday: "long",
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}</div>
+        date
+      ).toLocaleDateString("fr-FR", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })}</div>
                 <div class="detail-item">🕐 <strong>Heure :</strong> ${time}</div>
                 <div class="detail-item">✂️ <strong>Service :</strong> ${serviceName}</div>
                 <div class="detail-item">👨‍💼 <strong>Barbier :</strong> ${barberName}</div>
@@ -122,24 +159,17 @@ router.post("/create", async (req, res) => {
       `,
     };
 
-    // Persist booking in Supabase (if available)
-    let created = null;
-    try {
-      const { data, error } = await createBooking({
-        barber_id: barberId,
-        service_id: serviceId,
-        date,
-        time,
-        user_email: userEmail,
-        user_name: userName,
-        barber_name: barberName,
-        service_name: serviceName,
-      });
-      if (error) console.warn("Supabase createBooking warning:", error);
-      created = data ?? null;
-    } catch (err) {
-      console.warn("Could not create booking in supabase:", err.message || err);
-    }
+    // ✅ Persister la réservation dans Supabase (DRY)
+    const created = await persistBookingInSupabase({
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+    });
 
     // ✅ Envoi de l'email
     await transporter.sendMail(mailOptions);
@@ -185,9 +215,11 @@ router.get("/bookings", async (req, res) => {
 
     if (error) throw error;
 
-    const times = (data || []).map((d) =>
-      d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : null
-    ).filter(Boolean);
+    const times = (data || [])
+      .map((d) =>
+        d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : null
+      )
+      .filter(Boolean);
 
     res.json({ bookings: times });
   } catch (err) {
@@ -227,35 +259,30 @@ router.post("/create-checkout-session", async (req, res) => {
       (price != null && Number(price)) ||
       10;
 
-    // Create a pending booking in DB to link with the payment
-    let bookingRecord = null;
-    try {
-      const { data, error } = await createBooking({
-        barber_id: barberId,
-        service_id: serviceId,
-        date,
-        time,
-        user_email: userEmail,
-        user_name: userName,
-        barber_name: barberName,
-        service_name: serviceName,
-      });
-      if (error) console.warn("Supabase createBooking warning:", error);
-      bookingRecord = data;
-    } catch (err) {
-      console.warn("Could not create booking in supabase:", err.message || err);
-    }
+    // ✅ Création de la réservation en base (DRY)
+    const bookingRecord = await persistBookingInSupabase({
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+    });
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
       line_items: [
         {
-  price_data: {
-    currency: "cad",
-    product_data: { name: `Réservation - ${serviceName || "Service"}` },
-    unit_amount: Math.round(Number(finalPrice) * 100),
-      },
+          price_data: {
+            currency: "cad",
+            product_data: {
+              name: `Réservation - ${serviceName || "Service"}`,
+            },
+            unit_amount: Math.round(Number(finalPrice) * 100),
+          },
           quantity: 1,
         },
       ],
