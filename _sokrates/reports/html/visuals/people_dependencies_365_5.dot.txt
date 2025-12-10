@@ -1,0 +1,40 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="grey"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "147719914+badr1210@users.noreply.github.com" -- "2234682@cmontmorency.qc.ca" [label=" 468 ", penwidth="10", color="#00688bFF"];
+    "147719914+badr1210@users.noreply.github.com" -- "2258302@cmontmorency.qc.ca" [label=" 95 ", penwidth="2", color="#00688b70"];
+    "toni11elia11@gmail.com" -- "157541451+calinsanduta@users.noreply.github.com" [label=" 70 ", penwidth="1", color="#00688b5E"];
+    "2234682@cmontmorency.qc.ca" -- "toni11elia11@gmail.com" [label=" 66 ", penwidth="1", color="#00688b5E"];
+    "2234682@cmontmorency.qc.ca" -- "157541451+calinsanduta@users.noreply.github.com" [label=" 58 ", penwidth="1", color="#00688b5E"];
+    "toni11elia11@gmail.com" -- "2258302@cmontmorency.qc.ca" [label=" 18 ", penwidth="1", color="#00688b4C"];
+    "toni11elia11@gmail.com" -- "147719914+badr1210@users.noreply.github.com" [label=" 16 ", penwidth="1", color="#00688b4C"];
+    "2258302@cmontmorency.qc.ca" -- "2234682@cmontmorency.qc.ca" [label=" 12 ", penwidth="1", color="#00688b4C"];
+    "157541451+calinsanduta@users.noreply.github.com" -- "147719914+badr1210@users.noreply.github.com" [label=" 12 ", penwidth="1", color="#00688b4C"];
+    "157541451+calinsanduta@users.noreply.github.com" -- "2258302@cmontmorency.qc.ca" [label=" 8 ", penwidth="1", color="#00688b4C"];
+
+}

@@ -1,0 +1,114 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/App.js]",
+    "size" : 1
+  }, {
+    "id" : "[backend/routes/booking.js]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Login.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/styles/Booking.css]",
+    "size" : 2
+  } ],
+  "links" : [ {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 54
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 54
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 68
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 68
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 34
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 34
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 12
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 12
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

@@ -1,0 +1,45 @@
+id: 1
+unit: export default function App()
+file: frontend/user-app/src/App.js
+start line: 5
+end line: 74
+size: 48 LOC
+McCabe index: 1
+number of parameters: 0
+
+id: 2
+unit: export async function markBookingPaid()
+file: backend/lib/supabase.js
+start line: 26
+end line: 38
+size: 13 LOC
+McCabe index: 2
+number of parameters: 2
+
+id: 3
+unit: async function testConnection()
+file: frontend/user-app/src/App.js
+start line: 9
+end line: 22
+size: 13 LOC
+McCabe index: 2
+number of parameters: 0
+
+id: 4
+unit: export async function createBooking()
+file: backend/lib/supabase.js
+start line: 12
+end line: 23
+size: 12 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 5
+unit: async function sendConfirmationEmail()
+file: backend/email.js
+start line: 13
+end line: 23
+size: 10 LOC
+McCabe index: 1
+number of parameters: 3
+

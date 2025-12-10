@@ -1,0 +1,137 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "2258302@cmontmorency.qc.ca",
+    "size" : 4
+  }, {
+    "id" : "157541451+calinsanduta@users.noreply.github.com",
+    "size" : 4
+  }, {
+    "id" : "toni11elia11@gmail.com",
+    "size" : 4
+  }, {
+    "id" : "147719914+badr1210@users.noreply.github.com",
+    "size" : 4
+  }, {
+    "id" : "2234682@cmontmorency.qc.ca",
+    "size" : 4
+  } ],
+  "links" : [ {
+    "source" : "147719914+badr1210@users.noreply.github.com",
+    "target" : "2234682@cmontmorency.qc.ca",
+    "count" : 468
+  }, {
+    "source" : "2234682@cmontmorency.qc.ca",
+    "target" : "147719914+badr1210@users.noreply.github.com",
+    "count" : 468
+  }, {
+    "source" : "147719914+badr1210@users.noreply.github.com",
+    "target" : "2258302@cmontmorency.qc.ca",
+    "count" : 95
+  }, {
+    "source" : "2258302@cmontmorency.qc.ca",
+    "target" : "147719914+badr1210@users.noreply.github.com",
+    "count" : 95
+  }, {
+    "source" : "toni11elia11@gmail.com",
+    "target" : "157541451+calinsanduta@users.noreply.github.com",
+    "count" : 70
+  }, {
+    "source" : "157541451+calinsanduta@users.noreply.github.com",
+    "target" : "toni11elia11@gmail.com",
+    "count" : 70
+  }, {
+    "source" : "2234682@cmontmorency.qc.ca",
+    "target" : "toni11elia11@gmail.com",
+    "count" : 66
+  }, {
+    "source" : "toni11elia11@gmail.com",
+    "target" : "2234682@cmontmorency.qc.ca",
+    "count" : 66
+  }, {
+    "source" : "2234682@cmontmorency.qc.ca",
+    "target" : "157541451+calinsanduta@users.noreply.github.com",
+    "count" : 58
+  }, {
+    "source" : "157541451+calinsanduta@users.noreply.github.com",
+    "target" : "2234682@cmontmorency.qc.ca",
+    "count" : 58
+  }, {
+    "source" : "toni11elia11@gmail.com",
+    "target" : "2258302@cmontmorency.qc.ca",
+    "count" : 18
+  }, {
+    "source" : "2258302@cmontmorency.qc.ca",
+    "target" : "toni11elia11@gmail.com",
+    "count" : 18
+  }, {
+    "source" : "toni11elia11@gmail.com",
+    "target" : "147719914+badr1210@users.noreply.github.com",
+    "count" : 16
+  }, {
+    "source" : "147719914+badr1210@users.noreply.github.com",
+    "target" : "toni11elia11@gmail.com",
+    "count" : 16
+  }, {
+    "source" : "2258302@cmontmorency.qc.ca",
+    "target" : "2234682@cmontmorency.qc.ca",
+    "count" : 12
+  }, {
+    "source" : "2234682@cmontmorency.qc.ca",
+    "target" : "2258302@cmontmorency.qc.ca",
+    "count" : 12
+  }, {
+    "source" : "157541451+calinsanduta@users.noreply.github.com",
+    "target" : "147719914+badr1210@users.noreply.github.com",
+    "count" : 12
+  }, {
+    "source" : "147719914+badr1210@users.noreply.github.com",
+    "target" : "157541451+calinsanduta@users.noreply.github.com",
+    "count" : 12
+  }, {
+    "source" : "157541451+calinsanduta@users.noreply.github.com",
+    "target" : "2258302@cmontmorency.qc.ca",
+    "count" : 8
+  }, {
+    "source" : "2258302@cmontmorency.qc.ca",
+    "target" : "157541451+calinsanduta@users.noreply.github.com",
+    "count" : 8
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>frontend/user-app/src/components/BookingInfo.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/components/BookingInfo.jsx (<b>24</b> lines of code) (<a href="BookingInfo.jsx">raw</a>):</h3>
+<div id="editor">export default function BookingInfo({ barber, service, user }) {
+  if (!barber || !service || !user) return null;
+
+  return (
+    &lt;div className=&quot;booking-info&quot;&gt;
+      &lt;h2&gt;R&eacute;server avec {barber.nom}&lt;/h2&gt;
+
+      &lt;img
+        src={barber.photo_url ?? &quot;/images/fallback.jpg&quot;}
+        alt={barber.nom}
+        className=&quot;barber-photo&quot;
+      /&gt;
+
+      &lt;div className=&quot;booking-info-details&quot;&gt;
+        &lt;p&gt;
+          Service choisi : &lt;strong&gt;{service.nom}&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          Prix : &lt;strong&gt;CA${(service.prix ?? service.price ?? 10).toString()}&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          📧 Email de confirmation : &lt;strong&gt;{user.email}&lt;/strong&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

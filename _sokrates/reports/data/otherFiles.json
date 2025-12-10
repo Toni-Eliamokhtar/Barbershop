@@ -1,0 +1,57 @@
+[ {
+  "relativePath" : "backend/package-lock.json",
+  "extension" : "json",
+  "linesOfCode" : 1050,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "backend/package.json",
+  "extension" : "json",
+  "linesOfCode" : 21,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/package.json",
+  "extension" : "json",
+  "linesOfCode" : 42,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/public/manifest.json",
+  "extension" : "json",
+  "linesOfCode" : 25,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/public/robots.txt",
+  "extension" : "txt",
+  "linesOfCode" : 3,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/README.md",
+  "extension" : "md",
+  "linesOfCode" : 38,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "package-lock.json",
+  "extension" : "json",
+  "linesOfCode" : 21,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "package.json",
+  "extension" : "json",
+  "linesOfCode" : 5,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+} ]

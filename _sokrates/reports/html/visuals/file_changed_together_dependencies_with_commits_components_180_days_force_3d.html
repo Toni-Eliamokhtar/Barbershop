@@ -1,0 +1,1211 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "size" : 3
+  }, {
+    "id" : "commit_776330e514607f248ea6bc2b90e981393f8c7810",
+    "size" : 2
+  }, {
+    "id" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "size" : 4
+  }, {
+    "id" : "[frontend/user-app/src/styles/Home.css]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/styles/Auth.css]",
+    "size" : 1
+  }, {
+    "id" : "[backend/lib/supabase.js]",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/pages/Login.jsx]",
+    "size" : 5
+  }, {
+    "id" : "commit_96630ae572de9b0f864012353c8a3da501621b54",
+    "size" : 2
+  }, {
+    "id" : "[backend/user.js]",
+    "size" : 1
+  }, {
+    "id" : "commit_1acb1b4d6a9419cf8701a6b6df16aef959c16e88",
+    "size" : 2
+  }, {
+    "id" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "size" : 6
+  }, {
+    "id" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "size" : 3
+  }, {
+    "id" : "commit_0c2b86a055a148d521123de8999fc7d964650adc",
+    "size" : 2
+  }, {
+    "id" : "commit_37cf93085f4650a93a9387d556a01cd710c70328",
+    "size" : 2
+  }, {
+    "id" : "commit_518d9fa69d5ef042748bc0db816a4232a1c84abf",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/public/index.html]",
+    "size" : 1
+  }, {
+    "id" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "size" : 5
+  }, {
+    "id" : "commit_70adc81c2dd448a2fd7b1c44f70a18ad1bc644c4",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "size" : 4
+  }, {
+    "id" : "commit_5ca5a37662d19976efd0c0324c8718fa5afef40f",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 5
+  }, {
+    "id" : "commit_746ae21050bc99acc4f2a82b180dd1979bf803a9",
+    "size" : 2
+  }, {
+    "id" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "size" : 3
+  }, {
+    "id" : "commit_4929da610079d83e41938217ea17a72654a888f8",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/styles/Booking.css]",
+    "size" : 9
+  }, {
+    "id" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "size" : 5
+  }, {
+    "id" : "[frontend/user-app/src/App.css]",
+    "size" : 1
+  }, {
+    "id" : "[backend/routes/booking.js]",
+    "size" : 10
+  }, {
+    "id" : "commit_a4ddf8a13c00bca17a03550be7d17423e35c7be3",
+    "size" : 2
+  }, {
+    "id" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "size" : 4
+  }, {
+    "id" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "size" : 3
+  }, {
+    "id" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "size" : 4
+  }, {
+    "id" : "[backend/index.js]",
+    "size" : 11
+  }, {
+    "id" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "size" : 3
+  }, {
+    "id" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "size" : 4
+  }, {
+    "id" : "[backend/routes/auth.js]",
+    "size" : 3
+  }, {
+    "id" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "size" : 17
+  }, {
+    "id" : "commit_d2d3da1e577cf07eb9199641cc240bb8cd5c0586",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "size" : 10
+  }, {
+    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "size" : 1
+  }, {
+    "id" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/components/Footer.jsx]",
+    "size" : 4
+  }, {
+    "id" : "[frontend/user-app/src/styles/Dashboard.css]",
+    "size" : 1
+  }, {
+    "id" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/components/ProtectedRoute.js]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/setupTests.js]",
+    "size" : 1
+  }, {
+    "id" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "size" : 3
+  }, {
+    "id" : "commit_d4a05950507bf8a7f0d719dbe90e82666fdcef4c",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/AdminAddBarberForm.jsx]",
+    "size" : 2
+  }, {
+    "id" : "commit_5c6254bb3e9b091d9e24724f8d3dc47fd04a2ecd",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "size" : 9
+  }, {
+    "id" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "size" : 3
+  }, {
+    "id" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "size" : 6
+  }, {
+    "id" : "[frontend/user-app/src/index.js]",
+    "size" : 5
+  }, {
+    "id" : "commit_bb332c96cbecb99fe646e43bcc25111246452e9d",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/index.css]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/Header.jsx]",
+    "size" : 3
+  }, {
+    "id" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "size" : 3
+  }, {
+    "id" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "size" : 3
+  }, {
+    "id" : "commit_8c2d6d65813f6e2f5ae84658bcd1f9c28f735231",
+    "size" : 2
+  }, {
+    "id" : "[backend/email.js]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/App.js]",
+    "size" : 4
+  }, {
+    "id" : "[test-api.http]",
+    "size" : 2
+  }, {
+    "id" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "size" : 6
+  }, {
+    "id" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "size" : 2
+  }, {
+    "id" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "size" : 4
+  }, {
+    "id" : "commit_65b49156edd1fe3901e8b91785876ed5240f90e0",
+    "size" : 2
+  } ],
+  "links" : [ {
+    "source" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "count" : 2
+  }, {
+    "source" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "count" : 2
+  }, {
+    "source" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "count" : 2
+  }, {
+    "source" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "count" : 2
+  }, {
+    "source" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "count" : 2
+  }, {
+    "source" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "count" : 2
+  }, {
+    "source" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "target" : "[backend/index.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "count" : 3
+  }, {
+    "source" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "count" : 3
+  }, {
+    "source" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "target" : "[backend/index.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "count" : 3
+  }, {
+    "source" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "count" : 3
+  }, {
+    "source" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "count" : 2
+  }, {
+    "source" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "count" : 2
+  }, {
+    "source" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "count" : 2
+  }, {
+    "source" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "count" : 2
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[backend/index.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "count" : 3
+  }, {
+    "source" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "count" : 3
+  }, {
+    "source" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "count" : 3
+  }, {
+    "source" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "count" : 3
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bb332c96cbecb99fe646e43bcc25111246452e9d",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "commit_bb332c96cbecb99fe646e43bcc25111246452e9d",
+    "count" : 1
+  }, {
+    "source" : "commit_bb332c96cbecb99fe646e43bcc25111246452e9d",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "commit_bb332c96cbecb99fe646e43bcc25111246452e9d",
+    "count" : 1
+  }, {
+    "source" : "commit_4929da610079d83e41938217ea17a72654a888f8",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "commit_4929da610079d83e41938217ea17a72654a888f8",
+    "count" : 1
+  }, {
+    "source" : "commit_4929da610079d83e41938217ea17a72654a888f8",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "commit_4929da610079d83e41938217ea17a72654a888f8",
+    "count" : 1
+  }, {
+    "source" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_7378f7afdbc2f7216ba295ef03bd028b856b8693",
+    "count" : 2
+  }, {
+    "source" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_714d1a788472078f691e23192bae6ca3c35e4c99",
+    "count" : 2
+  }, {
+    "source" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_06edbf7d80ea4972feef5591f3bc5fc58524883e",
+    "count" : 2
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 4
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "count" : 4
+  }, {
+    "source" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "target" : "[frontend/user-app/src/components/Footer.jsx]",
+    "count" : 4
+  }, {
+    "source" : "[frontend/user-app/src/components/Footer.jsx]",
+    "target" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "count" : 4
+  }, {
+    "source" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "count" : 2
+  }, {
+    "source" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "target" : "[frontend/user-app/src/components/Footer.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/Footer.jsx]",
+    "target" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "count" : 2
+  }, {
+    "source" : "commit_776330e514607f248ea6bc2b90e981393f8c7810",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_776330e514607f248ea6bc2b90e981393f8c7810",
+    "count" : 1
+  }, {
+    "source" : "commit_776330e514607f248ea6bc2b90e981393f8c7810",
+    "target" : "[frontend/user-app/src/components/Footer.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/Footer.jsx]",
+    "target" : "commit_776330e514607f248ea6bc2b90e981393f8c7810",
+    "count" : 1
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/Footer.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/Footer.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "count" : 2
+  }, {
+    "source" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "count" : 2
+  }, {
+    "source" : "commit_a4ddf8a13c00bca17a03550be7d17423e35c7be3",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_a4ddf8a13c00bca17a03550be7d17423e35c7be3",
+    "count" : 1
+  }, {
+    "source" : "commit_a4ddf8a13c00bca17a03550be7d17423e35c7be3",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_a4ddf8a13c00bca17a03550be7d17423e35c7be3",
+    "count" : 1
+  }, {
+    "source" : "commit_746ae21050bc99acc4f2a82b180dd1979bf803a9",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_746ae21050bc99acc4f2a82b180dd1979bf803a9",
+    "count" : 1
+  }, {
+    "source" : "commit_746ae21050bc99acc4f2a82b180dd1979bf803a9",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_746ae21050bc99acc4f2a82b180dd1979bf803a9",
+    "count" : 1
+  }, {
+    "source" : "commit_37cf93085f4650a93a9387d556a01cd710c70328",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_37cf93085f4650a93a9387d556a01cd710c70328",
+    "count" : 1
+  }, {
+    "source" : "commit_37cf93085f4650a93a9387d556a01cd710c70328",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_37cf93085f4650a93a9387d556a01cd710c70328",
+    "count" : 1
+  }, {
+    "source" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "target" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "target" : "commit_0c100540df8f646e059e2d9c1a084390f5c82ff9",
+    "count" : 2
+  }, {
+    "source" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "target" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "target" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "count" : 2
+  }, {
+    "source" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "count" : 2
+  }, {
+    "source" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "target" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "target" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "count" : 2
+  }, {
+    "source" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "count" : 2
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingInfo.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "count" : 3
+  }, {
+    "source" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "count" : 3
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "target" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "target" : "commit_bd809db092df525a4215c6f520377c0ffaa43d03",
+    "count" : 3
+  }, {
+    "source" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "target" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "target" : "commit_a31a4ffc60809ee9cbd28c220becbedcc10530f9",
+    "count" : 3
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Dashboard.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_4b3092d0e937ed08cf3f2298d072a1aae99be073",
+    "count" : 2
+  }, {
+    "source" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "commit_8c94b6652c1269a8b579a5d95b1a11abe5c3e1af",
+    "count" : 2
+  }, {
+    "source" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "target" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "count" : 4
+  }, {
+    "source" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "target" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "count" : 4
+  }, {
+    "source" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "target" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "target" : "commit_3a20adfcd3a4c3646e651d5bae84f621404d3cce",
+    "count" : 2
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/ServiceCard.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_5ca5a37662d19976efd0c0324c8718fa5afef40f",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_5ca5a37662d19976efd0c0324c8718fa5afef40f",
+    "count" : 1
+  }, {
+    "source" : "commit_5ca5a37662d19976efd0c0324c8718fa5afef40f",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_5ca5a37662d19976efd0c0324c8718fa5afef40f",
+    "count" : 1
+  }, {
+    "source" : "commit_96630ae572de9b0f864012353c8a3da501621b54",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_96630ae572de9b0f864012353c8a3da501621b54",
+    "count" : 1
+  }, {
+    "source" : "commit_96630ae572de9b0f864012353c8a3da501621b54",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "commit_96630ae572de9b0f864012353c8a3da501621b54",
+    "count" : 1
+  }, {
+    "source" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "target" : "[backend/lib/supabase.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/lib/supabase.js]",
+    "target" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "count" : 2
+  }, {
+    "source" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "count" : 2
+  }, {
+    "source" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "target" : "[backend/lib/supabase.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/lib/supabase.js]",
+    "target" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "count" : 3
+  }, {
+    "source" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "target" : "[backend/lib/supabase.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/lib/supabase.js]",
+    "target" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "count" : 3
+  }, {
+    "source" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "target" : "[frontend/user-app/src/components/Header.jsx]",
+    "count" : 4
+  }, {
+    "source" : "[frontend/user-app/src/components/Header.jsx]",
+    "target" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "count" : 4
+  }, {
+    "source" : "commit_1acb1b4d6a9419cf8701a6b6df16aef959c16e88",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_1acb1b4d6a9419cf8701a6b6df16aef959c16e88",
+    "count" : 1
+  }, {
+    "source" : "commit_1acb1b4d6a9419cf8701a6b6df16aef959c16e88",
+    "target" : "[frontend/user-app/src/components/Header.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/Header.jsx]",
+    "target" : "commit_1acb1b4d6a9419cf8701a6b6df16aef959c16e88",
+    "count" : 1
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/Header.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/Header.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "target" : "[frontend/user-app/src/index.js]",
+    "count" : 4
+  }, {
+    "source" : "[frontend/user-app/src/index.js]",
+    "target" : "commit_40ec341b36183c6f0979be278e37eb4e63388bbe",
+    "count" : 4
+  }, {
+    "source" : "commit_d4a05950507bf8a7f0d719dbe90e82666fdcef4c",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "commit_d4a05950507bf8a7f0d719dbe90e82666fdcef4c",
+    "count" : 1
+  }, {
+    "source" : "commit_d4a05950507bf8a7f0d719dbe90e82666fdcef4c",
+    "target" : "[frontend/user-app/src/index.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/index.js]",
+    "target" : "commit_d4a05950507bf8a7f0d719dbe90e82666fdcef4c",
+    "count" : 1
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/index.js]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/index.js]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "target" : "[backend/email.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/email.js]",
+    "target" : "commit_ab3baf0aa209fc4116b4ecd1bff9e3a23099d242",
+    "count" : 2
+  }, {
+    "source" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "target" : "[backend/email.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/email.js]",
+    "target" : "commit_1a2b624dd50db06082470ecdc1533a6bc81b0b1b",
+    "count" : 2
+  }, {
+    "source" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_980886c075a602e9425ed14dadf34526e218b264",
+    "count" : 3
+  }, {
+    "source" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_1592a1757b59d1782df399dd9566c6fa6da45142",
+    "count" : 3
+  }, {
+    "source" : "commit_0c2b86a055a148d521123de8999fc7d964650adc",
+    "target" : "[test-api.http]",
+    "count" : 1
+  }, {
+    "source" : "[test-api.http]",
+    "target" : "commit_0c2b86a055a148d521123de8999fc7d964650adc",
+    "count" : 1
+  }, {
+    "source" : "commit_0c2b86a055a148d521123de8999fc7d964650adc",
+    "target" : "[backend/routes/auth.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/auth.js]",
+    "target" : "commit_0c2b86a055a148d521123de8999fc7d964650adc",
+    "count" : 1
+  }, {
+    "source" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "target" : "[test-api.http]",
+    "count" : 3
+  }, {
+    "source" : "[test-api.http]",
+    "target" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "count" : 3
+  }, {
+    "source" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "target" : "[backend/routes/auth.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/routes/auth.js]",
+    "target" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "count" : 3
+  }, {
+    "source" : "commit_518d9fa69d5ef042748bc0db816a4232a1c84abf",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_518d9fa69d5ef042748bc0db816a4232a1c84abf",
+    "count" : 1
+  }, {
+    "source" : "commit_518d9fa69d5ef042748bc0db816a4232a1c84abf",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_518d9fa69d5ef042748bc0db816a4232a1c84abf",
+    "count" : 1
+  }, {
+    "source" : "commit_65b49156edd1fe3901e8b91785876ed5240f90e0",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_65b49156edd1fe3901e8b91785876ed5240f90e0",
+    "count" : 1
+  }, {
+    "source" : "commit_65b49156edd1fe3901e8b91785876ed5240f90e0",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_65b49156edd1fe3901e8b91785876ed5240f90e0",
+    "count" : 1
+  }, {
+    "source" : "commit_70adc81c2dd448a2fd7b1c44f70a18ad1bc644c4",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "commit_70adc81c2dd448a2fd7b1c44f70a18ad1bc644c4",
+    "count" : 1
+  }, {
+    "source" : "commit_70adc81c2dd448a2fd7b1c44f70a18ad1bc644c4",
+    "target" : "[frontend/user-app/src/components/AdminAddBarberForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AdminAddBarberForm.jsx]",
+    "target" : "commit_70adc81c2dd448a2fd7b1c44f70a18ad1bc644c4",
+    "count" : 1
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/AdminAddBarberForm.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/AdminAddBarberForm.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/index.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/index.css]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/src/index.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/index.css]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "target" : "[backend/routes/auth.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/routes/auth.js]",
+    "target" : "commit_1e03fdb0ba46722918b47f30efbcf36f53265c1a",
+    "count" : 2
+  }, {
+    "source" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "target" : "[backend/index.js]",
+    "count" : 3
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "count" : 3
+  }, {
+    "source" : "commit_8c2d6d65813f6e2f5ae84658bcd1f9c28f735231",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "commit_8c2d6d65813f6e2f5ae84658bcd1f9c28f735231",
+    "count" : 1
+  }, {
+    "source" : "commit_8c2d6d65813f6e2f5ae84658bcd1f9c28f735231",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_8c2d6d65813f6e2f5ae84658bcd1f9c28f735231",
+    "count" : 1
+  }, {
+    "source" : "commit_d2d3da1e577cf07eb9199641cc240bb8cd5c0586",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "commit_d2d3da1e577cf07eb9199641cc240bb8cd5c0586",
+    "count" : 1
+  }, {
+    "source" : "commit_d2d3da1e577cf07eb9199641cc240bb8cd5c0586",
+    "target" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BookingForm.jsx]",
+    "target" : "commit_d2d3da1e577cf07eb9199641cc240bb8cd5c0586",
+    "count" : 1
+  }, {
+    "source" : "commit_5c6254bb3e9b091d9e24724f8d3dc47fd04a2ecd",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "commit_5c6254bb3e9b091d9e24724f8d3dc47fd04a2ecd",
+    "count" : 1
+  }, {
+    "source" : "commit_5c6254bb3e9b091d9e24724f8d3dc47fd04a2ecd",
+    "target" : "[frontend/user-app/src/index.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/index.js]",
+    "target" : "commit_5c6254bb3e9b091d9e24724f8d3dc47fd04a2ecd",
+    "count" : 1
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/src/index.js]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/index.js]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "target" : "[frontend/user-app/src/components/ProtectedRoute.js]",
+    "count" : 3
+  }, {
+    "source" : "[frontend/user-app/src/components/ProtectedRoute.js]",
+    "target" : "commit_e62fd534910d6a510303d2135cb5a7a663ec254c",
+    "count" : 3
+  }, {
+    "source" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "commit_3a84bf224d872762fcaa2e3d5f6748377bacf997",
+    "count" : 16
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/styles/Dashboard.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/styles/Dashboard.css]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  }, {
+    "source" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "target" : "[backend/user.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/user.js]",
+    "target" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "count" : 2
+  }, {
+    "source" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "target" : "[backend/index.js]",
+    "count" : 2
+  }, {
+    "source" : "[backend/index.js]",
+    "target" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "count" : 2
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/src/App.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/App.css]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/styles/Home.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/styles/Home.css]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/public/index.html]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/public/index.html]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "target" : "[frontend/user-app/src/setupTests.js]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/setupTests.js]",
+    "target" : "commit_a7624c1c6cef55ed381877e95e93f54cf9f78a50",
+    "count" : 5
+  }, {
+    "source" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "commit_fd2c5bd2b0f4c26c74d8a35f16b77ea020f4eb18",
+    "count" : 2
+  }, {
+    "source" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "target" : "[frontend/user-app/src/styles/Auth.css]",
+    "count" : 5
+  }, {
+    "source" : "[frontend/user-app/src/styles/Auth.css]",
+    "target" : "commit_bc1e54ee8cd101ec1a9b0ffd3ef1988635fd34e6",
+    "count" : 5
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

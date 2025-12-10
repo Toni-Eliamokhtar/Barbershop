@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>frontend/user-app/src/pages/Login.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Login.jsx (<b>52</b> lines of code) (<a href="Login.jsx">raw</a>):</h3>
+<div id="editor">import { useNavigate } from &quot;react-router-dom&quot;;
+import { supabase } from &quot;../lib/supabase&quot;;
+import LoginForm from &quot;../components/LoginForm&quot;;
+import Swal from &quot;sweetalert2&quot;;
+import &quot;../styles/Auth.css&quot;;
+
+export default function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = async ({ email, password }) =&gt; {
+    try {
+      const res = await fetch(&quot;http://localhost:5000/auth/login&quot;, {
+        method: &quot;POST&quot;,
+        headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || &quot;Erreur de connexion&quot;);
+
+      const { access_token, refresh_token } = data;
+      const { error } = await supabase.auth.setSession({
+        access_token,
+        refresh_token,
+      });
+      if (error) throw error;
+
+      await Swal.fire({
+        icon: &quot;success&quot;,
+        title: &quot;Connexion r&eacute;ussie ✅&quot;,
+        text: `Bienvenue ${email} !`,
+        confirmButtonColor: &quot;#111&quot;,
+      });
+
+      navigate(&quot;/dashboard&quot;);
+    } catch (err) {
+      console.error(&quot;Erreur de login :&quot;, err);
+
+      Swal.fire({
+        icon: &quot;error&quot;,
+        title: &quot;&Eacute;chec de connexion ❌&quot;,
+        text: err.message || &quot;Email ou mot de passe invalide.&quot;,
+        confirmButtonColor: &quot;#111&quot;,
+      });
+    }
+  };
+
+  return (
+    &lt;div className=&quot;auth-container&quot;&gt;
+      &lt;div className=&quot;auth-card&quot;&gt;
+        &lt;h2 className=&quot;auth-title&quot;&gt;Connexion&lt;/h2&gt;
+        &lt;div className=&quot;auth-divider&quot;&gt;&lt;/div&gt;
+
+        &lt;LoginForm onSubmit={handleLogin} /&gt;
+
+        &lt;p className=&quot;auth-switch&quot;&gt;
+          Pas encore de compte ? &lt;a href=&quot;/signup&quot;&gt;Inscris-toi&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

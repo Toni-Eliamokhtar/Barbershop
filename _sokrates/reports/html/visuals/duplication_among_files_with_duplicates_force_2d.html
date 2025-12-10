@@ -1,0 +1,300 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "duplicate4",
+    "size" : 2
+  }, {
+    "id" : "duplicate3",
+    "size" : 2
+  }, {
+    "id" : "duplicate6",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "size" : 2
+  }, {
+    "id" : "duplicate5",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "size" : 3
+  }, {
+    "id" : "duplicate8",
+    "size" : 2
+  }, {
+    "id" : "duplicate7",
+    "size" : 2
+  }, {
+    "id" : "duplicate9",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Login.jsx]",
+    "size" : 1
+  }, {
+    "id" : "duplicate11",
+    "size" : 2
+  }, {
+    "id" : "duplicate10",
+    "size" : 2
+  }, {
+    "id" : "duplicate12",
+    "size" : 2
+  }, {
+    "id" : "duplicate2",
+    "size" : 2
+  }, {
+    "id" : "duplicate1",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/styles/Booking.css]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/App.js]",
+    "size" : 3
+  }, {
+    "id" : "[backend/routes/booking.js]",
+    "size" : 8
+  }, {
+    "id" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "duplicate1",
+    "count" : 1
+  }, {
+    "source" : "duplicate1",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "duplicate1",
+    "count" : 1
+  }, {
+    "source" : "duplicate1",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate2",
+    "count" : 1
+  }, {
+    "source" : "duplicate2",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate2",
+    "count" : 1
+  }, {
+    "source" : "duplicate2",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate3",
+    "count" : 1
+  }, {
+    "source" : "duplicate3",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate3",
+    "count" : 1
+  }, {
+    "source" : "duplicate3",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "duplicate4",
+    "count" : 1
+  }, {
+    "source" : "duplicate4",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "duplicate4",
+    "count" : 1
+  }, {
+    "source" : "duplicate4",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "duplicate5",
+    "count" : 1
+  }, {
+    "source" : "duplicate5",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "duplicate5",
+    "count" : 1
+  }, {
+    "source" : "duplicate5",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "duplicate6",
+    "count" : 1
+  }, {
+    "source" : "duplicate6",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "duplicate6",
+    "count" : 1
+  }, {
+    "source" : "duplicate6",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "duplicate7",
+    "count" : 1
+  }, {
+    "source" : "duplicate7",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "duplicate7",
+    "count" : 1
+  }, {
+    "source" : "duplicate7",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "duplicate8",
+    "count" : 1
+  }, {
+    "source" : "duplicate8",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "duplicate8",
+    "count" : 1
+  }, {
+    "source" : "duplicate8",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "duplicate9",
+    "count" : 1
+  }, {
+    "source" : "duplicate9",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "duplicate9",
+    "count" : 1
+  }, {
+    "source" : "duplicate9",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "duplicate10",
+    "count" : 1
+  }, {
+    "source" : "duplicate10",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "duplicate10",
+    "count" : 1
+  }, {
+    "source" : "duplicate10",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate11",
+    "count" : 1
+  }, {
+    "source" : "duplicate11",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate11",
+    "count" : 1
+  }, {
+    "source" : "duplicate11",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate12",
+    "count" : 1
+  }, {
+    "source" : "duplicate12",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "duplicate12",
+    "count" : 1
+  }, {
+    "source" : "duplicate12",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

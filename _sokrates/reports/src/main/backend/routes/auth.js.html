@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>backend/routes/auth.js</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">backend/routes/auth.js (<b>67</b> lines of code) (<a href="auth.js">raw</a>):</h3>
+<div id="editor">import express from &quot;express&quot;;
+import { supabase } from &quot;../lib/supabase.js&quot;;
+import sendConfirmationEmail from &quot;../email.js&quot;;
+
+const router = express.Router();
+
+/**
+ * POST /auth/signup
+ * Body: { email, password, nom, telephone }
+ * 1) Cr&eacute;e l&rsquo;utilisateur Auth (admin)
+ * 2) Ins&egrave;re le profil
+ */
+router.post(&quot;/signup&quot;, async (req, res) =&gt; {
+  try {
+    const { email, password, nom, telephone } = req.body;
+    if (!email || !password || !nom) {
+      return res.status(400).json({ error: &quot;email, password, nom sont requis&quot; });
+    }
+
+    const { data: created, error: createErr } = await supabase.auth.admin.createUser({
+      email,
+      password,
+      email_confirm: true,
+    });
+    if (createErr) return res.status(400).json({ error: createErr.message });
+
+    const userId = created.user.id;
+
+    const { error: profErr } = await supabase
+      .from(&quot;profiles&quot;)
+      .insert([{ id: userId, nom, email, telephone, role: &quot;client&quot; }]);
+    if (profErr) return res.status(400).json({ error: profErr.message });
+
+    // Envoi d'un email de bienvenue (non-bloquant)
+    try {
+      const frontendUrl = process.env.FRONTEND_URL || &quot;http://localhost:3000&quot;;
+      const welcomeHtml = `
+        &lt;h1&gt;Bienvenue chez Barbershop 514 !&lt;/h1&gt;
+        &lt;p&gt;Bonjour ${nom},&lt;/p&gt;
+        &lt;p&gt;Merci d'avoir cr&eacute;&eacute; un compte chez nous. Voici un aper&ccedil;u de nos services :&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Coupe classique&lt;/strong&gt; &mdash; Coupe professionnelle adapt&eacute;e &agrave; votre style.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Barbe &amp; rasage&lt;/strong&gt; &mdash; Soin et finition pr&eacute;cis.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Coloration&lt;/strong&gt; &mdash; Produits de qualit&eacute; et conseil personnalis&eacute;.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Soins du cuir chevelu&lt;/strong&gt; &mdash; Traitements et diagnostics.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;Pour prendre rendez-vous, rendez-vous sur votre espace client : &lt;a href=&quot;${frontendUrl}&quot;&gt;Ouvrir l'application&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&Agrave; bient&ocirc;t,&lt;br/&gt;L'&eacute;quipe Barbershop 514&lt;/p&gt;
+      `;
+
+      // Appel non-bloquant : on attrape les erreurs mais on ne bloque pas la r&eacute;ponse
+      sendConfirmationEmail(email, &quot;Bienvenue chez Barbershop 514&quot;, welcomeHtml).catch((err) =&gt; {
+        console.error(&quot;Envoi email de bienvenue &eacute;chou&eacute;:&quot;, err);
+      });
+    } catch (err) {
+      console.error(&quot;Erreur pr&eacute;paration email de bienvenue:&quot;, err);
+    }
+
+    return res.json({ ok: true, user: { id: userId, email } });
+  } catch (e) {
+    console.error(&quot;Signup error:&quot;, e);
+    return res.status(500).json({ error: &quot;Erreur signup&quot; });
+  }
+});
+
+/**
+ * POST /auth/login
+ * Body: { email, password }
+ * &rarr; { access_token, refresh_token, user }
+ */
+router.post(&quot;/login&quot;, async (req, res) =&gt; {
+  try {
+    const { email, password } = req.body;
+    if (!email || !password)
+      return res.status(400).json({ error: &quot;email et password sont requis&quot; });
+
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) return res.status(400).json({ error: error.message });
+
+    return res.json({
+      ok: true,
+      user: data.user,
+      access_token: data.session?.access_token,
+      refresh_token: data.session?.refresh_token,
+    });
+  } catch (e) {
+    console.error(&quot;Login error:&quot;, e);
+    return res.status(500).json({ error: &quot;Erreur login&quot; });
+  }
+});
+
+export default router;
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/javascript");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

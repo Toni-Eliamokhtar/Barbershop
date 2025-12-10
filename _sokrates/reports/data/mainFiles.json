@@ -1,0 +1,232 @@
+[ {
+  "relativePath" : "backend/email.js",
+  "extension" : "js",
+  "linesOfCode" : 19,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 1,
+  "linesOfCodeInUnits" : 10
+}, {
+  "relativePath" : "backend/index.js",
+  "extension" : "js",
+  "linesOfCode" : 60,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "backend/lib/supabase.js",
+  "extension" : "js",
+  "linesOfCode" : 32,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 4,
+  "linesOfCodeInUnits" : 25
+}, {
+  "relativePath" : "backend/routes/auth.js",
+  "extension" : "js",
+  "linesOfCode" : 67,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "backend/routes/booking.js",
+  "extension" : "js",
+  "linesOfCode" : 240,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "backend/user.js",
+  "extension" : "js",
+  "linesOfCode" : 233,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/public/index.html",
+  "extension" : "html",
+  "linesOfCode" : 20,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/App.css",
+  "extension" : "css",
+  "linesOfCode" : 33,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/App.js",
+  "extension" : "js",
+  "linesOfCode" : 64,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 61
+}, {
+  "relativePath" : "frontend/user-app/src/components/AdminAddBarberForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 74,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/BarberCard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 33,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/BookingForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 193,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/BookingInfo.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 24,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/Footer.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 7,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/Header.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 17,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 30,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/ProtectedRoute.js",
+  "extension" : "js",
+  "linesOfCode" : 15,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/ServiceCard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 10,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/SignupForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 46,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/index.css",
+  "extension" : "css",
+  "linesOfCode" : 17,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/index.js",
+  "extension" : "js",
+  "linesOfCode" : 23,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/lib/supabase.js",
+  "extension" : "js",
+  "linesOfCode" : 4,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Booking.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 91,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Dashboard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 76,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Home.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 57,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 52,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 47,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/setupTests.js",
+  "extension" : "js",
+  "linesOfCode" : 1,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Auth.css",
+  "extension" : "css",
+  "linesOfCode" : 80,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Booking.css",
+  "extension" : "css",
+  "linesOfCode" : 128,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Dashboard.css",
+  "extension" : "css",
+  "linesOfCode" : 71,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Home.css",
+  "extension" : "css",
+  "linesOfCode" : 96,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "test-api.http",
+  "extension" : "http",
+  "linesOfCode" : 16,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+} ]

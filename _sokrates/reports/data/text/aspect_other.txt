@@ -1,0 +1,9 @@
+Path	Lines of Code
+backend/package-lock.json	1050
+backend/package.json	21
+frontend/user-app/README.md	38
+frontend/user-app/package.json	42
+frontend/user-app/public/manifest.json	25
+frontend/user-app/public/robots.txt	3
+package-lock.json	21
+package.json	5

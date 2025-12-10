@@ -1,0 +1,242 @@
+<html>
+<head>
+    <title>frontend/user-app/src/components/BookingForm.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/components/BookingForm.jsx (<b>193</b> lines of code) (<a href="BookingForm.jsx">raw</a>):</h3>
+<div id="editor">import { useState, useEffect } from &quot;react&quot;;
+import { supabase } from &quot;../lib/supabase&quot;;
+import Swal from &quot;sweetalert2&quot;; // ✅ popup centered
+
+export default function BookingForm({ barber, service, user }) {
+  const [date, setDate] = useState(&quot;&quot;);
+  const [time, setTime] = useState(&quot;&quot;);
+  // Liste compl&egrave;te de cr&eacute;neaux (constante)
+  const ALL_SLOTS = (() =&gt; {
+    const slots = [];
+    for (let hour = 10; hour &lt; 22; hour++) {
+      slots.push(`${hour.toString().padStart(2, &quot;0&quot;)}:00`);
+      slots.push(`${hour.toString().padStart(2, &quot;0&quot;)}:30`);
+    }
+    slots.push(&quot;22:00&quot;);
+    return slots;
+  })();
+
+  // `availableSlots` contient les cr&eacute;neaux non r&eacute;serv&eacute;s pour la date/barber choisis
+  const [availableSlots, setAvailableSlots] = useState(ALL_SLOTS);
+  const [loading, setLoading] = useState(false);
+
+  // Quand la date ou le barbier change, r&eacute;cup&eacute;rer les cr&eacute;neaux r&eacute;serv&eacute;s et filtrer
+  useEffect(() =&gt; {
+    // pas de date/barber -&gt; toutes les heures
+    if (!date || !barber) {
+      setAvailableSlots(ALL_SLOTS);
+      return;
+    }
+
+    let cancelled = false;
+    (async () =&gt; {
+      setLoading(true);
+      try {
+        // La table utilis&eacute;e dans la logique d'envoi est `disponibilites_barber`.
+        // On r&eacute;cup&egrave;re les heures d&eacute;j&agrave; r&eacute;serv&eacute;es (est_reserve = true) pour ce barbier et cette date.
+        const { data, error } = await supabase
+          .from(&quot;disponibilites_barber&quot;)
+          .select(&quot;heure_dispo&quot;)
+          .eq(&quot;barber_id&quot;, barber.id)
+          .eq(&quot;date_dispo&quot;, date)
+          .eq(&quot;est_reserve&quot;, true);
+
+        if (error) {
+          console.error(&quot;Erreur fetch disponibilites:&quot;, error);
+          if (!cancelled) setAvailableSlots(ALL_SLOTS);
+        } else if (!cancelled) {
+          // heure_dispo peut &ecirc;tre &quot;HH:MM:SS&quot; ou &quot;HH:MM&quot; -&gt; on normalise en HH:MM
+          const booked = (data || []).map((d) =&gt;
+            d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : &quot;&quot;
+          );
+
+          setAvailableSlots(ALL_SLOTS.filter((t) =&gt; !booked.includes(t)));
+
+          // si l'heure s&eacute;lectionn&eacute;e vient d'&ecirc;tre r&eacute;serv&eacute;e, la d&eacute;s&eacute;lectionner
+          if (booked.includes(time)) setTime(&quot;&quot;);
+        }
+      } catch (e) {
+        console.error(e);
+        if (!cancelled) setAvailableSlots(ALL_SLOTS);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+
+    return () =&gt; {
+      cancelled = true;
+    };
+  }, [date, barber]);
+
+  const handleSubmit = async (e) =&gt; {
+    e.preventDefault();
+    if (!barber || !service || !user) return;
+
+    setLoading(true);
+    try {
+      // Determine price from service object (fallback to 10 EUR)
+      const price = service?.prix || service?.price || 10;
+
+      const { data: svcData, error: svcErr } = await supabase
+        .from(&quot;services&quot;)
+        .select(&quot;id, nom&quot;)
+        .eq(&quot;nom&quot;, service.nom)
+        .single();
+
+      if (svcErr || !svcData) {
+        Swal.fire({
+          icon: &quot;error&quot;,
+          title: &quot;Service introuvable ❌&quot;,
+          text: &quot;R&eacute;essaie plus tard.&quot;
+        });
+        return;
+      }
+
+      const pgTime = time.length === 5 ? `${time}:00` : time;
+      const { data: slot, error: slotErr } = await supabase
+        .from(&quot;disponibilites_barber&quot;)
+        .select(&quot;id, est_reserve&quot;)
+        .eq(&quot;barber_id&quot;, barber.id)
+        .eq(&quot;date_dispo&quot;, date)      // format YYYY-MM-DD
+        .eq(&quot;heure_dispo&quot;, pgTime)     // format HH:MM (time)
+        .eq(&quot;est_reserve&quot;, false)
+        .single();
+
+      if (slotErr || !slot) {
+        Swal.fire({
+          icon: &quot;warning&quot;,
+          title: &quot;Cr&eacute;neau indisponible ⛔&quot;,
+          text: &quot;Ce cr&eacute;neau vient d&rsquo;&ecirc;tre r&eacute;serv&eacute;.&quot;
+        });
+        return;
+      }
+
+      const { data: rdvId, error: bookErr } = await supabase.rpc(&quot;book_rdv&quot;, {
+        p_client: user.id,
+        p_dispo: slot.id, 
+        p_service: svcData.id,
+      });
+
+      if (bookErr) {
+        Swal.fire({
+          icon: &quot;warning&quot;,
+          title: &quot;Cr&eacute;neau pris ⛔&quot;,
+          text: &quot;Quelqu'un a r&eacute;serv&eacute; &agrave; la derni&egrave;re seconde.&quot;
+        });
+        return;
+      }
+
+      // ✅ Succ&egrave;s popup avant paiement
+      Swal.fire({
+        icon: &quot;success&quot;,
+        title: &quot;Rendez-vous confirm&eacute; ✅&quot;,
+        html: `&lt;b&gt;${barber.nom}&lt;/b&gt;&lt;br/&gt;Le &lt;b&gt;${date}&lt;/b&gt; &agrave; &lt;b&gt;${time}&lt;/b&gt;`,
+        confirmButtonColor: &quot;#111&quot;,
+        confirmButtonText: &quot;Passer au paiement 💳&quot;
+      }).then(async () =&gt; {
+        const response = await fetch(&quot;http://localhost:5000/booking/create-checkout-session&quot;, {
+          method: &quot;POST&quot;,
+          headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+          body: JSON.stringify({
+            barberId: barber.id,
+            serviceId: service.id,
+            date,
+            time,
+            userEmail: user.email,
+            userName:
+              user.user_metadata?.nom ||
+              user.user_metadata?.name ||
+              user.email.split(&quot;@&quot;)[0],
+            barberName: barber.nom,
+            serviceName: service.nom,
+            price,
+
+            serviceUuid: svcData.id,
+            rendezvousId: rdvId,
+            dispoId: slot.id,
+          }),
+        }
+      );
+
+        const data = await response.json();
+        if (response.ok &amp;&amp; data.url) {
+          window.location = data.url;
+        }
+      });
+
+    } catch (error) {
+      Swal.fire({
+        icon: &quot;error&quot;,
+        title: &quot;Erreur ❌&quot;,
+        text: error.message
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    &lt;form onSubmit={handleSubmit} className=&quot;booking-form&quot;&gt;
+      &lt;div className=&quot;form-group&quot;&gt;
+        &lt;label htmlFor=&quot;date&quot;&gt;📅 Date :&lt;/label&gt;
+        &lt;input
+          id=&quot;date&quot;
+          type=&quot;date&quot;
+          value={date}
+          onChange={(e) =&gt; setDate(e.target.value)}
+          min={new Date().toISOString().split(&quot;T&quot;)[0]}
+          required
+        /&gt;
+      &lt;/div&gt;
+
+      &lt;div className=&quot;form-group&quot;&gt;
+        &lt;label htmlFor=&quot;time&quot;&gt;🕐 Heure :&lt;/label&gt;
+        &lt;select
+          id=&quot;time&quot;
+          value={time}
+          onChange={(e) =&gt; setTime(e.target.value)}
+          required
+        &gt;
+          &lt;option value=&quot;&quot;&gt;-- S&eacute;lectionner une heure --&lt;/option&gt;
+          {availableSlots.map((slot) =&gt; (
+            &lt;option key={slot} value={slot}&gt;
+              {slot}
+            &lt;/option&gt;
+          ))}
+        &lt;/select&gt;
+      &lt;/div&gt;
+
+      &lt;button type=&quot;submit&quot; disabled={loading}&gt;
+        {loading
+          ? &quot;⏳ Confirmation&hellip;&quot; 
+          : &quot;✅ Confirmer et payer&quot;}
+      &lt;/button&gt;
+    &lt;/form&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>
