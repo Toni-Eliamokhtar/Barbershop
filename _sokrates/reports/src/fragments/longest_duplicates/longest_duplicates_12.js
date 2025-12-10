@@ -1,23 +1,25 @@
-backend/routes/booking.js [152:157]:
+backend/email.js [4:10]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/routes/booking.js [203:208]:
+backend/routes/booking.js [49:55]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

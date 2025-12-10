@@ -25,7 +25,7 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 240,
+  "linesOfCode" : 263,
   "components" : [ "primary::backend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -49,7 +49,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/App.js",
   "extension" : "js",
-  "linesOfCode" : 64,
+  "linesOfCode" : 16,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -59,9 +59,21 @@
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
+  "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 12,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 20,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
   "relativePath" : "frontend/user-app/src/components/BarberCard.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 33,
+  "linesOfCode" : 27,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -91,7 +103,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 30,
+  "linesOfCode" : 21,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -109,7 +121,19 @@
 }, {
   "relativePath" : "frontend/user-app/src/components/SignupForm.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 46,
+  "linesOfCode" : 36,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/constants/services.js",
+  "extension" : "js",
+  "linesOfCode" : 7,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/hooks/useSupabaseStatus.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -133,7 +157,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Booking.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 91,
+  "linesOfCode" : 89,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -145,7 +169,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Home.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 57,
+  "linesOfCode" : 33,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {

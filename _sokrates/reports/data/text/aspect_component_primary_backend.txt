@@ -3,5 +3,5 @@ backend/email.js	19
 backend/index.js	60
 backend/lib/supabase.js	32
 backend/routes/auth.js	67
-backend/routes/booking.js	240
+backend/routes/booking.js	263
 backend/user.js	233

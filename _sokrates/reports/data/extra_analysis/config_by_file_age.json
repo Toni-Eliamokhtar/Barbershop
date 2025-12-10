@@ -8,7 +8,7 @@
   },
   "summary" : [ ],
   "srcRoot" : "..",
-  "extensions" : [ "js", "ts", "json", "md", "mjs", "yaml", "cjs", "ps1", "cmd", "txt", "editorconfig", "css", "npmignore", "html", "coffee", "jshintrc", "jsx", "markdown", "xml", "gitattributes", "babelrc", "eslintignore", "sh", "svg", "py", "jscsrc", "mdown", "ejs", "scss", "nix", "http", "applescript", "gitignore", "jison", "php", "prettierignore" ],
+  "extensions" : [ "js", "ts", "json", "md", "mjs", "yaml", "cjs", "ps1", "cmd", "txt", "editorconfig", "css", "npmignore", "html", "coffee", "jsx", "jshintrc", "markdown", "xml", "gitattributes", "babelrc", "eslintignore", "sh", "svg", "py", "jscsrc", "mdown", "ejs", "scss", "nix", "http", "applescript", "gitignore", "jison", "php", "prettierignore" ],
   "ignore" : [ {
     "pathPattern" : ".*/[.][a-zA-Z0-9_]+.*",
     "contentPattern" : "",
@@ -379,7 +379,7 @@
     "components" : [ {
       "name" : "1-30 days old",
       "sourceFileFilters" : [ ],
-      "files" : [ ]
+      "files" : [ "frontend/user-app/src/components/AuthEmailField.jsx", "frontend/user-app/src/components/AuthPasswordField.jsx", "frontend/user-app/src/constants/services.js", "frontend/user-app/src/hooks/useSupabaseStatus.js" ]
     }, {
       "name" : "31-90 days old",
       "sourceFileFilters" : [ ],

@@ -1,16 +1,16 @@
-backend/routes/booking.js [24:29]:
+backend/routes/booking.js [13:18]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
+  barberId,
+  serviceId,
+  date,
+  time,
+  userEmail,
+  userName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/routes/booking.js [152:157]:
+backend/routes/booking.js [182:187]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         barberId,
         serviceId,

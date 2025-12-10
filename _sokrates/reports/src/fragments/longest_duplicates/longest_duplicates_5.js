@@ -1,27 +1,27 @@
-frontend/user-app/src/App.js [40:47]:
+backend/routes/booking.js [235:242]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      <section className="home-about">
-        <img src="/images/barbershop.png" alt="Barbershop" />
-        <div>
-          <h2>Bienvenue chez Barbershop 514</h2>
-          <p>
-            Offrez-vous une coupe parfaite et une barbe soignée dans une
-            ambiance moderne et élégante. Nos barbiers professionnels sont là
-            pour vous sublimer.
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-frontend/user-app/src/pages/Home.jsx [34:41]:
+backend/routes/booking.js [264:271]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      <section className="home-about">
-        <img src="/images/barbershop.png" alt="Barbershop" />
-        <div>
-          <h2>Bienvenue chez Barbershop 514</h2>
-          <p>
-            Offrez-vous une coupe parfaite et une barbe soignée dans une
-            ambiance moderne et élégante. Nos barbiers professionnels sont là
-            pour vous sublimer.
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

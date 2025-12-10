@@ -1,41 +1,31 @@
-frontend/user-app/src/App.js [6:20]:
+backend/routes/booking.js [59:68]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  const [status, setStatus] = useState("⏳ Connexion à Supabase...");
-
-  useEffect(() => {
-    async function testConnection() {
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("*")
-        .limit(1);
-
-      if (error) {
-        console.error("❌ Erreur Supabase :", error.message);
-        setStatus("❌ Erreur de connexion à Supabase");
-      } else {
-        console.log("✅ Connexion Supabase OK, exemple :", data);
-        setStatus("✅ Supabase connecté !");
+  try {
+    const {
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-frontend/user-app/src/pages/Home.jsx [9:23]:
+backend/routes/booking.js [233:242]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  const [status, setStatus] = useState("⏳ Connexion à Supabase...");
-
-  useEffect(() => {
-    async function testConnection() {
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("*")
-        .limit(1);
-
-      if (error) {
-        console.error("❌ Erreur Supabase :", error.message);
-        setStatus("❌ Erreur de connexion à Supabase");
-      } else {
-        console.log("✅ Connexion Supabase OK, exemple :", data);
-        setStatus("✅ Supabase connecté !");
+  try {
+    const {
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

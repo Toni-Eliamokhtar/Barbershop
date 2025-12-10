@@ -1,87 +1,52 @@
 <html>
 <head>
-    <title>export default function App()</title>
+    <title>async function persistBookingInSupabase()</title>
     <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
     <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">export default function App()</h3>
-<p style="margin-top: 4px">in <i>frontend/user-app/src/App.js [5:74]</i></p>
+<h3 style="margin-bottom: 0">async function persistBookingInSupabase()</h3>
+<p style="margin-top: 4px">in <i>backend/routes/booking.js [12:46]</i></p>
 <ul>
-    <li><b>48</b> lines of code</li>
-    <li><b>1</b> McCabe index (conditional complexity)</li>
+    <li><b>33</b> lines of code</li>
+    <li><b>4</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-export default function App() {
-  const [status, setStatus] = useState(&quot;⏳ Connexion &agrave; Supabase...&quot;);
+async function persistBookingInSupabase({
+  barberId,
+  serviceId,
+  date,
+  time,
+  userEmail,
+  userName,
+  barberName,
+  serviceName,
+}) {
+  try {
+    const { data, error } = await createBooking({
+      barber_id: barberId,
+      service_id: serviceId,
+      date,
+      time,
+      user_email: userEmail,
+      user_name: userName,
+      barber_name: barberName,
+      service_name: serviceName,
+    });
 
-  useEffect(() =&gt; {
-    async function testConnection() {
-      const { data, error } = await supabase
-        .from(&quot;profiles&quot;)
-        .select(&quot;*&quot;)
-        .limit(1);
-
-      if (error) {
-        console.error(&quot;❌ Erreur Supabase :&quot;, error.message);
-        setStatus(&quot;❌ Erreur de connexion &agrave; Supabase&quot;);
-      } else {
-        console.log(&quot;✅ Connexion Supabase OK, exemple :&quot;, data);
-        setStatus(&quot;✅ Supabase connect&eacute; !&quot;);
-      }
+    if (error) {
+      console.warn(&quot;Supabase createBooking warning:&quot;, error);
     }
 
-    testConnection();
-  }, []);
-
-  return (
-    &lt;div className=&quot;home&quot;&gt;
-      &lt;header className=&quot;home-header&quot;&gt;
-        &lt;h1&gt;💈 Barbershop 514&lt;/h1&gt;
-        &lt;p className=&quot;slogan&quot;&gt;Style. Confiance. &Eacute;l&eacute;gance.&lt;/p&gt;
-        &lt;p style={{ marginTop: &quot;10px&quot;, fontSize: &quot;14px&quot; }}&gt;{status}&lt;/p&gt;
-
-        &lt;div className=&quot;home-actions&quot;&gt;
-          &lt;a href=&quot;/login&quot; className=&quot;btn-primary&quot;&gt;Se connecter&lt;/a&gt;
-          &lt;a href=&quot;/signup&quot; className=&quot;btn-secondary&quot;&gt;S'inscrire&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/header&gt;
-
-      &lt;section className=&quot;home-about&quot;&gt;
-        &lt;img src=&quot;/images/barbershop.png&quot; alt=&quot;Barbershop&quot; /&gt;
-        &lt;div&gt;
-          &lt;h2&gt;Bienvenue chez Barbershop 514&lt;/h2&gt;
-          &lt;p&gt;
-            Offrez-vous une coupe parfaite et une barbe soign&eacute;e dans une
-            ambiance moderne et &eacute;l&eacute;gante. Nos barbiers professionnels sont l&agrave;
-            pour vous sublimer.
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
-
-      &lt;section className=&quot;home-services&quot;&gt;
-        &lt;h2&gt;Nos services&lt;/h2&gt;
-        &lt;div className=&quot;services-grid&quot;&gt;
-          &lt;div className=&quot;service-card&quot;&gt;💇 Coupe de cheveux&lt;/div&gt;
-          &lt;div className=&quot;service-card&quot;&gt;🧔 Barbe &amp; moustache&lt;/div&gt;
-          &lt;div className=&quot;service-card&quot;&gt;🎓 &Eacute;tudiant &amp; enfant&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
-
-      &lt;section className=&quot;home-info&quot;&gt;
-        &lt;h2&gt;📍 Nous trouver&lt;/h2&gt;
-        &lt;p&gt;123 Rue Sainte-Catherine, Montr&eacute;al, QC&lt;/p&gt;
-        &lt;p&gt;🕒 Lun-Sam : 10h - 20h&lt;/p&gt;
-        &lt;p&gt;Dimanche : Ferm&eacute;&lt;/p&gt;
-        &lt;p&gt;📞 T&eacute;l&eacute;phone : (514) 123-4567&lt;/p&gt;
-      &lt;/section&gt;
-
-      &lt;footer className=&quot;home-footer&quot;&gt;
-        &lt;p&gt;&copy; 2025 Barbershop 514 - Tous droits r&eacute;serv&eacute;s&lt;/p&gt;
-      &lt;/footer&gt;
-    &lt;/div&gt;
-  );
+    return data ?? null;
+  } catch (err) {
+    console.warn(
+      &quot;Could not create booking in supabase:&quot;,
+      err?.message || err
+    );
+    return null;
+  }
 }
 
 </code>

@@ -33893,7 +33893,7 @@ node_modules/sweetalert2/themes/minimal.css
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Too long lines (1000+ characters)
-1646 files:
+1661 files:
 
 backend/node_modules/@supabase/auth-js/dist/main/lib/error-codes.d.ts
 backend/node_modules/@supabase/auth-js/dist/module/lib/error-codes.d.ts
@@ -33919,6 +33919,7 @@ frontend/user-app/node_modules/.cache/babel-loader/0cdaa04a49edf0137f0f90a4a29ba
 frontend/user-app/node_modules/.cache/babel-loader/0cf0d5b914895909cbc7ddff871350964b461e296dc5b13274c2919b5c7e4563.json
 frontend/user-app/node_modules/.cache/babel-loader/11cc14daad553d1499321748bdeab6ddbf5b3c5dd96c471a82b8fc6e1cf83ea9.json
 frontend/user-app/node_modules/.cache/babel-loader/125fda372107d503583acf9a77ea0afd01a17dd52a107e5631fa9957ee2670fb.json
+frontend/user-app/node_modules/.cache/babel-loader/1545b742fc4be49b5da353b52677f0e577f6f7a943cc1f9bb6ada554af14a8fa.json
 frontend/user-app/node_modules/.cache/babel-loader/16900a228d42845a7c5e62cf4a68c94e053f131d06a6cc44b9e43dab1d9af83e.json
 frontend/user-app/node_modules/.cache/babel-loader/19e2306fe578c3f4dbef76a83a050af15a4edda8165ce63449bbb1eb2b4f7587.json
 frontend/user-app/node_modules/.cache/babel-loader/1a17ff6b66391191ebd665e7a2c50ef0f19c0f25b4fbb31a97198bfe38d6f90a.json
@@ -33935,6 +33936,7 @@ frontend/user-app/node_modules/.cache/babel-loader/2948442e018a83e1094d5acb8b255
 frontend/user-app/node_modules/.cache/babel-loader/2c870db294d83fc289b1eba47c21cb1d053ae18abf4cb7344c6a146f42cad23b.json
 frontend/user-app/node_modules/.cache/babel-loader/2d767d723a7a3f8659d9eb0ff1fb761d3e91667e55bfd7e53f12a1ee15a8b166.json
 frontend/user-app/node_modules/.cache/babel-loader/2edab83b91014a724d916bb701244c08b6ae6ac07c3d20032ab5ccd560349b3a.json
+frontend/user-app/node_modules/.cache/babel-loader/2f48aea174e10a0e61b2bd6be660716129d005aa56c9917271969c46247d6472.json
 frontend/user-app/node_modules/.cache/babel-loader/31ca6b15e5360ba0fdce6ab783ad9d23e4cd0aa84fbf95350f448b70eb2e5179.json
 frontend/user-app/node_modules/.cache/babel-loader/3251fd807556570a0dbe6d1bd9d1926598784b70557c970adb98053a207b3e63.json
 frontend/user-app/node_modules/.cache/babel-loader/32941336d3cf0c8ddf7c1625b0b65b70a84c9557c4ab8e445303285c639175a9.json
@@ -33948,6 +33950,7 @@ frontend/user-app/node_modules/.cache/babel-loader/409b196d0fdfb513d51538babaed6
 frontend/user-app/node_modules/.cache/babel-loader/40fcc4d94fda8e340123a853ba514c6d7a05fbcb1fac8981e03e2d4945b0d6b6.json
 frontend/user-app/node_modules/.cache/babel-loader/437d6d825895d1057350fa04eafc7524ba182727ab8fb0b5f7b5f48a0c86ddab.json
 frontend/user-app/node_modules/.cache/babel-loader/444ecbdfdc748e7e268bb820f1f2e21501cd6cd7971da10f8fc50b8a9989704c.json
+frontend/user-app/node_modules/.cache/babel-loader/44a1a4a2f801aaefccd0fe5765ca24c04b543ab89138f928f417fdf8d98f8a91.json
 frontend/user-app/node_modules/.cache/babel-loader/479d7addbae351af53ef92d1648ea6b57467b563e09856ac6cded905b58b0f07.json
 frontend/user-app/node_modules/.cache/babel-loader/4891c9d4d4ca3684f733150ae295836b5acab3818f5fb7babaaf703741dcc0c1.json
 frontend/user-app/node_modules/.cache/babel-loader/49a398dd830086d8af9893bf0426bfdc4061d38fb6f17dc290136c46fb214dd8.json
@@ -33955,6 +33958,7 @@ frontend/user-app/node_modules/.cache/babel-loader/4f99451ea9cb5a1da12ac2c79d61c
 frontend/user-app/node_modules/.cache/babel-loader/4fe39ca2d840fab31ba0ac02ed46c53dc309fc87011c4c1fcccee44afa1a0264.json
 frontend/user-app/node_modules/.cache/babel-loader/53d82ed42c2d8e1122eb2c486d4d18d74478524a3d447cf781635bcf95c82dba.json
 frontend/user-app/node_modules/.cache/babel-loader/5808c21abd45f07540c38765e229bae262665653cc6d8387314e3f83c43dadae.json
+frontend/user-app/node_modules/.cache/babel-loader/585d3f39ad12f3dcea68e0448688a0e913b079b8b90524a313cf231d3383bee4.json
 frontend/user-app/node_modules/.cache/babel-loader/5905de46bb424540b1a6341b0b9f00f64ebbb07199f665812a558f4c15039792.json
 frontend/user-app/node_modules/.cache/babel-loader/59158aa7f86fde782812d78b0eb64b3abe8247128fa4a90553759eaa5932e5f6.json
 frontend/user-app/node_modules/.cache/babel-loader/59d0af003460316c4f94194b36990f0478676d6078c325096b43c0ce6c736849.json
@@ -33963,6 +33967,7 @@ frontend/user-app/node_modules/.cache/babel-loader/5b0cdea54b249d539dbbc002af448
 frontend/user-app/node_modules/.cache/babel-loader/5d34e4451d93b33404711b47673a2179f63c765aff28b930de0cdd683e7714f5.json
 frontend/user-app/node_modules/.cache/babel-loader/5d52b586fde0b0e753364b5b7b725caef62de7e4f9c37191e49c6def3ebd8590.json
 frontend/user-app/node_modules/.cache/babel-loader/5dc9cac7d2d6210b59541c2b960ebec1bf7dca7f84cfe5e622646e59ec467e90.json
+frontend/user-app/node_modules/.cache/babel-loader/610f92500a4f784f8de2b4bb014dfd6b18a5fb84dc3341fe4ecdcb5b06545206.json
 frontend/user-app/node_modules/.cache/babel-loader/62142aa2ef6d333998cd742817d18cc16004c94097f8f14fbdf6b72099fd0a3a.json
 frontend/user-app/node_modules/.cache/babel-loader/62e7b6eb2c936f933ffcda04596a3229d6763fc708a0d3d7ac17b2f8e72db153.json
 frontend/user-app/node_modules/.cache/babel-loader/634b9a178ac22015ecd8c4a69a37ca90e1f987348f5d90ac6993731367ea6cee.json
@@ -33971,6 +33976,7 @@ frontend/user-app/node_modules/.cache/babel-loader/6682e2f0fc0c405724be18559bbd5
 frontend/user-app/node_modules/.cache/babel-loader/6804c82cd4a3aa7608067182369351877d4b2235b1c442c795ec71ea72d8a533.json
 frontend/user-app/node_modules/.cache/babel-loader/6b00b0b87ec1f75b718c7d6e1f6c3f5d6f674737745c5060d9300e4501c13f30.json
 frontend/user-app/node_modules/.cache/babel-loader/6bf3031169fcd387df1f70ba472aa8775e25aa151996a9a6510a23dcc2694294.json
+frontend/user-app/node_modules/.cache/babel-loader/6c3778b3f96c62153ed7965ae2ee8f6c815377ded11865c78e3f82e773ede55f.json
 frontend/user-app/node_modules/.cache/babel-loader/6d68091b7e9c44ed32daab871a58ab65b138462010ad5feeba63f7e70be17184.json
 frontend/user-app/node_modules/.cache/babel-loader/6dd8551c864663897be5bab2bb1e503fd0780d62166c1c301e6d645e8af3361c.json
 frontend/user-app/node_modules/.cache/babel-loader/717fb300a5e54c3e69084d38e8118e96ce03a8bcb22f46786252b577458cba89.json
@@ -33982,7 +33988,9 @@ frontend/user-app/node_modules/.cache/babel-loader/7524c8f32413340d42871756ff981
 frontend/user-app/node_modules/.cache/babel-loader/76ca71cdd69ddc8c84fb39bbb712aaeaa10eea3dd90e84e89035f4de87594d63.json
 frontend/user-app/node_modules/.cache/babel-loader/78edc4a6bc35473fff404e5ce3d61a4fb30ccde75b864da375fbd4cd784ea2cc.json
 frontend/user-app/node_modules/.cache/babel-loader/7953b64d7f024fb6287fe6b1fbe3fcacbec14e7533f759144ca4b7f49bf72708.json
+frontend/user-app/node_modules/.cache/babel-loader/79acf0b6f434deefd633ec19e57dc7ed8d2c492849b95aed66e56849aed2772a.json
 frontend/user-app/node_modules/.cache/babel-loader/7d507e7b7ba510dac8e3901d731297964399af841de9acb34f3c51c498c9eb26.json
+frontend/user-app/node_modules/.cache/babel-loader/7e76a08c90ccaf3bad0b9542ad346a89c583f018d0072118124fc1a19a35cd92.json
 frontend/user-app/node_modules/.cache/babel-loader/8136397949620badbc4f45039acfc3beea5c76d88bf461c03ac90204fc37e9f0.json
 frontend/user-app/node_modules/.cache/babel-loader/836c174d20c7af3a4e1683dfde868eedfdae9b6850eca3235c4d1409f7f9fee8.json
 frontend/user-app/node_modules/.cache/babel-loader/850eab416bfe6598af30446398b6db39726d99c304b2c39ca30abf368f62749b.json
@@ -33995,18 +34003,22 @@ frontend/user-app/node_modules/.cache/babel-loader/8e35b510b9023ee20c35c4359a0a1
 frontend/user-app/node_modules/.cache/babel-loader/94a2f12da4248a3b167cadb4c0f4a006b1a299bf6191f0d3260546846def44be.json
 frontend/user-app/node_modules/.cache/babel-loader/976043ba2665e95bf4499afa84474256d51246fa7caf99bf1ba52f4eeeab5069.json
 frontend/user-app/node_modules/.cache/babel-loader/9979f51fadc9db9c182ba7badf0ca5968a766cff0138fdbba5eb4c34d560d101.json
+frontend/user-app/node_modules/.cache/babel-loader/99bbc7027011246d6b50885f0379924de59faaf7e25bf00da685981797ba4218.json
 frontend/user-app/node_modules/.cache/babel-loader/99fd2af1717295d41b322b53c01784bee1baf9dbf860ccb396ea32b69bab8c11.json
 frontend/user-app/node_modules/.cache/babel-loader/9bb9e702465f3876dcab9804543875b2e7497b77304a8c3fea4524410bf46b52.json
 frontend/user-app/node_modules/.cache/babel-loader/9eda0680f7b02c1a375e83a0dbbd74ef9fef8e17069af9956148e6e798528b44.json
 frontend/user-app/node_modules/.cache/babel-loader/9ede592c5710761c5efde2349ab26b65e43535441c377dd754a18ebe80816770.json
 frontend/user-app/node_modules/.cache/babel-loader/9f9adab4976868917bdb95c1df9798ec3361b4a75f92f172603667ff35e7c05d.json
 frontend/user-app/node_modules/.cache/babel-loader/a00c24467a16193ef8f9ff0e00e5f804f4aa8350e8dbc793cabf9d2d6c48ec39.json
+frontend/user-app/node_modules/.cache/babel-loader/a08e76804d6cbba79102a8e67a20a80e068e093f178cadf7ba771dd3567d8ac3.json
 frontend/user-app/node_modules/.cache/babel-loader/a1564efa1dff918cf28cd2b77cd9d2387c3276dfa66863f4538f408565cd6647.json
 frontend/user-app/node_modules/.cache/babel-loader/a18fa5f388ae24bb226354de2e063a6937d087857caf4ab7f1bae44931697aab.json
+frontend/user-app/node_modules/.cache/babel-loader/a4b05e84e1f7ca14f118b8dd8f00cc5eeb7838121c79659eed5bc3e097d2c4df.json
 frontend/user-app/node_modules/.cache/babel-loader/a50f5f5d8e7d87ac649a63cd21ea80f0d63e93ce9f34de4a75866e7d04c65f11.json
 frontend/user-app/node_modules/.cache/babel-loader/a65212803831852a781cc7469eade43103f56a5b1c100091887ada745ea0ffbc.json
 frontend/user-app/node_modules/.cache/babel-loader/a6c7776d8b8228d46987edaf35e4df885e4e9e8a162ed3f9171b37ba1ab21f0e.json
 frontend/user-app/node_modules/.cache/babel-loader/a933117b91daf1689b33079c6d67acc5d7d8e7efcee6fcf03bde443826c097dc.json
+frontend/user-app/node_modules/.cache/babel-loader/a99a6dc69e90c25a192abad01adb2f0961059afa22f5f3351e8fb53588a1c075.json
 frontend/user-app/node_modules/.cache/babel-loader/ad6f7a81c955ea73c189aba6567756512d2e34b7c86034a56680a5e4318ecb60.json
 frontend/user-app/node_modules/.cache/babel-loader/af662de788d6e39ac383a5184183fe1c322868fca5372b6d4628b3b992468566.json
 frontend/user-app/node_modules/.cache/babel-loader/b0694a4117291439f8911366ebae92075aec5eecf3df8994aca26766afdf3f7e.json
@@ -34050,6 +34062,8 @@ frontend/user-app/node_modules/.cache/babel-loader/e2da533d45a353301217e64fbda8d
 frontend/user-app/node_modules/.cache/babel-loader/e605a662bf714fa645f7a20051d639568458721da03c681c35741b499cb89a9d.json
 frontend/user-app/node_modules/.cache/babel-loader/e925af3f4d3df7431253fb1998867006bc243423dfc8aeebf4af796297b25923.json
 frontend/user-app/node_modules/.cache/babel-loader/ea58450f153a5fd0bfd71be47386654e49dafbff45419dfa5e543454542b6d1a.json
+frontend/user-app/node_modules/.cache/babel-loader/ea5d23b662d13cff8c76c36d6b264ed021017a0650a1baa15e5ef08152ae8b52.json
+frontend/user-app/node_modules/.cache/babel-loader/ea94e022d58f4555f943e269ad916a2e4ad9d693605a34d80482d8d529cae193.json
 frontend/user-app/node_modules/.cache/babel-loader/eaf0a57b2711a1102f810c4c19106db75b423009f96a7af53713316edc823787.json
 frontend/user-app/node_modules/.cache/babel-loader/eee8574892432cfcbf71961e117a1d3a6e54295c30f5d183c21bd62e493cda65.json
 frontend/user-app/node_modules/.cache/babel-loader/ef2db4b3e90ee1eba4fb4e8855675b06c56c7135824cb6eba1e1238834a305e9.json
@@ -34057,6 +34071,7 @@ frontend/user-app/node_modules/.cache/babel-loader/ef96553161d50343b9a8f21f27847
 frontend/user-app/node_modules/.cache/babel-loader/f01bf7b05a801112baf35431fc6b70650c70b7e88068a71a559801225bc482bd.json
 frontend/user-app/node_modules/.cache/babel-loader/f0906a08305906a3b01280c67447ee0aab95dc12a274b8ad828df8ef03a013c1.json
 frontend/user-app/node_modules/.cache/babel-loader/f2c3c126b19bad3e7c483693dae4937d884738d4afa36a24edcddd95ad641cd9.json
+frontend/user-app/node_modules/.cache/babel-loader/f692a1848b2e7ea028ab7d3546a242d31552bf743b1631407f49e1cff61e2e24.json
 frontend/user-app/node_modules/.cache/babel-loader/f6b983f0c7a8b660e7b58e42381d145efca2ed4338eaf35bec7ff13d189e37c4.json
 frontend/user-app/node_modules/.cache/babel-loader/f6de10effcf014a0e5f710f05078649a4160cbaed37c048fdcfa7a02e78ad715.json
 frontend/user-app/node_modules/.cache/babel-loader/f87da37d21279ed2637f84444cac415389b2fc512de861ff614cd214e14182a7.json

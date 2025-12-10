@@ -29,10 +29,10 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 240,
-  "unitsCount" : 0,
-  "unitsMcCabeIndexSum" : 0,
-  "linesOfCodeInUnits" : 0
+  "linesOfCode" : 263,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 4,
+  "linesOfCodeInUnits" : 33
 }, {
   "relativePath" : "backend/user.js",
   "extension" : "js",
@@ -57,10 +57,10 @@
 }, {
   "relativePath" : "frontend/user-app/src/App.js",
   "extension" : "js",
-  "linesOfCode" : 64,
-  "unitsCount" : 2,
-  "unitsMcCabeIndexSum" : 3,
-  "linesOfCodeInUnits" : 61
+  "linesOfCode" : 16,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
 }, {
   "relativePath" : "frontend/user-app/src/components/AdminAddBarberForm.jsx",
   "extension" : "jsx",
@@ -69,9 +69,23 @@
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
 }, {
+  "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 12,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 20,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
   "relativePath" : "frontend/user-app/src/components/BarberCard.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 33,
+  "linesOfCode" : 27,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
@@ -106,7 +120,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 30,
+  "linesOfCode" : 21,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
@@ -127,10 +141,24 @@
 }, {
   "relativePath" : "frontend/user-app/src/components/SignupForm.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 46,
+  "linesOfCode" : 36,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/constants/services.js",
+  "extension" : "js",
+  "linesOfCode" : 7,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/hooks/useSupabaseStatus.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 20
 }, {
   "relativePath" : "frontend/user-app/src/index.css",
   "extension" : "css",
@@ -155,7 +183,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Booking.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 91,
+  "linesOfCode" : 89,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
@@ -169,7 +197,7 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Home.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 57,
+  "linesOfCode" : 33,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0

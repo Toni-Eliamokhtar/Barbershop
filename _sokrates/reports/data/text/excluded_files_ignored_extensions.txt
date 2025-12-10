@@ -5000,6 +5000,24 @@ frontend/user-app/node_modules/whatwg-fetch/fetch.js.flow
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*.pack files (11):
+
+frontend/user-app/node_modules/.cache/default-development/0.pack
+frontend/user-app/node_modules/.cache/default-development/1.pack
+frontend/user-app/node_modules/.cache/default-development/2.pack
+frontend/user-app/node_modules/.cache/default-development/3.pack
+frontend/user-app/node_modules/.cache/default-development/4.pack
+frontend/user-app/node_modules/.cache/default-development/5.pack
+frontend/user-app/node_modules/.cache/default-development/6.pack
+frontend/user-app/node_modules/.cache/default-development/7.pack
+frontend/user-app/node_modules/.cache/default-development/8.pack
+frontend/user-app/node_modules/.cache/default-development/9.pack
+frontend/user-app/node_modules/.cache/default-development/index.pack
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 *.bsd files (10):
 
 frontend/user-app/node_modules/@nicolo-ribaudo/eslint-scope-5-internals/node_modules/estraverse/LICENSE.BSD
@@ -5038,17 +5056,6 @@ frontend/user-app/node_modules/ajv/lib/dot/defaults.def
 frontend/user-app/node_modules/ajv/lib/dot/definitions.def
 frontend/user-app/node_modules/ajv/lib/dot/errors.def
 frontend/user-app/node_modules/ajv/lib/dot/missing.def
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*.pack files (4):
-
-frontend/user-app/node_modules/.cache/default-development/0.pack
-frontend/user-app/node_modules/.cache/default-development/1.pack
-frontend/user-app/node_modules/.cache/default-development/2.pack
-frontend/user-app/node_modules/.cache/default-development/index.pack
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

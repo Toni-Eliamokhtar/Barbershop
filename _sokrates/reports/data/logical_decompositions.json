@@ -3,7 +3,7 @@
   "components" : [ {
     "name" : "backend",
     "filesCount" : 6,
-    "linesOfCode" : 651,
+    "linesOfCode" : 674,
     "numberOfRegexLineMatches" : 0,
     "fileCountPerExtension" : [ {
       "name" : "  *.js",
@@ -12,17 +12,17 @@
     } ],
     "linesOfCodePerExtension" : [ {
       "name" : "  *.js",
-      "value" : 651,
+      "value" : 674,
       "description" : [ ]
     } ]
   }, {
     "name" : "frontend",
-    "filesCount" : 26,
-    "linesOfCode" : 1309,
+    "filesCount" : 30,
+    "linesOfCode" : 1271,
     "numberOfRegexLineMatches" : 0,
     "fileCountPerExtension" : [ {
       "name" : "  *.jsx",
-      "value" : 14,
+      "value" : 16,
       "description" : [ ]
     }, {
       "name" : "  *.css",
@@ -30,7 +30,7 @@
       "description" : [ ]
     }, {
       "name" : "  *.js",
-      "value" : 5,
+      "value" : 7,
       "description" : [ ]
     }, {
       "name" : "  *.html",
@@ -39,7 +39,7 @@
     } ],
     "linesOfCodePerExtension" : [ {
       "name" : "  *.jsx",
-      "value" : 757,
+      "value" : 738,
       "description" : [ ]
     }, {
       "name" : "  *.css",
@@ -47,7 +47,7 @@
       "description" : [ ]
     }, {
       "name" : "  *.js",
-      "value" : 107,
+      "value" : 88,
       "description" : [ ]
     }, {
       "name" : "  *.html",
@@ -138,30 +138,30 @@
     "temporalLinkThreshold" : 1,
     "maxSearchDepthLines" : 200
   },
+  "linesOfCodePerComponent" : [ {
+    "name" : "backend",
+    "value" : 674,
+    "description" : [ ]
+  }, {
+    "name" : "frontend",
+    "value" : 1271,
+    "description" : [ ]
+  }, {
+    "name" : "ROOT",
+    "value" : 16,
+    "description" : [ ]
+  } ],
   "fileCountPerComponent" : [ {
     "name" : "backend",
     "value" : 6,
     "description" : [ ]
   }, {
     "name" : "frontend",
-    "value" : 26,
+    "value" : 30,
     "description" : [ ]
   }, {
     "name" : "ROOT",
     "value" : 1,
-    "description" : [ ]
-  } ],
-  "linesOfCodePerComponent" : [ {
-    "name" : "backend",
-    "value" : 651,
-    "description" : [ ]
-  }, {
-    "name" : "frontend",
-    "value" : 1309,
-    "description" : [ ]
-  }, {
-    "name" : "ROOT",
-    "value" : 16,
     "description" : [ ]
   } ]
 } ]

@@ -1,35 +1,29 @@
-backend/routes/booking.js [127:138]:
+backend/routes/booking.js [164:172]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    try {
-      const { data, error } = await createBooking({
-        barber_id: barberId,
-        service_id: serviceId,
-        date,
-        time,
-        user_email: userEmail,
-        user_name: userName,
-        barber_name: barberName,
-        service_name: serviceName,
-      });
-      if (error) console.warn("Supabase createBooking warning:", error);
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+    });
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/routes/booking.js [232:243]:
+backend/routes/booking.js [264:272]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    try {
-      const { data, error } = await createBooking({
-        barber_id: barberId,
-        service_id: serviceId,
-        date,
-        time,
-        user_email: userEmail,
-        user_name: userName,
-        barber_name: barberName,
-        service_name: serviceName,
-      });
-      if (error) console.warn("Supabase createBooking warning:", error);
+      barberId,
+      serviceId,
+      date,
+      time,
+      userEmail,
+      userName,
+      barberName,
+      serviceName,
+    });
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

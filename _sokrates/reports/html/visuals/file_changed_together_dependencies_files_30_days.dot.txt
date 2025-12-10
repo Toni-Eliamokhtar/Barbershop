@@ -26,6 +26,17 @@ graph G {
 
 
 
+    "[frontend/user-app/src/components/SignupForm.jsx]" -- "[frontend/user-app/src/components/LoginForm.jsx]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[frontend/user-app/src/components/LoginForm.jsx]" -- "[frontend/user-app/src/components/AuthEmailField.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
     "[frontend/user-app/src/pages/Signup.jsx]" -- "[frontend/user-app/src/components/SignupForm.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/hooks/useSupabaseStatus.js]" -- "[frontend/user-app/src/App.js]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/pages/Booking.jsx]" -- "[frontend/user-app/src/components/BarberCard.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/pages/Booking.jsx]" -- "[frontend/user-app/src/constants/services.js]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/pages/Home.jsx]" -- "[frontend/user-app/src/App.js]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/components/SignupForm.jsx]" -- "[frontend/user-app/src/components/AuthEmailField.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/constants/services.js]" -- "[frontend/user-app/src/components/BarberCard.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/components/AuthPasswordField.jsx]" -- "[frontend/user-app/src/components/SignupForm.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/pages/Home.jsx]" -- "[frontend/user-app/src/hooks/useSupabaseStatus.js]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[frontend/user-app/src/components/AuthPasswordField.jsx]" -- "[frontend/user-app/src/components/LoginForm.jsx]" [label=" 1 ", penwidth="1", color="#00688b5E"];
 
 }

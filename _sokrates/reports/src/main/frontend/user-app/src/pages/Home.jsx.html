@@ -12,35 +12,15 @@
     </style>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Home.jsx (<b>57</b> lines of code) (<a href="Home.jsx">raw</a>):</h3>
-<div id="editor">import { useEffect, useState } from &quot;react&quot;;
-import { supabase } from &quot;../lib/supabase&quot;;
-import Header from &quot;../components/Header&quot;;
+<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Home.jsx (<b>33</b> lines of code) (<a href="Home.jsx">raw</a>):</h3>
+<div id="editor">import Header from &quot;../components/Header&quot;;
 import Footer from &quot;../components/Footer&quot;;
 import ServiceCard from &quot;../components/ServiceCard&quot;;
+import useSupabaseStatus from &quot;../hooks/useSupabaseStatus&quot;;
 import &quot;../styles/Home.css&quot;;
 
 export default function Home() {
-  const [status, setStatus] = useState(&quot;⏳ Connexion &agrave; Supabase...&quot;);
-
-  useEffect(() =&gt; {
-    async function testConnection() {
-      const { data, error } = await supabase
-        .from(&quot;profiles&quot;)
-        .select(&quot;*&quot;)
-        .limit(1);
-
-      if (error) {
-        console.error(&quot;❌ Erreur Supabase :&quot;, error.message);
-        setStatus(&quot;❌ Erreur de connexion &agrave; Supabase&quot;);
-      } else {
-        console.log(&quot;✅ Connexion Supabase OK, exemple :&quot;, data);
-        setStatus(&quot;✅ Supabase connect&eacute; !&quot;);
-      }
-    }
-
-    testConnection();
-  }, []);
+  const status = useSupabaseStatus();
 
   return (
     &lt;div className=&quot;home&quot;&gt;
@@ -52,9 +32,9 @@ export default function Home() {
           &lt;h2&gt;Bienvenue chez Barbershop 514&lt;/h2&gt;
           &lt;p&gt;
             Offrez-vous une coupe parfaite et une barbe soign&eacute;e dans une
-            ambiance moderne et &eacute;l&eacute;gante. Nos barbiers professionnels sont l&agrave;
-            pour vous sublimer.
+            ambiance moderne et &eacute;l&eacute;gante.
           &lt;/p&gt;
+          &lt;p style={{ fontSize: &quot;14px&quot;, marginTop: &quot;10px&quot; }}&gt;{status}&lt;/p&gt;
         &lt;/div&gt;
       &lt;/section&gt;
 
@@ -65,14 +45,6 @@ export default function Home() {
           &lt;ServiceCard icon=&quot;🧔&quot; title=&quot;Barbe &amp; moustache&quot; /&gt;
           &lt;ServiceCard icon=&quot;🎓&quot; title=&quot;&Eacute;tudiant &amp; enfant&quot; /&gt;
         &lt;/div&gt;
-      &lt;/section&gt;
-
-      &lt;section className=&quot;home-info&quot;&gt;
-        &lt;h2&gt;📍 Nous trouver&lt;/h2&gt;
-        &lt;p&gt;123 Rue Sainte-Catherine, Montr&eacute;al, QC&lt;/p&gt;
-        &lt;p&gt;🕒 Lun-Sam : 10h - 20h&lt;/p&gt;
-        &lt;p&gt;Dimanche : Ferm&eacute;&lt;/p&gt;
-        &lt;p&gt;📞 T&eacute;l&eacute;phone : (514) 123-4567&lt;/p&gt;
       &lt;/section&gt;
 
       &lt;Footer /&gt;

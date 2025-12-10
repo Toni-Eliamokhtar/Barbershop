@@ -1,7 +1,5 @@
-backend/routes/booking.js [22:31]:
+backend/routes/booking.js [61:68]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  try {
-    const {
       barberId,
       serviceId,
       date,
@@ -14,10 +12,8 @@ backend/routes/booking.js [22:31]:
 
 
 
-backend/routes/booking.js [201:210]:
+backend/routes/booking.js [164:171]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  try {
-    const {
       barberId,
       serviceId,
       date,

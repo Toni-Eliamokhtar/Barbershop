@@ -1,11 +1,11 @@
 id: 1
-unit: export default function App()
-file: frontend/user-app/src/App.js
-start line: 5
-end line: 74
-size: 48 LOC
-McCabe index: 1
-number of parameters: 0
+unit: async function persistBookingInSupabase()
+file: backend/routes/booking.js
+start line: 12
+end line: 46
+size: 33 LOC
+McCabe index: 4
+number of parameters: 9
 
 id: 2
 unit: export async function markBookingPaid()
@@ -18,9 +18,9 @@ number of parameters: 2
 
 id: 3
 unit: async function testConnection()
-file: frontend/user-app/src/App.js
-start line: 9
-end line: 22
+file: frontend/user-app/src/hooks/useSupabaseStatus.js
+start line: 8
+end line: 21
 size: 13 LOC
 McCabe index: 2
 number of parameters: 0
@@ -42,4 +42,13 @@ end line: 23
 size: 10 LOC
 McCabe index: 1
 number of parameters: 3
+
+id: 6
+unit: export default function useSupabaseStatus()
+file: frontend/user-app/src/hooks/useSupabaseStatus.js
+start line: 4
+end line: 27
+size: 7 LOC
+McCabe index: 1
+number of parameters: 0
 

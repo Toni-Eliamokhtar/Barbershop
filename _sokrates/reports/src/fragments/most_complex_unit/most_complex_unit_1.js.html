@@ -1,28 +1,51 @@
 <html>
 <head>
-    <title>export async function createBooking()</title>
+    <title>async function persistBookingInSupabase()</title>
     <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
     <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">export async function createBooking()</h3>
-<p style="margin-top: 4px">in <i>backend/lib/supabase.js [12:23]</i></p>
+<h3 style="margin-bottom: 0">async function persistBookingInSupabase()</h3>
+<p style="margin-top: 4px">in <i>backend/routes/booking.js [12:46]</i></p>
 <ul>
-    <li><b>12</b> lines of code</li>
-    <li><b>2</b> McCabe index (conditional complexity)</li>
+    <li><b>33</b> lines of code</li>
+    <li><b>4</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-export async function createBooking(booking) {
+async function persistBookingInSupabase({
+  barberId,
+  serviceId,
+  date,
+  time,
+  userEmail,
+  userName,
+  barberName,
+  serviceName,
+}) {
   try {
-    const { data, error } = await supabase
-      .from(&quot;bookings&quot;)
-      .insert([{ ...booking, paid: false }])
-      .select()
-      .single();
-    return { data, error };
+    const { data, error } = await createBooking({
+      barber_id: barberId,
+      service_id: serviceId,
+      date,
+      time,
+      user_email: userEmail,
+      user_name: userName,
+      barber_name: barberName,
+      service_name: serviceName,
+    });
+
+    if (error) {
+      console.warn(&quot;Supabase createBooking warning:&quot;, error);
+    }
+
+    return data ?? null;
   } catch (err) {
-    return { data: null, error: err };
+    console.warn(
+      &quot;Could not create booking in supabase:&quot;,
+      err?.message || err
+    );
+    return null;
   }
 }
 

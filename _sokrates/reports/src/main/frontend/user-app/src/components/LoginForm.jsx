@@ -1,4 +1,6 @@
 import { useState } from "react";
+import AuthPasswordField from "./AuthPasswordField";
+import AuthEmailField from "./AuthEmailField";
 
 export default function LoginForm({ onSubmit }) {
   const [email, setEmail] = useState("");
@@ -11,23 +13,12 @@ export default function LoginForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit} className="auth-form">
-      <input
-        type="email"
-        placeholder="Adresse email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
+      <AuthEmailField email={email} setEmail={setEmail} />
+      <AuthPasswordField
+        password={password}
+        setPassword={setPassword}
+        buttonLabel="Se connecter"
       />
-      <input
-        type="password"
-        placeholder="Mot de passe"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit" className="auth-btn">
-        Se connecter
-      </button>
     </form>
   );
 }

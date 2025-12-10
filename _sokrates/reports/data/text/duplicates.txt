@@ -1,72 +1,108 @@
 duplicated block id: 1
-size: 13 cleaned lines of code
-in 2 files:
- - frontend/user-app/src/App.js (6:20)
- - frontend/user-app/src/pages/Home.jsx (9:23)
-
-duplicated block id: 2
-size: 12 cleaned lines of code
-in 2 files:
- - backend/routes/booking.js (127:138)
- - backend/routes/booking.js (232:243)
-
-duplicated block id: 3
 size: 10 cleaned lines of code
 in 2 files:
- - backend/routes/booking.js (22:31)
- - backend/routes/booking.js (201:210)
+ - backend/routes/booking.js (59:68)
+ - backend/routes/booking.js (233:242)
 
-duplicated block id: 4
+duplicated block id: 2
 size: 9 cleaned lines of code
 in 2 files:
- - frontend/user-app/src/components/LoginForm.jsx (20:28)
- - frontend/user-app/src/components/SignupForm.jsx (36:44)
+ - backend/routes/booking.js (164:172)
+ - backend/routes/booking.js (264:272)
+
+duplicated block id: 3
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (61:68)
+ - backend/routes/booking.js (164:171)
+
+duplicated block id: 4
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (61:68)
+ - backend/routes/booking.js (264:271)
 
 duplicated block id: 5
 size: 8 cleaned lines of code
 in 2 files:
- - frontend/user-app/src/App.js (40:47)
- - frontend/user-app/src/pages/Home.jsx (34:41)
+ - backend/routes/booking.js (235:242)
+ - backend/routes/booking.js (264:271)
 
 duplicated block id: 6
 size: 8 cleaned lines of code
 in 2 files:
- - frontend/user-app/src/components/LoginForm.jsx (14:21)
- - frontend/user-app/src/components/SignupForm.jsx (24:31)
+ - backend/routes/booking.js (13:20)
+ - backend/routes/booking.js (235:242)
 
 duplicated block id: 7
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (13:20)
+ - backend/routes/booking.js (61:68)
+
+duplicated block id: 8
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (164:171)
+ - backend/routes/booking.js (235:242)
+
+duplicated block id: 9
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (13:20)
+ - backend/routes/booking.js (264:271)
+
+duplicated block id: 10
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (13:20)
+ - backend/routes/booking.js (164:171)
+
+duplicated block id: 11
 size: 7 cleaned lines of code
 in 2 files:
  - frontend/user-app/src/pages/Login.jsx (43:50)
  - frontend/user-app/src/pages/Signup.jsx (35:42)
 
-duplicated block id: 8
+duplicated block id: 12
 size: 7 cleaned lines of code
 in 2 files:
- - frontend/user-app/src/components/BarberCard.jsx (4:10)
- - frontend/user-app/src/pages/Booking.jsx (8:14)
+ - backend/email.js (4:10)
+ - backend/routes/booking.js (49:55)
 
-duplicated block id: 9
+duplicated block id: 13
 size: 6 cleaned lines of code
 in 2 files:
- - frontend/user-app/src/App.js (61:66)
- - frontend/user-app/src/pages/Home.jsx (55:60)
+ - backend/routes/booking.js (13:18)
+ - backend/routes/booking.js (182:187)
 
-duplicated block id: 10
+duplicated block id: 14
+size: 6 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (164:169)
+ - backend/routes/booking.js (182:187)
+
+duplicated block id: 15
+size: 6 cleaned lines of code
+in 2 files:
+ - backend/routes/booking.js (182:187)
+ - backend/routes/booking.js (264:269)
+
+duplicated block id: 16
 size: 6 cleaned lines of code
 in 2 files:
  - frontend/user-app/src/styles/Booking.css (87:92)
  - frontend/user-app/src/styles/Booking.css (127:132)
 
-duplicated block id: 11
+duplicated block id: 17
 size: 6 cleaned lines of code
 in 2 files:
- - backend/routes/booking.js (24:29)
- - backend/routes/booking.js (152:157)
+ - backend/routes/booking.js (61:66)
+ - backend/routes/booking.js (182:187)
 
-duplicated block id: 12
+duplicated block id: 18
 size: 6 cleaned lines of code
 in 2 files:
- - backend/routes/booking.js (152:157)
- - backend/routes/booking.js (203:208)
+ - backend/routes/booking.js (182:187)
+ - backend/routes/booking.js (235:240)
 
