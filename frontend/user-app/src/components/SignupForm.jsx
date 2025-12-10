@@ -1,6 +1,6 @@
-// src/components/SignupForm.jsx
 import { useState } from "react";
 import AuthPasswordField from "./AuthPasswordField";
+import AuthEmailField from "./AuthEmailField";
 
 export default function SignupForm({ onSubmit }) {
   const [nom, setNom] = useState("");
@@ -22,13 +22,7 @@ export default function SignupForm({ onSubmit }) {
         onChange={(e) => setNom(e.target.value)}
         required
       />
-      <input
-        type="email"
-        placeholder="Adresse email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
+      <AuthEmailField email={email} setEmail={setEmail} />
       <input
         type="text"
         placeholder="Téléphone"
