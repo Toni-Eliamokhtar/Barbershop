@@ -1,29 +1,28 @@
 <html>
 <head>
-    <title>export async function createBooking()</title>
+    <title>async function sendConfirmationEmail()</title>
     <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
     <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">export async function createBooking()</h3>
-<p style="margin-top: 4px">in <i>backend/lib/supabase.js [12:23]</i></p>
+<h3 style="margin-bottom: 0">async function sendConfirmationEmail()</h3>
+<p style="margin-top: 4px">in <i>backend/email.js [13:23]</i></p>
 <ul>
-    <li><b>12</b> lines of code</li>
-    <li><b>2</b> McCabe index (conditional complexity)</li>
+    <li><b>10</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-export async function createBooking(booking) {
-  try {
-    const { data, error } = await supabase
-      .from(&quot;bookings&quot;)
-      .insert([{ ...booking, paid: false }])
-      .select()
-      .single();
-    return { data, error };
-  } catch (err) {
-    return { data: null, error: err };
-  }
+async function sendConfirmationEmail(to, subject, html) {
+  const mailOptions = {
+    from: `&quot;Barbershop 514&quot; &lt;${process.env.EMAIL_USER}&gt;`,
+    to,
+    subject,
+    html,
+  };
+
+  await transporter.sendMail(mailOptions);
+  console.log(`📩 Email envoy&eacute; &agrave; ${to}`);
 }
 
 </code>

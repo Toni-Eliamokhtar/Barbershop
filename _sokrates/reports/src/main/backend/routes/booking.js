@@ -4,24 +4,23 @@ import dotenv from "dotenv";
 import Stripe from "stripe";
 import { createBooking, supabase } from "../lib/supabase.js";
 import { extractBookingFields } from "../lib/extractBookingFields.js";
-import { buildBookingPayload } from "../lib/buildBookingPayload.js";
 
 dotenv.config();
 const router = express.Router();
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // 🔁 Persister une réservation
-async function persistBookingInSupabase(payload) {
+async function persistBookingInSupabase(fields) {
   try {
     const { data, error } = await createBooking({
-      barber_id: payload.barberId,
-      service_id: payload.serviceId,
-      date: payload.date,
-      time: payload.time,
-      user_email: payload.userEmail,
-      user_name: payload.userName,
-      barber_name: payload.barberName,
-      service_name: payload.serviceName,
+      barber_id: fields.barberId,
+      service_id: fields.serviceId,
+      date: fields.date,
+      time: fields.time,
+      user_email: fields.userEmail,
+      user_name: fields.userName,
+      barber_name: fields.barberName,
+      service_name: fields.serviceName,
     });
 
     if (error) console.warn("Supabase createBooking warning:", error);
@@ -48,13 +47,18 @@ router.post("/create", async (req, res) => {
   try {
     const fields = extractBookingFields(req.body);
 
-    if (!fields.barberId || !fields.serviceId || !fields.date || !fields.time || !fields.userEmail || !fields.userName) {
+    if (
+      !fields.barberId ||
+      !fields.serviceId ||
+      !fields.date ||
+      !fields.time ||
+      !fields.userEmail ||
+      !fields.userName
+    ) {
       return res.status(400).json({ error: "Tous les champs sont requis" });
     }
 
-    const payload = buildBookingPayload(fields);
-
-    const created = await persistBookingInSupabase(payload);
+    const created = await persistBookingInSupabase(fields);
 
     await transporter.sendMail({
       from: `"Barbershop 514" <${process.env.EMAIL_USER}>`,
@@ -71,7 +75,7 @@ router.post("/create", async (req, res) => {
 
     res.json({
       success: true,
-      booking: created || payload,
+      booking: created || fields,
     });
   } catch (error) {
     console.error("Erreur lors de la réservation:", error);
@@ -119,8 +123,6 @@ router.post("/create-checkout-session", async (req, res) => {
     const fields = extractBookingFields(req.body);
     const { price } = req.body;
 
-    const payload = buildBookingPayload(fields);
-
     const servicePriceMap = {
       "1": 25,
       "2": 35,
@@ -134,7 +136,7 @@ router.post("/create-checkout-session", async (req, res) => {
       (price != null && Number(price)) ||
       10;
 
-    const bookingRecord = await persistBookingInSupabase(payload);
+    const bookingRecord = await persistBookingInSupabase(fields);
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],

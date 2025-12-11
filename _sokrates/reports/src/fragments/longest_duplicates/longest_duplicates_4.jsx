@@ -1,6 +1,5 @@
-frontend/user-app/src/pages/Login.jsx [43:50]:
+frontend/user-app/src/pages/Login.jsx [40:46]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        confirmButtonColor: "#111",
       });
     }
   };
@@ -12,9 +11,8 @@ frontend/user-app/src/pages/Login.jsx [43:50]:
 
 
 
-frontend/user-app/src/pages/Signup.jsx [35:42]:
+frontend/user-app/src/pages/Signup.jsx [31:37]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        confirmButtonColor: "#111",
       });
     }
   };

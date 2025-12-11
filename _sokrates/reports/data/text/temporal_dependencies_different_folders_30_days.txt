@@ -1,10 +1,11 @@
 file 1	file 2	# same commits	# commits file 1	# commits file 2
-frontend/user-app/src/pages/Booking.jsx	frontend/user-app/src/components/BarberCard.jsx	1	10	4
-frontend/user-app/src/hooks/useSupabaseStatus.js	frontend/user-app/src/App.js	1	1	6
-frontend/user-app/src/constants/services.js	frontend/user-app/src/components/BarberCard.jsx	1	1	4
-frontend/user-app/src/pages/Signup.jsx	frontend/user-app/src/components/SignupForm.jsx	1	5	7
+backend/lib/extractBookingFields.js	backend/routes/booking.js	1	1	16
 frontend/user-app/src/pages/Home.jsx	frontend/user-app/src/hooks/useSupabaseStatus.js	1	7	1
-backend/routes/booking.js	backend/lib/buildBookingPayload.js	1	15	1
-frontend/user-app/src/pages/Booking.jsx	frontend/user-app/src/constants/services.js	1	10	1
-backend/lib/extractBookingFields.js	backend/routes/booking.js	1	1	15
+frontend/user-app/src/pages/Booking.jsx	frontend/user-app/src/components/BarberCard.jsx	1	10	4
+frontend/user-app/src/components/SignupForm.jsx	frontend/user-app/src/pages/Signup.jsx	1	7	6
 frontend/user-app/src/pages/Home.jsx	frontend/user-app/src/App.js	1	7	6
+frontend/user-app/src/utils/alerts.js	frontend/user-app/src/pages/Login.jsx	1	1	6
+frontend/user-app/src/constants/services.js	frontend/user-app/src/components/BarberCard.jsx	1	1	4
+frontend/user-app/src/utils/alerts.js	frontend/user-app/src/pages/Signup.jsx	1	1	6
+frontend/user-app/src/pages/Booking.jsx	frontend/user-app/src/constants/services.js	1	10	1
+frontend/user-app/src/hooks/useSupabaseStatus.js	frontend/user-app/src/App.js	1	1	6

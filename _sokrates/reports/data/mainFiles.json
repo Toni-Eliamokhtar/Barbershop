@@ -13,13 +13,6 @@
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
 }, {
-  "relativePath" : "backend/lib/buildBookingPayload.js",
-  "extension" : "js",
-  "linesOfCode" : 21,
-  "unitsCount" : 1,
-  "unitsMcCabeIndexSum" : 1,
-  "linesOfCodeInUnits" : 21
-}, {
   "relativePath" : "backend/lib/extractBookingFields.js",
   "extension" : "js",
   "linesOfCode" : 22,
@@ -43,7 +36,7 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 130,
+  "linesOfCode" : 134,
   "unitsCount" : 1,
   "unitsMcCabeIndexSum" : 4,
   "linesOfCodeInUnits" : 19
@@ -218,14 +211,14 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Login.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 52,
+  "linesOfCode" : 48,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
 }, {
   "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 47,
+  "linesOfCode" : 41,
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
@@ -264,6 +257,13 @@
   "unitsCount" : 0,
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "frontend/user-app/src/utils/alerts.js",
+  "extension" : "js",
+  "linesOfCode" : 17,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 16
 }, {
   "relativePath" : "test-api.http",
   "extension" : "http",

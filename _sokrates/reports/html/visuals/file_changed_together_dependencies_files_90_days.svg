@@ -1,0 +1,457 @@
+<svg width="2352pt" height="475pt"
+ viewBox="0.00 0.00 2352.00 475.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 471.25)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-471.25 2347.5,-471.25 2347.5,4 -4,4"/>
+<!-- [backend/index.js] -->
+<g id="node1" class="node">
+<title>[backend/index.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1230.62,-381 1101.38,-381 1101.38,-345 1230.62,-345 1230.62,-381"/>
+<text xml:space="preserve" text-anchor="middle" x="1166" y="-358.32" font-family="Tahoma" font-size="14.00">[backend/index.js]</text>
+</g>
+<!-- [backend/routes/booking.js] -->
+<g id="node2" class="node">
+<title>[backend/routes/booking.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1407.88,-36 1220.12,-36 1220.12,0 1407.88,0 1407.88,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="1314" y="-13.32" font-family="Tahoma" font-size="14.00">[backend/routes/booking.js]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge1" class="edge">
+<title>[backend/index.js]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1179.64,-344.72C1201.88,-316.76 1244.41,-264.17 1254,-258.75 1296.75,-234.6 1320.14,-264.71 1363,-240.75 1379.57,-231.49 1384.36,-226.28 1391,-208.5 1414.92,-144.46 1359.33,-69.58 1330.28,-36.37"/>
+<text xml:space="preserve" text-anchor="middle" x="1403.2" y="-186.22" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [frontend/user&#45;app/src/styles/Booking.css] -->
+<g id="node5" class="node">
+<title>[frontend/user&#45;app/src/styles/Booking.css]</title>
+<polygon fill="#00b2ee" stroke="white" points="1097.12,-294.75 820.88,-294.75 820.88,-258.75 1097.12,-258.75 1097.12,-294.75"/>
+<text xml:space="preserve" text-anchor="middle" x="959" y="-272.07" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/styles/Booking.css]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[frontend/user&#45;app/src/styles/Booking.css] -->
+<g id="edge3" class="edge">
+<title>[backend/index.js]&#45;&#45;[frontend/user&#45;app/src/styles/Booking.css]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1123.11,-344.54C1087.58,-330.08 1037.35,-309.64 1001.84,-295.18"/>
+<text xml:space="preserve" text-anchor="middle" x="1081.27" y="-315.6" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingForm.jsx] -->
+<g id="node7" class="node">
+<title>[frontend/user&#45;app/src/components/BookingForm.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="945.38,-208.5 598.62,-208.5 598.62,-172.5 945.38,-172.5 945.38,-208.5"/>
+<text xml:space="preserve" text-anchor="middle" x="772" y="-185.82" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/BookingForm.jsx]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx] -->
+<g id="edge37" class="edge">
+<title>[backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1101.08,-358.32C1007.77,-351.69 842.23,-334.56 799.25,-294.75 775.31,-272.58 771.41,-232.09 771.31,-208.95"/>
+<text xml:space="preserve" text-anchor="middle" x="805.62" y="-272.48" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/LoginForm.jsx] -->
+<g id="node16" class="node">
+<title>[frontend/user&#45;app/src/components/LoginForm.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="1381.5,-208.5 1050.5,-208.5 1050.5,-172.5 1381.5,-172.5 1381.5,-208.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1216" y="-185.82" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/LoginForm.jsx]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx] -->
+<g id="edge45" class="edge">
+<title>[backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1171.07,-344.71C1180.65,-312.03 1201.32,-241.55 1210.92,-208.83"/>
+<text xml:space="preserve" text-anchor="middle" x="1202.35" y="-272.48" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [backend/routes/auth.js] -->
+<g id="node19" class="node">
+<title>[backend/routes/auth.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1430.75,-294.75 1263.25,-294.75 1263.25,-258.75 1430.75,-258.75 1430.75,-294.75"/>
+<text xml:space="preserve" text-anchor="middle" x="1347" y="-272.07" font-family="Tahoma" font-size="14.00">[backend/routes/auth.js]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[backend/routes/auth.js] -->
+<g id="edge35" class="edge">
+<title>[backend/index.js]&#45;&#45;[backend/routes/auth.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1208.89,-344.56C1221.86,-339.11 1236.08,-332.96 1249,-327 1270.78,-316.95 1294.87,-304.86 1313.7,-295.17"/>
+<text xml:space="preserve" text-anchor="middle" x="1282.56" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BarberCard.jsx] -->
+<g id="node22" class="node">
+<title>[frontend/user&#45;app/src/components/BarberCard.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="689.12,-36 352.88,-36 352.88,0 689.12,0 689.12,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="521" y="-13.32" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/BarberCard.jsx]</text>
+</g>
+<!-- [backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx] -->
+<g id="edge41" class="edge">
+<title>[backend/index.js]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1100.94,-361.73C1031.98,-359.96 920.47,-352.83 828,-327 709.28,-293.85 659.34,-300.45 577.25,-208.5 555.91,-184.6 569.21,-168.45 554,-140.25 549.19,-131.33 544.15,-131.5 540,-122.25 527.25,-93.81 523.05,-57.3 521.68,-36.18"/>
+<text xml:space="preserve" text-anchor="middle" x="583.62" y="-186.22" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/SignupForm.jsx] -->
+<g id="node3" class="node">
+<title>[frontend/user&#45;app/src/components/SignupForm.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="415.62,-381 76.38,-381 76.38,-345 415.62,-345 415.62,-381"/>
+<text xml:space="preserve" text-anchor="middle" x="246" y="-358.32" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/SignupForm.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Signup.jsx] -->
+<g id="node4" class="node">
+<title>[frontend/user&#45;app/src/pages/Signup.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="327.38,-294.75 58.62,-294.75 58.62,-258.75 327.38,-258.75 327.38,-294.75"/>
+<text xml:space="preserve" text-anchor="middle" x="193" y="-272.07" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/pages/Signup.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx] -->
+<g id="edge2" class="edge">
+<title>[frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M235.02,-344.54C225.92,-330.08 213.06,-309.64 203.97,-295.18"/>
+<text xml:space="preserve" text-anchor="middle" x="229.05" y="-315.6" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Login.jsx] -->
+<g id="node6" class="node">
+<title>[frontend/user&#45;app/src/pages/Login.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="394.25,-122.25 133.75,-122.25 133.75,-86.25 394.25,-86.25 394.25,-122.25"/>
+<text xml:space="preserve" text-anchor="middle" x="264" y="-99.58" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/pages/Login.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx] -->
+<g id="edge10" class="edge">
+<title>[frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M283.54,-344.59C303.02,-333.36 324.99,-316.72 336,-294.75 366.51,-233.87 309.76,-156.76 280.23,-122.73"/>
+<text xml:space="preserve" text-anchor="middle" x="349.85" y="-229.35" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx] -->
+<g id="edge17" class="edge">
+<title>[frontend/user&#45;app/src/components/SignupForm.jsx]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M416.11,-361.94C630.82,-359.59 986.56,-347.5 1106,-294.75 1148.89,-275.81 1185.58,-232.88 1203.77,-208.76"/>
+<text xml:space="preserve" text-anchor="middle" x="1164.86" y="-272.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Signup.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx] -->
+<g id="edge4" class="edge">
+<title>[frontend/user&#45;app/src/pages/Signup.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M200.2,-258.46C213.81,-225.78 243.16,-155.3 256.78,-122.58"/>
+<text xml:space="preserve" text-anchor="middle" x="241.93" y="-186.22" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge5" class="edge">
+<title>[frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M971.43,-258.61C990.31,-232.88 1025.74,-185.86 1042,-172.5 1079.2,-141.92 1095.89,-145.61 1138,-122.25 1190.51,-93.13 1250.64,-57.31 1285.28,-36.42"/>
+<text xml:space="preserve" text-anchor="middle" x="1105.13" y="-143.1" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx] -->
+<g id="edge38" class="edge">
+<title>[frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M920.25,-258.29C888.16,-243.83 842.78,-223.39 810.7,-208.93"/>
+<text xml:space="preserve" text-anchor="middle" x="883.07" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="node8" class="node">
+<title>[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="825.12,-122.25 548.88,-122.25 548.88,-86.25 825.12,-86.25 825.12,-122.25"/>
+<text xml:space="preserve" text-anchor="middle" x="687" y="-99.58" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/pages/Booking.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="edge21" class="edge">
+<title>[frontend/user&#45;app/src/styles/Booking.css]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M963.79,-258.58C968.93,-236.12 973.9,-196.8 954,-172.5 935.52,-149.94 874.02,-133.61 814.69,-122.7"/>
+<text xml:space="preserve" text-anchor="middle" x="973.97" y="-186.22" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge33" class="edge">
+<title>[frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M899.09,-172.01C974.43,-159.92 1061.39,-142.41 1094,-122.25 1126.9,-101.91 1115.12,-74.37 1148,-54 1169.41,-40.74 1195.03,-32.43 1219.67,-27.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1128.09" y="-99.97" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx] -->
+<g id="edge28" class="edge">
+<title>[frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M666.74,-172.04C579.56,-157.58 456.27,-137.14 369.12,-122.68"/>
+<text xml:space="preserve" text-anchor="middle" x="554.79" y="-143.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="edge6" class="edge">
+<title>[frontend/user&#45;app/src/components/BookingForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M754.39,-172.04C739.8,-157.58 719.17,-137.14 704.59,-122.68"/>
+<text xml:space="preserve" text-anchor="middle" x="740.96" y="-143.1" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Booking.jsx]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge12" class="edge">
+<title>[frontend/user&#45;app/src/pages/Booking.jsx]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M806.31,-85.76C873.03,-76.11 957.72,-64.08 1033.25,-54 1095.33,-45.72 1165.21,-37 1219.72,-30.34"/>
+<text xml:space="preserve" text-anchor="middle" x="1039.62" y="-56.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Booking.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx] -->
+<g id="edge27" class="edge">
+<title>[frontend/user&#45;app/src/pages/Booking.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M652.6,-85.79C624.11,-71.33 583.83,-50.89 555.35,-36.43"/>
+<text xml:space="preserve" text-anchor="middle" x="620.31" y="-56.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Footer.jsx] -->
+<g id="node9" class="node">
+<title>[frontend/user&#45;app/src/components/Footer.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="2234.62,-208.5 1931.38,-208.5 1931.38,-172.5 2234.62,-172.5 2234.62,-208.5"/>
+<text xml:space="preserve" text-anchor="middle" x="2083" y="-185.82" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/Footer.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Home.jsx] -->
+<g id="node10" class="node">
+<title>[frontend/user&#45;app/src/pages/Home.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="2343.5,-122.25 2078.5,-122.25 2078.5,-86.25 2343.5,-86.25 2343.5,-122.25"/>
+<text xml:space="preserve" text-anchor="middle" x="2211" y="-99.58" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/pages/Home.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Footer.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx] -->
+<g id="edge7" class="edge">
+<title>[frontend/user&#45;app/src/components/Footer.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M2109.52,-172.04C2131.49,-157.58 2162.55,-137.14 2184.51,-122.68"/>
+<text xml:space="preserve" text-anchor="middle" x="2161.04" y="-143.1" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingInfo.jsx] -->
+<g id="node11" class="node">
+<title>[frontend/user&#45;app/src/components/BookingInfo.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="1864.62,-208.5 1525.38,-208.5 1525.38,-172.5 1864.62,-172.5 1864.62,-208.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1695" y="-185.82" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/BookingInfo.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingInfo.jsx]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge20" class="edge">
+<title>[frontend/user&#45;app/src/components/BookingInfo.jsx]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1680.25,-172.43C1653.67,-142.93 1594.59,-82.8 1531,-54 1492.85,-36.72 1447.53,-27.83 1408.19,-23.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1634.58" y="-99.97" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/BookingInfo.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="edge8" class="edge">
+<title>[frontend/user&#45;app/src/components/BookingInfo.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1525.1,-173.44C1413.44,-163.18 1264.1,-150.02 1132,-140.25 999.68,-130.47 966.18,-133.88 834,-122.25 831.18,-122 828.34,-121.74 825.47,-121.48"/>
+<text xml:space="preserve" text-anchor="middle" x="1308.72" y="-143.1" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/ServiceCard.jsx] -->
+<g id="node12" class="node">
+<title>[frontend/user&#45;app/src/components/ServiceCard.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="2283.62,-381 1944.38,-381 1944.38,-345 2283.62,-345 2283.62,-381"/>
+<text xml:space="preserve" text-anchor="middle" x="2114" y="-358.32" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/ServiceCard.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx] -->
+<g id="edge49" class="edge">
+<title>[frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1943.89,-349.02C1924.7,-347.62 1905.43,-346.26 1887,-345 1654.65,-329.14 1596.69,-322.24 1364,-312.75 962.48,-296.38 861.51,-311.52 460,-294.75 416.96,-292.95 370.06,-290.23 327.74,-287.48"/>
+<text xml:space="preserve" text-anchor="middle" x="1632.01" y="-315.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx] -->
+<g id="edge9" class="edge">
+<title>[frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2110.86,-344.71C2104.92,-312.03 2092.1,-241.55 2086.15,-208.83"/>
+<text xml:space="preserve" text-anchor="middle" x="2107.96" y="-272.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx] -->
+<g id="edge19" class="edge">
+<title>[frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2136.37,-344.62C2167.5,-318.85 2222.49,-267.19 2244,-208.5 2254.95,-178.64 2237.06,-143.21 2223.64,-122.57"/>
+<text xml:space="preserve" text-anchor="middle" x="2242.14" y="-229.35" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Header.jsx] -->
+<g id="node13" class="node">
+<title>[frontend/user&#45;app/src/components/Header.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="1934.25,-294.75 1625.75,-294.75 1625.75,-258.75 1934.25,-258.75 1934.25,-294.75"/>
+<text xml:space="preserve" text-anchor="middle" x="1780" y="-272.07" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/Header.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Header.jsx] -->
+<g id="edge39" class="edge">
+<title>[frontend/user&#45;app/src/components/ServiceCard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Header.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1984.64,-344.54C1960.95,-339.87 1936.65,-334.1 1914.25,-327 1900.08,-322.51 1897.79,-318.3 1884,-312.75 1868.53,-306.53 1851.49,-300.47 1835.76,-295.19"/>
+<text xml:space="preserve" text-anchor="middle" x="1920.62" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx] -->
+<g id="edge34" class="edge">
+<title>[frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1860.83,-258.3C1878.04,-253.49 1895.87,-247.66 1912,-240.75 1923.14,-235.98 1924.05,-231.12 1935.25,-226.5 1952.31,-219.46 1971.08,-213.66 1989.36,-208.94"/>
+<text xml:space="preserve" text-anchor="middle" x="1941.62" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx] -->
+<g id="edge11" class="edge">
+<title>[frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1806.86,-258.37C1826.18,-245.44 1852.52,-226.91 1874,-208.5 1891,-193.93 1889.68,-183.38 1909.25,-172.5 1960.61,-143.93 2023.24,-127.5 2078.1,-118.05"/>
+<text xml:space="preserve" text-anchor="middle" x="1915.62" y="-186.22" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BookingInfo.jsx] -->
+<g id="edge42" class="edge">
+<title>[frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BookingInfo.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1762.39,-258.29C1747.8,-243.83 1727.17,-223.39 1712.59,-208.93"/>
+<text xml:space="preserve" text-anchor="middle" x="1748.96" y="-229.35" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx] -->
+<g id="edge46" class="edge">
+<title>[frontend/user&#45;app/src/components/Header.jsx]&#45;&#45;[frontend/user&#45;app/src/components/LoginForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1625.31,-265.08C1562.65,-259.57 1489.75,-251.67 1424.25,-240.75 1375.33,-232.6 1320.8,-219.55 1279.81,-208.94"/>
+<text xml:space="preserve" text-anchor="middle" x="1430.62" y="-229.35" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx] -->
+<g id="node14" class="node">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="352.12,-467.25 57.88,-467.25 57.88,-431.25 352.12,-431.25 352.12,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="205" y="-444.57" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/pages/Dashboard.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[backend/index.js] -->
+<g id="edge48" class="edge">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[backend/index.js]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M352.38,-432.09C355.28,-431.8 358.15,-431.52 361,-431.25 635.84,-404.8 964.05,-379.26 1101,-368.87"/>
+<text xml:space="preserve" text-anchor="middle" x="720.55" y="-401.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/SignupForm.jsx] -->
+<g id="edge15" class="edge">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/components/SignupForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M213.5,-430.79C220.53,-416.33 230.48,-395.89 237.52,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="234.33" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx] -->
+<g id="edge13" class="edge">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Signup.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M123.46,-430.85C96.79,-420.87 70.01,-405.28 54.25,-381 29,-342.08 84.76,-312.53 132.95,-295.22"/>
+<text xml:space="preserve" text-anchor="middle" x="60.62" y="-358.73" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx] -->
+<g id="edge16" class="edge">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Login.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M57.38,-431.29C24.92,-418.98 0,-398.34 0,-364 0,-364 0,-364 0,-189.5 0,-157.45 71.53,-135.94 140.12,-122.68"/>
+<text xml:space="preserve" text-anchor="middle" x="6.38" y="-272.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="edge47" class="edge">
+<title>[frontend/user&#45;app/src/pages/Dashboard.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M352.42,-433.36C418.57,-417.67 482,-385.72 482,-320.88 482,-320.88 482,-320.88 482,-189.5 482,-151.98 511.74,-130.82 548.56,-119"/>
+<text xml:space="preserve" text-anchor="middle" x="488.38" y="-272.48" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js] -->
+<g id="node15" class="node">
+<title>[frontend/user&#45;app/src/index.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="2024.25,-467.25 1811.75,-467.25 1811.75,-431.25 2024.25,-431.25 2024.25,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1918" y="-444.57" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/index.js]</text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx] -->
+<g id="edge23" class="edge">
+<title>[frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/Footer.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1917.77,-430.84C1918.16,-409.51 1921.06,-372.76 1935,-345 1964.64,-285.94 2024.9,-234.61 2058.67,-208.95"/>
+<text xml:space="preserve" text-anchor="middle" x="1959.62" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx] -->
+<g id="edge14" class="edge">
+<title>[frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/pages/Home.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2024.62,-446.1C2141.31,-440.79 2312,-422.93 2312,-364 2312,-364 2312,-364 2312,-189.5 2312,-158.22 2283.07,-136.29 2256.18,-122.66"/>
+<text xml:space="preserve" text-anchor="middle" x="2318.38" y="-272.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/ServiceCard.jsx] -->
+<g id="edge22" class="edge">
+<title>[frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/ServiceCard.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1958.61,-430.79C1992.25,-416.33 2039.82,-395.89 2073.44,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="2034.11" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/Header.jsx] -->
+<g id="edge36" class="edge">
+<title>[frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/components/Header.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1904.01,-430.96C1877.56,-398.28 1820.51,-327.8 1794.03,-295.08"/>
+<text xml:space="preserve" text-anchor="middle" x="1869.09" y="-358.73" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/App.js] -->
+<g id="node21" class="node">
+<title>[frontend/user&#45;app/src/App.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1823.75,-381 1620.25,-381 1620.25,-345 1823.75,-345 1823.75,-381"/>
+<text xml:space="preserve" text-anchor="middle" x="1722" y="-358.32" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/App.js]</text>
+</g>
+<!-- [frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/App.js] -->
+<g id="edge29" class="edge">
+<title>[frontend/user&#45;app/src/index.js]&#45;&#45;[frontend/user&#45;app/src/App.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1877.39,-430.79C1843.75,-416.33 1796.18,-395.89 1762.56,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1838.11" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [backend/lib/supabase.js] -->
+<g id="node17" class="node">
+<title>[backend/lib/supabase.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1252.38,-467.25 1079.62,-467.25 1079.62,-431.25 1252.38,-431.25 1252.38,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1166" y="-444.57" font-family="Tahoma" font-size="14.00">[backend/lib/supabase.js]</text>
+</g>
+<!-- [backend/lib/supabase.js]&#45;&#45;[backend/index.js] -->
+<g id="edge18" class="edge">
+<title>[backend/lib/supabase.js]&#45;&#45;[backend/index.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1166,-430.79C1166,-416.33 1166,-395.89 1166,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1172.38" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- [backend/lib/supabase.js]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge30" class="edge">
+<title>[backend/lib/supabase.js]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1252.72,-440.2C1339.12,-429.7 1459,-407.34 1459,-364 1459,-364 1459,-364 1459,-232.62 1459,-142.71 1429.7,-115.39 1364,-54 1357.26,-47.71 1349.33,-41.65 1341.79,-36.39"/>
+<text xml:space="preserve" text-anchor="middle" x="1465.38" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [backend/lib/supabase.js]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx] -->
+<g id="edge24" class="edge">
+<title>[backend/lib/supabase.js]&#45;&#45;[frontend/user&#45;app/src/components/BookingForm.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1079.34,-444.09C931.21,-434.87 639.8,-406.78 583.25,-327 544.06,-271.71 637.59,-230.63 706.53,-208.93"/>
+<text xml:space="preserve" text-anchor="middle" x="589.62" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [test&#45;api.http] -->
+<g id="node18" class="node">
+<title>[test&#45;api.http]</title>
+<polygon fill="#00b2ee" stroke="white" points="1397.38,-381 1296.62,-381 1296.62,-345 1397.38,-345 1397.38,-381"/>
+<text xml:space="preserve" text-anchor="middle" x="1347" y="-358.32" font-family="Tahoma" font-size="14.00">[test&#45;api.http]</text>
+</g>
+<!-- [test&#45;api.http]&#45;&#45;[backend/routes/auth.js] -->
+<g id="edge25" class="edge">
+<title>[test&#45;api.http]&#45;&#45;[backend/routes/auth.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1347,-344.54C1347,-330.08 1347,-309.64 1347,-295.18"/>
+<text xml:space="preserve" text-anchor="middle" x="1353.38" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/index.css] -->
+<g id="node20" class="node">
+<title>[frontend/user&#45;app/src/index.css]</title>
+<polygon fill="#00b2ee" stroke="white" points="1793.75,-467.25 1572.25,-467.25 1572.25,-431.25 1793.75,-431.25 1793.75,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1683" y="-444.57" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/index.css]</text>
+</g>
+<!-- [frontend/user&#45;app/src/index.css]&#45;&#45;[frontend/user&#45;app/src/App.js] -->
+<g id="edge26" class="edge">
+<title>[frontend/user&#45;app/src/index.css]&#45;&#45;[frontend/user&#45;app/src/App.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1691.08,-430.79C1697.77,-416.33 1707.24,-395.89 1713.93,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1711.21" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/AdminAddBarberForm.jsx] -->
+<g id="node23" class="node">
+<title>[frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]</title>
+<polygon fill="#00b2ee" stroke="white" points="771.75,-467.25 370.25,-467.25 370.25,-431.25 771.75,-431.25 771.75,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="571" y="-444.57" font-family="Tahoma" font-size="14.00">[frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]</text>
+</g>
+<!-- [frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[backend/index.js] -->
+<g id="edge43" class="edge">
+<title>[frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[backend/index.js]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M694.28,-430.79C818.02,-413.27 1003.82,-386.96 1101.2,-373.18"/>
+<text xml:space="preserve" text-anchor="middle" x="910.5" y="-401.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx] -->
+<g id="edge50" class="edge">
+<title>[frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[frontend/user&#45;app/src/pages/Booking.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M564.88,-430.97C544.8,-372.85 484.23,-185.58 521,-140.25 526.84,-133.04 539.87,-127.27 556.18,-122.65"/>
+<text xml:space="preserve" text-anchor="middle" x="531.09" y="-272.48" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx] -->
+<g id="edge31" class="edge">
+<title>[frontend/user&#45;app/src/components/AdminAddBarberForm.jsx]&#45;&#45;[frontend/user&#45;app/src/components/BarberCard.jsx]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M550.2,-430.93C512.33,-397.31 436,-319.08 436,-234.62 436,-234.62 436,-234.62 436,-103.25 436,-73.54 462.52,-50.73 485.94,-36.39"/>
+<text xml:space="preserve" text-anchor="middle" x="442.51" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [backend/email.js] -->
+<g id="node24" class="node">
+<title>[backend/email.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1461,-467.25 1331,-467.25 1331,-431.25 1461,-431.25 1461,-467.25"/>
+<text xml:space="preserve" text-anchor="middle" x="1396" y="-444.57" font-family="Tahoma" font-size="14.00">[backend/email.js]</text>
+</g>
+<!-- [backend/email.js]&#45;&#45;[backend/index.js] -->
+<g id="edge40" class="edge">
+<title>[backend/email.js]&#45;&#45;[backend/index.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1348.34,-430.79C1308.87,-416.33 1253.05,-395.89 1213.6,-381.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1301.15" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [backend/email.js]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge32" class="edge">
+<title>[backend/email.js]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1447.61,-430.82C1456.8,-426.12 1465.74,-420.32 1473,-413.25 1490.45,-396.26 1497,-388.35 1497,-364 1497,-364 1497,-364 1497,-232.62 1497,-152.33 1524.73,-112.74 1470,-54 1460.73,-44.05 1435.69,-36.59 1408.32,-31.17"/>
+<text xml:space="preserve" text-anchor="middle" x="1503.38" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [backend/lib/extractBookingFields.js] -->
+<g id="node25" class="node">
+<title>[backend/lib/extractBookingFields.js]</title>
+<polygon fill="#00b2ee" stroke="white" points="1084.5,-122.25 843.5,-122.25 843.5,-86.25 1084.5,-86.25 1084.5,-122.25"/>
+<text xml:space="preserve" text-anchor="middle" x="964" y="-99.58" font-family="Tahoma" font-size="14.00">[backend/lib/extractBookingFields.js]</text>
+</g>
+<!-- [backend/lib/extractBookingFields.js]&#45;&#45;[backend/routes/booking.js] -->
+<g id="edge44" class="edge">
+<title>[backend/lib/extractBookingFields.js]&#45;&#45;[backend/routes/booking.js]</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1003.79,-85.79C1029.23,-75.23 1063.18,-62.26 1094.25,-54 1134.85,-43.21 1180.62,-35.27 1219.83,-29.71"/>
+<text xml:space="preserve" text-anchor="middle" x="1100.62" y="-56.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+</g>
+</svg>

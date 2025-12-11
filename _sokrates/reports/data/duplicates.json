@@ -1,152 +1,7 @@
 {
   "title" : "Duplication",
-  "timestamp" : "2025-12-10 19:40:07",
+  "timestamp" : "2025-12-10 20:05:59",
   "duplicates" : [ {
-    "blockSize" : 10,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 11,
-      "endLine" : 20,
-      "cleanedStartLine" : 11,
-      "cleanedEndLine" : 20
-    }, {
-      "file" : {
-        "relativePath" : "backend/lib/extractBookingFields.js",
-        "extension" : "js",
-        "linesOfCode" : 22,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 21,
-      "startLine" : 13,
-      "endLine" : 22,
-      "cleanedStartLine" : 12,
-      "cleanedEndLine" : 21
-    } ]
-  }, {
-    "blockSize" : 8,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 2,
-      "endLine" : 9,
-      "cleanedStartLine" : 2,
-      "cleanedEndLine" : 9
-    }, {
-      "file" : {
-        "relativePath" : "backend/lib/extractBookingFields.js",
-        "extension" : "js",
-        "linesOfCode" : 22,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 21,
-      "startLine" : 3,
-      "endLine" : 10,
-      "cleanedStartLine" : 3,
-      "cleanedEndLine" : 10
-    } ]
-  }, {
-    "blockSize" : 8,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 2,
-      "endLine" : 9,
-      "cleanedStartLine" : 2,
-      "cleanedEndLine" : 9
-    }, {
-      "file" : {
-        "relativePath" : "backend/lib/extractBookingFields.js",
-        "extension" : "js",
-        "linesOfCode" : 22,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 21,
-      "startLine" : 14,
-      "endLine" : 21,
-      "cleanedStartLine" : 13,
-      "cleanedEndLine" : 20
-    } ]
-  }, {
-    "blockSize" : 8,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 2,
-      "endLine" : 9,
-      "cleanedStartLine" : 2,
-      "cleanedEndLine" : 9
-    }, {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 12,
-      "endLine" : 19,
-      "cleanedStartLine" : 12,
-      "cleanedEndLine" : 19
-    } ]
-  }, {
-    "blockSize" : 8,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 20,
-      "startLine" : 12,
-      "endLine" : 19,
-      "cleanedStartLine" : 12,
-      "cleanedEndLine" : 19
-    }, {
-      "file" : {
-        "relativePath" : "backend/lib/extractBookingFields.js",
-        "extension" : "js",
-        "linesOfCode" : 22,
-        "components" : [ "primary::backend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 21,
-      "startLine" : 3,
-      "endLine" : 10,
-      "cleanedStartLine" : 3,
-      "cleanedEndLine" : 10
-    } ]
-  }, {
     "blockSize" : 8,
     "duplicatedFileBlocks" : [ {
       "file" : {
@@ -174,35 +29,6 @@
       "endLine" : 21,
       "cleanedStartLine" : 13,
       "cleanedEndLine" : 20
-    } ]
-  }, {
-    "blockSize" : 7,
-    "duplicatedFileBlocks" : [ {
-      "file" : {
-        "relativePath" : "frontend/user-app/src/pages/Login.jsx",
-        "extension" : "jsx",
-        "linesOfCode" : 52,
-        "components" : [ "primary::frontend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 49,
-      "startLine" : 43,
-      "endLine" : 50,
-      "cleanedStartLine" : 36,
-      "cleanedEndLine" : 42
-    }, {
-      "file" : {
-        "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
-        "extension" : "jsx",
-        "linesOfCode" : 47,
-        "components" : [ "primary::frontend" ],
-        "concerns" : [ "::Unclassified" ]
-      },
-      "sourceFileCleanedLinesOfCode" : 44,
-      "startLine" : 35,
-      "endLine" : 42,
-      "cleanedStartLine" : 30,
-      "cleanedEndLine" : 36
     } ]
   }, {
     "blockSize" : 7,
@@ -223,13 +49,13 @@
       "file" : {
         "relativePath" : "backend/routes/booking.js",
         "extension" : "js",
-        "linesOfCode" : 130,
+        "linesOfCode" : 134,
         "components" : [ "primary::backend" ],
         "concerns" : [ "::Unclassified" ]
       },
-      "sourceFileCleanedLinesOfCode" : 115,
-      "startLine" : 36,
-      "endLine" : 42,
+      "sourceFileCleanedLinesOfCode" : 120,
+      "startLine" : 35,
+      "endLine" : 41,
       "cleanedStartLine" : 21,
       "cleanedEndLine" : 27
     } ]
@@ -261,6 +87,35 @@
       "endLine" : 132,
       "cleanedStartLine" : 112,
       "cleanedEndLine" : 117
+    } ]
+  }, {
+    "blockSize" : 6,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+        "extension" : "jsx",
+        "linesOfCode" : 48,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 45,
+      "startLine" : 40,
+      "endLine" : 46,
+      "cleanedStartLine" : 33,
+      "cleanedEndLine" : 38
+    }, {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
+        "extension" : "jsx",
+        "linesOfCode" : 41,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 38,
+      "startLine" : 31,
+      "endLine" : 37,
+      "cleanedStartLine" : 26,
+      "cleanedEndLine" : 31
     } ]
   } ],
   "overallDuplication" : null

@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import LoginForm from "../components/LoginForm";
-import Swal from "sweetalert2";
 import "../styles/Auth.css";
+import { showSuccessAlert, showErrorAlert } from "../utils/alerts";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -25,22 +25,18 @@ export default function Login() {
       });
       if (error) throw error;
 
-      await Swal.fire({
-        icon: "success",
+      await showSuccessAlert({
         title: "Connexion réussie ✅",
         text: `Bienvenue ${email} !`,
-        confirmButtonColor: "#111",
       });
 
       navigate("/dashboard");
     } catch (err) {
       console.error("Erreur de login :", err);
 
-      Swal.fire({
-        icon: "error",
+      showErrorAlert({
         title: "Échec de connexion ❌",
         text: err.message || "Email ou mot de passe invalide.",
-        confirmButtonColor: "#111",
       });
     }
   };

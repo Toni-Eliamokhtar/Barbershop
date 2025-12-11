@@ -1,27 +1,25 @@
-backend/lib/buildBookingPayload.js [2:9]:
+backend/email.js [4:10]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    barberId,
-    serviceId,
-    date,
-    time,
-    userEmail,
-    userName,
-    barberName,
-    serviceName,
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/lib/extractBookingFields.js [3:10]:
+backend/routes/booking.js [35:41]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
-        barberName,
-        serviceName,
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
