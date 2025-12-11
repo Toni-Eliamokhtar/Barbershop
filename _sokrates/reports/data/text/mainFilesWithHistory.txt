@@ -1,9 +1,11 @@
 path	# lines of code	# active days	days since first update	days since last update	# commits	# contributors	first updated	last updated	first contributor	last contributor
 backend/email.js	19	1	44	44	2	2	2025-10-28	2025-10-28	147719914+badr1210@users.noreply.github.com	2234682@cmontmorency.qc.ca
 backend/index.js	60	6	79	44	12	5	2025-09-23	2025-10-28	2234682@cmontmorency.qc.ca	157541451+calinsanduta@users.noreply.github.com
+backend/lib/buildBookingPayload.js	21	1	1	1	1	1	2025-12-10	2025-12-10	toni11elia11@gmail.com	toni11elia11@gmail.com
+backend/lib/extractBookingFields.js	22	1	1	1	1	1	2025-12-10	2025-12-10	toni11elia11@gmail.com	toni11elia11@gmail.com
 backend/lib/supabase.js	32	2	77	44	3	2	2025-09-25	2025-10-28	2234682@cmontmorency.qc.ca	2234682@cmontmorency.qc.ca
 backend/routes/auth.js	67	4	77	43	6	4	2025-09-25	2025-10-29	2258302@cmontmorency.qc.ca	2234682@cmontmorency.qc.ca
-backend/routes/booking.js	263	5	49	1	13	4	2025-10-23	2025-12-10	2234682@cmontmorency.qc.ca	toni11elia11@gmail.com
+backend/routes/booking.js	130	5	49	1	15	4	2025-10-23	2025-12-10	2234682@cmontmorency.qc.ca	toni11elia11@gmail.com
 backend/user.js	233	1	79	79	1	1	2025-09-23	2025-09-23	2234682@cmontmorency.qc.ca	2234682@cmontmorency.qc.ca
 frontend/user-app/public/index.html	20	1	79	79	1	1	2025-09-23	2025-09-23	2234682@cmontmorency.qc.ca	2234682@cmontmorency.qc.ca
 frontend/user-app/src/App.css	33	1	79	79	1	1	2025-09-23	2025-09-23	2234682@cmontmorency.qc.ca	2234682@cmontmorency.qc.ca

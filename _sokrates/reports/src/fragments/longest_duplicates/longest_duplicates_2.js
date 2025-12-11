@@ -1,29 +1,27 @@
-backend/routes/booking.js [164:172]:
+backend/lib/buildBookingPayload.js [2:9]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    });
+    barberId,
+    serviceId,
+    date,
+    time,
+    userEmail,
+    userName,
+    barberName,
+    serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/routes/booking.js [264:272]:
+backend/lib/extractBookingFields.js [3:10]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    });
+        barberId,
+        serviceId,
+        date,
+        time,
+        userEmail,
+        userName,
+        barberName,
+        serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

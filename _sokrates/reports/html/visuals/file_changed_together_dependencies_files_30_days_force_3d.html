@@ -12,6 +12,21 @@
 <script>
     const gData = {
   "nodes" : [ {
+    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[backend/lib/buildBookingPayload.js]",
+    "size" : 1
+  }, {
     "id" : "[frontend/user-app/src/components/SignupForm.jsx]",
     "size" : 4
   }, {
@@ -21,13 +36,10 @@
     "id" : "[frontend/user-app/src/App.js]",
     "size" : 2
   }, {
-    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
-    "size" : 3
-  }, {
-    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "id" : "[backend/lib/extractBookingFields.js]",
     "size" : 1
   }, {
-    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "id" : "[backend/routes/booking.js]",
     "size" : 2
   }, {
     "id" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
@@ -41,9 +53,6 @@
   }, {
     "id" : "[frontend/user-app/src/constants/services.js]",
     "size" : 2
-  }, {
-    "id" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
-    "size" : 2
   } ],
   "links" : [ {
     "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
@@ -54,12 +63,44 @@
     "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
     "count" : 2
   }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "count" : 1
+  }, {
     "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
     "target" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
     "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/constants/services.js]",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "[frontend/user-app/src/constants/services.js]",
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/pages/Signup.jsx]",
@@ -70,20 +111,20 @@
     "target" : "[frontend/user-app/src/pages/Signup.jsx]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
-    "target" : "[frontend/user-app/src/App.js]",
-    "count" : 1
-  }, {
-    "source" : "[frontend/user-app/src/App.js]",
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
     "target" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
-    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
-    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/routes/booking.js]",
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/pages/Booking.jsx]",
@@ -92,14 +133,6 @@
   }, {
     "source" : "[frontend/user-app/src/constants/services.js]",
     "target" : "[frontend/user-app/src/pages/Booking.jsx]",
-    "count" : 1
-  }, {
-    "source" : "[frontend/user-app/src/pages/Home.jsx]",
-    "target" : "[frontend/user-app/src/App.js]",
-    "count" : 1
-  }, {
-    "source" : "[frontend/user-app/src/App.js]",
-    "target" : "[frontend/user-app/src/pages/Home.jsx]",
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
@@ -110,12 +143,12 @@
     "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/constants/services.js]",
-    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/routes/booking.js]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
-    "target" : "[frontend/user-app/src/constants/services.js]",
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
@@ -127,19 +160,11 @@
     "count" : 1
   }, {
     "source" : "[frontend/user-app/src/pages/Home.jsx]",
-    "target" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "target" : "[frontend/user-app/src/App.js]",
     "count" : 1
   }, {
-    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "source" : "[frontend/user-app/src/App.js]",
     "target" : "[frontend/user-app/src/pages/Home.jsx]",
-    "count" : 1
-  }, {
-    "source" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
-    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
-    "count" : 1
-  }, {
-    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
-    "target" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
     "count" : 1
   } ]
 }

@@ -11,6 +11,18 @@
   "components" : [ "primary::backend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
+  "relativePath" : "backend/lib/buildBookingPayload.js",
+  "extension" : "js",
+  "linesOfCode" : 21,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/lib/extractBookingFields.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
   "relativePath" : "backend/lib/supabase.js",
   "extension" : "js",
   "linesOfCode" : 32,
@@ -25,7 +37,7 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 263,
+  "linesOfCode" : 130,
   "components" : [ "primary::backend" ],
   "concerns" : [ "::Unclassified" ]
 }, {

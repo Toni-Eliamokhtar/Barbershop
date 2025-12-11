@@ -3,49 +3,36 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import Stripe from "stripe";
 import { createBooking, supabase } from "../lib/supabase.js";
+import { extractBookingFields } from "../lib/extractBookingFields.js";
+import { buildBookingPayload } from "../lib/buildBookingPayload.js";
 
 dotenv.config();
 const router = express.Router();
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
-// 🔁 Helper pour créer une réservation dans Supabase (évite la duplication)
-async function persistBookingInSupabase({
-  barberId,
-  serviceId,
-  date,
-  time,
-  userEmail,
-  userName,
-  barberName,
-  serviceName,
-}) {
+// 🔁 Persister une réservation
+async function persistBookingInSupabase(payload) {
   try {
     const { data, error } = await createBooking({
-      barber_id: barberId,
-      service_id: serviceId,
-      date,
-      time,
-      user_email: userEmail,
-      user_name: userName,
-      barber_name: barberName,
-      service_name: serviceName,
+      barber_id: payload.barberId,
+      service_id: payload.serviceId,
+      date: payload.date,
+      time: payload.time,
+      user_email: payload.userEmail,
+      user_name: payload.userName,
+      barber_name: payload.barberName,
+      service_name: payload.serviceName,
     });
 
-    if (error) {
-      console.warn("Supabase createBooking warning:", error);
-    }
-
+    if (error) console.warn("Supabase createBooking warning:", error);
     return data ?? null;
   } catch (err) {
-    console.warn(
-      "Could not create booking in supabase:",
-      err?.message || err
-    );
+    console.warn("Could not create booking in supabase:", err?.message || err);
     return null;
   }
 }
 
-// ✅ Configuration du transporteur Gmail
+// ✉️ Config email
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -54,158 +41,56 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// ✅ Route pour créer une réservation et envoyer l'email de confirmation
+// -------------------------------
+// 🔥 ROUTE: CREATE
+// -------------------------------
 router.post("/create", async (req, res) => {
   try {
-    const {
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    } = req.body;
+    const fields = extractBookingFields(req.body);
 
-    // 🧭 Validation basique
-    if (!barberId || !serviceId || !date || !time || !userEmail || !userName) {
-      return res.status(400).json({
-        error: "Tous les champs sont requis",
-      });
+    if (!fields.barberId || !fields.serviceId || !fields.date || !fields.time || !fields.userEmail || !fields.userName) {
+      return res.status(400).json({ error: "Tous les champs sont requis" });
     }
 
-    // 📨 Email HTML
-    const mailOptions = {
+    const payload = buildBookingPayload(fields);
+
+    const created = await persistBookingInSupabase(payload);
+
+    await transporter.sendMail({
       from: `"Barbershop 514" <${process.env.EMAIL_USER}>`,
-      to: userEmail,
-      subject: "✅ Confirmation de votre rendez-vous - Barbershop 514",
+      to: fields.userEmail,
+      subject: "Confirmation de votre rendez-vous",
       html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-            .email-container {
-              font-family: Arial, sans-serif;
-              max-width: 600px;
-              margin: 0 auto;
-              padding: 20px;
-              background-color: #f9f9f9;
-            }
-            .email-header {
-              background-color: #2c3e50;
-              color: white;
-              padding: 20px;
-              text-align: center;
-              border-radius: 10px 10px 0 0;
-            }
-            .email-body {
-              background-color: white;
-              padding: 30px;
-              border-radius: 0 0 10px 10px;
-              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            }
-            .booking-details {
-              background-color: #ecf0f1;
-              padding: 20px;
-              border-radius: 8px;
-              margin: 20px 0;
-            }
-            .detail-item {
-              margin: 10px 0;
-              font-size: 16px;
-            }
-            .highlight {
-              color: #e74c3c;
-              font-weight: bold;
-            }
-          </style>
-        </head>
-        <body>
-          <div class="email-container">
-            <div class="email-header">
-              <h1>✂️ Barbershop</h1>
-              <h2>Réservation Confirmée</h2>
-            </div>
-            <div class="email-body">
-              <p>Bonjour <strong>${userName}</strong>,</p>
-              <p>Votre rendez-vous a été <span class="highlight">confirmé avec succès</span> !</p>
-              
-              <div class="booking-details">
-                <h3>📋 Détails de votre réservation :</h3>
-                <div class="detail-item">📅 <strong>Date :</strong> ${new Date(
-        date
-      ).toLocaleDateString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })}</div>
-                <div class="detail-item">🕐 <strong>Heure :</strong> ${time}</div>
-                <div class="detail-item">✂️ <strong>Service :</strong> ${serviceName}</div>
-                <div class="detail-item">👨‍💼 <strong>Barbier :</strong> ${barberName}</div>
-              </div>
-              
-              <p><strong>📧 Email de contact :</strong> ${userEmail}</p>
-              <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
-              <p><em>Merci de votre confiance ! Nous avons hâte de vous accueillir.</em></p>
-              <p style="text-align: center; margin-top: 30px;">
-                <strong>L'équipe Barbershop 💈</strong>
-              </p>
-            </div>
-          </div>
-        </body>
-        </html>
+        <h2>Votre rendez-vous est confirmé</h2>
+        <p><strong>Date:</strong> ${fields.date}</p>
+        <p><strong>Heure:</strong> ${fields.time}</p>
+        <p><strong>Service:</strong> ${fields.serviceName}</p>
+        <p><strong>Barbier:</strong> ${fields.barberName}</p>
       `,
-    };
-
-    // ✅ Persister la réservation dans Supabase (DRY)
-    const created = await persistBookingInSupabase({
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
     });
-
-    // ✅ Envoi de l'email
-    await transporter.sendMail(mailOptions);
-    console.log(`📩 Email de confirmation envoyé à ${userEmail}`);
 
     res.json({
       success: true,
-      message: "✅ Réservation confirmée et email envoyé avec succès",
-      booking: created || {
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
-      },
+      booking: created || payload,
     });
   } catch (error) {
-    console.error("❌ Erreur lors de la réservation:", error);
-    res.status(500).json({
-      error: "Erreur lors de la confirmation de réservation",
-      details: error.message,
-    });
+    console.error("Erreur lors de la réservation:", error);
+    res.status(500).json({ error: "Erreur interne" });
   }
 });
 
-// GET /booking/bookings?date=YYYY-MM-DD&barber_id=123
+// -------------------------------
+// 🔥 ROUTE: GET BOOKINGS
+// -------------------------------
 router.get("/bookings", async (req, res) => {
   const date = req.query.date;
   const barberId = req.query.barber_id || req.query.barberId;
+
   if (!date || !barberId) {
     return res.status(400).json({ error: "Missing date or barber_id" });
   }
 
   try {
-    // On lit la table des disponibilités pour ce barbier+date et on renvoie les heures réservées
     const { data, error } = await supabase
       .from("disponibilites_barber")
       .select("heure_dispo")
@@ -216,35 +101,26 @@ router.get("/bookings", async (req, res) => {
     if (error) throw error;
 
     const times = (data || [])
-      .map((d) =>
-        d?.heure_dispo ? d.heure_dispo.toString().slice(0, 5) : null
-      )
+      .map((d) => d?.heure_dispo?.toString().slice(0, 5))
       .filter(Boolean);
 
     res.json({ bookings: times });
   } catch (err) {
-    console.error("GET /booking/bookings error", err);
+    console.error("GET /bookings error", err);
     res.status(500).json({ error: "Server error" });
   }
 });
 
-// Create a Stripe Checkout session and (optionally) create a pending booking
+// -------------------------------
+// 🔥 ROUTE: STRIPE CHECKOUT
+// -------------------------------
 router.post("/create-checkout-session", async (req, res) => {
   try {
-    const {
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-      price,
-    } = req.body;
+    const fields = extractBookingFields(req.body);
+    const { price } = req.body;
 
-    // Server-side price mapping to avoid trusting client-provided prices.
-    // Map service IDs to prices (CAD). Keep in sync with frontend `services`.
+    const payload = buildBookingPayload(fields);
+
     const servicePriceMap = {
       "1": 25,
       "2": 35,
@@ -253,23 +129,12 @@ router.post("/create-checkout-session", async (req, res) => {
       "5": 18,
     };
 
-    // Prefer server-side mapping; fall back to client-provided price when missing.
     const finalPrice =
-      (serviceId != null && servicePriceMap[String(serviceId)]) ||
+      servicePriceMap[String(fields.serviceId)] ||
       (price != null && Number(price)) ||
       10;
 
-    // ✅ Création de la réservation en base (DRY)
-    const bookingRecord = await persistBookingInSupabase({
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
-    });
+    const bookingRecord = await persistBookingInSupabase(payload);
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -278,15 +143,13 @@ router.post("/create-checkout-session", async (req, res) => {
         {
           price_data: {
             currency: "cad",
-            product_data: {
-              name: `Réservation - ${serviceName || "Service"}`,
-            },
+            product_data: { name: `Réservation - ${fields.serviceName}` },
             unit_amount: Math.round(Number(finalPrice) * 100),
           },
           quantity: 1,
         },
       ],
-      customer_email: userEmail,
+      customer_email: fields.userEmail,
       success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.FRONTEND_URL}/cancel`,
       metadata: { bookingId: bookingRecord?.id ?? "" },

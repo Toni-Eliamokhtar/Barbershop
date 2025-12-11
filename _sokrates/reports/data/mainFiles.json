@@ -13,6 +13,20 @@
   "unitsMcCabeIndexSum" : 0,
   "linesOfCodeInUnits" : 0
 }, {
+  "relativePath" : "backend/lib/buildBookingPayload.js",
+  "extension" : "js",
+  "linesOfCode" : 21,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 1,
+  "linesOfCodeInUnits" : 21
+}, {
+  "relativePath" : "backend/lib/extractBookingFields.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 1,
+  "linesOfCodeInUnits" : 22
+}, {
   "relativePath" : "backend/lib/supabase.js",
   "extension" : "js",
   "linesOfCode" : 32,
@@ -29,10 +43,10 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 263,
+  "linesOfCode" : 130,
   "unitsCount" : 1,
   "unitsMcCabeIndexSum" : 4,
-  "linesOfCodeInUnits" : 33
+  "linesOfCodeInUnits" : 19
 }, {
   "relativePath" : "backend/user.js",
   "extension" : "js",

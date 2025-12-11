@@ -33893,7 +33893,7 @@ node_modules/sweetalert2/themes/minimal.css
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Too long lines (1000+ characters)
-1661 files:
+1664 files:
 
 backend/node_modules/@supabase/auth-js/dist/main/lib/error-codes.d.ts
 backend/node_modules/@supabase/auth-js/dist/module/lib/error-codes.d.ts
@@ -33964,6 +33964,7 @@ frontend/user-app/node_modules/.cache/babel-loader/59158aa7f86fde782812d78b0eb64
 frontend/user-app/node_modules/.cache/babel-loader/59d0af003460316c4f94194b36990f0478676d6078c325096b43c0ce6c736849.json
 frontend/user-app/node_modules/.cache/babel-loader/5ac9c6ea6aaf936c675033269383eb4cb08ccd7dceeaaa1e433cc98c54a077df.json
 frontend/user-app/node_modules/.cache/babel-loader/5b0cdea54b249d539dbbc002af4488731384aae8ee050831a5ca1769871c1620.json
+frontend/user-app/node_modules/.cache/babel-loader/5cbd8cedda5527525d01fc0a83c966742c716a32c0e7002b52c87f3084251165.json
 frontend/user-app/node_modules/.cache/babel-loader/5d34e4451d93b33404711b47673a2179f63c765aff28b930de0cdd683e7714f5.json
 frontend/user-app/node_modules/.cache/babel-loader/5d52b586fde0b0e753364b5b7b725caef62de7e4f9c37191e49c6def3ebd8590.json
 frontend/user-app/node_modules/.cache/babel-loader/5dc9cac7d2d6210b59541c2b960ebec1bf7dca7f84cfe5e622646e59ec467e90.json
@@ -34026,6 +34027,7 @@ frontend/user-app/node_modules/.cache/babel-loader/b0d3b250b76502f933eec5e98704b
 frontend/user-app/node_modules/.cache/babel-loader/b183b05a6eb952e4529fa5ed6d4136d7f94add415def438984ba686b3e86a439.json
 frontend/user-app/node_modules/.cache/babel-loader/b1a6989a7cd579e69bfa81016694b5ac57d3523245e81571f37914759ee1050e.json
 frontend/user-app/node_modules/.cache/babel-loader/b1e9bcdc29b446136bd312f0fd587a136cd3a7e678309f8c2368440088fe3484.json
+frontend/user-app/node_modules/.cache/babel-loader/b3ffefe3cb6e6ec2e7c78e0d57cd015802a60685e438178ebb601d39b205bf40.json
 frontend/user-app/node_modules/.cache/babel-loader/b5654a4dd111bfb4d3a202976014a85de7c15afbfedde96a328f857b3d761105.json
 frontend/user-app/node_modules/.cache/babel-loader/b907b23e7b97cacb8729c5e022a58dc41cb9135dfcebf2c3f31429f65b6bd6cd.json
 frontend/user-app/node_modules/.cache/babel-loader/bccbe2f00e25a2f7fe238fa78c656ae69c7c820b96abe00ecc7fd7a253417507.json
@@ -34034,6 +34036,7 @@ frontend/user-app/node_modules/.cache/babel-loader/beaae9df5ea41ec807b7b2b4a19be
 frontend/user-app/node_modules/.cache/babel-loader/bfdf883a7ecbbfa9eb9a1015112cb9dd65191075cf040a92e3e0b5d0fd568ae5.json
 frontend/user-app/node_modules/.cache/babel-loader/c06a87b5e67b5a163301078c3ef35fc3f5ab9ee3ebf4909281f852a57d35ae76.json
 frontend/user-app/node_modules/.cache/babel-loader/c0feb31509a82d269145300e4e5c56800b44e7c0b5635696979fad22aa1897a7.json
+frontend/user-app/node_modules/.cache/babel-loader/c0ffa66a6576c6a5e1c5a01627dc274d1ca49624c0453af9796211e59dddb516.json
 frontend/user-app/node_modules/.cache/babel-loader/c1fa2637f7618cff5152b97eed711103192bb4e49639defa4962871af08fcf92.json
 frontend/user-app/node_modules/.cache/babel-loader/c324a49674b4ddfbf9fb60b1a97733b241e65bbd01bd249272529218b878f003.json
 frontend/user-app/node_modules/.cache/babel-loader/c3ca67e9275cbb65c8e7ae6a331ccfe505232e370b53452cd2dda9b327549141.json

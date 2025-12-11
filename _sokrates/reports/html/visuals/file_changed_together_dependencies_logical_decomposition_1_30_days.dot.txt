@@ -27,5 +27,6 @@ graph G {
 
 
     "frontend" -- "frontend" [label=" 5 ", penwidth="5", color="#a0a0a0A5"];
+    "backend" -- "backend" [label=" 2 ", penwidth="2", color="#a0a0a070"];
 
 }

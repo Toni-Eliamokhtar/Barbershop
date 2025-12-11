@@ -379,7 +379,7 @@
     "components" : [ {
       "name" : "1-30 days old",
       "sourceFileFilters" : [ ],
-      "files" : [ "frontend/user-app/src/components/AuthEmailField.jsx", "frontend/user-app/src/components/AuthPasswordField.jsx", "frontend/user-app/src/constants/services.js", "frontend/user-app/src/hooks/useSupabaseStatus.js" ]
+      "files" : [ "backend/lib/buildBookingPayload.js", "backend/lib/extractBookingFields.js", "frontend/user-app/src/components/AuthEmailField.jsx", "frontend/user-app/src/components/AuthPasswordField.jsx", "frontend/user-app/src/constants/services.js", "frontend/user-app/src/hooks/useSupabaseStatus.js" ]
     }, {
       "name" : "31-90 days old",
       "sourceFileFilters" : [ ],

@@ -379,7 +379,7 @@
     "components" : [ {
       "name" : "1-30 days old",
       "sourceFileFilters" : [ ],
-      "files" : [ "backend/routes/booking.js", "frontend/user-app/src/App.js", "frontend/user-app/src/components/AuthEmailField.jsx", "frontend/user-app/src/components/AuthPasswordField.jsx", "frontend/user-app/src/components/BarberCard.jsx", "frontend/user-app/src/components/LoginForm.jsx", "frontend/user-app/src/components/SignupForm.jsx", "frontend/user-app/src/constants/services.js", "frontend/user-app/src/hooks/useSupabaseStatus.js", "frontend/user-app/src/pages/Booking.jsx", "frontend/user-app/src/pages/Home.jsx", "frontend/user-app/src/pages/Signup.jsx" ]
+      "files" : [ "backend/lib/buildBookingPayload.js", "backend/lib/extractBookingFields.js", "backend/routes/booking.js", "frontend/user-app/src/App.js", "frontend/user-app/src/components/AuthEmailField.jsx", "frontend/user-app/src/components/AuthPasswordField.jsx", "frontend/user-app/src/components/BarberCard.jsx", "frontend/user-app/src/components/LoginForm.jsx", "frontend/user-app/src/components/SignupForm.jsx", "frontend/user-app/src/constants/services.js", "frontend/user-app/src/hooks/useSupabaseStatus.js", "frontend/user-app/src/pages/Booking.jsx", "frontend/user-app/src/pages/Home.jsx", "frontend/user-app/src/pages/Signup.jsx" ]
     }, {
       "name" : "31-90 days old",
       "sourceFileFilters" : [ ],

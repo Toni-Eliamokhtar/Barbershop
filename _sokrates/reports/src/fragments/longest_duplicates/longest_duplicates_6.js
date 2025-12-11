@@ -1,27 +1,27 @@
-backend/routes/booking.js [13:20]:
+backend/lib/extractBookingFields.js [3:10]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  barberId,
-  serviceId,
-  date,
-  time,
-  userEmail,
-  userName,
-  barberName,
-  serviceName,
+        barberId,
+        serviceId,
+        date,
+        time,
+        userEmail,
+        userName,
+        barberName,
+        serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/routes/booking.js [235:242]:
+backend/lib/extractBookingFields.js [14:21]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      barberId,
-      serviceId,
-      date,
-      time,
-      userEmail,
-      userName,
-      barberName,
-      serviceName,
+        barberId,
+        serviceId,
+        date,
+        time,
+        userEmail,
+        userName,
+        barberName,
+        serviceName,
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

@@ -1,30 +1,38 @@
 <html>
 <head>
-    <title>export async function markBookingPaid()</title>
+    <title>export function buildBookingPayload()</title>
     <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
     <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">export async function markBookingPaid()</h3>
-<p style="margin-top: 4px">in <i>backend/lib/supabase.js [26:38]</i></p>
+<h3 style="margin-bottom: 0">export function buildBookingPayload()</h3>
+<p style="margin-top: 4px">in <i>backend/lib/buildBookingPayload.js [1:21]</i></p>
 <ul>
-    <li><b>13</b> lines of code</li>
-    <li><b>2</b> McCabe index (conditional complexity)</li>
+    <li><b>21</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-export async function markBookingPaid(bookingId, paymentInfo = {}) {
-  try {
-    const { data, error } = await supabase
-      .from(&quot;bookings&quot;)
-      .update({ paid: true, payment_info: paymentInfo })
-      .eq(&quot;id&quot;, bookingId)
-      .select()
-      .single();
-    return { data, error };
-  } catch (err) {
-    return { data: null, error: err };
-  }
+export function buildBookingPayload({
+    barberId,
+    serviceId,
+    date,
+    time,
+    userEmail,
+    userName,
+    barberName,
+    serviceName,
+}) {
+    return {
+        barberId,
+        serviceId,
+        date,
+        time,
+        userEmail,
+        userName,
+        barberName,
+        serviceName,
+    };
 }
 
 </code>

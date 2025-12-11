@@ -9,16 +9,16 @@
     "linesOfCodePerExtension" : [ ]
   }, {
     "name" : "Unclassified",
-    "filesCount" : 37,
-    "linesOfCode" : 1961,
+    "filesCount" : 39,
+    "linesOfCode" : 1871,
     "numberOfRegexLineMatches" : 0,
     "fileCountPerExtension" : [ {
-      "name" : "  *.js",
-      "value" : 13,
-      "description" : [ ]
-    }, {
       "name" : "  *.jsx",
       "value" : 16,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 15,
       "description" : [ ]
     }, {
       "name" : "  *.css",
@@ -34,12 +34,12 @@
       "description" : [ ]
     } ],
     "linesOfCodePerExtension" : [ {
-      "name" : "  *.js",
-      "value" : 762,
-      "description" : [ ]
-    }, {
       "name" : "  *.jsx",
       "value" : 738,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 672,
       "description" : [ ]
     }, {
       "name" : "  *.css",
@@ -56,22 +56,22 @@
     } ]
   } ],
   "concernsGroup" : null,
-  "linesOfCodePerConcern" : [ {
-    "name" : "TODOs",
-    "value" : 0,
-    "description" : [ ]
-  }, {
-    "name" : "Unclassified",
-    "value" : 1961,
-    "description" : [ ]
-  } ],
   "fileCountPerConcern" : [ {
     "name" : "TODOs",
     "value" : 0,
     "description" : [ ]
   }, {
     "name" : "Unclassified",
-    "value" : 37,
+    "value" : 39,
+    "description" : [ ]
+  } ],
+  "linesOfCodePerConcern" : [ {
+    "name" : "TODOs",
+    "value" : 0,
+    "description" : [ ]
+  }, {
+    "name" : "Unclassified",
+    "value" : 1871,
     "description" : [ ]
   } ]
 } ]

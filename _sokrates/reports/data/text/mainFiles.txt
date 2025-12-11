@@ -1,9 +1,11 @@
 path	# lines of code
 backend/email.js	19
 backend/index.js	60
+backend/lib/buildBookingPayload.js	21
+backend/lib/extractBookingFields.js	22
 backend/lib/supabase.js	32
 backend/routes/auth.js	67
-backend/routes/booking.js	263
+backend/routes/booking.js	130
 backend/user.js	233
 frontend/user-app/public/index.html	20
 frontend/user-app/src/App.css	33

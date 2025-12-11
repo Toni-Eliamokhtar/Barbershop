@@ -12,29 +12,51 @@
 <script>
     const gData = {
   "nodes" : [ {
+    "id" : "[backend/lib/extractBookingFields.js]",
+    "size" : 3
+  }, {
     "id" : "[backend/email.js]",
     "size" : 1
   }, {
-    "id" : "[backend/routes/booking.js]",
-    "size" : 3
-  }, {
     "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[backend/routes/booking.js]",
     "size" : 1
   }, {
     "id" : "[frontend/user-app/src/pages/Login.jsx]",
     "size" : 1
   }, {
+    "id" : "[backend/lib/buildBookingPayload.js]",
+    "size" : 3
+  }, {
     "id" : "[frontend/user-app/src/styles/Booking.css]",
     "size" : 2
   } ],
   "links" : [ {
-    "source" : "[backend/routes/booking.js]",
-    "target" : "[backend/routes/booking.js]",
-    "count" : 226
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 68
   }, {
-    "source" : "[backend/routes/booking.js]",
-    "target" : "[backend/routes/booking.js]",
-    "count" : 226
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 68
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 16
   }, {
     "source" : "[frontend/user-app/src/pages/Login.jsx]",
     "target" : "[frontend/user-app/src/pages/Signup.jsx]",
