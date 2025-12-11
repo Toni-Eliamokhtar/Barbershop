@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>frontend/user-app/src/components/AdminAddBarberForm.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/components/AdminAddBarberForm.jsx (<b>74</b> lines of code) (<a href="AdminAddBarberForm.jsx">raw</a>):</h3>
+<div id="editor">import { useState } from &quot;react&quot;;
+import { supabase } from &quot;../lib/supabase&quot;;
+
+export default function AdminAddBarberForm({ onBarberAdded }) {
+  const [nom, setNom] = useState(&quot;&quot;);
+  const [specialite, setSpecialite] = useState(&quot;&quot;);
+  const [photoUrl, setPhotoUrl] = useState(&quot;&quot;);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleAddBarber = async (e) =&gt; {
+    e.preventDefault();
+    setError(null);
+
+    if (!nom.trim() || !specialite.trim()) {
+      setError(&quot;Veuillez remplir le nom et la sp&eacute;cialit&eacute;.&quot;);
+      return;
+    }
+
+    setSaving(true);
+    const { error } = await supabase.from(&quot;barbers&quot;).insert({
+      nom: nom.trim(),
+      specialite: specialite.trim(),
+      photo_url: photoUrl.trim() || &quot;/images/fallback.jpg&quot;,
+    });
+    setSaving(false);
+
+    if (error) {
+      setError(error.message);
+      return;
+    }
+
+    // R&eacute;initialise le formulaire
+    setNom(&quot;&quot;);
+    setSpecialite(&quot;&quot;);
+    setPhotoUrl(&quot;&quot;);
+
+    // 🔄 Informe le parent qu&rsquo;un barbier a &eacute;t&eacute; ajout&eacute;
+    if (onBarberAdded) onBarberAdded();
+  };
+
+  return (
+    &lt;div
+      className=&quot;admin-box&quot;
+      style={{
+        background: &quot;#111827&quot;,
+        borderRadius: 12,
+        padding: 16,
+        marginBottom: 20,
+        border: &quot;1px solid #1f2937&quot;,
+      }}
+    &gt;
+      &lt;h3 style={{ marginTop: 0 }}&gt;Admin &mdash; Ajouter un barbier&lt;/h3&gt;
+      &lt;form
+        onSubmit={handleAddBarber}
+        style={{ display: &quot;grid&quot;, gap: 12, maxWidth: 520 }}
+      &gt;
+        &lt;input
+          placeholder=&quot;Nom&quot;
+          value={nom}
+          onChange={(e) =&gt; setNom(e.target.value)}
+          required
+        /&gt;
+        &lt;input
+          placeholder=&quot;Sp&eacute;cialit&eacute;&quot;
+          value={specialite}
+          onChange={(e) =&gt; setSpecialite(e.target.value)}
+          required
+        /&gt;
+        &lt;input
+          placeholder=&quot;Photo URL (optionnel)&quot;
+          value={photoUrl}
+          onChange={(e) =&gt; setPhotoUrl(e.target.value)}
+        /&gt;
+        &lt;button type=&quot;submit&quot; disabled={saving}&gt;
+          {saving ? &quot;Ajout...&quot; : &quot;Ajouter&quot;}
+        &lt;/button&gt;
+        {error &amp;&amp; &lt;p style={{ color: &quot;tomato&quot;, margin: 0 }}&gt;Erreur: {error}&lt;/p&gt;}
+      &lt;/form&gt;
+    &lt;/div&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

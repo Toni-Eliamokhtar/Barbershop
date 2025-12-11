@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>frontend/user-app/src/components/SignupForm.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/components/SignupForm.jsx (<b>36</b> lines of code) (<a href="SignupForm.jsx">raw</a>):</h3>
+<div id="editor">import { useState } from &quot;react&quot;;
+import AuthPasswordField from &quot;./AuthPasswordField&quot;;
+import AuthEmailField from &quot;./AuthEmailField&quot;;
+
+export default function SignupForm({ onSubmit }) {
+  const [nom, setNom] = useState(&quot;&quot;);
+  const [email, setEmail] = useState(&quot;&quot;);
+  const [telephone, setTelephone] = useState(&quot;&quot;);
+  const [password, setPassword] = useState(&quot;&quot;);
+
+  const handleSubmit = (e) =&gt; {
+    e.preventDefault();
+    onSubmit?.({ nom, email, telephone, password });
+  };
+
+  return (
+    &lt;form onSubmit={handleSubmit} className=&quot;auth-form&quot;&gt;
+      &lt;input
+        type=&quot;text&quot;
+        placeholder=&quot;Nom complet&quot;
+        value={nom}
+        onChange={(e) =&gt; setNom(e.target.value)}
+        required
+      /&gt;
+      &lt;AuthEmailField email={email} setEmail={setEmail} /&gt;
+      &lt;input
+        type=&quot;text&quot;
+        placeholder=&quot;T&eacute;l&eacute;phone&quot;
+        value={telephone}
+        onChange={(e) =&gt; setTelephone(e.target.value)}
+      /&gt;
+      &lt;AuthPasswordField
+        password={password}
+        setPassword={setPassword}
+        buttonLabel=&quot;S'inscrire&quot;
+      /&gt;
+    &lt;/form&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

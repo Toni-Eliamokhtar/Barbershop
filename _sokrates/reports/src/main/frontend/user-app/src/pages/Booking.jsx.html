@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>frontend/user-app/src/pages/Booking.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Booking.jsx (<b>89</b> lines of code) (<a href="Booking.jsx">raw</a>):</h3>
+<div id="editor">import { useParams, useNavigate } from &quot;react-router-dom&quot;;
+import { useEffect, useState } from &quot;react&quot;;
+import { supabase } from &quot;../lib/supabase&quot;;
+import BookingInfo from &quot;../components/BookingInfo&quot;;
+import BookingForm from &quot;../components/BookingForm&quot;;
+import { SERVICES } from &quot;../constants/services&quot;;
+import &quot;../styles/Booking.css&quot;;
+
+export default function Booking() {
+  const navigate = useNavigate();
+
+  const handleBack = () =&gt; {
+    navigate(-1);
+  };
+
+  const { barberId, serviceId } = useParams();
+
+  const [barber, setBarber] = useState(null);
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [err, setErr] = useState(null);
+
+  const service = SERVICES.find((s) =&gt; s.id === Number(serviceId));
+
+  useEffect(() =&gt; {
+    (async () =&gt; {
+      try {
+        const { data: barberData, error: barberError } = await supabase
+          .from(&quot;barbers&quot;)
+          .select(&quot;*&quot;)
+          .eq(&quot;id&quot;, barberId)
+          .single();
+
+        const {
+          data: { user: currentUser },
+          error: userError,
+        } = await supabase.auth.getUser();
+
+        if (barberError) setErr(barberError.message);
+        else setBarber(barberData);
+
+        if (userError) setErr(userError.message);
+        else setUser(currentUser);
+      } catch (error) {
+        setErr(error.message);
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, [barberId]);
+
+  if (loading)
+    return (
+      &lt;div className=&quot;booking&quot;&gt;
+        &lt;p&gt;Chargement&hellip;&lt;/p&gt;
+      &lt;/div&gt;
+    );
+
+  if (err)
+    return (
+      &lt;div className=&quot;booking&quot;&gt;
+        &lt;p style={{ color: &quot;tomato&quot; }}&gt;Erreur: {err}&lt;/p&gt;
+      &lt;/div&gt;
+    );
+
+  if (!barber)
+    return (
+      &lt;div className=&quot;booking&quot;&gt;
+        &lt;p&gt;Barbier introuvable.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+
+  if (!service)
+    return (
+      &lt;div className=&quot;booking&quot;&gt;
+        &lt;p&gt;Service introuvable.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+
+  if (!user)
+    return (
+      &lt;div className=&quot;booking&quot;&gt;
+        &lt;p&gt;Vous devez &ecirc;tre connect&eacute; pour r&eacute;server.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+
+  return (
+    &lt;div className=&quot;booking&quot;&gt;
+      &lt;button onClick={handleBack} className=&quot;back-btn&quot;&gt;
+        Retour
+      &lt;/button&gt;
+
+      &lt;div className=&quot;booking-card&quot;&gt;
+        &lt;BookingInfo barber={barber} service={service} user={user} /&gt;
+        &lt;BookingForm
+          barber={barber}
+          service={service}
+          user={user}
+          barberId={barberId}
+          serviceId={serviceId}
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

@@ -1,0 +1,235 @@
+[ {
+  "relativePath" : "backend/email.js",
+  "extension" : "js",
+  "linesOfCode" : 19,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/index.js",
+  "extension" : "js",
+  "linesOfCode" : 60,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/lib/buildBookingPayload.js",
+  "extension" : "js",
+  "linesOfCode" : 21,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/lib/extractBookingFields.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/lib/supabase.js",
+  "extension" : "js",
+  "linesOfCode" : 32,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/routes/auth.js",
+  "extension" : "js",
+  "linesOfCode" : 67,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/routes/booking.js",
+  "extension" : "js",
+  "linesOfCode" : 130,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "backend/user.js",
+  "extension" : "js",
+  "linesOfCode" : 233,
+  "components" : [ "primary::backend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/public/index.html",
+  "extension" : "html",
+  "linesOfCode" : 20,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/App.css",
+  "extension" : "css",
+  "linesOfCode" : 33,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/App.js",
+  "extension" : "js",
+  "linesOfCode" : 16,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/AdminAddBarberForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 74,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 12,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 20,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/BarberCard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 27,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/BookingForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 193,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/BookingInfo.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 24,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/Footer.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 7,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/Header.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 17,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 21,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/ProtectedRoute.js",
+  "extension" : "js",
+  "linesOfCode" : 15,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/ServiceCard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 10,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/components/SignupForm.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 36,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/constants/services.js",
+  "extension" : "js",
+  "linesOfCode" : 7,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/hooks/useSupabaseStatus.js",
+  "extension" : "js",
+  "linesOfCode" : 22,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/index.css",
+  "extension" : "css",
+  "linesOfCode" : 17,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/index.js",
+  "extension" : "js",
+  "linesOfCode" : 23,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/lib/supabase.js",
+  "extension" : "js",
+  "linesOfCode" : 4,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Booking.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 89,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Dashboard.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 76,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Home.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 33,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 52,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
+  "extension" : "jsx",
+  "linesOfCode" : 47,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/setupTests.js",
+  "extension" : "js",
+  "linesOfCode" : 1,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Auth.css",
+  "extension" : "css",
+  "linesOfCode" : 80,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Booking.css",
+  "extension" : "css",
+  "linesOfCode" : 128,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Dashboard.css",
+  "extension" : "css",
+  "linesOfCode" : 71,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/styles/Home.css",
+  "extension" : "css",
+  "linesOfCode" : 96,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "test-api.http",
+  "extension" : "http",
+  "linesOfCode" : 16,
+  "components" : [ "primary::ROOT" ],
+  "concerns" : [ "::Unclassified" ]
+} ]

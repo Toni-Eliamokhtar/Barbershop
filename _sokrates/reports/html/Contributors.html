@@ -1,0 +1,3306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Barbershop Contributors</title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+<div style='font-size: 36px; margin-top: 15px; padding-bottom: 15px; white-space: nowrap; overflow: hidden;'><a href='index.html' style="font-size: 100%;text-decoration:none">
+<img style='height: 64px' valign='middle' src='https://zeljkoobrenovic.github.io/sokrates-media/icons/repository.png'>
+<div style='margin-left: 4px; display: inline-block; vertical-align: middle; font-size: 120%'><div style='color: #bbbbbb; font-size: 60%;'>Barbershop</div><div style='height: 34px; font-size: 100%'>Contributors</div></div></div>
+</a>
+</div>
+
+<p style="margin-top: 12px; color: grey">An overview of contributor trends.</p>
+<div class="tab">
+  <button class='tablinks active' onclick='openTab(event, "matrix")'>Contributors Matrix</button>
+  <button class='tablinks' onclick='openTab(event, "30_days")'>Past 30 Days</button>
+  <button class='tablinks' onclick='openTab(event, "90_days")'>Past 3 Months</button>
+  <button class='tablinks' onclick='openTab(event, "180_days")'>Past 6 Months</button>
+  <button class='tablinks' onclick='openTab(event, "365_days")'>Past Year</button>
+  <button class='tablinks' onclick='openTab(event, "contributors")'>Overview</button>
+  <button class='tablinks' onclick='openTab(event, "data")'>Data</button>
+</div>
+<div id="contributors" class="tabcontent" style="display: none">
+<div style="margin-top: 10px">
+Zoomable circles (number of contributors per file): 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_30_main.html'>30 days</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_90_main.html'>90 days</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_180_main.html'>6 months</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_365_main.html'>past year</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_main.html'>all time</a>
+<div style="color: grey; font-size: 80%">
+Files with only one contributor are shown as grey.
+</div>
+</div>
+<br/>
+<div class='subSection'><div class='subSectionHeader'>  <span class='subSectionTitle'>Contributors</span></div><div class='sectionBody'>
+<div style="">
+<h2>Recent Contributors (5)</h2>
+<p style="color: grey">Committed in past 6 months (a rookie = the first commit in past year)</p>
+<p style="font-size: 80%">Past 30 days (1):</p>
+<div style='margin: 4px; box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; text-align: center; border-bottom:2px solid green; display: inline-block;opacity:1.0' title='toni11elia11@gmail.com 29 commits (40%), between 2025-10-23 and 2025-12-10'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='64px' height='64px' viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+<div style='padding: 4px; font-size: 10px; width: 64px; overflow: hidden; max-height: 22px; min-height: 22px;'>
+toni11elia11@gmail.com
+</div>
+</div>
+<hr/>
+<p style="font-size: 80%">Past 31 to 90 days (4):</p>
+<div style='margin: 4px; box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; text-align: center; border-bottom:2px solid green; display: inline-block;opacity:0.6965517241379311' title='2234682@cmontmorency.qc.ca 18 commits (25%), between 2025-09-23 and 2025-10-30'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='64px' height='64px' viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+<div style='padding: 4px; font-size: 10px; width: 64px; overflow: hidden; max-height: 22px; min-height: 22px;'>
+2234682@cmontmorency.qc.ca
+</div>
+</div>
+<div style='margin: 4px; box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; text-align: center; border-bottom:2px solid green; display: inline-block;opacity:0.5034482758620691' title='2258302@cmontmorency.qc.ca 11 commits (15%), between 2025-09-25 and 2025-10-30'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='64px' height='64px' viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+<div style='padding: 4px; font-size: 10px; width: 64px; overflow: hidden; max-height: 22px; min-height: 22px;'>
+2258302@cmontmorency.qc.ca
+</div>
+</div>
+<div style='margin: 4px; box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; text-align: center; border-bottom:2px solid green; display: inline-block;opacity:0.5034482758620691' title='147719914+badr1210@users.noreply.github.com 11 commits (15%), between 2025-10-23 and 2025-10-30'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='64px' height='64px' viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+<div style='padding: 4px; font-size: 10px; width: 64px; overflow: hidden; max-height: 22px; min-height: 22px;'>
+147719914+badr1210@users.noreply.github.com
+</div>
+</div>
+<div style='margin: 4px; box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; text-align: center; border-bottom:2px solid green; display: inline-block;opacity:0.25517241379310346' title='157541451+calinsanduta@users.noreply.github.com 2 commits (2%), between 2025-10-28 and 2025-10-28'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='64px' height='64px' viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+<div style='padding: 4px; font-size: 10px; width: 64px; overflow: hidden; max-height: 22px; min-height: 22px;'>
+157541451+calinsanduta@users.noreply.github.com
+</div>
+</div>
+<hr/>
+<p style="font-size: 80%">No contributors in past 91 to 180 days.</p>
+<h2 style="margin-top: 40px">Historical Contributors (0)</h2>
+<p style="color: grey">Last contributors more than 6 months ago</p>
+</div>
+</div></div>
+</div>
+<div id="matrix" class="tabcontent" style="display: block">
+<div style="height: 20px">
+&nbsp;
+</div>
+<div class='subSection'><div class='subSectionHeader'>  <span class='subSectionTitle'>Contributors Matrix (Per Month)</span></div><div class='sectionBody'>
+<div style="width: 100%; overflow-x: scroll; overflow-y: scroll; max-height: 600px">
+<table>
+<tr>
+<td style="min-width: 200px; border: none; border: none"></td>
+<td style="max-width: 100px; text-align: center; border: none">Commits<br>(3m)</td>
+<td style="max-width: 100px; text-align: center; border: none">Commit<br>Days</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-12: 1 contributor">
+1
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-10: 5 contributors ">
+5
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-09: 2 contributors ">
+2
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-05: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-04: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-12: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-10: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-09: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-05: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-04: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-12: 0 contributors ">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div>
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">29</td>
+<td style="text-align: center; border: none; font-weight: bold;">3</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 10px; height: 10px;" title="Month 2025-12: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.5; border-radius: 50%; width: 10px; height: 10px;" title="Month 2025-10: 2 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div>
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">18</td>
+<td style="text-align: center; border: none; font-weight: bold;">8</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.5; border-radius: 50%; width: 14px; height: 14px;" title="Month 2025-10: 5 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.29999999999999993; border-radius: 50%; width: 10px; height: 10px;" title="Month 2025-09: 3 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div>
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">11</td>
+<td style="text-align: center; border: none; font-weight: bold;">5</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.5; border-radius: 50%; width: 14px; height: 14px;" title="Month 2025-10: 4 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.29999999999999993; border-radius: 50%; width: 10px; height: 10px;" title="Month 2025-09: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div>
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">11</td>
+<td style="text-align: center; border: none; font-weight: bold;">4</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.5; border-radius: 50%; width: 14px; height: 14px;" title="Month 2025-10: 4 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div>
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">2</td>
+<td style="text-align: center; border: none; font-weight: bold;">1</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.5; border-radius: 50%; width: 10px; height: 10px;" title="Month 2025-10: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div></div>
+<div style="height: 20px">
+&nbsp;
+</div>
+<div class='subSection'><div class='subSectionHeader'>  <span class='subSectionTitle'>Bots Matrix (Per Month)</span></div><div class='sectionBody'>
+<div style="width: 100%; overflow-x: scroll; overflow-y: scroll; max-height: 600px">
+<table>
+<tr>
+<td style="min-width: 200px; border: none; border: none"></td>
+<td style="max-width: 100px; text-align: center; border: none">Commits<br>(3m)</td>
+<td style="max-width: 100px; text-align: center; border: none">Commit<br>Days</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-12: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-10: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-09: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-05: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-04: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2025-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-12: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-10: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-09: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-05: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-04: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2024-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-12: 0 contributors ">
+-
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div></div>
+</div>
+<div id="30_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>1</b> contributor (<b>9</b> commit):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 600px' title='toni11elia11@gmail.com
+9 commits (100%)'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<th>File Updates<br>(per extension)</th>
+<tr style=''>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-12-10</td>
+<td>9 (100%)</td>
+<td>html (282), txt (79), js (46), json (41), jsx (37)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="90_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>5</b> contributors (<b>71</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 245px' title='toni11elia11@gmail.com
+29 commits (41%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 152px' title='2234682@cmontmorency.qc.ca
+18 commits (25%)
+top 2contributors together (40% of contributors) = 66% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 93px' title='2258302@cmontmorency.qc.ca
+11 commits (15%)
+top 3contributors together (60% of contributors) = 81% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 93px' title='147719914+badr1210@users.noreply.github.com
+11 commits (15%)
+top 4contributors together (80% of contributors) = 97% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 17px' title='157541451+calinsanduta@users.noreply.github.com
+2 commits (3%)
+top 5contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<th>File Updates<br>(per extension)</th>
+<tr style=''>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-12-10</td>
+<td>29 (40%)</td>
+<td>html (282), js (140), txt (81), jsx (69), json (55)</td>
+</tr>
+<tr style='color: grey'>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-23</td>
+<td>2025-10-30</td>
+<td>18 (25%)</td>
+<td>ts (520), js (463), map (248), json (41), md (31)</td>
+</tr>
+<tr style='color: grey'>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-25</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+<td>js (78), css (9), jsx (6), json (6), http (2)</td>
+</tr>
+<tr style='color: grey'>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+<td>js (311), ts (212), json (11), css (10), jsx (9)</td>
+</tr>
+<tr style='color: grey'>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>2025-10-28</td>
+<td>2025-10-28</td>
+<td>2 (2%)</td>
+<td>js (39), jsx (14), json (6), md (3), css (2)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 90 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_5');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_5" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>90</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_1.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_1.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_1_force_2d.html'>- open 2D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_1_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_2_force_2d.html'>- open 2D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_2_force_2d_only_shared_file.html'>- open 2D force graph (including only shared files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_2_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_2_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_6');")>468 shared files</a><span id="showMoreBlock_6" style="display: none;">
+<br>backend/node_modules/stripe/types/SubscriptionItemsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/Subscriptions.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/ReviewsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Apps/Secrets.js
+<br>backend/node_modules/stripe/types/BillingPortal/SessionsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/InboundTransfers.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/ReceivedCredits.js
+<br>backend/node_modules/stripe/cjs/resources/Balance.js
+<br>backend/node_modules/stripe/esm/resources/Customers.js
+<br>backend/node_modules/stripe/types/Tax/TransactionLineItems.d.ts
+<br>backend/node_modules/stripe/esm/crypto/CryptoProvider.js
+<br>backend/node_modules/stripe/types/BalanceTransactions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/TestHelpers/Treasury/ReceivedDebits.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Cardholders.js
+<br>backend/node_modules/stripe/types/TestHelpers/CustomersResource.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Cards.js
+<br>backend/node_modules/stripe/types/ProductsResource.d.ts
+<br>backend/node_modules/stripe/types/CashBalances.d.ts
+<br>backend/node_modules/stripe/types/Webhooks.d.ts
+<br>backend/node_modules/stripe/VERSION
+<br>backend/node_modules/stripe/esm/resources/Products.js
+<br>backend/node_modules/stripe/cjs/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Disputes.js
+<br>backend/node_modules/stripe/types/EphemeralKeys.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ApplicationFees.js
+<br>backend/node_modules/stripe/types/FileLinksResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Customers.js
+<br>backend/node_modules/stripe/cjs/resources/Treasury/OutboundTransfers.js
+<br>backend/node_modules/stripe/cjs/resources/Tax/Settings.js
+<br>backend/node_modules/stripe/cjs/resources/SubscriptionSchedules.js
+<br>backend/node_modules/stripe/types/Accounts.d.ts
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/stripe/cjs/resources/InvoiceItems.js
+<br>backend/node_modules/stripe/types/Tax/TransactionsResource.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/RefundsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Reviews.js
+<br>backend/node_modules/stripe/types/Cards.d.ts
+<br>backend/node_modules/stripe/esm/Error.js
+<br>backend/node_modules/stripe/esm/net/HttpClient.js
+<br>backend/node_modules/stripe/types/UpcomingInvoices.d.ts
+<br>backend/node_modules/stripe/esm/resources/Terminal/Readers.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Authorizations.js
+<br>backend/node_modules/stripe/esm/resources/PaymentLinks.js
+<br>backend/node_modules/stripe/types/Radar/EarlyFraudWarningsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Subscriptions.js
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRuns.d.ts
+<br>backend/node_modules/stripe/types/test/tsconfig.json
+<br>backend/node_modules/stripe/esm/resources/Transfers.js
+<br>backend/node_modules/stripe/types/lib.d.ts
+<br>backend/node_modules/stripe/esm/stripe.esm.node.js
+<br>backend/node_modules/stripe/types/Radar/ValueListItems.d.ts
+<br>backend/node_modules/stripe/types/Customers.d.ts
+<br>backend/node_modules/stripe/types/Checkout/SessionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ShippingRates.js
+<br>backend/node_modules/stripe/cjs/resources/Invoices.js
+<br>backend/node_modules/stripe/types/Tax/CalculationsResource.d.ts
+<br>backend/node_modules/stripe/cjs/crypto/NodeCryptoProvider.js
+<br>backend/node_modules/stripe/types/Tax/Calculations.d.ts
+<br>backend/node_modules/stripe/types/Identity/VerificationSessions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/BillingPortal/Sessions.js
+<br>backend/node_modules/stripe/esm/resources/AccountLinks.js
+<br>backend/node_modules/stripe/cjs/resources/Events.js
+<br>backend/node_modules/stripe/types/AccountLinks.d.ts
+<br>backend/node_modules/stripe/types/SubscriptionSchedulesResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/ReceivedDebits.d.ts
+<br>backend/node_modules/stripe/esm/resources/Sigma/ScheduledQueryRuns.js
+<br>backend/node_modules/stripe/types/Treasury/ReceivedCredits.d.ts
+<br>backend/node_modules/stripe/types/InvoiceLineItems.d.ts
+<br>backend/node_modules/stripe/types/Treasury/FinancialAccounts.d.ts
+<br>backend/node_modules/stripe/esm/resources/Quotes.js
+<br>backend/node_modules/stripe/esm/platform/NodePlatformFunctions.js
+<br>backend/node_modules/stripe/types/PaymentMethods.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/Treasury/OutboundPaymentsResource.d.ts
+<br>backend/node_modules/stripe/types/Tax/CalculationLineItems.d.ts
+<br>backend/node_modules/stripe/types/SetupAttemptsResource.d.ts
+<br>backend/node_modules/stripe/types/Prices.d.ts
+<br>backend/node_modules/stripe/types/PaymentMethodsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/CreditReversals.d.ts
+<br>backend/node_modules/stripe/types/FinancialConnections/Accounts.d.ts
+<br>backend/node_modules/stripe/types/test/typescriptTest.ts
+<br>backend/node_modules/stripe/types/Terminal/ConnectionTokensResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Tax/Transactions.js
+<br>backend/node_modules/stripe/esm/resources/FinancialConnections/Accounts.js
+<br>backend/node_modules/stripe/types/Treasury/TransactionEntriesResource.d.ts
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRunsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/CountrySpecs.js
+<br>backend/node_modules/stripe/types/PayoutsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Accounts.js
+<br>backend/node_modules/stripe/esm/resources/Invoices.js
+<br>backend/node_modules/stripe/types/TestHelpers/TestClocksResource.d.ts
+<br>backend/node_modules/stripe/cjs/net/HttpClient.js
+<br>backend/node_modules/stripe/types/SourcesResource.d.ts
+<br>backend/node_modules/stripe/types/BalanceTransactionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/package.json
+<br>backend/node_modules/stripe/types/ApplePayDomainsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Identity/VerificationSessions.js
+<br>...
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_7');")>95 shared files</a><span id="showMoreBlock_7" style="display: none;">
+<br>node_modules/sweetalert2/src/popup-click-handler.js
+<br>node_modules/sweetalert2/sweetalert2.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>node_modules/sweetalert2/src/utils/iosFix.js
+<br>node_modules/sweetalert2/src/utils/draggable.js
+<br>node_modules/sweetalert2/README.md
+<br>node_modules/sweetalert2/src/privateProps.js
+<br>node_modules/sweetalert2/src/utils/setParameters.js
+<br>package.json
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderInput.js
+<br>node_modules/sweetalert2/src/utils/dom/index.js
+<br>node_modules/sweetalert2/src/utils/isNodeEnv.js
+<br>node_modules/sweetalert2/src/utils/utils.js
+<br>node_modules/sweetalert2/src/constants.js
+<br>backend/routes/auth.js
+<br>node_modules/sweetalert2/themes/bulma.css
+<br>node_modules/sweetalert2/src/sweetalert2.scss
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js
+<br>node_modules/sweetalert2/src/utils/params.js
+<br>node_modules/sweetalert2/src/SweetAlert.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.min.js
+<br>node_modules/sweetalert2/dist/sweetalert2.min.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>node_modules/sweetalert2/src/utils/dom/domUtils.js
+<br>node_modules/sweetalert2/themes/bootstrap-4.css
+<br>node_modules/sweetalert2/src/utils/DismissReason.js
+<br>node_modules/sweetalert2/src/staticMethods/showLoading.js
+<br>node_modules/sweetalert2/src/staticMethods/bindClickHandler.js
+<br>node_modules/sweetalert2/src/staticMethods.js
+<br>node_modules/sweetalert2/src/utils/EventEmitter.js
+<br>node_modules/sweetalert2/package.json
+<br>frontend/user-app/public/images/barber3.jpg
+<br>node_modules/sweetalert2/dist/sweetalert2.min.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContainer.js
+<br>node_modules/sweetalert2/src/instanceMethods/_destroy.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.js
+<br>node_modules/sweetalert2/src/utils/classes.js
+<br>node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.js
+<br>node_modules/sweetalert2/themes/embed-iframe.css
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>node_modules/sweetalert2/src/staticMethods/eventHandlers.js
+<br>node_modules/sweetalert2/src/instanceMethods/close.js
+<br>node_modules/sweetalert2/src/utils/getTemplateParams.js
+<br>backend/index.js
+<br>node_modules/sweetalert2/themes/minimal.css
+<br>node_modules/sweetalert2/src/instanceMethods/getInput.js
+<br>node_modules/sweetalert2/src/utils/Timer.js
+<br>node_modules/sweetalert2/src/instanceMethods/hideLoading.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js
+<br>backend/.env
+<br>node_modules/sweetalert2/src/sweetalert2.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderPopup.js
+<br>node_modules/sweetalert2/src/keydown-handler.js
+<br>node_modules/sweetalert2/src/staticMethods/fire.js
+<br>node_modules/sweetalert2/src/types.js
+<br>node_modules/sweetalert2/src/buttons-handlers.js
+<br>node_modules/sweetalert2/src/privateMethods.js
+<br>node_modules/sweetalert2/src/staticMethods/argsToParams.js
+<br>node_modules/sweetalert2/themes/material-ui.css
+<br>node_modules/sweetalert2/LICENSE
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.min.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>node_modules/sweetalert2/themes/bootstrap-5.css
+<br>frontend/user-app/src/pages/Login.jsx
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderCloseButton.js
+<br>node_modules/sweetalert2/src/staticMethods/mixin.js
+<br>node_modules/sweetalert2/src/instanceMethods/validation-message.js
+<br>node_modules/.package-lock.json
+<br>node_modules/sweetalert2/src/instanceMethods.js
+<br>node_modules/sweetalert2/src/instanceMethods/update.js
+<br>node_modules/sweetalert2/src/utils/aria.js
+<br>package-lock.json
+<br>node_modules/sweetalert2/src/utils/openPopup.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.min.js
+<br>frontend/user-app/.env
+<br>node_modules/sweetalert2/src/utils/dom/inputUtils.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderFooter.js
+<br>node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js
+<br>node_modules/sweetalert2/src/utils/dom/getters.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/render.js
+<br>node_modules/sweetalert2/src/utils/defaultInputValidators.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.js
+<br>node_modules/sweetalert2/dist/sweetalert2.js
+<br>node_modules/sweetalert2/src/staticMethods/timer.js
+<br>node_modules/sweetalert2/dist/sweetalert2.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js
+<br>node_modules/sweetalert2/src/utils/scrollbar.js
+<br>node_modules/sweetalert2/src/globalState.js
+<br>node_modules/sweetalert2/themes/borderless.css
+<br>node_modules/sweetalert2/src/staticMethods/dom.js
+<br>node_modules/sweetalert2/src/utils/dom/init.js
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_8');")>70 shared files</a><span id="showMoreBlock_8" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/src/pages/Home.jsx
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>frontend/user-app/src/components/Header.jsx
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/components/Footer.jsx
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>frontend/user-app/src/pages/Dashboard.jsx
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/components/BarberCard.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/components/AdminAddBarberForm.jsx
+<br>frontend/user-app/src/components/LoginForm.jsx
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>frontend/user-app/src/components/ServiceCard.jsx
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_9');")>67 shared files</a><span id="showMoreBlock_9" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/package.json
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/routes/auth.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>frontend/user-app/src/pages/Booking.js
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>frontend/user-app/package-lock.json
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/pages/Login.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/App.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_10');")>58 shared files</a><span id="showMoreBlock_10" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_11');")>18 shared files</a><span id="showMoreBlock_11" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>test-api.http
+<br>frontend/user-app/src/components/ProtectedRoute.js
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_12');")>16 shared files</a><span id="showMoreBlock_12" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/.env
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_13');")>12 shared files</a><span id="showMoreBlock_13" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_14');")>12 shared files</a><span id="showMoreBlock_14" style="display: none;">
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_15');")>8 shared files</a><span id="showMoreBlock_15" style="display: none;">
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>4</td>
+<td>29</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>2</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 4.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 4.0 contributors with 4.0 or more connections.</p>
+</div>
+<div id="180_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>5</b> contributors (<b>71</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 245px' title='toni11elia11@gmail.com
+29 commits (41%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 152px' title='2234682@cmontmorency.qc.ca
+18 commits (25%)
+top 2contributors together (40% of contributors) = 66% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 93px' title='2258302@cmontmorency.qc.ca
+11 commits (15%)
+top 3contributors together (60% of contributors) = 81% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 93px' title='147719914+badr1210@users.noreply.github.com
+11 commits (15%)
+top 4contributors together (80% of contributors) = 97% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 17px' title='157541451+calinsanduta@users.noreply.github.com
+2 commits (3%)
+top 5contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<tr style=''>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-12-10</td>
+<td>29 (40%)</td>
+</tr>
+<tr style='color: grey'>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-23</td>
+<td>2025-10-30</td>
+<td>18 (25%)</td>
+</tr>
+<tr style='color: grey'>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-25</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+</tr>
+<tr style='color: grey'>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+</tr>
+<tr style='color: grey'>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>2025-10-28</td>
+<td>2025-10-28</td>
+<td>2 (2%)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 180 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_16');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_16" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>180</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_3.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_3.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_3_force_2d.html'>- open 2D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_3_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_4_force_2d.html'>- open 2D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_4_force_2d_only_shared_file.html'>- open 2D force graph (including only shared files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_4_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_4_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_17');")>468 shared files</a><span id="showMoreBlock_17" style="display: none;">
+<br>backend/node_modules/stripe/types/SubscriptionItemsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/Subscriptions.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/ReviewsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Apps/Secrets.js
+<br>backend/node_modules/stripe/types/BillingPortal/SessionsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/InboundTransfers.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/ReceivedCredits.js
+<br>backend/node_modules/stripe/cjs/resources/Balance.js
+<br>backend/node_modules/stripe/esm/resources/Customers.js
+<br>backend/node_modules/stripe/types/Tax/TransactionLineItems.d.ts
+<br>backend/node_modules/stripe/esm/crypto/CryptoProvider.js
+<br>backend/node_modules/stripe/types/BalanceTransactions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/TestHelpers/Treasury/ReceivedDebits.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Cardholders.js
+<br>backend/node_modules/stripe/types/TestHelpers/CustomersResource.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Cards.js
+<br>backend/node_modules/stripe/types/ProductsResource.d.ts
+<br>backend/node_modules/stripe/types/CashBalances.d.ts
+<br>backend/node_modules/stripe/types/Webhooks.d.ts
+<br>backend/node_modules/stripe/VERSION
+<br>backend/node_modules/stripe/esm/resources/Products.js
+<br>backend/node_modules/stripe/cjs/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Disputes.js
+<br>backend/node_modules/stripe/types/EphemeralKeys.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ApplicationFees.js
+<br>backend/node_modules/stripe/types/FileLinksResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Customers.js
+<br>backend/node_modules/stripe/cjs/resources/Treasury/OutboundTransfers.js
+<br>backend/node_modules/stripe/cjs/resources/Tax/Settings.js
+<br>backend/node_modules/stripe/cjs/resources/SubscriptionSchedules.js
+<br>backend/node_modules/stripe/types/Accounts.d.ts
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/stripe/cjs/resources/InvoiceItems.js
+<br>backend/node_modules/stripe/types/Tax/TransactionsResource.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/RefundsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Reviews.js
+<br>backend/node_modules/stripe/types/Cards.d.ts
+<br>backend/node_modules/stripe/esm/Error.js
+<br>backend/node_modules/stripe/esm/net/HttpClient.js
+<br>backend/node_modules/stripe/types/UpcomingInvoices.d.ts
+<br>backend/node_modules/stripe/esm/resources/Terminal/Readers.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Authorizations.js
+<br>backend/node_modules/stripe/esm/resources/PaymentLinks.js
+<br>backend/node_modules/stripe/types/Radar/EarlyFraudWarningsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Subscriptions.js
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRuns.d.ts
+<br>backend/node_modules/stripe/types/test/tsconfig.json
+<br>backend/node_modules/stripe/esm/resources/Transfers.js
+<br>backend/node_modules/stripe/types/lib.d.ts
+<br>backend/node_modules/stripe/esm/stripe.esm.node.js
+<br>backend/node_modules/stripe/types/Radar/ValueListItems.d.ts
+<br>backend/node_modules/stripe/types/Customers.d.ts
+<br>backend/node_modules/stripe/types/Checkout/SessionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ShippingRates.js
+<br>backend/node_modules/stripe/cjs/resources/Invoices.js
+<br>backend/node_modules/stripe/types/Tax/CalculationsResource.d.ts
+<br>backend/node_modules/stripe/cjs/crypto/NodeCryptoProvider.js
+<br>backend/node_modules/stripe/types/Tax/Calculations.d.ts
+<br>backend/node_modules/stripe/types/Identity/VerificationSessions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/BillingPortal/Sessions.js
+<br>backend/node_modules/stripe/esm/resources/AccountLinks.js
+<br>backend/node_modules/stripe/cjs/resources/Events.js
+<br>backend/node_modules/stripe/types/AccountLinks.d.ts
+<br>backend/node_modules/stripe/types/SubscriptionSchedulesResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/ReceivedDebits.d.ts
+<br>backend/node_modules/stripe/esm/resources/Sigma/ScheduledQueryRuns.js
+<br>backend/node_modules/stripe/types/Treasury/ReceivedCredits.d.ts
+<br>backend/node_modules/stripe/types/InvoiceLineItems.d.ts
+<br>backend/node_modules/stripe/types/Treasury/FinancialAccounts.d.ts
+<br>backend/node_modules/stripe/esm/resources/Quotes.js
+<br>backend/node_modules/stripe/esm/platform/NodePlatformFunctions.js
+<br>backend/node_modules/stripe/types/PaymentMethods.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/Treasury/OutboundPaymentsResource.d.ts
+<br>backend/node_modules/stripe/types/Tax/CalculationLineItems.d.ts
+<br>backend/node_modules/stripe/types/SetupAttemptsResource.d.ts
+<br>backend/node_modules/stripe/types/Prices.d.ts
+<br>backend/node_modules/stripe/types/PaymentMethodsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/CreditReversals.d.ts
+<br>backend/node_modules/stripe/types/FinancialConnections/Accounts.d.ts
+<br>backend/node_modules/stripe/types/test/typescriptTest.ts
+<br>backend/node_modules/stripe/types/Terminal/ConnectionTokensResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Tax/Transactions.js
+<br>backend/node_modules/stripe/esm/resources/FinancialConnections/Accounts.js
+<br>backend/node_modules/stripe/types/Treasury/TransactionEntriesResource.d.ts
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRunsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/CountrySpecs.js
+<br>backend/node_modules/stripe/types/PayoutsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Accounts.js
+<br>backend/node_modules/stripe/esm/resources/Invoices.js
+<br>backend/node_modules/stripe/types/TestHelpers/TestClocksResource.d.ts
+<br>backend/node_modules/stripe/cjs/net/HttpClient.js
+<br>backend/node_modules/stripe/types/SourcesResource.d.ts
+<br>backend/node_modules/stripe/types/BalanceTransactionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/package.json
+<br>backend/node_modules/stripe/types/ApplePayDomainsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Identity/VerificationSessions.js
+<br>...
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_18');")>95 shared files</a><span id="showMoreBlock_18" style="display: none;">
+<br>node_modules/sweetalert2/src/popup-click-handler.js
+<br>node_modules/sweetalert2/sweetalert2.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>node_modules/sweetalert2/src/utils/iosFix.js
+<br>node_modules/sweetalert2/src/utils/draggable.js
+<br>node_modules/sweetalert2/README.md
+<br>node_modules/sweetalert2/src/privateProps.js
+<br>node_modules/sweetalert2/src/utils/setParameters.js
+<br>package.json
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderInput.js
+<br>node_modules/sweetalert2/src/utils/dom/index.js
+<br>node_modules/sweetalert2/src/utils/isNodeEnv.js
+<br>node_modules/sweetalert2/src/utils/utils.js
+<br>node_modules/sweetalert2/src/constants.js
+<br>backend/routes/auth.js
+<br>node_modules/sweetalert2/themes/bulma.css
+<br>node_modules/sweetalert2/src/sweetalert2.scss
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js
+<br>node_modules/sweetalert2/src/utils/params.js
+<br>node_modules/sweetalert2/src/SweetAlert.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.min.js
+<br>node_modules/sweetalert2/dist/sweetalert2.min.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>node_modules/sweetalert2/src/utils/dom/domUtils.js
+<br>node_modules/sweetalert2/themes/bootstrap-4.css
+<br>node_modules/sweetalert2/src/utils/DismissReason.js
+<br>node_modules/sweetalert2/src/staticMethods/showLoading.js
+<br>node_modules/sweetalert2/src/staticMethods/bindClickHandler.js
+<br>node_modules/sweetalert2/src/staticMethods.js
+<br>node_modules/sweetalert2/src/utils/EventEmitter.js
+<br>node_modules/sweetalert2/package.json
+<br>frontend/user-app/public/images/barber3.jpg
+<br>node_modules/sweetalert2/dist/sweetalert2.min.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContainer.js
+<br>node_modules/sweetalert2/src/instanceMethods/_destroy.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.js
+<br>node_modules/sweetalert2/src/utils/classes.js
+<br>node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.js
+<br>node_modules/sweetalert2/themes/embed-iframe.css
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>node_modules/sweetalert2/src/staticMethods/eventHandlers.js
+<br>node_modules/sweetalert2/src/instanceMethods/close.js
+<br>node_modules/sweetalert2/src/utils/getTemplateParams.js
+<br>backend/index.js
+<br>node_modules/sweetalert2/themes/minimal.css
+<br>node_modules/sweetalert2/src/instanceMethods/getInput.js
+<br>node_modules/sweetalert2/src/utils/Timer.js
+<br>node_modules/sweetalert2/src/instanceMethods/hideLoading.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js
+<br>backend/.env
+<br>node_modules/sweetalert2/src/sweetalert2.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderPopup.js
+<br>node_modules/sweetalert2/src/keydown-handler.js
+<br>node_modules/sweetalert2/src/staticMethods/fire.js
+<br>node_modules/sweetalert2/src/types.js
+<br>node_modules/sweetalert2/src/buttons-handlers.js
+<br>node_modules/sweetalert2/src/privateMethods.js
+<br>node_modules/sweetalert2/src/staticMethods/argsToParams.js
+<br>node_modules/sweetalert2/themes/material-ui.css
+<br>node_modules/sweetalert2/LICENSE
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.min.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>node_modules/sweetalert2/themes/bootstrap-5.css
+<br>frontend/user-app/src/pages/Login.jsx
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderCloseButton.js
+<br>node_modules/sweetalert2/src/staticMethods/mixin.js
+<br>node_modules/sweetalert2/src/instanceMethods/validation-message.js
+<br>node_modules/.package-lock.json
+<br>node_modules/sweetalert2/src/instanceMethods.js
+<br>node_modules/sweetalert2/src/instanceMethods/update.js
+<br>node_modules/sweetalert2/src/utils/aria.js
+<br>package-lock.json
+<br>node_modules/sweetalert2/src/utils/openPopup.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.min.js
+<br>frontend/user-app/.env
+<br>node_modules/sweetalert2/src/utils/dom/inputUtils.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderFooter.js
+<br>node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js
+<br>node_modules/sweetalert2/src/utils/dom/getters.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/render.js
+<br>node_modules/sweetalert2/src/utils/defaultInputValidators.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.js
+<br>node_modules/sweetalert2/dist/sweetalert2.js
+<br>node_modules/sweetalert2/src/staticMethods/timer.js
+<br>node_modules/sweetalert2/dist/sweetalert2.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js
+<br>node_modules/sweetalert2/src/utils/scrollbar.js
+<br>node_modules/sweetalert2/src/globalState.js
+<br>node_modules/sweetalert2/themes/borderless.css
+<br>node_modules/sweetalert2/src/staticMethods/dom.js
+<br>node_modules/sweetalert2/src/utils/dom/init.js
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_19');")>70 shared files</a><span id="showMoreBlock_19" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/src/pages/Home.jsx
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>frontend/user-app/src/components/Header.jsx
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/components/Footer.jsx
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>frontend/user-app/src/pages/Dashboard.jsx
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/components/BarberCard.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/components/AdminAddBarberForm.jsx
+<br>frontend/user-app/src/components/LoginForm.jsx
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>frontend/user-app/src/components/ServiceCard.jsx
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_20');")>67 shared files</a><span id="showMoreBlock_20" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/package.json
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/routes/auth.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>frontend/user-app/src/pages/Booking.js
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>frontend/user-app/package-lock.json
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/pages/Login.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/App.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_21');")>58 shared files</a><span id="showMoreBlock_21" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_22');")>18 shared files</a><span id="showMoreBlock_22" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>test-api.http
+<br>frontend/user-app/src/components/ProtectedRoute.js
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_23');")>16 shared files</a><span id="showMoreBlock_23" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/.env
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_24');")>12 shared files</a><span id="showMoreBlock_24" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_25');")>12 shared files</a><span id="showMoreBlock_25" style="display: none;">
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_26');")>8 shared files</a><span id="showMoreBlock_26" style="display: none;">
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>4</td>
+<td>29</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>2</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 4.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 4.0 contributors with 4.0 or more connections.</p>
+</div>
+<div id="365_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>5</b> contributors (<b>71</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 245px' title='toni11elia11@gmail.com
+29 commits (41%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 152px' title='2234682@cmontmorency.qc.ca
+18 commits (25%)
+top 2contributors together (40% of contributors) = 66% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 93px' title='2258302@cmontmorency.qc.ca
+11 commits (15%)
+top 3contributors together (60% of contributors) = 81% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 93px' title='147719914+badr1210@users.noreply.github.com
+11 commits (15%)
+top 4contributors together (80% of contributors) = 97% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 17px' title='157541451+calinsanduta@users.noreply.github.com
+2 commits (3%)
+top 5contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<tr style=''>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-12-10</td>
+<td>29 (40%)</td>
+</tr>
+<tr style='color: grey'>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-23</td>
+<td>2025-10-30</td>
+<td>18 (25%)</td>
+</tr>
+<tr style='color: grey'>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>2025-09-25</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+</tr>
+<tr style='color: grey'>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>2025-10-23</td>
+<td>2025-10-30</td>
+<td>11 (15%)</td>
+</tr>
+<tr style='color: grey'>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>2025-10-28</td>
+<td>2025-10-28</td>
+<td>2 (2%)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 365 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_27');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_27" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>365</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_5.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_5.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_5_force_2d.html'>- open 2D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_5_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_6_force_2d.html'>- open 2D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_6_force_2d_only_shared_file.html'>- open 2D force graph (including only shared files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_6_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_6_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_28');")>468 shared files</a><span id="showMoreBlock_28" style="display: none;">
+<br>backend/node_modules/stripe/types/SubscriptionItemsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/Subscriptions.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/DebitReversals.js
+<br>backend/node_modules/stripe/types/ReviewsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Apps/Secrets.js
+<br>backend/node_modules/stripe/types/BillingPortal/SessionsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/InboundTransfers.d.ts
+<br>backend/node_modules/stripe/esm/resources/Treasury/ReceivedCredits.js
+<br>backend/node_modules/stripe/cjs/resources/Balance.js
+<br>backend/node_modules/stripe/esm/resources/Customers.js
+<br>backend/node_modules/stripe/types/Tax/TransactionLineItems.d.ts
+<br>backend/node_modules/stripe/esm/crypto/CryptoProvider.js
+<br>backend/node_modules/stripe/types/BalanceTransactions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/TestHelpers/Treasury/ReceivedDebits.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Cardholders.js
+<br>backend/node_modules/stripe/types/TestHelpers/CustomersResource.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Cards.js
+<br>backend/node_modules/stripe/types/ProductsResource.d.ts
+<br>backend/node_modules/stripe/types/CashBalances.d.ts
+<br>backend/node_modules/stripe/types/Webhooks.d.ts
+<br>backend/node_modules/stripe/VERSION
+<br>backend/node_modules/stripe/esm/resources/Products.js
+<br>backend/node_modules/stripe/cjs/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Issuing/Disputes.js
+<br>backend/node_modules/stripe/types/EphemeralKeys.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ApplicationFees.js
+<br>backend/node_modules/stripe/types/FileLinksResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Radar/ValueListItems.js
+<br>backend/node_modules/stripe/cjs/resources/Customers.js
+<br>backend/node_modules/stripe/cjs/resources/Treasury/OutboundTransfers.js
+<br>backend/node_modules/stripe/cjs/resources/Tax/Settings.js
+<br>backend/node_modules/stripe/cjs/resources/SubscriptionSchedules.js
+<br>backend/node_modules/stripe/types/Accounts.d.ts
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/stripe/cjs/resources/InvoiceItems.js
+<br>backend/node_modules/stripe/types/Tax/TransactionsResource.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/RefundsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Reviews.js
+<br>backend/node_modules/stripe/types/Cards.d.ts
+<br>backend/node_modules/stripe/esm/Error.js
+<br>backend/node_modules/stripe/esm/net/HttpClient.js
+<br>backend/node_modules/stripe/types/UpcomingInvoices.d.ts
+<br>backend/node_modules/stripe/esm/resources/Terminal/Readers.js
+<br>backend/node_modules/stripe/esm/resources/Issuing/Authorizations.js
+<br>backend/node_modules/stripe/esm/resources/PaymentLinks.js
+<br>backend/node_modules/stripe/types/Radar/EarlyFraudWarningsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Subscriptions.js
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRuns.d.ts
+<br>backend/node_modules/stripe/types/test/tsconfig.json
+<br>backend/node_modules/stripe/esm/resources/Transfers.js
+<br>backend/node_modules/stripe/types/lib.d.ts
+<br>backend/node_modules/stripe/esm/stripe.esm.node.js
+<br>backend/node_modules/stripe/types/Radar/ValueListItems.d.ts
+<br>backend/node_modules/stripe/types/Customers.d.ts
+<br>backend/node_modules/stripe/types/Checkout/SessionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/ShippingRates.js
+<br>backend/node_modules/stripe/cjs/resources/Invoices.js
+<br>backend/node_modules/stripe/types/Tax/CalculationsResource.d.ts
+<br>backend/node_modules/stripe/cjs/crypto/NodeCryptoProvider.js
+<br>backend/node_modules/stripe/types/Tax/Calculations.d.ts
+<br>backend/node_modules/stripe/types/Identity/VerificationSessions.d.ts
+<br>backend/node_modules/stripe/cjs/resources/BillingPortal/Sessions.js
+<br>backend/node_modules/stripe/esm/resources/AccountLinks.js
+<br>backend/node_modules/stripe/cjs/resources/Events.js
+<br>backend/node_modules/stripe/types/AccountLinks.d.ts
+<br>backend/node_modules/stripe/types/SubscriptionSchedulesResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/ReceivedDebits.d.ts
+<br>backend/node_modules/stripe/esm/resources/Sigma/ScheduledQueryRuns.js
+<br>backend/node_modules/stripe/types/Treasury/ReceivedCredits.d.ts
+<br>backend/node_modules/stripe/types/InvoiceLineItems.d.ts
+<br>backend/node_modules/stripe/types/Treasury/FinancialAccounts.d.ts
+<br>backend/node_modules/stripe/esm/resources/Quotes.js
+<br>backend/node_modules/stripe/esm/platform/NodePlatformFunctions.js
+<br>backend/node_modules/stripe/types/PaymentMethods.d.ts
+<br>backend/node_modules/stripe/types/TestHelpers/Treasury/OutboundPaymentsResource.d.ts
+<br>backend/node_modules/stripe/types/Tax/CalculationLineItems.d.ts
+<br>backend/node_modules/stripe/types/SetupAttemptsResource.d.ts
+<br>backend/node_modules/stripe/types/Prices.d.ts
+<br>backend/node_modules/stripe/types/PaymentMethodsResource.d.ts
+<br>backend/node_modules/stripe/types/Treasury/CreditReversals.d.ts
+<br>backend/node_modules/stripe/types/FinancialConnections/Accounts.d.ts
+<br>backend/node_modules/stripe/types/test/typescriptTest.ts
+<br>backend/node_modules/stripe/types/Terminal/ConnectionTokensResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Tax/Transactions.js
+<br>backend/node_modules/stripe/esm/resources/FinancialConnections/Accounts.js
+<br>backend/node_modules/stripe/types/Treasury/TransactionEntriesResource.d.ts
+<br>backend/node_modules/stripe/types/Sigma/ScheduledQueryRunsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/CountrySpecs.js
+<br>backend/node_modules/stripe/types/PayoutsResource.d.ts
+<br>backend/node_modules/stripe/esm/resources/Accounts.js
+<br>backend/node_modules/stripe/esm/resources/Invoices.js
+<br>backend/node_modules/stripe/types/TestHelpers/TestClocksResource.d.ts
+<br>backend/node_modules/stripe/cjs/net/HttpClient.js
+<br>backend/node_modules/stripe/types/SourcesResource.d.ts
+<br>backend/node_modules/stripe/types/BalanceTransactionsResource.d.ts
+<br>backend/node_modules/stripe/cjs/package.json
+<br>backend/node_modules/stripe/types/ApplePayDomainsResource.d.ts
+<br>backend/node_modules/stripe/cjs/resources/Identity/VerificationSessions.js
+<br>...
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_29');")>95 shared files</a><span id="showMoreBlock_29" style="display: none;">
+<br>node_modules/sweetalert2/src/popup-click-handler.js
+<br>node_modules/sweetalert2/sweetalert2.d.ts
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>node_modules/sweetalert2/src/utils/iosFix.js
+<br>node_modules/sweetalert2/src/utils/draggable.js
+<br>node_modules/sweetalert2/README.md
+<br>node_modules/sweetalert2/src/privateProps.js
+<br>node_modules/sweetalert2/src/utils/setParameters.js
+<br>package.json
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderInput.js
+<br>node_modules/sweetalert2/src/utils/dom/index.js
+<br>node_modules/sweetalert2/src/utils/isNodeEnv.js
+<br>node_modules/sweetalert2/src/utils/utils.js
+<br>node_modules/sweetalert2/src/constants.js
+<br>backend/routes/auth.js
+<br>node_modules/sweetalert2/themes/bulma.css
+<br>node_modules/sweetalert2/src/sweetalert2.scss
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js
+<br>node_modules/sweetalert2/src/utils/params.js
+<br>node_modules/sweetalert2/src/SweetAlert.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.min.js
+<br>node_modules/sweetalert2/dist/sweetalert2.min.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>node_modules/sweetalert2/src/utils/dom/domUtils.js
+<br>node_modules/sweetalert2/themes/bootstrap-4.css
+<br>node_modules/sweetalert2/src/utils/DismissReason.js
+<br>node_modules/sweetalert2/src/staticMethods/showLoading.js
+<br>node_modules/sweetalert2/src/staticMethods/bindClickHandler.js
+<br>node_modules/sweetalert2/src/staticMethods.js
+<br>node_modules/sweetalert2/src/utils/EventEmitter.js
+<br>node_modules/sweetalert2/package.json
+<br>frontend/user-app/public/images/barber3.jpg
+<br>node_modules/sweetalert2/dist/sweetalert2.min.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderContainer.js
+<br>node_modules/sweetalert2/src/instanceMethods/_destroy.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.js
+<br>node_modules/sweetalert2/src/utils/classes.js
+<br>node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js
+<br>node_modules/sweetalert2/dist/sweetalert2.all.js
+<br>node_modules/sweetalert2/themes/embed-iframe.css
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>node_modules/sweetalert2/src/staticMethods/eventHandlers.js
+<br>node_modules/sweetalert2/src/instanceMethods/close.js
+<br>node_modules/sweetalert2/src/utils/getTemplateParams.js
+<br>backend/index.js
+<br>node_modules/sweetalert2/themes/minimal.css
+<br>node_modules/sweetalert2/src/instanceMethods/getInput.js
+<br>node_modules/sweetalert2/src/utils/Timer.js
+<br>node_modules/sweetalert2/src/instanceMethods/hideLoading.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js
+<br>backend/.env
+<br>node_modules/sweetalert2/src/sweetalert2.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderPopup.js
+<br>node_modules/sweetalert2/src/keydown-handler.js
+<br>node_modules/sweetalert2/src/staticMethods/fire.js
+<br>node_modules/sweetalert2/src/types.js
+<br>node_modules/sweetalert2/src/buttons-handlers.js
+<br>node_modules/sweetalert2/src/privateMethods.js
+<br>node_modules/sweetalert2/src/staticMethods/argsToParams.js
+<br>node_modules/sweetalert2/themes/material-ui.css
+<br>node_modules/sweetalert2/LICENSE
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.min.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>node_modules/sweetalert2/themes/bootstrap-5.css
+<br>frontend/user-app/src/pages/Login.jsx
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderCloseButton.js
+<br>node_modules/sweetalert2/src/staticMethods/mixin.js
+<br>node_modules/sweetalert2/src/instanceMethods/validation-message.js
+<br>node_modules/.package-lock.json
+<br>node_modules/sweetalert2/src/instanceMethods.js
+<br>node_modules/sweetalert2/src/instanceMethods/update.js
+<br>node_modules/sweetalert2/src/utils/aria.js
+<br>package-lock.json
+<br>node_modules/sweetalert2/src/utils/openPopup.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.min.js
+<br>frontend/user-app/.env
+<br>node_modules/sweetalert2/src/utils/dom/inputUtils.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderFooter.js
+<br>node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js
+<br>node_modules/sweetalert2/src/utils/dom/getters.js
+<br>node_modules/sweetalert2/src/utils/dom/renderers/render.js
+<br>node_modules/sweetalert2/src/utils/defaultInputValidators.js
+<br>node_modules/sweetalert2/dist/sweetalert2.esm.all.js
+<br>node_modules/sweetalert2/dist/sweetalert2.js
+<br>node_modules/sweetalert2/src/staticMethods/timer.js
+<br>node_modules/sweetalert2/dist/sweetalert2.css
+<br>node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js
+<br>node_modules/sweetalert2/src/utils/scrollbar.js
+<br>node_modules/sweetalert2/src/globalState.js
+<br>node_modules/sweetalert2/themes/borderless.css
+<br>node_modules/sweetalert2/src/staticMethods/dom.js
+<br>node_modules/sweetalert2/src/utils/dom/init.js
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_30');")>70 shared files</a><span id="showMoreBlock_30" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/src/pages/Home.jsx
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>frontend/user-app/src/components/Header.jsx
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/components/Footer.jsx
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>frontend/user-app/src/pages/Dashboard.jsx
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/components/BarberCard.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/components/AdminAddBarberForm.jsx
+<br>frontend/user-app/src/components/LoginForm.jsx
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>frontend/user-app/src/components/ServiceCard.jsx
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_31');")>67 shared files</a><span id="showMoreBlock_31" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/package.json
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/routes/auth.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>frontend/user-app/src/pages/Booking.js
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>frontend/user-app/package-lock.json
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>frontend/user-app/src/pages/Login.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/App.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_32');")>58 shared files</a><span id="showMoreBlock_32" style="display: none;">
+<br>frontend/user-app/src/index.js
+<br>backend/node_modules/nodemailer/lib/mime-node/le-unix.js
+<br>backend/node_modules/nodemailer/lib/addressparser/index.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/node_modules/nodemailer/lib/mailer/mail-message.js
+<br>backend/node_modules/nodemailer/package.json
+<br>backend/node_modules/nodemailer/lib/mime-node/index.js
+<br>backend/node_modules/nodemailer/lib/shared/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js
+<br>backend/node_modules/nodemailer/lib/fetch/cookies.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/index.js
+<br>backend/node_modules/nodemailer/lib/stream-transport/index.js
+<br>backend/node_modules/nodemailer/.prettierrc
+<br>backend/node_modules/nodemailer/lib/base64/index.js
+<br>backend/node_modules/nodemailer/lib/mime-funcs/mime-types.js
+<br>backend/node_modules/nodemailer/eslint.config.js
+<br>backend/node_modules/nodemailer/lib/nodemailer.js
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/message-parser.js
+<br>backend/node_modules/nodemailer/lib/qp/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/index.js
+<br>backend/node_modules/nodemailer/lib/fetch/index.js
+<br>backend/node_modules/nodemailer/lib/dkim/relaxed-body.js
+<br>backend/node_modules/nodemailer/SECURITY.txt
+<br>backend/node_modules/nodemailer/lib/smtp-transport/index.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/node_modules/nodemailer/lib/mail-composer/index.js
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/node_modules/nodemailer/lib/ses-transport/index.js
+<br>backend/node_modules/nodemailer/.release-please-config.json
+<br>backend/node_modules/nodemailer/lib/mailer/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-connection/data-stream.js
+<br>backend/node_modules/nodemailer/.prettierignore
+<br>backend/node_modules/nodemailer/lib/mime-node/last-newline.js
+<br>backend/node_modules/nodemailer/LICENSE
+<br>backend/package.json
+<br>backend/node_modules/nodemailer/lib/well-known/index.js
+<br>backend/.env
+<br>backend/node_modules/nodemailer/lib/json-transport/index.js
+<br>backend/routes/booking.js
+<br>backend/node_modules/nodemailer/lib/dkim/sign.js
+<br>backend/node_modules/nodemailer/lib/well-known/services.json
+<br>backend/node_modules/nodemailer/lib/mime-funcs/index.js
+<br>backend/node_modules/nodemailer/.ncurc.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>backend/node_modules/nodemailer/lib/dkim/index.js
+<br>backend/node_modules/nodemailer/lib/smtp-pool/pool-resource.js
+<br>backend/node_modules/nodemailer/CODE_OF_CONDUCT.md
+<br>backend/node_modules/nodemailer/lib/sendmail-transport/index.js
+<br>backend/node_modules/nodemailer/CHANGELOG.md
+<br>backend/node_modules/nodemailer/.gitattributes
+<br>backend/node_modules/nodemailer/README.md
+<br>backend/node_modules/nodemailer/lib/punycode/index.js
+<br>backend/package-lock.json
+<br>backend/node_modules/nodemailer/lib/mime-node/le-windows.js
+<br>backend/node_modules/nodemailer/.prettierrc.js
+<br>backend/node_modules/nodemailer/lib/xoauth2/index.js
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_33');")>18 shared files</a><span id="showMoreBlock_33" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+<br>test-api.http
+<br>frontend/user-app/src/components/ProtectedRoute.js
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_34');")>16 shared files</a><span id="showMoreBlock_34" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/src/styles/Booking.css
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>frontend/user-app/.env
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_35');")>12 shared files</a><span id="showMoreBlock_35" style="display: none;">
+<br>frontend/user-app/src/pages/Dashboard.js
+<br>frontend/user-app/package.json
+<br>backend/routes/auth.js
+<br>frontend/user-app/src/pages/Booking.js
+<br>frontend/user-app/package-lock.json
+<br>frontend/user-app/src/pages/Login.js
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Signup.js
+<br>frontend/user-app/.env
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_36');")>12 shared files</a><span id="showMoreBlock_36" style="display: none;">
+<br>frontend/user-app/src/styles/Booking.css
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/BookingInfo.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/node_modules/.package-lock.json
+<br>backend/package.json
+<br>backend/.env
+<br>backend/routes/booking.js
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+<br>backend/package-lock.json
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_37');")>8 shared files</a><span id="showMoreBlock_37" style="display: none;">
+<br>frontend/user-app/src/pages/Signup.jsx
+<br>frontend/user-app/public/images/barber3.jpg
+<br>frontend/user-app/src/components/SignupForm.jsx
+<br>frontend/user-app/src/pages/Booking.jsx
+<br>backend/index.js
+<br>backend/.env
+<br>frontend/user-app/src/components/BookingForm.jsx
+<br>frontend/user-app/src/pages/Login.jsx
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>Toni <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;toni11elia11@gmail.com&gt;</div></td>
+<td>4</td>
+<td>29</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2234682@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Calin Sanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;2258302@cmontmorency.qc.ca&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Badr1210 <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;147719914+badr1210@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>CalinSanduta <div style='color: grey; font-size: 80%; margin-bottom: 6px;'>&lt;157541451+calinsanduta@users.noreply.github.com&gt;</div></td>
+<td>4</td>
+<td>2</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 4.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 4.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 4.0 contributors with 4.0 or more connections.</p>
+</div>
+<div id="data" class="tabcontent" style="display: none">
+<ul>
+<li>
+<a style='text-decoration: none' target='_blank' href='../data/text/contributors.txt'>Contributors' details...</a>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

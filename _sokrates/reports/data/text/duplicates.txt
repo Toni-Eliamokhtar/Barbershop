@@ -1,0 +1,54 @@
+duplicated block id: 1
+size: 10 cleaned lines of code
+in 2 files:
+ - backend/lib/buildBookingPayload.js (11:20)
+ - backend/lib/extractBookingFields.js (13:22)
+
+duplicated block id: 2
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/lib/buildBookingPayload.js (2:9)
+ - backend/lib/extractBookingFields.js (3:10)
+
+duplicated block id: 3
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/lib/buildBookingPayload.js (2:9)
+ - backend/lib/extractBookingFields.js (14:21)
+
+duplicated block id: 4
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/lib/buildBookingPayload.js (2:9)
+ - backend/lib/buildBookingPayload.js (12:19)
+
+duplicated block id: 5
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/lib/buildBookingPayload.js (12:19)
+ - backend/lib/extractBookingFields.js (3:10)
+
+duplicated block id: 6
+size: 8 cleaned lines of code
+in 2 files:
+ - backend/lib/extractBookingFields.js (3:10)
+ - backend/lib/extractBookingFields.js (14:21)
+
+duplicated block id: 7
+size: 7 cleaned lines of code
+in 2 files:
+ - frontend/user-app/src/pages/Login.jsx (43:50)
+ - frontend/user-app/src/pages/Signup.jsx (35:42)
+
+duplicated block id: 8
+size: 7 cleaned lines of code
+in 2 files:
+ - backend/email.js (4:10)
+ - backend/routes/booking.js (36:42)
+
+duplicated block id: 9
+size: 6 cleaned lines of code
+in 2 files:
+ - frontend/user-app/src/styles/Booking.css (87:92)
+ - frontend/user-app/src/styles/Booking.css (127:132)
+

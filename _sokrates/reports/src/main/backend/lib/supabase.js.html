@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>backend/lib/supabase.js</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">backend/lib/supabase.js (<b>32</b> lines of code) (<a href="supabase.js">raw</a>):</h3>
+<div id="editor">import { createClient } from &quot;@supabase/supabase-js&quot;;
+import dotenv from &quot;dotenv&quot;;
+
+dotenv.config();
+
+export const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_KEY 
+);
+
+// Helper: create a booking in Supabase
+export async function createBooking(booking) {
+  try {
+    const { data, error } = await supabase
+      .from(&quot;bookings&quot;)
+      .insert([{ ...booking, paid: false }])
+      .select()
+      .single();
+    return { data, error };
+  } catch (err) {
+    return { data: null, error: err };
+  }
+}
+
+// Helper: mark booking as paid
+export async function markBookingPaid(bookingId, paymentInfo = {}) {
+  try {
+    const { data, error } = await supabase
+      .from(&quot;bookings&quot;)
+      .update({ paid: true, payment_info: paymentInfo })
+      .eq(&quot;id&quot;, bookingId)
+      .select()
+      .single();
+    return { data, error };
+  } catch (err) {
+    return { data: null, error: err };
+  }
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/javascript");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

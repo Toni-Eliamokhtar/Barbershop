@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>frontend/user-app/src/pages/Dashboard.jsx</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Dashboard.jsx (<b>76</b> lines of code) (<a href="Dashboard.jsx">raw</a>):</h3>
+<div id="editor">import { useEffect, useState } from &quot;react&quot;;
+import { Link, useNavigate } from &quot;react-router-dom&quot;;
+import { supabase } from &quot;../lib/supabase&quot;;
+import BarberCard from &quot;../components/BarberCard&quot;;
+import AdminAddBarberForm from &quot;../components/AdminAddBarberForm&quot;; // ✅ import du nouveau composant
+import &quot;../styles/Dashboard.css&quot;;
+
+export default function Dashboard() {
+  const navigate = useNavigate();
+
+  const [barbers, setBarbers] = useState([]);
+  const [loadingBarbers, setLoadingBarbers] = useState(true);
+  const [barbersError, setBarbersError] = useState(null);
+  const [profile, setProfile] = useState(null);
+
+  // ✅ Fonction pour charger les barbiers (r&eacute;utilisable)
+  const loadBarbers = async () =&gt; {
+    const { data, error } = await supabase
+      .from(&quot;barbers&quot;)
+      .select(&quot;*&quot;)
+      .order(&quot;nom&quot;, { ascending: true });
+
+    if (error) setBarbersError(error.message);
+    else setBarbers(data ?? []);
+  };
+
+  useEffect(() =&gt; {
+    (async () =&gt; {
+      const { data: auth } = await supabase.auth.getUser();
+      const user = auth?.user;
+      if (!user) {
+        navigate(&quot;/login&quot;);
+        return;
+      }
+
+      // 🔹 Charger le profil
+      const { data: prof, error: pErr } = await supabase
+        .from(&quot;profiles&quot;)
+        .select(&quot;*&quot;)
+        .eq(&quot;id&quot;, user.id)
+        .single();
+
+      if (!pErr) setProfile(prof);
+
+      // 🔹 Charger les barbiers
+      await loadBarbers();
+      setLoadingBarbers(false);
+    })();
+  }, [navigate]);
+
+  const handleLogout = async () =&gt; {
+    await supabase.auth.signOut();
+    navigate(&quot;/login&quot;);
+  };
+
+  const isAdmin = profile?.role === &quot;admin&quot;;
+
+  return (
+    &lt;div className=&quot;dashboard&quot;&gt;
+      &lt;div className=&quot;dashboard-header&quot;&gt;
+        &lt;h2&gt;R&eacute;serve ton rendez-vous 💈&lt;/h2&gt;
+        &lt;button onClick={handleLogout} className=&quot;logout-btn&quot;&gt;
+          D&eacute;connexion
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      {/* ✅ Bloc admin s&eacute;par&eacute; */}
+      {isAdmin &amp;&amp; (
+        &lt;AdminAddBarberForm
+          onBarberAdded={loadBarbers} // callback pour rafra&icirc;chir la liste
+        /&gt;
+      )}
+
+      {/* ✅ Liste des barbiers */}
+      {loadingBarbers &amp;&amp; &lt;p&gt;Chargement des barbiers&hellip;&lt;/p&gt;}
+      {barbersError &amp;&amp; (
+        &lt;p style={{ color: &quot;tomato&quot; }}&gt;Erreur: {barbersError}&lt;/p&gt;
+      )}
+
+      &lt;div className=&quot;barbers-grid&quot;&gt;
+        {barbers.map((b) =&gt; (
+          &lt;BarberCard key={b.id} barber={b} /&gt;
+        ))}
+
+        {!loadingBarbers &amp;&amp; !barbersError &amp;&amp; barbers.length === 0 &amp;&amp; (
+          &lt;p&gt;Aucun barbier pour le moment.&lt;/p&gt;
+        )}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/html");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

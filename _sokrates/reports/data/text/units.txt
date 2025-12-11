@@ -1,0 +1,72 @@
+id: 1
+unit: export function extractBookingFields()
+file: backend/lib/extractBookingFields.js
+start line: 1
+end line: 23
+size: 22 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 2
+unit: export function buildBookingPayload()
+file: backend/lib/buildBookingPayload.js
+start line: 1
+end line: 21
+size: 21 LOC
+McCabe index: 1
+number of parameters: 9
+
+id: 3
+unit: async function persistBookingInSupabase()
+file: backend/routes/booking.js
+start line: 14
+end line: 33
+size: 19 LOC
+McCabe index: 4
+number of parameters: 1
+
+id: 4
+unit: export async function markBookingPaid()
+file: backend/lib/supabase.js
+start line: 26
+end line: 38
+size: 13 LOC
+McCabe index: 2
+number of parameters: 2
+
+id: 5
+unit: async function testConnection()
+file: frontend/user-app/src/hooks/useSupabaseStatus.js
+start line: 8
+end line: 21
+size: 13 LOC
+McCabe index: 2
+number of parameters: 0
+
+id: 6
+unit: export async function createBooking()
+file: backend/lib/supabase.js
+start line: 12
+end line: 23
+size: 12 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 7
+unit: async function sendConfirmationEmail()
+file: backend/email.js
+start line: 13
+end line: 23
+size: 10 LOC
+McCabe index: 1
+number of parameters: 3
+
+id: 8
+unit: export default function useSupabaseStatus()
+file: frontend/user-app/src/hooks/useSupabaseStatus.js
+start line: 4
+end line: 27
+size: 7 LOC
+McCabe index: 1
+number of parameters: 0
+

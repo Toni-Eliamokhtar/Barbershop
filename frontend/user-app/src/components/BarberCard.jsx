@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
+import { SERVICES } from "../constants/services";
 import "../styles/Dashboard.css";
-
-const services = [
-  { id: 1, nom: "Coupe cheveux", prix: 25 },
-  { id: 2, nom: "Cheveux + barbe", prix: 35 },
-  { id: 3, nom: "Étudiant", prix: 20 },
-  { id: 4, nom: "Enfant", prix: 15 },
-  { id: 5, nom: "Barbe", prix: 18 },
-];
 
 export default function BarberCard({ barber }) {
   return (
@@ -21,7 +14,7 @@ export default function BarberCard({ barber }) {
       <p className="specialite">{barber.specialite}</p>
 
       <div className="services">
-        {services.map((s) => (
+        {SERVICES.map((s) => (
           <Link
             key={s.id}
             to={`/booking/${barber.id}/${s.id}`}

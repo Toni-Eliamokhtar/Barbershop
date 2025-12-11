@@ -1,0 +1,111 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[backend/lib/extractBookingFields.js]",
+    "size" : 3
+  }, {
+    "id" : "[backend/email.js]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[backend/routes/booking.js]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Login.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[backend/lib/buildBookingPayload.js]",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/styles/Booking.css]",
+    "size" : 2
+  } ],
+  "links" : [ {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 68
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 68
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 16
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 16
+  }, {
+    "source" : "[frontend/user-app/src/pages/Login.jsx]",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "[frontend/user-app/src/pages/Login.jsx]",
+    "count" : 14
+  }, {
+    "source" : "[backend/email.js]",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 14
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/email.js]",
+    "count" : 14
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 12
+  }, {
+    "source" : "[frontend/user-app/src/styles/Booking.css]",
+    "target" : "[frontend/user-app/src/styles/Booking.css]",
+    "count" : 12
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

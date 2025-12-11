@@ -1,0 +1,267 @@
+{
+  "title" : "Duplication",
+  "timestamp" : "2025-12-10 19:40:07",
+  "duplicates" : [ {
+    "blockSize" : 10,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 11,
+      "endLine" : 20,
+      "cleanedStartLine" : 11,
+      "cleanedEndLine" : 20
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 13,
+      "endLine" : 22,
+      "cleanedStartLine" : 12,
+      "cleanedEndLine" : 21
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 2,
+      "endLine" : 9,
+      "cleanedStartLine" : 2,
+      "cleanedEndLine" : 9
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 3,
+      "endLine" : 10,
+      "cleanedStartLine" : 3,
+      "cleanedEndLine" : 10
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 2,
+      "endLine" : 9,
+      "cleanedStartLine" : 2,
+      "cleanedEndLine" : 9
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 14,
+      "endLine" : 21,
+      "cleanedStartLine" : 13,
+      "cleanedEndLine" : 20
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 2,
+      "endLine" : 9,
+      "cleanedStartLine" : 2,
+      "cleanedEndLine" : 9
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 12,
+      "endLine" : 19,
+      "cleanedStartLine" : 12,
+      "cleanedEndLine" : 19
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/buildBookingPayload.js",
+        "extension" : "js",
+        "linesOfCode" : 21,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 20,
+      "startLine" : 12,
+      "endLine" : 19,
+      "cleanedStartLine" : 12,
+      "cleanedEndLine" : 19
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 3,
+      "endLine" : 10,
+      "cleanedStartLine" : 3,
+      "cleanedEndLine" : 10
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 3,
+      "endLine" : 10,
+      "cleanedStartLine" : 3,
+      "cleanedEndLine" : 10
+    }, {
+      "file" : {
+        "relativePath" : "backend/lib/extractBookingFields.js",
+        "extension" : "js",
+        "linesOfCode" : 22,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 21,
+      "startLine" : 14,
+      "endLine" : 21,
+      "cleanedStartLine" : 13,
+      "cleanedEndLine" : 20
+    } ]
+  }, {
+    "blockSize" : 7,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+        "extension" : "jsx",
+        "linesOfCode" : 52,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 49,
+      "startLine" : 43,
+      "endLine" : 50,
+      "cleanedStartLine" : 36,
+      "cleanedEndLine" : 42
+    }, {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
+        "extension" : "jsx",
+        "linesOfCode" : 47,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 44,
+      "startLine" : 35,
+      "endLine" : 42,
+      "cleanedStartLine" : 30,
+      "cleanedEndLine" : 36
+    } ]
+  }, {
+    "blockSize" : 7,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "backend/email.js",
+        "extension" : "js",
+        "linesOfCode" : 19,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 17,
+      "startLine" : 4,
+      "endLine" : 10,
+      "cleanedStartLine" : 1,
+      "cleanedEndLine" : 7
+    }, {
+      "file" : {
+        "relativePath" : "backend/routes/booking.js",
+        "extension" : "js",
+        "linesOfCode" : 130,
+        "components" : [ "primary::backend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 115,
+      "startLine" : 36,
+      "endLine" : 42,
+      "cleanedStartLine" : 21,
+      "cleanedEndLine" : 27
+    } ]
+  }, {
+    "blockSize" : 6,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/styles/Booking.css",
+        "extension" : "css",
+        "linesOfCode" : 128,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 128,
+      "startLine" : 87,
+      "endLine" : 92,
+      "cleanedStartLine" : 77,
+      "cleanedEndLine" : 82
+    }, {
+      "file" : {
+        "relativePath" : "frontend/user-app/src/styles/Booking.css",
+        "extension" : "css",
+        "linesOfCode" : 128,
+        "components" : [ "primary::frontend" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 128,
+      "startLine" : 127,
+      "endLine" : 132,
+      "cleanedStartLine" : 112,
+      "cleanedEndLine" : 117
+    } ]
+  } ],
+  "overallDuplication" : null
+}

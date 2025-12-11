@@ -1,0 +1,196 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "size" : 3
+  }, {
+    "id" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/pages/Home.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[backend/lib/buildBookingPayload.js]",
+    "size" : 1
+  }, {
+    "id" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "size" : 4
+  }, {
+    "id" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/App.js]",
+    "size" : 2
+  }, {
+    "id" : "[backend/lib/extractBookingFields.js]",
+    "size" : 1
+  }, {
+    "id" : "[backend/routes/booking.js]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "size" : 2
+  }, {
+    "id" : "[frontend/user-app/src/constants/services.js]",
+    "size" : 2
+  } ],
+  "links" : [ {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 2
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "target" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
+    "target" : "[frontend/user-app/src/components/LoginForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/constants/services.js]",
+    "target" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/BarberCard.jsx]",
+    "target" : "[frontend/user-app/src/constants/services.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "[frontend/user-app/src/pages/Signup.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/hooks/useSupabaseStatus.js]",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/lib/buildBookingPayload.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/lib/buildBookingPayload.js]",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "target" : "[frontend/user-app/src/constants/services.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/constants/services.js]",
+    "target" : "[frontend/user-app/src/pages/Booking.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AuthEmailField.jsx]",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[backend/lib/extractBookingFields.js]",
+    "target" : "[backend/routes/booking.js]",
+    "count" : 1
+  }, {
+    "source" : "[backend/routes/booking.js]",
+    "target" : "[backend/lib/extractBookingFields.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "target" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/components/SignupForm.jsx]",
+    "target" : "[frontend/user-app/src/components/AuthPasswordField.jsx]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/pages/Home.jsx]",
+    "target" : "[frontend/user-app/src/App.js]",
+    "count" : 1
+  }, {
+    "source" : "[frontend/user-app/src/App.js]",
+    "target" : "[frontend/user-app/src/pages/Home.jsx]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>
