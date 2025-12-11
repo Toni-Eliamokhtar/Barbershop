@@ -1,6 +1,5 @@
-backend/lib/buildBookingPayload.js [11:20]:
+backend/lib/extractBookingFields.js [3:10]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    return {
         barberId,
         serviceId,
         date,
@@ -9,14 +8,12 @@ backend/lib/buildBookingPayload.js [11:20]:
         userName,
         barberName,
         serviceName,
-    };
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-backend/lib/extractBookingFields.js [13:22]:
+backend/lib/extractBookingFields.js [14:21]:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    return {
         barberId,
         serviceId,
         date,
@@ -25,7 +22,6 @@ backend/lib/extractBookingFields.js [13:22]:
         userName,
         barberName,
         serviceName,
-    };
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

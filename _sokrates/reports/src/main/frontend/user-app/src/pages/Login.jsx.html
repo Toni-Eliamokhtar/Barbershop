@@ -12,12 +12,12 @@
     </style>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Login.jsx (<b>52</b> lines of code) (<a href="Login.jsx">raw</a>):</h3>
+<h3 style="margin-bottom: 0">frontend/user-app/src/pages/Login.jsx (<b>48</b> lines of code) (<a href="Login.jsx">raw</a>):</h3>
 <div id="editor">import { useNavigate } from &quot;react-router-dom&quot;;
 import { supabase } from &quot;../lib/supabase&quot;;
 import LoginForm from &quot;../components/LoginForm&quot;;
-import Swal from &quot;sweetalert2&quot;;
 import &quot;../styles/Auth.css&quot;;
+import { showSuccessAlert, showErrorAlert } from &quot;../utils/alerts&quot;;
 
 export default function Login() {
   const navigate = useNavigate();
@@ -40,22 +40,18 @@ export default function Login() {
       });
       if (error) throw error;
 
-      await Swal.fire({
-        icon: &quot;success&quot;,
+      await showSuccessAlert({
         title: &quot;Connexion r&eacute;ussie ✅&quot;,
         text: `Bienvenue ${email} !`,
-        confirmButtonColor: &quot;#111&quot;,
       });
 
       navigate(&quot;/dashboard&quot;);
     } catch (err) {
       console.error(&quot;Erreur de login :&quot;, err);
 
-      Swal.fire({
-        icon: &quot;error&quot;,
+      showErrorAlert({
         title: &quot;&Eacute;chec de connexion ❌&quot;,
         text: err.message || &quot;Email ou mot de passe invalide.&quot;,
-        confirmButtonColor: &quot;#111&quot;,
       });
     }
   };

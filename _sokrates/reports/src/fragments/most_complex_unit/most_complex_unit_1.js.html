@@ -6,24 +6,24 @@
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
 <h3 style="margin-bottom: 0">async function persistBookingInSupabase()</h3>
-<p style="margin-top: 4px">in <i>backend/routes/booking.js [14:33]</i></p>
+<p style="margin-top: 4px">in <i>backend/routes/booking.js [13:32]</i></p>
 <ul>
     <li><b>19</b> lines of code</li>
     <li><b>4</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-async function persistBookingInSupabase(payload) {
+async function persistBookingInSupabase(fields) {
   try {
     const { data, error } = await createBooking({
-      barber_id: payload.barberId,
-      service_id: payload.serviceId,
-      date: payload.date,
-      time: payload.time,
-      user_email: payload.userEmail,
-      user_name: payload.userName,
-      barber_name: payload.barberName,
-      service_name: payload.serviceName,
+      barber_id: fields.barberId,
+      service_id: fields.serviceId,
+      date: fields.date,
+      time: fields.time,
+      user_email: fields.userEmail,
+      user_name: fields.userName,
+      barber_name: fields.barberName,
+      service_name: fields.serviceName,
     });
 
     if (error) console.warn(&quot;Supabase createBooking warning:&quot;, error);

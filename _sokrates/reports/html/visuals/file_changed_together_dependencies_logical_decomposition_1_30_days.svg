@@ -1,0 +1,31 @@
+<svg width="222pt" height="44pt"
+ viewBox="0.00 0.00 222.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 218.12,-40 218.12,4 -4,4"/>
+<!-- frontend -->
+<g id="node1" class="node">
+<title>frontend</title>
+<polygon fill="#00b2ee" stroke="white" points="67.75,-36 0,-36 0,0 67.75,0 67.75,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="33.88" y="-13.32" font-family="Tahoma" font-size="14.00">frontend</text>
+</g>
+<!-- frontend&#45;&#45;frontend -->
+<g id="edge1" class="edge">
+<title>frontend&#45;&#45;frontend</title>
+<path fill="none" stroke="#a0a0a0" stroke-width="6" stroke-opacity="0.717647" d="M67.8,-24.74C77.9,-24.53 85.75,-22.29 85.75,-18 85.75,-13.71 77.9,-11.47 67.8,-11.26"/>
+<text xml:space="preserve" text-anchor="middle" x="92.12" y="-13.72" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- backend -->
+<g id="node2" class="node">
+<title>backend</title>
+<polygon fill="#00b2ee" stroke="white" points="183.38,-36 116.38,-36 116.38,0 183.38,0 183.38,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="149.88" y="-13.32" font-family="Tahoma" font-size="14.00">backend</text>
+</g>
+<!-- backend&#45;&#45;backend -->
+<g id="edge2" class="edge">
+<title>backend&#45;&#45;backend</title>
+<path fill="none" stroke="#a0a0a0" stroke-opacity="0.368627" d="M183.56,-24.74C193.58,-24.53 201.38,-22.29 201.38,-18 201.38,-13.71 193.58,-11.47 183.56,-11.26"/>
+<text xml:space="preserve" text-anchor="middle" x="207.75" y="-13.72" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+</g>
+</svg>

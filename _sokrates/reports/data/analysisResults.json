@@ -9,7 +9,7 @@
   "metricsList" : {
     "metrics" : [ {
       "id" : "TOTAL_NUMBER_OF_FILES",
-      "value" : 40977,
+      "value" : 40981,
       "description" : "Total number of files in the source folder"
     }, {
       "id" : "NUMBER_OF_FILES_MAIN",
@@ -17,7 +17,7 @@
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_MAIN",
-      "value" : 1871,
+      "value" : 1861,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_MAIN_EXT_JSX",
@@ -25,7 +25,7 @@
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_MAIN_EXT_JSX",
-      "value" : 738,
+      "value" : 728,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_MAIN_EXT_JS",
@@ -129,27 +129,27 @@
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_BACKEND",
-      "value" : 8,
+      "value" : 7,
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_DECOMPOSITION_PRIMARY_BACKEND",
-      "value" : 584,
+      "value" : 567,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_BACKEND_EXT_JS",
-      "value" : 8,
+      "value" : 7,
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_DECOMPOSITION_PRIMARY_BACKEND_EXT_JS",
-      "value" : 584,
+      "value" : 567,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FRONTEND",
-      "value" : 30,
+      "value" : 31,
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_DECOMPOSITION_PRIMARY_FRONTEND",
-      "value" : 1271,
+      "value" : 1278,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FRONTEND_EXT_JSX",
@@ -157,7 +157,7 @@
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_DECOMPOSITION_PRIMARY_FRONTEND_EXT_JSX",
-      "value" : 738,
+      "value" : 728,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FRONTEND_EXT_CSS",
@@ -169,11 +169,11 @@
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FRONTEND_EXT_JS",
-      "value" : 7,
+      "value" : 8,
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_DECOMPOSITION_PRIMARY_FRONTEND_EXT_JS",
-      "value" : 88,
+      "value" : 105,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FRONTEND_EXT_HTML",
@@ -225,7 +225,7 @@
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED",
-      "value" : 1871,
+      "value" : 1861,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED_EXT_JSX",
@@ -233,7 +233,7 @@
       "description" : null
     }, {
       "id" : "LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED_EXT_JSX",
-      "value" : 738,
+      "value" : 728,
       "description" : null
     }, {
       "id" : "NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED_EXT_JS",
@@ -289,11 +289,11 @@
       "description" : "Number of  files with more than 1000 lines of code"
     }, {
       "id" : "NEGLIGIBLE_RISK_FILE_SIZE_LOC",
-      "value" : 1187,
+      "value" : 1173,
       "description" : "Lines of code in  files with 100 or less lines of code"
     }, {
       "id" : "LOW_RISK_FILE_SIZE_LOC",
-      "value" : 451,
+      "value" : 455,
       "description" : "Lines of code in  files with 100 to 200 lines of code"
     }, {
       "id" : "MEDIUM_RISK_FILE_SIZE_LOC",
@@ -309,27 +309,27 @@
       "description" : "Lines of code in  files with more than 1000 lines of code"
     }, {
       "id" : "NUMBER_OF_UNITS",
-      "value" : 8,
+      "value" : 9,
       "description" : "Number of units"
     }, {
       "id" : "LINES_OF_CODE_IN_UNITS",
-      "value" : 117,
+      "value" : 112,
       "description" : "Lines of code in units"
     }, {
       "id" : "LINES_OF_CODE_OUTSIDE_UNITS",
-      "value" : 1754,
+      "value" : 1749,
       "description" : "Lines of code in units"
     }, {
       "id" : "UNIT_SIZE_NEGLIGIBLE_RISK_LOC",
-      "value" : 17,
+      "value" : 33,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_NEGLIGIBLE_RISK_PERCENTAGE",
-      "value" : 14.52991452991453,
+      "value" : 29.464285714285715,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_NEGLIGIBLE_RISK_COUNT",
-      "value" : 2,
+      "value" : 4,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_LOW_RISK_LOC",
@@ -337,7 +337,7 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_LOW_RISK_PERCENTAGE",
-      "value" : 48.717948717948715,
+      "value" : 50.892857142857146,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_LOW_RISK_COUNT",
@@ -345,15 +345,15 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_MEDIUM_RISK_LOC",
-      "value" : 43,
+      "value" : 22,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_MEDIUM_RISK_PERCENTAGE",
-      "value" : 36.75213675213675,
+      "value" : 19.642857142857142,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_MEDIUM_RISK_COUNT",
-      "value" : 2,
+      "value" : 1,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_HIGH_RISK_LOC",
@@ -385,7 +385,7 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_NEGLIGIBLE_RISK_PERCENTAGE",
-      "value" : 10.309278350515465,
+      "value" : 13.157894736842104,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_NEGLIGIBLE_RISK_COUNT",
@@ -397,7 +397,7 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_LOW_RISK_PERCENTAGE",
-      "value" : 45.36082474226804,
+      "value" : 57.89473684210526,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_LOW_RISK_COUNT",
@@ -405,15 +405,15 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_MEDIUM_RISK_LOC",
-      "value" : 43,
+      "value" : 22,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_MEDIUM_RISK_PERCENTAGE",
-      "value" : 44.329896907216494,
+      "value" : 28.94736842105263,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_MEDIUM_RISK_COUNT",
-      "value" : 2,
+      "value" : 1,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_BACKEND_HIGH_RISK_LOC",
@@ -441,15 +441,15 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_LOC",
-      "value" : 7,
+      "value" : 23,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_PERCENTAGE",
-      "value" : 35.0,
+      "value" : 63.888888888888886,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_COUNT",
-      "value" : 1,
+      "value" : 3,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_LOW_RISK_LOC",
@@ -457,7 +457,7 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_LOW_RISK_PERCENTAGE",
-      "value" : 65.0,
+      "value" : 36.111111111111114,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_COMPONENT_FRONTEND_LOW_RISK_COUNT",
@@ -501,15 +501,15 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_LOC",
-      "value" : 17,
+      "value" : 33,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_PERCENTAGE",
-      "value" : 14.52991452991453,
+      "value" : 29.464285714285715,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_COUNT",
-      "value" : 2,
+      "value" : 4,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_LOW_RISK_LOC",
@@ -517,7 +517,7 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_LOW_RISK_PERCENTAGE",
-      "value" : 48.717948717948715,
+      "value" : 50.892857142857146,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_LOW_RISK_COUNT",
@@ -525,15 +525,15 @@
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_LOC",
-      "value" : 43,
+      "value" : 22,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_PERCENTAGE",
-      "value" : 36.75213675213675,
+      "value" : 19.642857142857142,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_COUNT",
-      "value" : 2,
+      "value" : 1,
       "description" : null
     }, {
       "id" : "UNIT_SIZE_EXTENSION_JS_HIGH_RISK_LOC",
@@ -561,7 +561,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_LOC",
-      "value" : 117,
+      "value" : 112,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_PERCENTAGE",
@@ -569,7 +569,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_COUNT",
-      "value" : 8,
+      "value" : 9,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_LOW_RISK_LOC",
@@ -629,7 +629,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_BACKEND_NEGLIGIBLE_RISK_LOC",
-      "value" : 97,
+      "value" : 76,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_BACKEND_NEGLIGIBLE_RISK_PERCENTAGE",
@@ -637,7 +637,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_BACKEND_NEGLIGIBLE_RISK_COUNT",
-      "value" : 6,
+      "value" : 5,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_BACKEND_LOW_RISK_LOC",
@@ -689,7 +689,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_LOC",
-      "value" : 20,
+      "value" : 36,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_PERCENTAGE",
@@ -697,7 +697,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_FRONTEND_NEGLIGIBLE_RISK_COUNT",
-      "value" : 2,
+      "value" : 4,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_FRONTEND_LOW_RISK_LOC",
@@ -749,7 +749,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_LOC",
-      "value" : 117,
+      "value" : 112,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_PERCENTAGE",
@@ -757,7 +757,7 @@
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_COUNT",
-      "value" : 8,
+      "value" : 9,
       "description" : null
     }, {
       "id" : "CONDITIONAL_COMPLEXITY_COMPONENT_JS_LOW_RISK_LOC",
@@ -825,11 +825,11 @@
       "description" : "The number of estimated working days in the period"
     }, {
       "id" : "FILE_AGE_NEGLIGIBLE_RISK_COUNT",
-      "value" : 14,
+      "value" : 15,
       "description" : "Number of files 1-30 days days old"
     }, {
       "id" : "FILE_AGE_LOW_RISK_COUNT",
-      "value" : 25,
+      "value" : 24,
       "description" : "Number of files 31-90 days days old"
     }, {
       "id" : "FILE_AGE_MEDIUM_RISK_COUNT",
@@ -845,11 +845,11 @@
       "description" : "Number of files 366+ days days old"
     }, {
       "id" : "FILE_AGE_NEGLIGIBLE_RISK_LOC",
-      "value" : 503,
+      "value" : 545,
       "description" : "Number of files 1-30 days days old"
     }, {
       "id" : "FILE_AGE_LOW_RISK_LOC",
-      "value" : 1368,
+      "value" : 1316,
       "description" : "Number of files 31-90 days days old"
     }, {
       "id" : "FILE_AGE_MEDIUM_RISK_LOC",
@@ -869,23 +869,23 @@
       "description" : "Number of contributors"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATES",
-      "value" : 9,
+      "value" : 4,
       "description" : "Number of duplicates"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_FILES_WITH_DUPLICATES",
-      "value" : 7,
+      "value" : 6,
       "description" : "Number of files with duplicates"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES",
-      "value" : 76,
+      "value" : 54,
       "description" : "Number of duplicated lines"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_CLEANED_LINES",
-      "value" : 1721,
+      "value" : 1710,
       "description" : "Number of lines after cleaning for duplication calculations"
     }, {
       "id" : "DUPLICATION_PERCENTAGE",
-      "value" : 4.416037187681581,
+      "value" : 3.1578947368421053,
       "description" : "Duplication percentage"
     }, {
       "id" : "UNIT_DUPLICATES_COUNT",
@@ -893,11 +893,11 @@
       "description" : "Unit duplicates"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_BACKEND",
-      "value" : 50,
+      "value" : 30,
       "description" : "Number of duplicated lines"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_BACKEND",
-      "value" : 50,
+      "value" : 30,
       "description" : "Number of lines after cleaning for duplication calculations"
     }, {
       "id" : "DUPLICATION_PERCENTAGE_PRIMARY_BACKEND",
@@ -905,11 +905,11 @@
       "description" : "Duplication percentage"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_FRONTEND",
-      "value" : 26,
+      "value" : 24,
       "description" : "Number of duplicated lines"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_FRONTEND",
-      "value" : 26,
+      "value" : 24,
       "description" : "Number of lines after cleaning for duplication calculations"
     }, {
       "id" : "DUPLICATION_PERCENTAGE_PRIMARY_FRONTEND",
@@ -929,15 +929,15 @@
       "description" : "Duplication percentage"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES_JS",
-      "value" : 50,
+      "value" : 30,
       "description" : "Number of duplicated lines"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_CLEANED_LINES_JS",
-      "value" : 576,
+      "value" : 575,
       "description" : "Number of lines after cleaning for duplication calculations"
     }, {
       "id" : "DUPLICATION_PERCENTAGE_JS",
-      "value" : 8.680555555555555,
+      "value" : 5.217391304347826,
       "description" : "Duplication percentage"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES_CSS",
@@ -953,19 +953,19 @@
       "description" : "Duplication percentage"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_DUPLICATED_LINES_JSX",
-      "value" : 14,
+      "value" : 12,
       "description" : "Number of duplicated lines"
     }, {
       "id" : "DUPLICATION_NUMBER_OF_CLEANED_LINES_JSX",
-      "value" : 687,
+      "value" : 677,
       "description" : "Number of lines after cleaning for duplication calculations"
     }, {
       "id" : "DUPLICATION_PERCENTAGE_JSX",
-      "value" : 2.037845705967977,
+      "value" : 1.7725258493353029,
       "description" : "Duplication percentage"
     }, {
       "id" : "TOTAL_ANALYSIS_TIME_IN_MILLIS",
-      "value" : 6030,
+      "value" : 5943,
       "description" : "Total analysis time in milliseconds"
     } ]
   },
@@ -1020,7 +1020,7 @@
         },
         "metric" : {
           "id" : "LINES_OF_CODE_MAIN",
-          "value" : 1871,
+          "value" : 1861,
           "description" : null
         },
         "status" : "OK"
@@ -1036,7 +1036,7 @@
         },
         "metric" : {
           "id" : "DUPLICATION_PERCENTAGE",
-          "value" : 4.416037187681581,
+          "value" : 3.1578947368421053,
           "description" : "Duplication percentage"
         },
         "status" : "OK"
@@ -1075,11 +1075,11 @@
       } ]
     } ]
   },
-  "totalNumberOfFilesInScope" : 40977,
+  "totalNumberOfFilesInScope" : 40981,
   "mainAspectAnalysisResults" : {
     "name" : null,
     "filesCount" : 39,
-    "linesOfCode" : 1871,
+    "linesOfCode" : 1861,
     "numberOfRegexLineMatches" : 0,
     "fileCountPerExtension" : [ {
       "name" : "  *.jsx",
@@ -1104,7 +1104,7 @@
     } ],
     "linesOfCodePerExtension" : [ {
       "name" : "  *.jsx",
-      "value" : 738,
+      "value" : 728,
       "description" : [ ]
     }, {
       "name" : "  *.js",
@@ -1192,23 +1192,23 @@
     "key" : "primary",
     "components" : [ {
       "name" : "backend",
-      "filesCount" : 8,
-      "linesOfCode" : 584,
+      "filesCount" : 7,
+      "linesOfCode" : 567,
       "numberOfRegexLineMatches" : 0,
       "fileCountPerExtension" : [ {
         "name" : "  *.js",
-        "value" : 8,
+        "value" : 7,
         "description" : [ ]
       } ],
       "linesOfCodePerExtension" : [ {
         "name" : "  *.js",
-        "value" : 584,
+        "value" : 567,
         "description" : [ ]
       } ]
     }, {
       "name" : "frontend",
-      "filesCount" : 30,
-      "linesOfCode" : 1271,
+      "filesCount" : 31,
+      "linesOfCode" : 1278,
       "numberOfRegexLineMatches" : 0,
       "fileCountPerExtension" : [ {
         "name" : "  *.jsx",
@@ -1220,7 +1220,7 @@
         "description" : [ ]
       }, {
         "name" : "  *.js",
-        "value" : 7,
+        "value" : 8,
         "description" : [ ]
       }, {
         "name" : "  *.html",
@@ -1229,7 +1229,7 @@
       } ],
       "linesOfCodePerExtension" : [ {
         "name" : "  *.jsx",
-        "value" : 738,
+        "value" : 728,
         "description" : [ ]
       }, {
         "name" : "  *.css",
@@ -1237,7 +1237,7 @@
         "description" : [ ]
       }, {
         "name" : "  *.js",
-        "value" : 88,
+        "value" : 105,
         "description" : [ ]
       }, {
         "name" : "  *.html",
@@ -1330,11 +1330,11 @@
     },
     "fileCountPerComponent" : [ {
       "name" : "backend",
-      "value" : 8,
+      "value" : 7,
       "description" : [ ]
     }, {
       "name" : "frontend",
-      "value" : 30,
+      "value" : 31,
       "description" : [ ]
     }, {
       "name" : "ROOT",
@@ -1343,11 +1343,11 @@
     } ],
     "linesOfCodePerComponent" : [ {
       "name" : "backend",
-      "value" : 584,
+      "value" : 567,
       "description" : [ ]
     }, {
       "name" : "frontend",
-      "value" : 1271,
+      "value" : 1278,
       "description" : [ ]
     }, {
       "name" : "ROOT",
@@ -1367,7 +1367,7 @@
     }, {
       "name" : "Unclassified",
       "filesCount" : 39,
-      "linesOfCode" : 1871,
+      "linesOfCode" : 1861,
       "numberOfRegexLineMatches" : 0,
       "fileCountPerExtension" : [ {
         "name" : "  *.jsx",
@@ -1392,7 +1392,7 @@
       } ],
       "linesOfCodePerExtension" : [ {
         "name" : "  *.jsx",
-        "value" : 738,
+        "value" : 728,
         "description" : [ ]
       }, {
         "name" : "  *.js",
@@ -1428,7 +1428,7 @@
       "description" : [ ]
     }, {
       "name" : "Unclassified",
-      "value" : 1871,
+      "value" : 1861,
       "description" : [ ]
     } ]
   } ],
@@ -1520,8 +1520,8 @@
       "mediumRiskThreshold" : 200,
       "highRiskThreshold" : 500,
       "veryHighRiskThreshold" : 1000,
-      "negligibleRiskValue" : 1187,
-      "lowRiskValue" : 451,
+      "negligibleRiskValue" : 1173,
+      "lowRiskValue" : 455,
       "mediumRiskValue" : 233,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -1535,13 +1535,13 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 24.10475681453768,
       "highRiskPercentage" : 0.0,
-      "mediumRiskPercentage" : 12.453233564938536,
-      "totalValue" : 1871,
+      "lowRiskPercentage" : 24.44922084900591,
+      "veryHighRiskPercentage" : 0.0,
+      "mediumRiskPercentage" : 12.520150456743686,
+      "negligibleRiskPercentage" : 63.0306286942504,
       "totalCount" : 39,
-      "negligibleRiskPercentage" : 63.442009620523784
+      "totalValue" : 1861
     },
     "fileSizeDistributionPerExtension" : [ {
       "key" : "js",
@@ -1549,8 +1549,8 @@
       "mediumRiskThreshold" : 200,
       "highRiskThreshold" : 500,
       "veryHighRiskThreshold" : 1000,
-      "negligibleRiskValue" : 309,
-      "lowRiskValue" : 130,
+      "negligibleRiskValue" : 305,
+      "lowRiskValue" : 134,
       "mediumRiskValue" : 233,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -1564,13 +1564,13 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 19.345238095238095,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 19.94047619047619,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 34.67261904761905,
-      "totalValue" : 672,
+      "negligibleRiskPercentage" : 45.38690476190476,
       "totalCount" : 15,
-      "negligibleRiskPercentage" : 45.982142857142854
+      "totalValue" : 672
     }, {
       "key" : "html",
       "lowRiskThreshold" : 100,
@@ -1592,13 +1592,13 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
+      "negligibleRiskPercentage" : 100.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 100.0
+      "totalValue" : 20
     }, {
       "key" : "css",
       "lowRiskThreshold" : 100,
@@ -1620,20 +1620,20 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 30.11764705882353,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 30.11764705882353,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 425,
+      "negligibleRiskPercentage" : 69.88235294117646,
       "totalCount" : 6,
-      "negligibleRiskPercentage" : 69.88235294117646
+      "totalValue" : 425
     }, {
       "key" : "jsx",
       "lowRiskThreshold" : 100,
       "mediumRiskThreshold" : 200,
       "highRiskThreshold" : 500,
       "veryHighRiskThreshold" : 1000,
-      "negligibleRiskValue" : 545,
+      "negligibleRiskValue" : 535,
       "lowRiskValue" : 193,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
@@ -1648,13 +1648,13 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 26.151761517615178,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 26.51098901098901,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 738,
+      "negligibleRiskPercentage" : 73.48901098901099,
       "totalCount" : 16,
-      "negligibleRiskPercentage" : 73.84823848238483
+      "totalValue" : 728
     }, {
       "key" : "http",
       "lowRiskThreshold" : 100,
@@ -1676,13 +1676,13 @@
       "mediumRiskLabel" : "201-500",
       "highRiskLabel" : "501-1000",
       "veryHighRiskLabel" : "1001+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 16,
+      "negligibleRiskPercentage" : 100.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 100.0
+      "totalValue" : 16
     } ],
     "fileSizeDistributionPerLogicalDecomposition" : [ {
       "name" : "primary",
@@ -1692,13 +1692,13 @@
         "mediumRiskThreshold" : 200,
         "highRiskThreshold" : 500,
         "veryHighRiskThreshold" : 1000,
-        "negligibleRiskValue" : 221,
-        "lowRiskValue" : 130,
+        "negligibleRiskValue" : 200,
+        "lowRiskValue" : 134,
         "mediumRiskValue" : 233,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 1,
-        "negligibleRiskCount" : 6,
+        "negligibleRiskCount" : 5,
         "mediumRiskCount" : 1,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -1707,26 +1707,26 @@
         "mediumRiskLabel" : "201-500",
         "highRiskLabel" : "501-1000",
         "veryHighRiskLabel" : "1001+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 22.26027397260274,
         "highRiskPercentage" : 0.0,
-        "mediumRiskPercentage" : 39.897260273972606,
-        "totalValue" : 584,
-        "totalCount" : 8,
-        "negligibleRiskPercentage" : 37.842465753424655
+        "lowRiskPercentage" : 23.6331569664903,
+        "veryHighRiskPercentage" : 0.0,
+        "mediumRiskPercentage" : 41.09347442680776,
+        "negligibleRiskPercentage" : 35.27336860670194,
+        "totalCount" : 7,
+        "totalValue" : 567
       }, {
         "key" : "frontend",
         "lowRiskThreshold" : 100,
         "mediumRiskThreshold" : 200,
         "highRiskThreshold" : 500,
         "veryHighRiskThreshold" : 1000,
-        "negligibleRiskValue" : 950,
+        "negligibleRiskValue" : 957,
         "lowRiskValue" : 321,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 2,
-        "negligibleRiskCount" : 28,
+        "negligibleRiskCount" : 29,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -1735,13 +1735,13 @@
         "mediumRiskLabel" : "201-500",
         "highRiskLabel" : "501-1000",
         "veryHighRiskLabel" : "1001+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 25.255704169944924,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 25.11737089201878,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 1271,
-        "totalCount" : 30,
-        "negligibleRiskPercentage" : 74.74429583005508
+        "negligibleRiskPercentage" : 74.88262910798122,
+        "totalCount" : 31,
+        "totalValue" : 1278
       }, {
         "key" : "ROOT",
         "lowRiskThreshold" : 100,
@@ -1763,13 +1763,13 @@
         "mediumRiskLabel" : "201-500",
         "highRiskLabel" : "501-1000",
         "veryHighRiskLabel" : "1001+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 0.0,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 0.0,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 16,
+        "negligibleRiskPercentage" : 100.0,
         "totalCount" : 1,
-        "negligibleRiskPercentage" : 100.0
+        "totalValue" : 16
       } ]
     } ],
     "longestFiles" : [ {
@@ -1789,7 +1789,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -1859,14 +1859,14 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Login.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 52,
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -1934,13 +1934,6 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
       "extension" : "jsx",
       "linesOfCode" : 21,
@@ -1982,6 +1975,13 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     }, {
       "relativePath" : "frontend/user-app/src/App.js",
       "extension" : "js",
@@ -2061,19 +2061,19 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
+    }, {
       "relativePath" : "backend/email.js",
       "extension" : "js",
       "linesOfCode" : 19,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 1,
       "linesOfCodeInUnits" : 10
-    }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
     }, {
       "relativePath" : "backend/lib/extractBookingFields.js",
       "extension" : "js",
@@ -2084,7 +2084,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -2097,13 +2097,13 @@
       "mediumRiskThreshold" : 90,
       "highRiskThreshold" : 180,
       "veryHighRiskThreshold" : 365,
-      "negligibleRiskValue" : 503,
-      "lowRiskValue" : 1368,
+      "negligibleRiskValue" : 545,
+      "lowRiskValue" : 1316,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
-      "lowRiskCount" : 25,
-      "negligibleRiskCount" : 14,
+      "lowRiskCount" : 24,
+      "negligibleRiskCount" : 15,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -2112,13 +2112,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 73.11598075895243,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 70.7146695325094,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 1871,
+      "negligibleRiskPercentage" : 29.285330467490596,
       "totalCount" : 39,
-      "negligibleRiskPercentage" : 26.884019241047568
+      "totalValue" : 1861
     },
     "overallFileFirstModifiedDistribution" : {
       "key" : "",
@@ -2126,8 +2126,8 @@
       "mediumRiskThreshold" : 90,
       "highRiskThreshold" : 180,
       "veryHighRiskThreshold" : 365,
-      "negligibleRiskValue" : 104,
-      "lowRiskValue" : 1767,
+      "negligibleRiskValue" : 100,
+      "lowRiskValue" : 1761,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -2141,13 +2141,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 94.44147514698022,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 94.62654486835035,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 1871,
+      "negligibleRiskPercentage" : 5.373455131649651,
       "totalCount" : 39,
-      "negligibleRiskPercentage" : 5.558524853019776
+      "totalValue" : 1861
     },
     "overallFileChangeDistribution" : {
       "key" : "",
@@ -2155,7 +2155,7 @@
       "mediumRiskThreshold" : 20,
       "highRiskThreshold" : 50,
       "veryHighRiskThreshold" : 100,
-      "negligibleRiskValue" : 1683,
+      "negligibleRiskValue" : 1673,
       "lowRiskValue" : 188,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
@@ -2170,13 +2170,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 10.048102618920364,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 10.102095647501343,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 1871,
+      "negligibleRiskPercentage" : 89.89790435249866,
       "totalCount" : 39,
-      "negligibleRiskPercentage" : 89.95189738107963
+      "totalValue" : 1861
     },
     "overallContributorsCountDistribution" : {
       "key" : "",
@@ -2184,8 +2184,8 @@
       "mediumRiskThreshold" : 5,
       "highRiskThreshold" : 10,
       "veryHighRiskThreshold" : 25,
-      "negligibleRiskValue" : 659,
-      "lowRiskValue" : 1212,
+      "negligibleRiskValue" : 655,
+      "lowRiskValue" : 1206,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -2199,13 +2199,13 @@
       "mediumRiskLabel" : "6-10",
       "highRiskLabel" : "11-25",
       "veryHighRiskLabel" : "26+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 64.77819347942277,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 64.80386888769479,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 1871,
+      "negligibleRiskPercentage" : 35.19613111230521,
       "totalCount" : 39,
-      "negligibleRiskPercentage" : 35.22180652057723
+      "totalValue" : 1861
     },
     "filesWithoutCommitHistoryCount" : 0,
     "filesWithoutCommitHistoryLinesOfCode" : 0,
@@ -2230,13 +2230,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 8.928571428571429,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 8.928571428571429,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 672,
+      "negligibleRiskPercentage" : 91.07142857142857,
       "totalCount" : 15,
-      "negligibleRiskPercentage" : 91.07142857142857
+      "totalValue" : 672
     }, {
       "key" : "html",
       "lowRiskThreshold" : 5,
@@ -2258,13 +2258,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
+      "negligibleRiskPercentage" : 100.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 100.0
+      "totalValue" : 20
     }, {
       "key" : "css",
       "lowRiskThreshold" : 5,
@@ -2286,20 +2286,20 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 30.11764705882353,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 30.11764705882353,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 425,
+      "negligibleRiskPercentage" : 69.88235294117646,
       "totalCount" : 6,
-      "negligibleRiskPercentage" : 69.88235294117646
+      "totalValue" : 425
     }, {
       "key" : "jsx",
       "lowRiskThreshold" : 5,
       "mediumRiskThreshold" : 20,
       "highRiskThreshold" : 50,
       "veryHighRiskThreshold" : 100,
-      "negligibleRiskValue" : 738,
+      "negligibleRiskValue" : 728,
       "lowRiskValue" : 0,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
@@ -2314,13 +2314,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 738,
+      "negligibleRiskPercentage" : 100.0,
       "totalCount" : 16,
-      "negligibleRiskPercentage" : 100.0
+      "totalValue" : 728
     }, {
       "key" : "http",
       "lowRiskThreshold" : 5,
@@ -2342,13 +2342,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 16,
+      "negligibleRiskPercentage" : 100.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 100.0
+      "totalValue" : 16
     } ],
     "lastModifiedDistributionPerExtension" : [ {
       "key" : "js",
@@ -2371,13 +2371,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 67.55952380952381,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 67.55952380952381,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 672,
+      "negligibleRiskPercentage" : 32.44047619047619,
       "totalCount" : 15,
-      "negligibleRiskPercentage" : 32.44047619047619
+      "totalValue" : 672
     }, {
       "key" : "html",
       "lowRiskThreshold" : 30,
@@ -2399,13 +2399,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 20
     }, {
       "key" : "css",
       "lowRiskThreshold" : 30,
@@ -2427,26 +2427,26 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 425,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 6,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 425
     }, {
       "key" : "jsx",
       "lowRiskThreshold" : 30,
       "mediumRiskThreshold" : 90,
       "highRiskThreshold" : 180,
       "veryHighRiskThreshold" : 365,
-      "negligibleRiskValue" : 285,
-      "lowRiskValue" : 453,
+      "negligibleRiskValue" : 327,
+      "lowRiskValue" : 401,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
-      "lowRiskCount" : 8,
-      "negligibleRiskCount" : 8,
+      "lowRiskCount" : 7,
+      "negligibleRiskCount" : 9,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -2455,13 +2455,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 61.38211382113821,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 55.082417582417584,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 738,
+      "negligibleRiskPercentage" : 44.917582417582416,
       "totalCount" : 16,
-      "negligibleRiskPercentage" : 38.61788617886179
+      "totalValue" : 728
     }, {
       "key" : "http",
       "lowRiskThreshold" : 30,
@@ -2483,13 +2483,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 16,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 16
     } ],
     "firstModifiedDistributionPerExtension" : [ {
       "key" : "js",
@@ -2497,8 +2497,8 @@
       "mediumRiskThreshold" : 90,
       "highRiskThreshold" : 180,
       "veryHighRiskThreshold" : 365,
-      "negligibleRiskValue" : 72,
-      "lowRiskValue" : 600,
+      "negligibleRiskValue" : 68,
+      "lowRiskValue" : 604,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -2512,13 +2512,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 89.28571428571429,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 89.88095238095238,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 672,
+      "negligibleRiskPercentage" : 10.119047619047619,
       "totalCount" : 15,
-      "negligibleRiskPercentage" : 10.714285714285714
+      "totalValue" : 672
     }, {
       "key" : "html",
       "lowRiskThreshold" : 30,
@@ -2540,13 +2540,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 20
     }, {
       "key" : "css",
       "lowRiskThreshold" : 30,
@@ -2568,13 +2568,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 425,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 6,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 425
     }, {
       "key" : "jsx",
       "lowRiskThreshold" : 30,
@@ -2582,7 +2582,7 @@
       "highRiskThreshold" : 180,
       "veryHighRiskThreshold" : 365,
       "negligibleRiskValue" : 32,
-      "lowRiskValue" : 706,
+      "lowRiskValue" : 696,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
@@ -2596,13 +2596,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 95.6639566395664,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 95.6043956043956,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 738,
+      "negligibleRiskPercentage" : 4.395604395604396,
       "totalCount" : 16,
-      "negligibleRiskPercentage" : 4.336043360433604
+      "totalValue" : 728
     }, {
       "key" : "http",
       "lowRiskThreshold" : 30,
@@ -2624,13 +2624,13 @@
       "mediumRiskLabel" : "91-180 days",
       "highRiskLabel" : "181-365 days",
       "veryHighRiskLabel" : "366+ days",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 100.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 100.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 16,
+      "negligibleRiskPercentage" : 0.0,
       "totalCount" : 1,
-      "negligibleRiskPercentage" : 0.0
+      "totalValue" : 16
     } ],
     "changeDistributionPerLogicalDecomposition" : [ {
       "name" : "primary",
@@ -2640,13 +2640,13 @@
         "mediumRiskThreshold" : 20,
         "highRiskThreshold" : 50,
         "veryHighRiskThreshold" : 100,
-        "negligibleRiskValue" : 524,
+        "negligibleRiskValue" : 507,
         "lowRiskValue" : 60,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 1,
-        "negligibleRiskCount" : 7,
+        "negligibleRiskCount" : 6,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2655,26 +2655,26 @@
         "mediumRiskLabel" : "21-50",
         "highRiskLabel" : "51-100",
         "veryHighRiskLabel" : "101+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 10.273972602739725,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 10.582010582010582,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 584,
-        "totalCount" : 8,
-        "negligibleRiskPercentage" : 89.72602739726027
+        "negligibleRiskPercentage" : 89.41798941798942,
+        "totalCount" : 7,
+        "totalValue" : 567
       }, {
         "key" : "frontend",
         "lowRiskThreshold" : 5,
         "mediumRiskThreshold" : 20,
         "highRiskThreshold" : 50,
         "veryHighRiskThreshold" : 100,
-        "negligibleRiskValue" : 1143,
+        "negligibleRiskValue" : 1150,
         "lowRiskValue" : 128,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 1,
-        "negligibleRiskCount" : 29,
+        "negligibleRiskCount" : 30,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2683,13 +2683,13 @@
         "mediumRiskLabel" : "21-50",
         "highRiskLabel" : "51-100",
         "veryHighRiskLabel" : "101+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 10.07081038552321,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 10.015649452269171,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 1271,
-        "totalCount" : 30,
-        "negligibleRiskPercentage" : 89.92918961447678
+        "negligibleRiskPercentage" : 89.98435054773083,
+        "totalCount" : 31,
+        "totalValue" : 1278
       }, {
         "key" : "ROOT",
         "lowRiskThreshold" : 5,
@@ -2711,13 +2711,13 @@
         "mediumRiskLabel" : "21-50",
         "highRiskLabel" : "51-100",
         "veryHighRiskLabel" : "101+",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 0.0,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 0.0,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 16,
+        "negligibleRiskPercentage" : 100.0,
         "totalCount" : 1,
-        "negligibleRiskPercentage" : 100.0
+        "totalValue" : 16
       } ]
     } ],
     "firstModifiedDistributionPerLogicalDecomposition" : [ {
@@ -2728,13 +2728,13 @@
         "mediumRiskThreshold" : 90,
         "highRiskThreshold" : 180,
         "veryHighRiskThreshold" : 365,
-        "negligibleRiskValue" : 43,
-        "lowRiskValue" : 541,
+        "negligibleRiskValue" : 22,
+        "lowRiskValue" : 545,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 6,
-        "negligibleRiskCount" : 2,
+        "negligibleRiskCount" : 1,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2743,26 +2743,26 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 92.63698630136986,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 96.11992945326278,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 584,
-        "totalCount" : 8,
-        "negligibleRiskPercentage" : 7.363013698630137
+        "negligibleRiskPercentage" : 3.880070546737213,
+        "totalCount" : 7,
+        "totalValue" : 567
       }, {
         "key" : "frontend",
         "lowRiskThreshold" : 30,
         "mediumRiskThreshold" : 90,
         "highRiskThreshold" : 180,
         "veryHighRiskThreshold" : 365,
-        "negligibleRiskValue" : 61,
-        "lowRiskValue" : 1210,
+        "negligibleRiskValue" : 78,
+        "lowRiskValue" : 1200,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 26,
-        "negligibleRiskCount" : 4,
+        "negligibleRiskCount" : 5,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2771,13 +2771,13 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 95.2006294256491,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 93.89671361502347,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 1271,
-        "totalCount" : 30,
-        "negligibleRiskPercentage" : 4.799370574350905
+        "negligibleRiskPercentage" : 6.103286384976526,
+        "totalCount" : 31,
+        "totalValue" : 1278
       }, {
         "key" : "ROOT",
         "lowRiskThreshold" : 30,
@@ -2799,13 +2799,13 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 100.0,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 100.0,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 16,
+        "negligibleRiskPercentage" : 0.0,
         "totalCount" : 1,
-        "negligibleRiskPercentage" : 0.0
+        "totalValue" : 16
       } ]
     } ],
     "lastModifiedDistributionPerLogicalDecomposition" : [ {
@@ -2816,13 +2816,13 @@
         "mediumRiskThreshold" : 90,
         "highRiskThreshold" : 180,
         "veryHighRiskThreshold" : 365,
-        "negligibleRiskValue" : 173,
+        "negligibleRiskValue" : 156,
         "lowRiskValue" : 411,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
         "lowRiskCount" : 5,
-        "negligibleRiskCount" : 3,
+        "negligibleRiskCount" : 2,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2831,26 +2831,26 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 70.37671232876713,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 72.48677248677248,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 584,
-        "totalCount" : 8,
-        "negligibleRiskPercentage" : 29.623287671232877
+        "negligibleRiskPercentage" : 27.513227513227513,
+        "totalCount" : 7,
+        "totalValue" : 567
       }, {
         "key" : "frontend",
         "lowRiskThreshold" : 30,
         "mediumRiskThreshold" : 90,
         "highRiskThreshold" : 180,
         "veryHighRiskThreshold" : 365,
-        "negligibleRiskValue" : 330,
-        "lowRiskValue" : 941,
+        "negligibleRiskValue" : 389,
+        "lowRiskValue" : 889,
         "mediumRiskValue" : 0,
         "highRiskValue" : 0,
         "veryHighRiskValue" : 0,
-        "lowRiskCount" : 19,
-        "negligibleRiskCount" : 11,
+        "lowRiskCount" : 18,
+        "negligibleRiskCount" : 13,
         "mediumRiskCount" : 0,
         "highRiskCount" : 0,
         "veryHighRiskCount" : 0,
@@ -2859,13 +2859,13 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 74.03619197482297,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 69.56181533646323,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 1271,
-        "totalCount" : 30,
-        "negligibleRiskPercentage" : 25.963808025177027
+        "negligibleRiskPercentage" : 30.438184663536777,
+        "totalCount" : 31,
+        "totalValue" : 1278
       }, {
         "key" : "ROOT",
         "lowRiskThreshold" : 30,
@@ -2887,13 +2887,13 @@
         "mediumRiskLabel" : "91-180 days",
         "highRiskLabel" : "181-365 days",
         "veryHighRiskLabel" : "366+ days",
-        "veryHighRiskPercentage" : 0.0,
-        "lowRiskPercentage" : 100.0,
         "highRiskPercentage" : 0.0,
+        "lowRiskPercentage" : 100.0,
+        "veryHighRiskPercentage" : 0.0,
         "mediumRiskPercentage" : 0.0,
-        "totalValue" : 16,
+        "negligibleRiskPercentage" : 0.0,
         "totalCount" : 1,
-        "negligibleRiskPercentage" : 0.0
+        "totalValue" : 16
       } ]
     } ],
     "oldestFiles" : [ {
@@ -3018,7 +3018,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -3053,14 +3053,14 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Login.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 52,
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -3142,19 +3142,19 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
       "extension" : "jsx",
       "linesOfCode" : 20,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     }, {
       "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
       "extension" : "jsx",
@@ -3185,19 +3185,19 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
       "extension" : "jsx",
       "linesOfCode" : 20,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     }, {
       "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
       "extension" : "jsx",
@@ -3250,14 +3250,14 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Login.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 52,
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -3320,7 +3320,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -3447,7 +3447,7 @@
     "mostRecentlyChangedFiles" : [ {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -3459,9 +3459,16 @@
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
+      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+      "extension" : "jsx",
+      "linesOfCode" : 48,
+      "unitsCount" : 0,
+      "unitsMcCabeIndexSum" : 0,
+      "linesOfCodeInUnits" : 0
+    }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -3501,13 +3508,6 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "frontend/user-app/src/components/LoginForm.jsx",
       "extension" : "jsx",
       "linesOfCode" : 21,
@@ -3521,6 +3521,13 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     }, {
       "relativePath" : "frontend/user-app/src/App.js",
       "extension" : "js",
@@ -3560,13 +3567,6 @@
       "relativePath" : "backend/routes/auth.js",
       "extension" : "js",
       "linesOfCode" : 67,
-      "unitsCount" : 0,
-      "unitsMcCabeIndexSum" : 0,
-      "linesOfCodeInUnits" : 0
-    }, {
-      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
-      "extension" : "jsx",
-      "linesOfCode" : 52,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -3866,13 +3866,6 @@
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
-      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
-      "extension" : "jsx",
-      "linesOfCode" : 52,
-      "unitsCount" : 0,
-      "unitsMcCabeIndexSum" : 0,
-      "linesOfCodeInUnits" : 0
-    }, {
       "relativePath" : "backend/routes/auth.js",
       "extension" : "js",
       "linesOfCode" : 67,
@@ -3915,6 +3908,13 @@
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
+    }, {
       "relativePath" : "frontend/user-app/src/components/AuthPasswordField.jsx",
       "extension" : "jsx",
       "linesOfCode" : 20,
@@ -3928,13 +3928,6 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
-    }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
     }, {
       "relativePath" : "frontend/user-app/src/hooks/useSupabaseStatus.js",
       "extension" : "js",
@@ -3973,7 +3966,14 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
+      "unitsCount" : 0,
+      "unitsMcCabeIndexSum" : 0,
+      "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+      "extension" : "jsx",
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -3987,7 +3987,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -4009,7 +4009,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -4030,7 +4030,14 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
+      "unitsCount" : 0,
+      "unitsMcCabeIndexSum" : 0,
+      "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+      "extension" : "jsx",
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4080,13 +4087,6 @@
       "relativePath" : "frontend/user-app/src/pages/Home.jsx",
       "extension" : "jsx",
       "linesOfCode" : 33,
-      "unitsCount" : 0,
-      "unitsMcCabeIndexSum" : 0,
-      "linesOfCodeInUnits" : 0
-    }, {
-      "relativePath" : "frontend/user-app/src/pages/Login.jsx",
-      "extension" : "jsx",
-      "linesOfCode" : 52,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4182,6 +4182,13 @@
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
     }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
+    }, {
       "relativePath" : "frontend/user-app/src/index.css",
       "extension" : "css",
       "linesOfCode" : 17,
@@ -4209,13 +4216,6 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
-    }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
     }, {
       "relativePath" : "frontend/user-app/src/hooks/useSupabaseStatus.js",
       "extension" : "js",
@@ -4297,7 +4297,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -4311,7 +4311,7 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Login.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 52,
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4332,7 +4332,7 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4435,13 +4435,6 @@
       "unitsMcCabeIndexSum" : 1,
       "linesOfCodeInUnits" : 10
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "backend/lib/extractBookingFields.js",
       "extension" : "js",
       "linesOfCode" : 22,
@@ -4539,6 +4532,13 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     } ],
     "filesWithLeastContributors" : [ {
       "relativePath" : "backend/user.js",
@@ -4590,13 +4590,6 @@
       "unitsMcCabeIndexSum" : 3,
       "linesOfCodeInUnits" : 20
     }, {
-      "relativePath" : "backend/lib/buildBookingPayload.js",
-      "extension" : "js",
-      "linesOfCode" : 21,
-      "unitsCount" : 1,
-      "unitsMcCabeIndexSum" : 1,
-      "linesOfCodeInUnits" : 21
-    }, {
       "relativePath" : "frontend/user-app/public/index.html",
       "extension" : "html",
       "linesOfCode" : 20,
@@ -4617,6 +4610,13 @@
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
+    }, {
+      "relativePath" : "frontend/user-app/src/utils/alerts.js",
+      "extension" : "js",
+      "linesOfCode" : 17,
+      "unitsCount" : 2,
+      "unitsMcCabeIndexSum" : 2,
+      "linesOfCodeInUnits" : 16
     }, {
       "relativePath" : "frontend/user-app/src/components/AuthEmailField.jsx",
       "extension" : "jsx",
@@ -4739,7 +4739,7 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 47,
+      "linesOfCode" : 41,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4760,7 +4760,7 @@
     }, {
       "relativePath" : "backend/routes/booking.js",
       "extension" : "js",
-      "linesOfCode" : 130,
+      "linesOfCode" : 134,
       "unitsCount" : 1,
       "unitsMcCabeIndexSum" : 4,
       "linesOfCodeInUnits" : 19
@@ -4781,7 +4781,7 @@
     }, {
       "relativePath" : "frontend/user-app/src/pages/Login.jsx",
       "extension" : "jsx",
-      "linesOfCode" : 52,
+      "linesOfCode" : 48,
       "unitsCount" : 0,
       "unitsMcCabeIndexSum" : 0,
       "linesOfCodeInUnits" : 0
@@ -4834,7 +4834,7 @@
     }, {
       "extension" : "css",
       "year" : "2025",
-      "commitsCount" : 14,
+      "commitsCount" : 15,
       "contributors" : [ "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com", "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "svg",
@@ -4859,12 +4859,12 @@
     }, {
       "extension" : "json",
       "year" : "2025",
-      "commitsCount" : 16,
+      "commitsCount" : 17,
       "contributors" : [ "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com", "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "txt",
       "year" : "2025",
-      "commitsCount" : 8,
+      "commitsCount" : 9,
       "contributors" : [ "157541451+calinsanduta@users.noreply.github.com", "toni11elia11@gmail.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "http",
@@ -4874,7 +4874,7 @@
     }, {
       "extension" : "zip",
       "year" : "2025",
-      "commitsCount" : 2,
+      "commitsCount" : 3,
       "contributors" : [ "toni11elia11@gmail.com" ]
     }, {
       "extension" : "jpg",
@@ -4884,7 +4884,7 @@
     }, {
       "extension" : "js",
       "year" : "2025",
-      "commitsCount" : 52,
+      "commitsCount" : 55,
       "contributors" : [ "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com", "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "gitkeep",
@@ -4924,7 +4924,7 @@
     }, {
       "extension" : "html",
       "year" : "2025",
-      "commitsCount" : 3,
+      "commitsCount" : 4,
       "contributors" : [ "toni11elia11@gmail.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "mts",
@@ -4939,7 +4939,7 @@
     }, {
       "extension" : "jsx",
       "year" : "2025",
-      "commitsCount" : 38,
+      "commitsCount" : 40,
       "contributors" : [ "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com", "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ]
     }, {
       "extension" : "scss",
@@ -4959,22 +4959,22 @@
     } ]
   },
   "unitsAnalysisResults" : {
-    "totalNumberOfUnits" : 8,
-    "linesOfCodeInUnits" : 117,
+    "totalNumberOfUnits" : 9,
+    "linesOfCodeInUnits" : 112,
     "unitSizeRiskDistribution" : {
       "key" : "",
       "lowRiskThreshold" : 10,
       "mediumRiskThreshold" : 20,
       "highRiskThreshold" : 50,
       "veryHighRiskThreshold" : 100,
-      "negligibleRiskValue" : 17,
+      "negligibleRiskValue" : 33,
       "lowRiskValue" : 57,
-      "mediumRiskValue" : 43,
+      "mediumRiskValue" : 22,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 4,
-      "negligibleRiskCount" : 2,
-      "mediumRiskCount" : 2,
+      "negligibleRiskCount" : 4,
+      "mediumRiskCount" : 1,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
       "negligibleRiskLabel" : "1-10",
@@ -4982,13 +4982,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 48.717948717948715,
       "highRiskPercentage" : 0.0,
-      "mediumRiskPercentage" : 36.75213675213675,
-      "totalValue" : 117,
-      "totalCount" : 8,
-      "negligibleRiskPercentage" : 14.52991452991453
+      "lowRiskPercentage" : 50.892857142857146,
+      "veryHighRiskPercentage" : 0.0,
+      "mediumRiskPercentage" : 19.642857142857142,
+      "negligibleRiskPercentage" : 29.464285714285715,
+      "totalCount" : 9,
+      "totalValue" : 112
     },
     "conditionalComplexityRiskDistribution" : {
       "key" : "",
@@ -4996,13 +4996,13 @@
       "mediumRiskThreshold" : 10,
       "highRiskThreshold" : 25,
       "veryHighRiskThreshold" : 50,
-      "negligibleRiskValue" : 117,
+      "negligibleRiskValue" : 112,
       "lowRiskValue" : 0,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 0,
-      "negligibleRiskCount" : 8,
+      "negligibleRiskCount" : 9,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -5011,13 +5011,13 @@
       "mediumRiskLabel" : "11-25",
       "highRiskLabel" : "26-50",
       "veryHighRiskLabel" : "51+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 117,
-      "totalCount" : 8,
-      "negligibleRiskPercentage" : 100.0
+      "negligibleRiskPercentage" : 100.0,
+      "totalCount" : 9,
+      "totalValue" : 112
     },
     "unitSizeRiskDistributionPerExtension" : [ {
       "key" : "js",
@@ -5025,14 +5025,14 @@
       "mediumRiskThreshold" : 20,
       "highRiskThreshold" : 50,
       "veryHighRiskThreshold" : 100,
-      "negligibleRiskValue" : 17,
+      "negligibleRiskValue" : 33,
       "lowRiskValue" : 57,
-      "mediumRiskValue" : 43,
+      "mediumRiskValue" : 22,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 4,
-      "negligibleRiskCount" : 2,
-      "mediumRiskCount" : 2,
+      "negligibleRiskCount" : 4,
+      "mediumRiskCount" : 1,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
       "negligibleRiskLabel" : "1-10",
@@ -5040,13 +5040,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 48.717948717948715,
       "highRiskPercentage" : 0.0,
-      "mediumRiskPercentage" : 36.75213675213675,
-      "totalValue" : 117,
-      "totalCount" : 8,
-      "negligibleRiskPercentage" : 14.52991452991453
+      "lowRiskPercentage" : 50.892857142857146,
+      "veryHighRiskPercentage" : 0.0,
+      "mediumRiskPercentage" : 19.642857142857142,
+      "negligibleRiskPercentage" : 29.464285714285715,
+      "totalCount" : 9,
+      "totalValue" : 112
     } ],
     "unitSizeRiskDistributionPerComponent" : [ [ {
       "key" : "backend",
@@ -5056,12 +5056,12 @@
       "veryHighRiskThreshold" : 100,
       "negligibleRiskValue" : 10,
       "lowRiskValue" : 44,
-      "mediumRiskValue" : 43,
+      "mediumRiskValue" : 22,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 3,
       "negligibleRiskCount" : 1,
-      "mediumRiskCount" : 2,
+      "mediumRiskCount" : 1,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
       "negligibleRiskLabel" : "1-10",
@@ -5069,26 +5069,26 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 45.36082474226804,
       "highRiskPercentage" : 0.0,
-      "mediumRiskPercentage" : 44.329896907216494,
-      "totalValue" : 97,
-      "totalCount" : 6,
-      "negligibleRiskPercentage" : 10.309278350515465
+      "lowRiskPercentage" : 57.89473684210526,
+      "veryHighRiskPercentage" : 0.0,
+      "mediumRiskPercentage" : 28.94736842105263,
+      "negligibleRiskPercentage" : 13.157894736842104,
+      "totalCount" : 5,
+      "totalValue" : 76
     }, {
       "key" : "frontend",
       "lowRiskThreshold" : 10,
       "mediumRiskThreshold" : 20,
       "highRiskThreshold" : 50,
       "veryHighRiskThreshold" : 100,
-      "negligibleRiskValue" : 7,
+      "negligibleRiskValue" : 23,
       "lowRiskValue" : 13,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 1,
-      "negligibleRiskCount" : 1,
+      "negligibleRiskCount" : 3,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -5097,13 +5097,13 @@
       "mediumRiskLabel" : "21-50",
       "highRiskLabel" : "51-100",
       "veryHighRiskLabel" : "101+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 65.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 36.111111111111114,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
-      "totalCount" : 2,
-      "negligibleRiskPercentage" : 35.0
+      "negligibleRiskPercentage" : 63.888888888888886,
+      "totalCount" : 4,
+      "totalValue" : 36
     } ] ],
     "longestUnits" : [ {
       "shortName" : "export function extractBookingFields()",
@@ -5126,38 +5126,18 @@
       "numberOfExpressions" : 0,
       "children" : [ ]
     }, {
-      "shortName" : "export function buildBookingPayload()",
-      "longName" : "",
-      "sourceFile" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "unitsCount" : 1,
-        "unitsMcCabeIndexSum" : 1,
-        "linesOfCodeInUnits" : 21
-      },
-      "startLine" : 1,
-      "endLine" : 21,
-      "linesOfCode" : 21,
-      "mcCabeIndex" : 1,
-      "numberOfParameters" : 9,
-      "numberOfLiterals" : 0,
-      "numberOfStatements" : 0,
-      "numberOfExpressions" : 0,
-      "children" : [ ]
-    }, {
       "shortName" : "async function persistBookingInSupabase()",
       "longName" : "",
       "sourceFile" : {
         "relativePath" : "backend/routes/booking.js",
         "extension" : "js",
-        "linesOfCode" : 130,
+        "linesOfCode" : 134,
         "unitsCount" : 1,
         "unitsMcCabeIndexSum" : 4,
         "linesOfCodeInUnits" : 19
       },
-      "startLine" : 14,
-      "endLine" : 33,
+      "startLine" : 13,
+      "endLine" : 32,
       "linesOfCode" : 19,
       "mcCabeIndex" : 4,
       "numberOfParameters" : 1,
@@ -5241,6 +5221,46 @@
       "linesOfCode" : 10,
       "mcCabeIndex" : 1,
       "numberOfParameters" : 3,
+      "numberOfLiterals" : 0,
+      "numberOfStatements" : 0,
+      "numberOfExpressions" : 0,
+      "children" : [ ]
+    }, {
+      "shortName" : "export function showSuccessAlert()",
+      "longName" : "",
+      "sourceFile" : {
+        "relativePath" : "frontend/user-app/src/utils/alerts.js",
+        "extension" : "js",
+        "linesOfCode" : 17,
+        "unitsCount" : 2,
+        "unitsMcCabeIndexSum" : 2,
+        "linesOfCodeInUnits" : 16
+      },
+      "startLine" : 3,
+      "endLine" : 10,
+      "linesOfCode" : 8,
+      "mcCabeIndex" : 1,
+      "numberOfParameters" : 2,
+      "numberOfLiterals" : 0,
+      "numberOfStatements" : 0,
+      "numberOfExpressions" : 0,
+      "children" : [ ]
+    }, {
+      "shortName" : "export function showErrorAlert()",
+      "longName" : "",
+      "sourceFile" : {
+        "relativePath" : "frontend/user-app/src/utils/alerts.js",
+        "extension" : "js",
+        "linesOfCode" : 17,
+        "unitsCount" : 2,
+        "unitsMcCabeIndexSum" : 2,
+        "linesOfCodeInUnits" : 16
+      },
+      "startLine" : 12,
+      "endLine" : 19,
+      "linesOfCode" : 8,
+      "mcCabeIndex" : 1,
+      "numberOfParameters" : 2,
       "numberOfLiterals" : 0,
       "numberOfStatements" : 0,
       "numberOfExpressions" : 0,
@@ -5292,13 +5312,13 @@
       "mediumRiskThreshold" : 10,
       "highRiskThreshold" : 25,
       "veryHighRiskThreshold" : 50,
-      "negligibleRiskValue" : 117,
+      "negligibleRiskValue" : 112,
       "lowRiskValue" : 0,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 0,
-      "negligibleRiskCount" : 8,
+      "negligibleRiskCount" : 9,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -5307,13 +5327,13 @@
       "mediumRiskLabel" : "11-25",
       "highRiskLabel" : "26-50",
       "veryHighRiskLabel" : "51+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 117,
-      "totalCount" : 8,
-      "negligibleRiskPercentage" : 100.0
+      "negligibleRiskPercentage" : 100.0,
+      "totalCount" : 9,
+      "totalValue" : 112
     } ],
     "conditionalComplexityRiskDistributionPerComponent" : [ [ {
       "key" : "backend",
@@ -5321,13 +5341,13 @@
       "mediumRiskThreshold" : 10,
       "highRiskThreshold" : 25,
       "veryHighRiskThreshold" : 50,
-      "negligibleRiskValue" : 97,
+      "negligibleRiskValue" : 76,
       "lowRiskValue" : 0,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 0,
-      "negligibleRiskCount" : 6,
+      "negligibleRiskCount" : 5,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -5336,26 +5356,26 @@
       "mediumRiskLabel" : "11-25",
       "highRiskLabel" : "26-50",
       "veryHighRiskLabel" : "51+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 97,
-      "totalCount" : 6,
-      "negligibleRiskPercentage" : 100.0
+      "negligibleRiskPercentage" : 100.0,
+      "totalCount" : 5,
+      "totalValue" : 76
     }, {
       "key" : "frontend",
       "lowRiskThreshold" : 5,
       "mediumRiskThreshold" : 10,
       "highRiskThreshold" : 25,
       "veryHighRiskThreshold" : 50,
-      "negligibleRiskValue" : 20,
+      "negligibleRiskValue" : 36,
       "lowRiskValue" : 0,
       "mediumRiskValue" : 0,
       "highRiskValue" : 0,
       "veryHighRiskValue" : 0,
       "lowRiskCount" : 0,
-      "negligibleRiskCount" : 2,
+      "negligibleRiskCount" : 4,
       "mediumRiskCount" : 0,
       "highRiskCount" : 0,
       "veryHighRiskCount" : 0,
@@ -5364,13 +5384,13 @@
       "mediumRiskLabel" : "11-25",
       "highRiskLabel" : "26-50",
       "veryHighRiskLabel" : "51+",
-      "veryHighRiskPercentage" : 0.0,
-      "lowRiskPercentage" : 0.0,
       "highRiskPercentage" : 0.0,
+      "lowRiskPercentage" : 0.0,
+      "veryHighRiskPercentage" : 0.0,
       "mediumRiskPercentage" : 0.0,
-      "totalValue" : 20,
-      "totalCount" : 2,
-      "negligibleRiskPercentage" : 100.0
+      "negligibleRiskPercentage" : 100.0,
+      "totalCount" : 4,
+      "totalValue" : 36
     } ] ],
     "mostComplexUnits" : [ {
       "shortName" : "async function persistBookingInSupabase()",
@@ -5378,13 +5398,13 @@
       "sourceFile" : {
         "relativePath" : "backend/routes/booking.js",
         "extension" : "js",
-        "linesOfCode" : 130,
+        "linesOfCode" : 134,
         "unitsCount" : 1,
         "unitsMcCabeIndexSum" : 4,
         "linesOfCodeInUnits" : 19
       },
-      "startLine" : 14,
-      "endLine" : 33,
+      "startLine" : 13,
+      "endLine" : 32,
       "linesOfCode" : 19,
       "mcCabeIndex" : 4,
       "numberOfParameters" : 1,
@@ -5473,26 +5493,6 @@
       "numberOfExpressions" : 0,
       "children" : [ ]
     }, {
-      "shortName" : "export function buildBookingPayload()",
-      "longName" : "",
-      "sourceFile" : {
-        "relativePath" : "backend/lib/buildBookingPayload.js",
-        "extension" : "js",
-        "linesOfCode" : 21,
-        "unitsCount" : 1,
-        "unitsMcCabeIndexSum" : 1,
-        "linesOfCodeInUnits" : 21
-      },
-      "startLine" : 1,
-      "endLine" : 21,
-      "linesOfCode" : 21,
-      "mcCabeIndex" : 1,
-      "numberOfParameters" : 9,
-      "numberOfLiterals" : 0,
-      "numberOfStatements" : 0,
-      "numberOfExpressions" : 0,
-      "children" : [ ]
-    }, {
       "shortName" : "export function extractBookingFields()",
       "longName" : "",
       "sourceFile" : {
@@ -5552,31 +5552,71 @@
         "numberOfExpressions" : 0,
         "children" : [ ]
       } ]
+    }, {
+      "shortName" : "export function showSuccessAlert()",
+      "longName" : "",
+      "sourceFile" : {
+        "relativePath" : "frontend/user-app/src/utils/alerts.js",
+        "extension" : "js",
+        "linesOfCode" : 17,
+        "unitsCount" : 2,
+        "unitsMcCabeIndexSum" : 2,
+        "linesOfCodeInUnits" : 16
+      },
+      "startLine" : 3,
+      "endLine" : 10,
+      "linesOfCode" : 8,
+      "mcCabeIndex" : 1,
+      "numberOfParameters" : 2,
+      "numberOfLiterals" : 0,
+      "numberOfStatements" : 0,
+      "numberOfExpressions" : 0,
+      "children" : [ ]
+    }, {
+      "shortName" : "export function showErrorAlert()",
+      "longName" : "",
+      "sourceFile" : {
+        "relativePath" : "frontend/user-app/src/utils/alerts.js",
+        "extension" : "js",
+        "linesOfCode" : 17,
+        "unitsCount" : 2,
+        "unitsMcCabeIndexSum" : 2,
+        "linesOfCodeInUnits" : 16
+      },
+      "startLine" : 12,
+      "endLine" : 19,
+      "linesOfCode" : 8,
+      "mcCabeIndex" : 1,
+      "numberOfParameters" : 2,
+      "numberOfLiterals" : 0,
+      "numberOfStatements" : 0,
+      "numberOfExpressions" : 0,
+      "children" : [ ]
     } ]
   },
   "duplicationAnalysisResults" : {
     "overallDuplication" : {
       "key" : "system",
-      "numberOfDuplicates" : 9,
-      "cleanedLinesOfCode" : 1721,
-      "duplicatedLinesOfCode" : 76,
-      "numberOfFilesWithDuplicates" : 7,
-      "duplicationPercentage" : 4.416037187681581
+      "numberOfDuplicates" : 4,
+      "cleanedLinesOfCode" : 1710,
+      "duplicatedLinesOfCode" : 54,
+      "numberOfFilesWithDuplicates" : 6,
+      "duplicationPercentage" : 3.1578947368421053
     },
     "duplicationPerComponent" : [ [ {
       "key" : "backend",
       "numberOfDuplicates" : 0,
-      "cleanedLinesOfCode" : 508,
-      "duplicatedLinesOfCode" : 50,
+      "cleanedLinesOfCode" : 493,
+      "duplicatedLinesOfCode" : 30,
       "numberOfFilesWithDuplicates" : 0,
-      "duplicationPercentage" : 9.84251968503937
+      "duplicationPercentage" : 6.085192697768763
     }, {
       "key" : "frontend",
       "numberOfDuplicates" : 0,
-      "cleanedLinesOfCode" : 1197,
-      "duplicatedLinesOfCode" : 26,
+      "cleanedLinesOfCode" : 1201,
+      "duplicatedLinesOfCode" : 24,
       "numberOfFilesWithDuplicates" : 0,
-      "duplicationPercentage" : 2.172096908939014
+      "duplicationPercentage" : 1.9983347210657785
     }, {
       "key" : "ROOT",
       "numberOfDuplicates" : 0,
@@ -5589,10 +5629,10 @@
     "duplicationPerExtension" : [ {
       "key" : "js",
       "numberOfDuplicates" : 0,
-      "cleanedLinesOfCode" : 576,
-      "duplicatedLinesOfCode" : 50,
+      "cleanedLinesOfCode" : 575,
+      "duplicatedLinesOfCode" : 30,
       "numberOfFilesWithDuplicates" : 0,
-      "duplicationPercentage" : 8.680555555555555
+      "duplicationPercentage" : 5.217391304347826
     }, {
       "key" : "css",
       "numberOfDuplicates" : 0,
@@ -5603,195 +5643,15 @@
     }, {
       "key" : "jsx",
       "numberOfDuplicates" : 0,
-      "cleanedLinesOfCode" : 687,
-      "duplicatedLinesOfCode" : 14,
+      "cleanedLinesOfCode" : 677,
+      "duplicatedLinesOfCode" : 12,
       "numberOfFilesWithDuplicates" : 0,
-      "duplicationPercentage" : 2.037845705967977
+      "duplicationPercentage" : 1.7725258493353029
     } ],
     "longestDuplicates" : [ {
       "displayContent" : "",
       "duplicatedFileBlocks" : [ {
         "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 11,
-        "endLine" : 20,
-        "cleanedStartLine" : 11,
-        "cleanedEndLine" : 20,
-        "percentage" : 50.0,
-        "blockSize" : 10
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 13,
-        "endLine" : 22,
-        "cleanedStartLine" : 12,
-        "cleanedEndLine" : 21,
-        "percentage" : 47.61904761904762,
-        "blockSize" : 10
-      } ],
-      "blockSize" : 10
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 2,
-        "endLine" : 9,
-        "cleanedStartLine" : 2,
-        "cleanedEndLine" : 9,
-        "percentage" : 40.0,
-        "blockSize" : 8
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 3,
-        "endLine" : 10,
-        "cleanedStartLine" : 3,
-        "cleanedEndLine" : 10,
-        "percentage" : 38.095238095238095,
-        "blockSize" : 8
-      } ],
-      "blockSize" : 8
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 2,
-        "endLine" : 9,
-        "cleanedStartLine" : 2,
-        "cleanedEndLine" : 9,
-        "percentage" : 40.0,
-        "blockSize" : 8
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 14,
-        "endLine" : 21,
-        "cleanedStartLine" : 13,
-        "cleanedEndLine" : 20,
-        "percentage" : 38.095238095238095,
-        "blockSize" : 8
-      } ],
-      "blockSize" : 8
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 2,
-        "endLine" : 9,
-        "cleanedStartLine" : 2,
-        "cleanedEndLine" : 9,
-        "percentage" : 40.0,
-        "blockSize" : 8
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 12,
-        "endLine" : 19,
-        "cleanedStartLine" : 12,
-        "cleanedEndLine" : 19,
-        "percentage" : 40.0,
-        "blockSize" : 8
-      } ],
-      "blockSize" : 8
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 12,
-        "endLine" : 19,
-        "cleanedStartLine" : 12,
-        "cleanedEndLine" : 19,
-        "percentage" : 40.0,
-        "blockSize" : 8
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 3,
-        "endLine" : 10,
-        "cleanedStartLine" : 3,
-        "cleanedEndLine" : 10,
-        "percentage" : 38.095238095238095,
-        "blockSize" : 8
-      } ],
-      "blockSize" : 8
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
           "relativePath" : "backend/lib/extractBookingFields.js",
           "extension" : "js",
           "linesOfCode" : 22,
@@ -5824,42 +5684,6 @@
         "blockSize" : 8
       } ],
       "blockSize" : 8
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "frontend/user-app/src/pages/Login.jsx",
-          "extension" : "jsx",
-          "linesOfCode" : 52,
-          "unitsCount" : 0,
-          "unitsMcCabeIndexSum" : 0,
-          "linesOfCodeInUnits" : 0
-        },
-        "sourceFileCleanedLinesOfCode" : 49,
-        "startLine" : 43,
-        "endLine" : 50,
-        "cleanedStartLine" : 36,
-        "cleanedEndLine" : 42,
-        "percentage" : 14.285714285714286,
-        "blockSize" : 7
-      }, {
-        "sourceFile" : {
-          "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
-          "extension" : "jsx",
-          "linesOfCode" : 47,
-          "unitsCount" : 0,
-          "unitsMcCabeIndexSum" : 0,
-          "linesOfCodeInUnits" : 0
-        },
-        "sourceFileCleanedLinesOfCode" : 44,
-        "startLine" : 35,
-        "endLine" : 42,
-        "cleanedStartLine" : 30,
-        "cleanedEndLine" : 36,
-        "percentage" : 15.909090909090908,
-        "blockSize" : 7
-      } ],
-      "blockSize" : 7
     }, {
       "displayContent" : "",
       "duplicatedFileBlocks" : [ {
@@ -5882,17 +5706,17 @@
         "sourceFile" : {
           "relativePath" : "backend/routes/booking.js",
           "extension" : "js",
-          "linesOfCode" : 130,
+          "linesOfCode" : 134,
           "unitsCount" : 1,
           "unitsMcCabeIndexSum" : 4,
           "linesOfCodeInUnits" : 19
         },
-        "sourceFileCleanedLinesOfCode" : 115,
-        "startLine" : 36,
-        "endLine" : 42,
+        "sourceFileCleanedLinesOfCode" : 120,
+        "startLine" : 35,
+        "endLine" : 41,
         "cleanedStartLine" : 21,
         "cleanedEndLine" : 27,
-        "percentage" : 6.086956521739131,
+        "percentage" : 5.833333333333333,
         "blockSize" : 7
       } ],
       "blockSize" : 7
@@ -5932,223 +5756,55 @@
         "blockSize" : 6
       } ],
       "blockSize" : 6
+    }, {
+      "displayContent" : "",
+      "duplicatedFileBlocks" : [ {
+        "sourceFile" : {
+          "relativePath" : "frontend/user-app/src/pages/Login.jsx",
+          "extension" : "jsx",
+          "linesOfCode" : 48,
+          "unitsCount" : 0,
+          "unitsMcCabeIndexSum" : 0,
+          "linesOfCodeInUnits" : 0
+        },
+        "sourceFileCleanedLinesOfCode" : 45,
+        "startLine" : 40,
+        "endLine" : 46,
+        "cleanedStartLine" : 33,
+        "cleanedEndLine" : 38,
+        "percentage" : 13.333333333333334,
+        "blockSize" : 6
+      }, {
+        "sourceFile" : {
+          "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
+          "extension" : "jsx",
+          "linesOfCode" : 41,
+          "unitsCount" : 0,
+          "unitsMcCabeIndexSum" : 0,
+          "linesOfCodeInUnits" : 0
+        },
+        "sourceFileCleanedLinesOfCode" : 38,
+        "startLine" : 31,
+        "endLine" : 37,
+        "cleanedStartLine" : 26,
+        "cleanedEndLine" : 31,
+        "percentage" : 15.789473684210526,
+        "blockSize" : 6
+      } ],
+      "blockSize" : 6
     } ],
-    "mostFrequentDuplicates" : [ {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 2,
-        "endLine" : 7,
-        "cleanedStartLine" : 2,
-        "cleanedEndLine" : 7,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 3,
-        "endLine" : 8,
-        "cleanedStartLine" : 3,
-        "cleanedEndLine" : 8,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 12,
-        "endLine" : 17,
-        "cleanedStartLine" : 12,
-        "cleanedEndLine" : 17,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 14,
-        "endLine" : 19,
-        "cleanedStartLine" : 13,
-        "cleanedEndLine" : 18,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      } ],
-      "blockSize" : 6
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 3,
-        "endLine" : 8,
-        "cleanedStartLine" : 3,
-        "cleanedEndLine" : 8,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 4,
-        "endLine" : 9,
-        "cleanedStartLine" : 4,
-        "cleanedEndLine" : 9,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 13,
-        "endLine" : 18,
-        "cleanedStartLine" : 13,
-        "cleanedEndLine" : 18,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 15,
-        "endLine" : 20,
-        "cleanedStartLine" : 14,
-        "cleanedEndLine" : 19,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      } ],
-      "blockSize" : 6
-    }, {
-      "displayContent" : "",
-      "duplicatedFileBlocks" : [ {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 4,
-        "endLine" : 9,
-        "cleanedStartLine" : 4,
-        "cleanedEndLine" : 9,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 5,
-        "endLine" : 10,
-        "cleanedStartLine" : 5,
-        "cleanedEndLine" : 10,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/buildBookingPayload.js",
-          "extension" : "js",
-          "linesOfCode" : 21,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 21
-        },
-        "sourceFileCleanedLinesOfCode" : 20,
-        "startLine" : 14,
-        "endLine" : 19,
-        "cleanedStartLine" : 14,
-        "cleanedEndLine" : 19,
-        "percentage" : 30.0,
-        "blockSize" : 6
-      }, {
-        "sourceFile" : {
-          "relativePath" : "backend/lib/extractBookingFields.js",
-          "extension" : "js",
-          "linesOfCode" : 22,
-          "unitsCount" : 1,
-          "unitsMcCabeIndexSum" : 1,
-          "linesOfCodeInUnits" : 22
-        },
-        "sourceFileCleanedLinesOfCode" : 21,
-        "startLine" : 16,
-        "endLine" : 21,
-        "cleanedStartLine" : 15,
-        "cleanedEndLine" : 20,
-        "percentage" : 28.571428571428573,
-        "blockSize" : 6
-      } ],
-      "blockSize" : 6
-    } ]
+    "mostFrequentDuplicates" : [ ]
   },
   "contributorsAnalysisResults" : {
     "latestCommitDate" : "2025-12-10",
     "contributors" : [ {
       "email" : "toni11elia11@gmail.com",
       "userName" : "Toni",
-      "commitsCount" : 29,
-      "commitsCount30Days" : 9,
-      "commitsCount90Days" : 29,
-      "commitsCount180Days" : 29,
-      "commitsCount365Days" : 29,
+      "commitsCount" : 32,
+      "commitsCount30Days" : 12,
+      "commitsCount90Days" : 32,
+      "commitsCount180Days" : 32,
+      "commitsCount365Days" : 32,
       "firstCommitDate" : "2025-10-23",
       "latestCommitDate" : "2025-12-10",
       "activeYears" : [ "2025" ],
@@ -6220,7 +5876,7 @@
     "contributorsPerYear" : [ {
       "timeSlot" : "2025",
       "contributorsCount" : 5,
-      "commitsCount" : 71
+      "commitsCount" : 74
     } ],
     "contributorsPerMonth" : [ {
       "timeSlot" : "2025-09",
@@ -6233,7 +5889,7 @@
     }, {
       "timeSlot" : "2025-12",
       "contributorsCount" : 1,
-      "commitsCount" : 9
+      "commitsCount" : 12
     } ],
     "contributorsPerDay" : [ {
       "timeSlot" : "2025-09-23",
@@ -6278,7 +5934,7 @@
     }, {
       "timeSlot" : "2025-12-10",
       "contributorsCount" : 1,
-      "commitsCount" : 9
+      "commitsCount" : 12
     } ],
     "contributorsPerWeek" : [ {
       "timeSlot" : "2025-09-22",
@@ -6299,19 +5955,19 @@
     }, {
       "timeSlot" : "2025-12-08",
       "contributorsCount" : 1,
-      "commitsCount" : 9
+      "commitsCount" : 12
     } ],
     "commitsPerExtensions" : [ {
       "extension" : "css",
-      "commitsCount" : 41,
+      "commitsCount" : 42,
       "committers" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
-      "filesCount" : 23,
-      "commitsCount30Days" : 8,
+      "filesCount" : 24,
+      "commitsCount30Days" : 9,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
-      "filesCount30Days" : 8,
-      "commitsCount90Days" : 41,
+      "filesCount30Days" : 9,
+      "commitsCount90Days" : 42,
       "committers90Days" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
-      "filesCount90Days" : 23,
+      "filesCount90Days" : 24,
       "contributorPerExtensionStats" : [ {
         "contributor" : "2258302@cmontmorency.qc.ca",
         "fileUpdates30Days" : 0,
@@ -6324,9 +5980,9 @@
         "fileUpdates" : 2
       }, {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 8,
-        "fileUpdates90Days" : 10,
-        "fileUpdates" : 10
+        "fileUpdates30Days" : 9,
+        "fileUpdates90Days" : 11,
+        "fileUpdates" : 11
       }, {
         "contributor" : "147719914+badr1210@users.noreply.github.com",
         "fileUpdates30Days" : 0,
@@ -6340,15 +5996,15 @@
       } ]
     }, {
       "extension" : "js",
-      "commitsCount" : 1031,
+      "commitsCount" : 1043,
       "committers" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
-      "filesCount" : 542,
-      "commitsCount30Days" : 46,
+      "filesCount" : 545,
+      "commitsCount30Days" : 58,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
-      "filesCount30Days" : 36,
-      "commitsCount90Days" : 1031,
+      "filesCount30Days" : 39,
+      "commitsCount90Days" : 1043,
       "committers90Days" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "2258302@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
-      "filesCount90Days" : 542,
+      "filesCount90Days" : 545,
       "contributorPerExtensionStats" : [ {
         "contributor" : "2258302@cmontmorency.qc.ca",
         "fileUpdates30Days" : 0,
@@ -6361,9 +6017,9 @@
         "fileUpdates" : 39
       }, {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 46,
-        "fileUpdates90Days" : 140,
-        "fileUpdates" : 140
+        "fileUpdates30Days" : 58,
+        "fileUpdates90Days" : 152,
+        "fileUpdates" : 152
       }, {
         "contributor" : "147719914+badr1210@users.noreply.github.com",
         "fileUpdates30Days" : 0,
@@ -6377,13 +6033,13 @@
       } ]
     }, {
       "extension" : "jsx",
-      "commitsCount" : 104,
+      "commitsCount" : 107,
       "committers" : [ "toni11elia11@gmail.com", "2258302@cmontmorency.qc.ca", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
       "filesCount" : 37,
-      "commitsCount30Days" : 37,
+      "commitsCount30Days" : 40,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
-      "filesCount30Days" : 29,
-      "commitsCount90Days" : 104,
+      "filesCount30Days" : 30,
+      "commitsCount90Days" : 107,
       "committers90Days" : [ "toni11elia11@gmail.com", "2258302@cmontmorency.qc.ca", "147719914+badr1210@users.noreply.github.com", "2234682@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
       "filesCount90Days" : 37,
       "contributorPerExtensionStats" : [ {
@@ -6398,9 +6054,9 @@
         "fileUpdates" : 14
       }, {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 37,
-        "fileUpdates90Days" : 69,
-        "fileUpdates" : 69
+        "fileUpdates30Days" : 40,
+        "fileUpdates90Days" : 72,
+        "fileUpdates" : 72
       }, {
         "contributor" : "147719914+badr1210@users.noreply.github.com",
         "fileUpdates30Days" : 0,
@@ -6414,13 +6070,13 @@
       } ]
     }, {
       "extension" : "json",
-      "commitsCount" : 119,
+      "commitsCount" : 132,
       "committers" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2258302@cmontmorency.qc.ca", "2234682@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
       "filesCount" : 61,
-      "commitsCount30Days" : 41,
+      "commitsCount30Days" : 54,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
       "filesCount30Days" : 25,
-      "commitsCount90Days" : 119,
+      "commitsCount90Days" : 132,
       "committers90Days" : [ "toni11elia11@gmail.com", "147719914+badr1210@users.noreply.github.com", "2258302@cmontmorency.qc.ca", "2234682@cmontmorency.qc.ca", "157541451+calinsanduta@users.noreply.github.com" ],
       "filesCount90Days" : 61,
       "contributorPerExtensionStats" : [ {
@@ -6435,9 +6091,9 @@
         "fileUpdates" : 6
       }, {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 41,
-        "fileUpdates90Days" : 55,
-        "fileUpdates" : 55
+        "fileUpdates30Days" : 54,
+        "fileUpdates90Days" : 68,
+        "fileUpdates" : 68
       }, {
         "contributor" : "147719914+badr1210@users.noreply.github.com",
         "fileUpdates30Days" : 0,
@@ -6451,13 +6107,13 @@
       } ]
     }, {
       "extension" : "txt",
-      "commitsCount" : 85,
+      "commitsCount" : 114,
       "committers" : [ "toni11elia11@gmail.com", "157541451+calinsanduta@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ],
       "filesCount" : 49,
-      "commitsCount30Days" : 79,
+      "commitsCount30Days" : 108,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
       "filesCount30Days" : 46,
-      "commitsCount90Days" : 85,
+      "commitsCount90Days" : 114,
       "committers90Days" : [ "toni11elia11@gmail.com", "157541451+calinsanduta@users.noreply.github.com", "2234682@cmontmorency.qc.ca" ],
       "filesCount90Days" : 49,
       "contributorPerExtensionStats" : [ {
@@ -6467,9 +6123,9 @@
         "fileUpdates" : 1
       }, {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 79,
-        "fileUpdates90Days" : 81,
-        "fileUpdates" : 81
+        "fileUpdates30Days" : 108,
+        "fileUpdates90Days" : 110,
+        "fileUpdates" : 110
       }, {
         "contributor" : "2234682@cmontmorency.qc.ca",
         "fileUpdates30Days" : 0,
@@ -6478,20 +6134,20 @@
       } ]
     }, {
       "extension" : "html",
-      "commitsCount" : 283,
+      "commitsCount" : 389,
       "committers" : [ "toni11elia11@gmail.com", "2234682@cmontmorency.qc.ca" ],
-      "filesCount" : 166,
-      "commitsCount30Days" : 282,
+      "filesCount" : 172,
+      "commitsCount30Days" : 388,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
-      "filesCount30Days" : 165,
-      "commitsCount90Days" : 283,
+      "filesCount30Days" : 171,
+      "commitsCount90Days" : 389,
       "committers90Days" : [ "toni11elia11@gmail.com", "2234682@cmontmorency.qc.ca" ],
-      "filesCount90Days" : 166,
+      "filesCount90Days" : 172,
       "contributorPerExtensionStats" : [ {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 282,
-        "fileUpdates90Days" : 282,
-        "fileUpdates" : 282
+        "fileUpdates30Days" : 388,
+        "fileUpdates90Days" : 388,
+        "fileUpdates" : 388
       }, {
         "contributor" : "2234682@cmontmorency.qc.ca",
         "fileUpdates30Days" : 0,
@@ -6522,20 +6178,20 @@
       } ]
     }, {
       "extension" : "zip",
-      "commitsCount" : 4,
+      "commitsCount" : 6,
       "committers" : [ "toni11elia11@gmail.com" ],
       "filesCount" : 2,
-      "commitsCount30Days" : 4,
+      "commitsCount30Days" : 6,
       "committers30Days" : [ "toni11elia11@gmail.com" ],
       "filesCount30Days" : 2,
-      "commitsCount90Days" : 4,
+      "commitsCount90Days" : 6,
       "committers90Days" : [ "toni11elia11@gmail.com" ],
       "filesCount90Days" : 2,
       "contributorPerExtensionStats" : [ {
         "contributor" : "toni11elia11@gmail.com",
-        "fileUpdates30Days" : 4,
-        "fileUpdates90Days" : 4,
-        "fileUpdates" : 4
+        "fileUpdates30Days" : 6,
+        "fileUpdates90Days" : 6,
+        "fileUpdates" : 6
       } ]
     }, {
       "extension" : "svg",
@@ -6992,7 +6648,7 @@
       } ]
     } ]
   },
-  "numberOfExcludedFiles" : 40930,
+  "numberOfExcludedFiles" : 40934,
   "excludedExtensions" : {
     "" : 1377,
     "css" : 31,
@@ -7029,7 +6685,7 @@
     "png" : 100,
     "prettierrc" : 1,
     "mts" : 57,
-    "pack" : 13,
+    "pack" : 14,
     "1" : 3,
     "license" : 1,
     "bsd" : 10,
@@ -7050,7 +6706,7 @@
     "browserslistrc" : 1,
     "applescript" : 1,
     "markdown" : 13,
-    "json" : 2311,
+    "json" : 2314,
     "tsbuildinfo" : 19,
     "map" : 2790,
     "jpg" : 3,
@@ -7069,7 +6725,7 @@
     "prettierignore" : 1,
     "esprima" : 3
   },
-  "analysisStartTimeMs" : 1765413601327,
-  "maxFileCount" : 39,
-  "maxLinesOfCode" : 1871
+  "analysisStartTimeMs" : 1765415153228,
+  "maxLinesOfCode" : 1861,
+  "maxFileCount" : 39
 }

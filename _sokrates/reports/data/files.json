@@ -11,12 +11,6 @@
   "components" : [ "primary::backend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
-  "relativePath" : "backend/lib/buildBookingPayload.js",
-  "extension" : "js",
-  "linesOfCode" : 21,
-  "components" : [ "primary::backend" ],
-  "concerns" : [ "::Unclassified" ]
-}, {
   "relativePath" : "backend/lib/extractBookingFields.js",
   "extension" : "js",
   "linesOfCode" : 22,
@@ -37,7 +31,7 @@
 }, {
   "relativePath" : "backend/routes/booking.js",
   "extension" : "js",
-  "linesOfCode" : 130,
+  "linesOfCode" : 134,
   "components" : [ "primary::backend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -187,13 +181,13 @@
 }, {
   "relativePath" : "frontend/user-app/src/pages/Login.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 52,
+  "linesOfCode" : 48,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
   "relativePath" : "frontend/user-app/src/pages/Signup.jsx",
   "extension" : "jsx",
-  "linesOfCode" : 47,
+  "linesOfCode" : 41,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {
@@ -224,6 +218,12 @@
   "relativePath" : "frontend/user-app/src/styles/Home.css",
   "extension" : "css",
   "linesOfCode" : 96,
+  "components" : [ "primary::frontend" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "frontend/user-app/src/utils/alerts.js",
+  "extension" : "js",
+  "linesOfCode" : 17,
   "components" : [ "primary::frontend" ],
   "concerns" : [ "::Unclassified" ]
 }, {

@@ -4961,6 +4961,27 @@ frontend/user-app/node_modules/workbox-window/tsconfig.tsbuildinfo
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*.pack files (14):
+
+frontend/user-app/node_modules/.cache/default-development/0.pack
+frontend/user-app/node_modules/.cache/default-development/1.pack
+frontend/user-app/node_modules/.cache/default-development/10.pack
+frontend/user-app/node_modules/.cache/default-development/11.pack
+frontend/user-app/node_modules/.cache/default-development/12.pack
+frontend/user-app/node_modules/.cache/default-development/2.pack
+frontend/user-app/node_modules/.cache/default-development/3.pack
+frontend/user-app/node_modules/.cache/default-development/4.pack
+frontend/user-app/node_modules/.cache/default-development/5.pack
+frontend/user-app/node_modules/.cache/default-development/6.pack
+frontend/user-app/node_modules/.cache/default-development/7.pack
+frontend/user-app/node_modules/.cache/default-development/8.pack
+frontend/user-app/node_modules/.cache/default-development/9.pack
+frontend/user-app/node_modules/.cache/default-development/index.pack
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 *.bnf files (13):
 
 frontend/user-app/node_modules/@babel/core/node_modules/semver/range.bnf
@@ -4976,26 +4997,6 @@ frontend/user-app/node_modules/eslint-plugin-react/node_modules/semver/range.bnf
 frontend/user-app/node_modules/istanbul-lib-instrument/node_modules/semver/range.bnf
 frontend/user-app/node_modules/make-dir/node_modules/semver/range.bnf
 frontend/user-app/node_modules/semver/range.bnf
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*.pack files (13):
-
-frontend/user-app/node_modules/.cache/default-development/0.pack
-frontend/user-app/node_modules/.cache/default-development/1.pack
-frontend/user-app/node_modules/.cache/default-development/10.pack
-frontend/user-app/node_modules/.cache/default-development/11.pack
-frontend/user-app/node_modules/.cache/default-development/2.pack
-frontend/user-app/node_modules/.cache/default-development/3.pack
-frontend/user-app/node_modules/.cache/default-development/4.pack
-frontend/user-app/node_modules/.cache/default-development/5.pack
-frontend/user-app/node_modules/.cache/default-development/6.pack
-frontend/user-app/node_modules/.cache/default-development/7.pack
-frontend/user-app/node_modules/.cache/default-development/8.pack
-frontend/user-app/node_modules/.cache/default-development/9.pack
-frontend/user-app/node_modules/.cache/default-development/index.pack
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

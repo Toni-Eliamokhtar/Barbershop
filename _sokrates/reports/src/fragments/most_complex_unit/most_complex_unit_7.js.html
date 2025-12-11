@@ -1,40 +1,41 @@
 <html>
 <head>
-    <title>export function extractBookingFields()</title>
+    <title>export default function useSupabaseStatus()</title>
     <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
     <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
 </head>
 <body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
-<h3 style="margin-bottom: 0">export function extractBookingFields()</h3>
-<p style="margin-top: 4px">in <i>backend/lib/extractBookingFields.js [1:23]</i></p>
+<h3 style="margin-bottom: 0">export default function useSupabaseStatus()</h3>
+<p style="margin-top: 4px">in <i>frontend/user-app/src/hooks/useSupabaseStatus.js [4:27]</i></p>
 <ul>
-    <li><b>22</b> lines of code</li>
+    <li><b>7</b> lines of code</li>
     <li><b>1</b> McCabe index (conditional complexity)</li>
 </ul>
 <pre>
 <code class="js">
-export function extractBookingFields(body) {
-    const {
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
-        barberName,
-        serviceName,
-    } = body;
+export default function useSupabaseStatus() {
+    const [status, setStatus] = useState(&quot;⏳ Connexion &agrave; Supabase...&quot;);
 
-    return {
-        barberId,
-        serviceId,
-        date,
-        time,
-        userEmail,
-        userName,
-        barberName,
-        serviceName,
-    };
+    useEffect(() =&gt; {
+        async function testConnection() {
+            const { data, error } = await supabase
+                .from(&quot;profiles&quot;)
+                .select(&quot;*&quot;)
+                .limit(1);
+
+            if (error) {
+                console.error(&quot;❌ Erreur Supabase :&quot;, error.message);
+                setStatus(&quot;❌ Erreur de connexion &agrave; Supabase&quot;);
+            } else {
+                console.log(&quot;✅ Supabase connect&eacute; :&quot;, data);
+                setStatus(&quot;✅ Supabase connect&eacute; !&quot;);
+            }
+        }
+
+        testConnection();
+    }, []);
+
+    return status;
 }
 
 </code>
