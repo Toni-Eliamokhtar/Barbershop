@@ -1,8 +1,7 @@
-// src/pages/Signup.jsx
 import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
 import "../styles/Auth.css";
 import SignupForm from "../components/SignupForm";
+import { showSuccessAlert, showErrorAlert } from "../utils/alerts";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -19,20 +18,16 @@ export default function Signup() {
       if (!res.ok)
         throw new Error(data.error || "Création du compte impossible");
 
-      await Swal.fire({
-        icon: "success",
+      await showSuccessAlert({
         title: "Compte créé 🎉",
         text: "Ton compte est prêt. Tu peux te connecter maintenant.",
-        confirmButtonColor: "#111",
       });
 
       navigate("/login");
     } catch (err) {
-      Swal.fire({
-        icon: "error",
+      showErrorAlert({
         title: "Échec d'inscription ❌",
         text: err.message || "Une erreur est survenue.",
-        confirmButtonColor: "#111",
       });
     }
   };
@@ -43,7 +38,6 @@ export default function Signup() {
         <h2 className="auth-title">Créer un compte</h2>
         <div className="auth-divider"></div>
 
-        {/* Passe le handler au formulaire */}
         <SignupForm onSubmit={handleSignup} />
 
         <p className="auth-switch">
