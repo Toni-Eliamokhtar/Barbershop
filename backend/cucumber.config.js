@@ -1,7 +1,6 @@
 export default {
   default: {
-    require: ['features/step_definitions/**/*.js'],
-    requireModule: ['@babel/register'],
+    import: ['features/step_definitions/**/*.js'],
     format: [
       'progress-bar',
       'html:reports/cucumber-report.html',

@@ -1,5 +1,5 @@
 import express from "express";
-import nodemailer from "nodemailer";
+import sendConfirmationEmail from "../email.js";
 import dotenv from "dotenv";
 import Stripe from "stripe";
 import { createBooking, supabase } from "../lib/supabase.js";
@@ -31,14 +31,6 @@ async function persistBookingInSupabase(fields) {
   }
 }
 
-// ✉️ Config email
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
 
 // -------------------------------
 // 🔥 ROUTE: CREATE
@@ -60,18 +52,18 @@ router.post("/create", async (req, res) => {
 
     const created = await persistBookingInSupabase(fields);
 
-    await transporter.sendMail({
-      from: `"Barbershop 514" <${process.env.EMAIL_USER}>`,
-      to: fields.userEmail,
-      subject: "Confirmation de votre rendez-vous",
-      html: `
+    // send confirmation email (no-op in test env if emails disabled)
+    await sendConfirmationEmail(
+      fields.userEmail,
+      "Confirmation de votre rendez-vous",
+      `
         <h2>Votre rendez-vous est confirmé</h2>
         <p><strong>Date:</strong> ${fields.date}</p>
         <p><strong>Heure:</strong> ${fields.time}</p>
         <p><strong>Service:</strong> ${fields.serviceName}</p>
         <p><strong>Barbier:</strong> ${fields.barberName}</p>
-      `,
-    });
+      `
+    );
 
     res.json({
       success: true,

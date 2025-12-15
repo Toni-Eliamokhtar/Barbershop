@@ -1,7 +1,14 @@
 module.exports = {
   testEnvironment: 'node',
-  testMatch: ['**/tests/**/*.test.js'],
-  transform: {},
+  testMatch: ['**/tests/**/*.test.js', '**/tests/**/*.test.mjs', '**/tests/**/*.test.cjs'],
+  transform: {
+    '^.+\\.js$': ['babel-jest', { configFile: './babel.config.cjs' }]
+  },
+  globals: {
+    'babel-jest': {
+      useESM: true
+    }
+  },
   collectCoverageFrom: [
     'src/**/*.js',
     '!src/**/*.test.js',
@@ -17,5 +24,6 @@ module.exports = {
     }
   },
   verbose: true,
-  testTimeout: 10000
+  testTimeout: 10000,
+  testPathIgnorePatterns: ['/node_modules/']
 };
