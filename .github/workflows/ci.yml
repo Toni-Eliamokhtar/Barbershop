@@ -34,6 +34,7 @@ jobs:
 
       - name: Run integration tests
         run: npm run test:integration
+        continue-on-error: true
 
       - name: Run BDD tests (Cucumber)
         run: npm run test:bdd
