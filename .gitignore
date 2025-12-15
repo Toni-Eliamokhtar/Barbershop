@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Coverage reports
+backend/coverage/
+frontend/*/coverage/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/fixtures/*.json
+backend/cypress/screenshots/
+backend/cypress/videos/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Sokrates reports (keep only config.json)
+_sokrates/reports/
+git-history.txt
