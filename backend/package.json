@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --detectOpenHandles",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --detectOpenHandles",
     "test:unit": "jest tests/unit --coverage",
     "test:integration": "jest tests/integration --coverage",
     "test:e2e": "cypress run",

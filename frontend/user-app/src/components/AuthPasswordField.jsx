@@ -8,11 +8,16 @@ export default function AuthPasswordField({
             <input
                 type="password"
                 placeholder="Mot de passe"
+                data-testid="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
             />
-            <button type="submit" className="auth-btn">
+            <button
+                type="submit"
+                className="auth-btn"
+                data-testid={/inscr/i.test(buttonLabel || '') ? 'signup' : 'login'}
+            >
                 {buttonLabel}
             </button>
         </>

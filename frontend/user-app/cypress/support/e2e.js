@@ -1,3 +1,6 @@
+/* eslint-env cypress */
+/* global Cypress */
+
 // Cypress support file for E2E tests
 // Global test utilities and hooks
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="21.855" tests="5" failures="5">
+  <testsuite name="Root Suite" timestamp="2025-12-15T09:10:52" tests="0" file="cypress\e2e\booking.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Complete Booking Flow - E2E" timestamp="2025-12-15T09:10:52" tests="5" time="21.852" failures="5">
+    <testcase name="Complete Booking Flow - E2E should complete full booking journey from barber to confirmation" time="0.000" classname="should complete full booking journey from barber to confirmation">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;/Sélectionner|choisir/i&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: '/Sélectionner|choisir/i' but never did.
+    at Context.eval (webpack://user-app/./cypress/e2e/booking.cy.js:10:41)]]></failure>
+    </testcase>
+    <testcase name="Complete Booking Flow - E2E should handle payment failure gracefully" time="0.000" classname="should handle payment failure gracefully">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-testid=&quot;barber-1&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="barber-1"]`, but never found it.
+    at Context.eval (webpack://user-app/./cypress/e2e/booking.cy.js:67:7)]]></failure>
+    </testcase>
+    <testcase name="Complete Booking Flow - E2E should prevent double booking of same time slot" time="0.000" classname="should prevent double booking of same time slot">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-testid=&quot;barber-1&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="barber-1"]`, but never found it.
+    at Context.eval (webpack://user-app/./cypress/e2e/booking.cy.js:92:7)]]></failure>
+    </testcase>
+    <testcase name="Complete Booking Flow - E2E should show available time slots only" time="0.000" classname="should show available time slots only">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-testid=&quot;barber-1&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="barber-1"]`, but never found it.
+    at Context.eval (webpack://user-app/./cypress/e2e/booking.cy.js:120:7)]]></failure>
+    </testcase>
+    <testcase name="Complete Booking Flow - E2E should maintain booking data through page refresh" time="0.000" classname="should maintain booking data through page refresh">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-testid=&quot;barber-1&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="barber-1"]`, but never found it.
+    at Context.eval (webpack://user-app/./cypress/e2e/booking.cy.js:136:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

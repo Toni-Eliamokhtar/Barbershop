@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import authRoutes from "./routes/auth.js";
 import bookingRoutes from "./routes/booking.js";
+import barbersRoutes from "./routes/barbers.js";
 import dotenv from "dotenv";
 import Stripe from "stripe";
 import { markBookingPaid } from "./lib/supabase.js";
@@ -67,9 +68,14 @@ app.post(
 // ✅ Routes
 app.use("/auth", authRoutes);
 app.use("/booking", bookingRoutes);
+app.use('/api', barbersRoutes);
 
-// ✅ Lancement du serveur
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`✅ Backend démarré sur http://localhost:${PORT}`);
-});
+// Export app for tests and start server only outside of test environment
+export default app;
+
+if (process.env.NODE_ENV !== 'test') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`✅ Backend démarré sur http://localhost:${PORT}`);
+  });
+}

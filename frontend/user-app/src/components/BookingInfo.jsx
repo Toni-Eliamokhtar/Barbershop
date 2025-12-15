@@ -2,7 +2,7 @@ export default function BookingInfo({ barber, service, user }) {
   if (!barber || !service || !user) return null;
 
   return (
-    <div className="booking-info">
+    <div className="booking-info" data-testid="barber-selected">
       <h2>Réserver avec {barber.nom}</h2>
 
       <img

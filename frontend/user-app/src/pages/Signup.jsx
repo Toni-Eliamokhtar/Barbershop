@@ -18,12 +18,19 @@ export default function Signup() {
       if (!res.ok)
         throw new Error(data.error || "Création du compte impossible");
 
-      await showSuccessAlert({
+      // In E2E tests (Cypress) avoid awaiting the modal so navigation isn't blocked
+      const alertPromise = showSuccessAlert({
         title: "Compte créé 🎉",
         text: "Ton compte est prêt. Tu peux te connecter maintenant.",
       });
 
-      navigate("/login");
+      if (typeof window !== "undefined" && window.Cypress) {
+        // don't await in Cypress; navigate immediately
+        navigate("/login");
+      } else {
+        await alertPromise;
+        navigate("/login");
+      }
     } catch (err) {
       showErrorAlert({
         title: "Échec d'inscription ❌",

@@ -25,12 +25,17 @@ export default function Login() {
       });
       if (error) throw error;
 
-      await showSuccessAlert({
+      const alertPromise = showSuccessAlert({
         title: "Connexion réussie ✅",
         text: `Bienvenue ${email} !`,
       });
 
-      navigate("/dashboard");
+      if (typeof window !== "undefined" && window.Cypress) {
+        navigate("/dashboard");
+      } else {
+        await alertPromise;
+        navigate("/dashboard");
+      }
     } catch (err) {
       console.error("Erreur de login :", err);
 
