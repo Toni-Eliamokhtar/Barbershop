@@ -35,6 +35,10 @@ jobs:
       - name: Run integration tests
         run: npm run test:integration
 
+      - name: Run BDD tests (Cucumber)
+        run: npm run test:bdd
+        continue-on-error: true
+
       - name: Upload coverage reports
         uses: actions/upload-artifact@v4
         if: always()
