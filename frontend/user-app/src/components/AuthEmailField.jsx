@@ -4,6 +4,7 @@ export default function AuthEmailField({ email, setEmail }) {
         <input
             type="email"
             placeholder="Adresse email"
+            data-testid="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
